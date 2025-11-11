@@ -4,8 +4,8 @@ import { BINARY_DATA_ACCESS_TOOLTIP } from '@/app/constants';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import useEnvironmentsStore from '@/features/settings/environments.ee/environments.store';
 import type { IUpdateInformation } from '@/Interface';
-import { useI18n } from '@n8n/i18n';
-import type { AssignmentValue, INodeProperties } from 'n8n-workflow';
+import { useI18n } from '@aura/i18n';
+import type { AssignmentValue, INodeProperties } from 'aura-workflow';
 import { computed, ref } from 'vue';
 import InputTriple from '../InputTriple/InputTriple.vue';
 import ParameterInputFull from '../ParameterInputFull.vue';
@@ -15,7 +15,7 @@ import TypeSelect from './TypeSelect.vue';
 
 import { removeExpressionPrefix } from '@/app/utils/expressions';
 import { propertyNameFromExpression } from '@/app/utils/mappingUtils';
-import { N8nIconButton, N8nTooltip } from '@n8n/design-system';
+import { N8nIconButton, N8nTooltip } from '@aura/design-system';
 import { typeFromExpression } from '../../utils/assignmentCollection.utils';
 
 interface Props {

@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import * as database from './database/Database.resource';
 import type { OracleDBType } from './node.type';

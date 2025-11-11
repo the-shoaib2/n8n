@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const includeInputFields: INodeProperties = {
 	displayName: 'Include Input Fields',

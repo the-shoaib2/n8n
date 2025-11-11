@@ -24,7 +24,7 @@ import {
 	type Workflow,
 	type CronContext,
 	type Cron,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 const logger = mock({
 	scoped: jest.fn().mockReturnValue(

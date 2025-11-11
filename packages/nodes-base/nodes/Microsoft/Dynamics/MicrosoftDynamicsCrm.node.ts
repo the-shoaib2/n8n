@@ -6,8 +6,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 import { accountFields, accountOperations } from './descriptions';
 import type { IField } from './GenericFunctions';

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import * as copy from './copy.operation';
 import * as createFromText from './createFromText.operation';

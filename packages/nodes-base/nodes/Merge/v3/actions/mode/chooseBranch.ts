@@ -1,5 +1,5 @@
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
+import { NodeOperationError } from 'aura-workflow';
+import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'aura-workflow';
 
 import { preparePairedItemDataArray, updateDisplayOptions } from '@utils/utilities';
 

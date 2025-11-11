@@ -1,4 +1,4 @@
-# @n8n/stores
+# @aura/stores
 
 A collection of Pinia stores that provide common data-related functionality across n8n's Front-End packages.
 

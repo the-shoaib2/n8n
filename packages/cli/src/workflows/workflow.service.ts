@@ -12,10 +12,10 @@ import {
 import { Service } from '@aura/di';
 import type { Scope } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
-import type { QueryDeepPartialEntity } from '@aura/typeorm/query-builder/QueryPartialEntity';
+import { In } from '@n8n/typeorm';
+import type { QueryDeepPartialEntity } from '@n8n/typeorm/query-builder/QueryPartialEntity';
 import omit from 'lodash/omit';
 import pick from 'lodash/pick';
 import { BinaryDataService } from 'aura-core';

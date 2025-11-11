@@ -1,4 +1,4 @@
-import { Column, Entity, Index, OneToMany } from '@aura/typeorm';
+import { Column, Entity, Index, OneToMany } from '@n8n/typeorm';
 import { IsObject, IsString, Length } from 'class-validator';
 
 import { WithTimestampsAndStringId } from './abstract-entity';

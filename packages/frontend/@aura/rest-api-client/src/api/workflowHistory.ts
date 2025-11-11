@@ -1,4 +1,4 @@
-import type { IConnections, INode } from 'n8n-workflow';
+import type { IConnections, INode } from 'aura-workflow';
 
 import type { IRestApiContext } from '../types';
 import { get } from '../utils';

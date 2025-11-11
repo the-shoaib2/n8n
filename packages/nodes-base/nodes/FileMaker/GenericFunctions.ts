@@ -5,8 +5,8 @@ import type {
 	INodePropertyOptions,
 	JsonObject,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeApiError, NodeOperationError } from 'aura-workflow';
 
 interface ScriptsOptions {
 	script?: any;

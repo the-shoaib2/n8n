@@ -5,7 +5,7 @@ import {
 	chatHubProviderSchema,
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	type ChatHubProvider,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import { useLocalStorage } from '@vueuse/core';
 import { computed, onMounted, ref } from 'vue';
 

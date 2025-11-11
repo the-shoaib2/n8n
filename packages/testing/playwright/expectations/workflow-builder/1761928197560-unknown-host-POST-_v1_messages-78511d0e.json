@@ -71,7 +71,7 @@
 						"id": "toolu_01Xqbag1c5UTjpHDzQh8VgdP",
 						"name": "get_node_details",
 						"input": {
-							"nodeName": "@n8n/n8n-nodes-langchain.googleGemini",
+							"nodeName": "@aura/n8n-nodes-langchain.googleGemini",
 							"withConnections": true,
 							"withParameters": true
 						}
@@ -81,7 +81,7 @@
 						"id": "toolu_01T9CepnnfkmhFofhovTdvEA",
 						"name": "get_node_details",
 						"input": {
-							"nodeName": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+							"nodeName": "@aura/n8n-nodes-langchain.lmChatGoogleGemini",
 							"withConnections": true,
 							"withParameters": false
 						}

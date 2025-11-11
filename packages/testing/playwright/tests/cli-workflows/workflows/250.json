@@ -30,7 +30,7 @@
 			},
 			"id": "86dbd078-2724-4acc-ad29-182603ab8fbb",
 			"name": "Embeddings OpenAI",
-			"type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [860, 1360],
 			"credentials": {
@@ -59,7 +59,7 @@
 			},
 			"id": "5402877d-e03d-49d5-aa3a-ca5f911811c7",
 			"name": "Default Data Loader",
-			"type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+			"type": "@aura/n8n-nodes-langchain.documentDefaultDataLoader",
 			"typeVersion": 1,
 			"position": [840, 1560]
 		},
@@ -70,7 +70,7 @@
 			},
 			"id": "554a499c-04d1-4644-a05a-93c9fb4a6fa6",
 			"name": "Token Splitter",
-			"type": "@n8n/n8n-nodes-langchain.textSplitterTokenSplitter",
+			"type": "@aura/n8n-nodes-langchain.textSplitterTokenSplitter",
 			"typeVersion": 1,
 			"position": [840, 1720]
 		},
@@ -126,7 +126,7 @@
 			},
 			"id": "a18395f0-240d-40c4-84c2-6aaee560aab0",
 			"name": "Question and Answer Chain",
-			"type": "@n8n/n8n-nodes-langchain.chainRetrievalQa",
+			"type": "@aura/n8n-nodes-langchain.chainRetrievalQa",
 			"typeVersion": 1.5,
 			"position": [2260, 1180]
 		},
@@ -139,7 +139,7 @@
 			},
 			"id": "7c6ba271-7628-4f90-8c09-53764c4d18d4",
 			"name": "OpenAI Chat Model",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [2260, 1380],
 			"credentials": {
@@ -153,7 +153,7 @@
 			"parameters": {},
 			"id": "25862b21-175a-4126-97e9-69c5b2623937",
 			"name": "Vector Store Retriever",
-			"type": "@n8n/n8n-nodes-langchain.retrieverVectorStore",
+			"type": "@aura/n8n-nodes-langchain.retrieverVectorStore",
 			"typeVersion": 1,
 			"position": [2340, 1380]
 		},
@@ -164,7 +164,7 @@
 			},
 			"id": "21a318d1-8d44-43c1-85b9-102cf320e0ed",
 			"name": "Embeddings OpenAI9",
-			"type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [2280, 1680],
 			"credentials": {
@@ -201,7 +201,7 @@
 			},
 			"id": "c784fb20-7fa0-496c-87ee-512f83276fd0",
 			"name": "Embeddings OpenAI10",
-			"type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [1700, 1400],
 			"credentials": {
@@ -227,7 +227,7 @@
 			},
 			"id": "ba43d67a-0573-4452-bb9e-e73d58ef75e2",
 			"name": "Pinecone Vector Store",
-			"type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+			"type": "@aura/n8n-nodes-langchain.vectorStorePinecone",
 			"typeVersion": 1,
 			"position": [840, 1180],
 			"credentials": {
@@ -284,7 +284,7 @@
 			},
 			"id": "db229cc9-ccf7-405d-8549-5a82e4137103",
 			"name": "Pinecone Vector Store2",
-			"type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+			"type": "@aura/n8n-nodes-langchain.vectorStorePinecone",
 			"typeVersion": 1,
 			"position": [2280, 1560],
 			"credentials": {
@@ -310,7 +310,7 @@
 			},
 			"id": "387518ca-2c63-40b5-bd96-8b5958a2a0d8",
 			"name": "Pinecone Vector Store1",
-			"type": "@n8n/n8n-nodes-langchain.vectorStorePinecone",
+			"type": "@aura/n8n-nodes-langchain.vectorStorePinecone",
 			"typeVersion": 1,
 			"position": [1680, 1180],
 			"credentials": {

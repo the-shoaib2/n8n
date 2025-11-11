@@ -1,6 +1,6 @@
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { createResultOk, createResultError } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
+import { createResultOk, createResultError } from 'aura-workflow';
 
 import { PythonTaskRunnerSandbox } from '../PythonTaskRunnerSandbox';
 

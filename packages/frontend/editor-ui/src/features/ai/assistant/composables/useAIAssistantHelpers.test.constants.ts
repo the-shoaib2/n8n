@@ -1,6 +1,6 @@
 import { VIEWS } from '@/app/constants';
 import type { ChatRequest } from '../assistant.types';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 export const PAYLOAD_SIZE_FOR_1_PASS = 4;
 export const PAYLOAD_SIZE_FOR_2_PASSES = 2;

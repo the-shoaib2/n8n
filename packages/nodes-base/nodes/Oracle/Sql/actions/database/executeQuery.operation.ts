@@ -3,7 +3,7 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type oracledb from 'oracledb';
 
 import { getResolvables, updateDisplayOptions } from '@utils/utilities';

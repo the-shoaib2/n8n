@@ -1,6 +1,6 @@
 import { GlobalConfig } from '@aura/config';
 import { Container } from '@aura/di';
-import type { ColumnOptions } from '@aura/typeorm';
+import type { ColumnOptions } from '@n8n/typeorm';
 import {
 	BeforeInsert,
 	BeforeUpdate,
@@ -8,7 +8,7 @@ import {
 	CreateDateColumn,
 	PrimaryColumn,
 	UpdateDateColumn,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import type { Class } from 'aura-core';
 
 import { generateNanoId } from '../utils/generators';

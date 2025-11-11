@@ -2,7 +2,7 @@ import { createWorkflow, testDb, mockInstance } from '@aura/backend-test-utils';
 import { GlobalConfig } from '@aura/config';
 import { WorkflowHistoryRepository, WorkflowRepository } from '@aura/db';
 import { Container } from '@aura/di';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { DateTime } from 'luxon';
 
 import { License } from '@/license';

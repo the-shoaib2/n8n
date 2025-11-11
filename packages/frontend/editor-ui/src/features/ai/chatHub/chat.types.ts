@@ -8,7 +8,7 @@ import {
 	type ChatHubConversationModel,
 	type EnrichedStructuredChunk,
 	type ChatHubProvider,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import { z } from 'zod';
 
 export interface UserMessage {

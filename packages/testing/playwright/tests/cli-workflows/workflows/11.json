@@ -36,7 +36,7 @@
 			"parameters": {
 				"operation": "get",
 				"list": "eb9ad4be19",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"options": {}
 			},
 			"name": "Mailchimp",
@@ -76,7 +76,7 @@
 			"parameters": {
 				"resource": "memberTag",
 				"list": "eb9ad4be19",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"tags": ["n8n"],
 				"options": {}
 			},
@@ -98,7 +98,7 @@
 				"resource": "memberTag",
 				"operation": "delete",
 				"list": "eb9ad4be19",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"tags": ["n8n"],
 				"options": {}
 			},

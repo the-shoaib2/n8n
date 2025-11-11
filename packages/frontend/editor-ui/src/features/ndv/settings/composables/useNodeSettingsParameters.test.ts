@@ -8,7 +8,7 @@ import * as nodeHelpers from '@/app/composables/useNodeHelpers';
 import * as workflowHelpers from '@/app/composables/useWorkflowHelpers';
 import * as nodeSettingsUtils from '@/features/ndv/shared/ndv.utils';
 import * as nodeTypesUtils from '@/app/utils/nodeTypesUtils';
-import type { INodeProperties, INodeTypeDescription } from 'n8n-workflow';
+import type { INodeProperties, INodeTypeDescription } from 'aura-workflow';
 import type { MockedStore } from '@/__tests__/utils';
 import { mockedStore } from '@/__tests__/utils';
 import type { INodeUi } from '@/Interface';

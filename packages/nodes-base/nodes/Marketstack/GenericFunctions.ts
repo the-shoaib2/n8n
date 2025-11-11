@@ -4,8 +4,8 @@ import type {
 	JsonObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 
 export async function marketstackApiRequest(
 	this: IExecuteFunctions,

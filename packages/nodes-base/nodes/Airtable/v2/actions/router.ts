@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import * as base from './base/Base.resource';
 import type { AirtableType } from './node.type';

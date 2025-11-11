@@ -1,5 +1,5 @@
 import { Service } from '@aura/di';
-import { DataSource, LessThan, Repository } from '@aura/typeorm';
+import { DataSource, LessThan, Repository } from '@n8n/typeorm';
 
 import { WorkflowHistory, WorkflowEntity } from '../entities';
 

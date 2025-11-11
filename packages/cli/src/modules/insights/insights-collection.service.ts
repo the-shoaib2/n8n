@@ -2,7 +2,7 @@ import { Logger } from '@aura/backend-common';
 import { SharedWorkflowRepository } from '@aura/db';
 import { OnLifecycleEvent, type WorkflowExecuteAfterContext } from '@aura/decorators';
 import { Service } from '@aura/di';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { DateTime } from 'luxon';
 import { UnexpectedError, type ExecutionStatus, type WorkflowExecuteMode } from 'aura-workflow';
 

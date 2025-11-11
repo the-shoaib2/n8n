@@ -1,5 +1,5 @@
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { ILoadOptionsFunctions } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import {
 	getSheetHeaderRow,

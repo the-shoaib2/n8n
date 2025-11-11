@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import { activityOperations, activityFields } from './activityFields';
 import { automationFields, automationOperations } from './automationFields';

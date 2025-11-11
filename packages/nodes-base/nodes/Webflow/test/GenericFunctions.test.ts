@@ -4,7 +4,7 @@ import type {
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	INode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { webflowApiRequest, webflowApiRequestAllItems } from '../GenericFunctions';
 

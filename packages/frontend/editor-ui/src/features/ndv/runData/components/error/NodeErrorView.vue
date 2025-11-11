@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useToast } from '@/app/composables/useToast';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import type {
 	IDataObject,
 	INodeProperties,
@@ -16,11 +16,11 @@ import type {
 	NodeApiError,
 	NodeError,
 	NodeOperationError,
-} from 'n8n-workflow';
-import { isCommunityPackageName } from 'n8n-workflow';
+} from 'aura-workflow';
+import { isCommunityPackageName } from 'aura-workflow';
 import { sanitizeHtml } from '@/app/utils/htmlUtils';
 import { MAX_DISPLAY_DATA_SIZE, NEW_ASSISTANT_SESSION_MODAL, VIEWS } from '@/app/constants';
-import type { BaseTextKey } from '@n8n/i18n';
+import type { BaseTextKey } from '@aura/i18n';
 import { useChatPanelStore } from '@/features/ai/assistant/chatPanel.store';
 import { useAssistantStore } from '@/features/ai/assistant/assistant.store';
 import type { ChatRequest } from '@/features/ai/assistant/assistant.types';
@@ -32,7 +32,7 @@ import {
 	N8nIcon,
 	N8nIconButton,
 	N8nTooltip,
-} from '@n8n/design-system';
+} from '@aura/design-system';
 
 type Props = {
 	// TODO: .node can be undefined

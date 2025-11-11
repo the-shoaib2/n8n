@@ -22,7 +22,7 @@ import { useDataTableColumns } from '@/features/core/dataTable/composables/useDa
 import { useDataTableSelection } from '@/features/core/dataTable/composables/useDataTableSelection';
 import { useDataTableOperations } from '@/features/core/dataTable/composables/useDataTableOperations';
 import { useDataTableColumnFilters } from '@/features/core/dataTable/composables/useDataTableColumnFilters';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { GRID_FILTER_CONFIG } from '@/features/core/dataTable/utils/filterMappings';
 
 import { ElPagination } from 'element-plus';

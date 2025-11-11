@@ -5,8 +5,8 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 export async function contentfulApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError, UserError } from 'n8n-workflow';
+import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'aura-workflow';
+import { NodeOperationError, UserError } from 'aura-workflow';
 
 import { cellFormat, handlingExtraData, locationDefine } from './commonDescription';
 import type { GoogleSheet } from '../../helpers/GoogleSheet';

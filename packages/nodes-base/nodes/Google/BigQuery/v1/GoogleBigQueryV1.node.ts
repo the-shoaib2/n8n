@@ -8,8 +8,8 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeApiError } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { oldVersionNotice } from '@utils/descriptions';

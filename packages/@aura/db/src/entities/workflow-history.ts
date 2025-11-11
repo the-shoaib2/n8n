@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, ManyToOne, PrimaryColumn } from '@n8n/typeorm';
 import { IConnections } from 'aura-workflow';
 import type { INode } from 'aura-workflow';
 

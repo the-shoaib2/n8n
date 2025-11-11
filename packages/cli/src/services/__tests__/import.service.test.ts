@@ -1,6 +1,6 @@
 import { safeJoinPath, type Logger } from '@aura/backend-common';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { type DataSource, type EntityManager } from '@aura/typeorm';
+import { type DataSource, type EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { readdir, readFile } from 'fs/promises';
 import type { Cipher } from 'aura-core';

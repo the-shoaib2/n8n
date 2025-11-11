@@ -10,7 +10,7 @@ import {
 	type INodeTypeDescription,
 	NodeConnectionTypes,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { TodoistProjectType } from './Service';
 import {

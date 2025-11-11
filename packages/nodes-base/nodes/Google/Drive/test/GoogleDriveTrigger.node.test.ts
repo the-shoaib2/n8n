@@ -1,7 +1,7 @@
 import { mockDeep } from 'jest-mock-extended';
 import moment from 'moment-timezone';
-import type { IPollFunctions, INode, ILoadOptionsFunctions, IDataObject } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+import type { IPollFunctions, INode, ILoadOptionsFunctions, IDataObject } from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { GoogleDriveTrigger } from '../GoogleDriveTrigger.node';
 import * as GenericFunctions from '../v1/GenericFunctions';

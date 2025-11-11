@@ -3,32 +3,32 @@ import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 import { useRoute } from 'vue-router';
 import { useToast } from '@/app/composables/useToast';
 import type { ITimeoutHMS, IWorkflowSettings, IWorkflowShortResponse } from '@/Interface';
-import type { WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
+import type { WorkflowDataUpdate } from '@aura/rest-api-client/api/workflows';
 import Modal from '@/app/components/Modal.vue';
 import {
 	EnterpriseEditionFeature,
 	PLACEHOLDER_EMPTY_WORKFLOW_ID,
 	WORKFLOW_SETTINGS_MODAL_KEY,
 } from '@/app/constants';
-import type { WorkflowSettings } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import type { WorkflowSettings } from 'aura-workflow';
+import { deepCopy } from 'aura-workflow';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useWorkflowsEEStore } from '@/app/stores/workflows.ee.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import { createEventBus } from '@n8n/utils/event-bus';
+import { createEventBus } from '@aura/utils/event-bus';
 import { useExternalHooks } from '@/app/composables/useExternalHooks';
 import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/sourceControl.store';
 import { ProjectTypes } from '@/features/collaboration/projects/projects.types';
-import { getResourcePermissions } from '@n8n/permissions';
-import { useI18n } from '@n8n/i18n';
+import { getResourcePermissions } from '@aura/permissions';
+import { useI18n } from '@aura/i18n';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useDebounce } from '@/app/composables/useDebounce';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 import { useMcp } from '@/features/ai/mcpAccess/composables/useMcp';
 
 import { ElCol, ElRow, ElSwitch } from 'element-plus';
-import { N8nButton, N8nIcon, N8nInput, N8nOption, N8nSelect, N8nTooltip } from '@n8n/design-system';
+import { N8nButton, N8nIcon, N8nInput, N8nOption, N8nSelect, N8nTooltip } from '@aura/design-system';
 const route = useRoute();
 const i18n = useI18n();
 const externalHooks = useExternalHooks();

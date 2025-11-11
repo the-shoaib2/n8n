@@ -4,7 +4,7 @@ import ProjectBreadcrumb from './ProjectBreadcrumb.vue';
 import { ProjectTypes } from '@/features/collaboration/projects/projects.types';
 import { createTestProject } from '@/features/collaboration/projects/__tests__/utils';
 
-vi.mock('@n8n/i18n', async (importOriginal) => ({
+vi.mock('@aura/i18n', async (importOriginal) => ({
 	...(await importOriginal()),
 	useI18n: () => ({
 		baseText: vi.fn((key) => {

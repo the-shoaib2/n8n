@@ -10,8 +10,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { deepCopy, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { deepCopy, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 function parseDateByFormat(this: IExecuteFunctions, value: string, fromFormat: string) {
 	const date = moment(value, fromFormat, true);

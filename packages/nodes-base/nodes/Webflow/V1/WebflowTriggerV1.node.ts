@@ -7,7 +7,7 @@ import {
 	type IWebhookResponseData,
 	type INodeTypeBaseDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { getSites, webflowApiRequest } from '../GenericFunctions';
 

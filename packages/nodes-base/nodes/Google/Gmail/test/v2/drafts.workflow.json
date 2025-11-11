@@ -61,12 +61,12 @@
 							}
 						]
 					},
-					"bccList": "test-bcc@n8n.io",
-					"ccList": "test-cc@n8n.io",
-					"fromAlias": "=test-alias@n8n.io",
-					"replyTo": "test-reply@n8n.io",
+					"bccList": "test-bcc@aura.io",
+					"ccList": "test-cc@aura.io",
+					"fromAlias": "=test-alias@aura.io",
+					"replyTo": "test-reply@aura.io",
 					"threadId": "test-thread-id",
-					"sendTo": "test-to@n8n.io"
+					"sendTo": "test-to@aura.io"
 				}
 			},
 			"type": "n8n-nodes-base.gmail",

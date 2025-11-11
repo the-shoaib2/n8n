@@ -6,7 +6,7 @@ import {
 	type INode,
 	type INodeExecutionData,
 	type INodeParameters,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import * as oracleDBTypes from 'oracledb';
 
 import * as deleteTable from '../actions/database/deleteTable.operation';

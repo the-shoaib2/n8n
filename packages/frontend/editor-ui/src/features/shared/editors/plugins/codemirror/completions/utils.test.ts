@@ -4,7 +4,7 @@ import { CompletionContext, insertCompletionText } from '@codemirror/autocomplet
 import { javascriptLanguage } from '@codemirror/lang-javascript';
 import { EditorState } from '@codemirror/state';
 import { EditorView } from '@codemirror/view';
-import { NodeConnectionTypes, type IConnections } from 'n8n-workflow';
+import { NodeConnectionTypes, type IConnections } from 'aura-workflow';
 import type { MockInstance } from 'vitest';
 import {
 	autocompletableNodeNames,

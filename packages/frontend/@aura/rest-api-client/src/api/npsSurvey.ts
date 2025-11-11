@@ -1,4 +1,4 @@
-import type { NpsSurveyState } from 'n8n-workflow';
+import type { NpsSurveyState } from 'aura-workflow';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

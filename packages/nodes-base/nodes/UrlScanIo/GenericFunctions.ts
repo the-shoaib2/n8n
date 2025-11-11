@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, IDataObject, IRequestOptions } from 'n8n-workflow';
+import type { IExecuteFunctions, IDataObject, IRequestOptions } from 'aura-workflow';
 
 export async function urlScanIoApiRequest(
 	this: IExecuteFunctions,

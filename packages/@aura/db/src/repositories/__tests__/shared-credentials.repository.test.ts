@@ -1,5 +1,5 @@
 import { Container } from '@aura/di';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 
 import { SharedCredentials } from '../../entities';
 import { mockEntityManager } from '../../utils/test-utils/mock-entity-manager';

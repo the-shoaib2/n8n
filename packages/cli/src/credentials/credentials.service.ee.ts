@@ -3,7 +3,7 @@ import { Project, SharedCredentials, SharedCredentialsRepository } from '@aura/d
 import { Service } from '@aura/di';
 import { hasGlobalScope } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In, type EntityManager } from '@aura/typeorm';
+import { In, type EntityManager } from '@n8n/typeorm';
 import type { ICredentialDataDecryptedObject } from 'aura-workflow';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';

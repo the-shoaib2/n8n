@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
 
 import { addPostExecutionWarning } from '../utils';
 

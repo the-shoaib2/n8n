@@ -637,19 +637,19 @@ describe('Resolution-based completions', () => {
 			);
 		});
 
-		test('should recommend extractEmail() for: {{ "string with test@n8n.io in it".| }}', () => {
+		test('should recommend extractEmail() for: {{ "string with test@aura.io in it".| }}', () => {
 			vi.spyOn(workflowHelpers, 'resolveParameter').mockReturnValueOnce(
-				'string with test@n8n.io in it',
+				'string with test@aura.io in it',
 			);
-			const options = completions('{{ "string with test@n8n.io in it".| }}');
+			const options = completions('{{ "string with test@aura.io in it".| }}');
 			expect(options?.[0]).toEqual(
 				expect.objectContaining({ label: 'extractEmail()', section: RECOMMENDED_SECTION }),
 			);
 		});
 
-		test('should recommend extractDomain(), isEmail() for: {{ "test@n8n.io".| }}', () => {
-			vi.spyOn(workflowHelpers, 'resolveParameter').mockReturnValueOnce('test@n8n.io');
-			const options = completions('{{ "test@n8n.io".| }}');
+		test('should recommend extractDomain(), isEmail() for: {{ "test@aura.io".| }}', () => {
+			vi.spyOn(workflowHelpers, 'resolveParameter').mockReturnValueOnce('test@aura.io');
+			const options = completions('{{ "test@aura.io".| }}');
 			expect(options?.[0]).toEqual(
 				expect.objectContaining({ label: 'extractDomain()', section: RECOMMENDED_SECTION }),
 			);

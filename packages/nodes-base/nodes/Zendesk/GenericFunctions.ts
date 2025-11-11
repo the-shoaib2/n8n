@@ -5,7 +5,7 @@ import type {
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 function getUri(resource: string, subdomain: string) {
 	if (resource.includes('webhooks')) {

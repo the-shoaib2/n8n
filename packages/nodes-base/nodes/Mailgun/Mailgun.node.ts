@@ -6,8 +6,8 @@ import type {
 	INodeTypeDescription,
 	JsonObject,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 export class Mailgun implements INodeType {
 	description: INodeTypeDescription = {

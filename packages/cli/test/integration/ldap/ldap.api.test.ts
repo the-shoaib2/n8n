@@ -14,7 +14,7 @@ import {
 	UserRepository,
 } from '@aura/db';
 import { Container } from '@aura/di';
-import { Not } from '@aura/typeorm';
+import { Not } from '@n8n/typeorm';
 import type { Entry as LdapUser } from 'ldapts';
 import { Cipher } from 'aura-core';
 

@@ -1,6 +1,6 @@
-import { ModuleMetadata } from '@n8n/decorators';
-import type { EntityClass, ModuleContext, ModuleSettings } from '@n8n/decorators';
-import { Container, Service } from '@n8n/di';
+import { ModuleMetadata } from '@aura/decorators';
+import type { EntityClass, ModuleContext, ModuleSettings } from '@aura/decorators';
+import { Container, Service } from '@aura/di';
 import { existsSync } from 'fs';
 import path from 'path';
 

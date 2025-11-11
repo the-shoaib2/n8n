@@ -5,8 +5,8 @@ import type {
 	INodeExecutionData,
 	IPairedItemData,
 	NodeExecutionWithMetadata,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type {
 	Mysql2Pool,

@@ -27,7 +27,7 @@ import {
 	type ProjectRole,
 	type Scope,
 } from '@aura/permissions';
-import { EntityNotFoundError } from '@aura/typeorm';
+import { EntityNotFoundError } from '@n8n/typeorm';
 import { createFolder } from '@test-integration/db/folders';
 
 import {

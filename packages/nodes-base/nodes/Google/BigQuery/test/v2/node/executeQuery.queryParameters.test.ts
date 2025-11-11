@@ -22,7 +22,7 @@ describe('Test Google BigQuery V2, executeQuery with named parameters', () => {
 						{
 							name: 'email',
 							parameterType: { type: 'STRING' },
-							parameterValue: { value: 'test@n8n.io' },
+							parameterValue: { value: 'test@aura.io' },
 						},
 						{
 							name: 'name',
@@ -36,7 +36,7 @@ describe('Test Google BigQuery V2, executeQuery with named parameters', () => {
 						},
 					],
 					query:
-						'SELECT * FROM bigquery_node_dev_test_dataset.test_json WHERE email = @email AND name = @name AND n8n_variable = @n8n_variable;',
+						'SELECT * FROM bigquery_node_dev_test_dataset.test_json WHERE email = @email AND name = @name AND n8n_variable = @aura_variable;',
 					useLegacySql: false,
 					parameterMode: 'NAMED',
 				},

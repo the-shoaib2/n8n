@@ -1,4 +1,4 @@
-import type { ExternalSecretsProvider } from '@n8n/api-types';
+import type { ExternalSecretsProvider } from '@aura/api-types';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

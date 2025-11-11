@@ -3,7 +3,7 @@ import type { LanguageServiceWorker, LanguageServiceWorkerInit } from '../types'
 import { indexedDbCache } from '@/app/plugins/cache';
 import { bufferChangeSets, fnPrefix } from './utils';
 
-import type { CodeExecutionMode } from 'n8n-workflow';
+import type { CodeExecutionMode } from 'aura-workflow';
 
 import { pascalCase } from 'change-case';
 import { computed, reactive, ref, watch } from 'vue';

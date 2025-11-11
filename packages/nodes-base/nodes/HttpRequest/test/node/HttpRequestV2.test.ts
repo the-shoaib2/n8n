@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, INodeTypeBaseDescription } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeTypeBaseDescription } from 'aura-workflow';
 
 import { HttpRequestV2 } from '../../V2/HttpRequestV2.node';
 

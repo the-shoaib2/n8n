@@ -570,7 +570,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {
@@ -612,7 +612,7 @@
 							"from": {
 								"id": 9876543210,
 								"is_bot": true,
-								"first_name": "@n8n",
+								"first_name": "@aura",
 								"username": "n8n_test_bot"
 							},
 							"chat": {
@@ -660,7 +660,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {
@@ -676,7 +676,7 @@
 							"from": {
 								"id": 9876543210,
 								"is_bot": true,
-								"first_name": "@n8n",
+								"first_name": "@aura",
 								"username": "n8n_test_bot"
 							},
 							"chat": {
@@ -738,7 +738,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {
@@ -783,7 +783,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {
@@ -836,7 +836,7 @@
 					"user": {
 						"id": 9876543210,
 						"is_bot": true,
-						"first_name": "@n8n",
+						"first_name": "@aura",
 						"username": "n8n_test_bot"
 					},
 					"status": "administrator",
@@ -889,7 +889,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {
@@ -959,7 +959,7 @@
 						"from": {
 							"id": 9876543210,
 							"is_bot": true,
-							"first_name": "@n8n",
+							"first_name": "@aura",
 							"username": "n8n_test_bot"
 						},
 						"chat": {

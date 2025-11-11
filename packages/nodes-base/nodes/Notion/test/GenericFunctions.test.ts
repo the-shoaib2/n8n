@@ -1,7 +1,7 @@
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode, INodeParameterResourceLocator } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INode, INodeParameterResourceLocator } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { databasePageUrlExtractionRegexp } from '../shared/constants';
 import { extractPageId, formatBlocks, getPageId } from '../shared/GenericFunctions';

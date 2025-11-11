@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { payPalApiRequest, payPalApiRequestAllItems, validateJSON } from './GenericFunctions';
 import {

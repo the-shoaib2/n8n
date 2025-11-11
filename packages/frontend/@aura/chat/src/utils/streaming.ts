@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import type { ChatMessage, ChatMessageText } from '@n8n/chat/types';
+import type { ChatMessage, ChatMessageText } from '@aura/chat/types';
 
 export interface NodeRunData {
 	content: string;

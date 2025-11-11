@@ -53,7 +53,7 @@
 			"parameters": {},
 			"id": "4674f10d-6144-4a17-bbbb-350c3974438e",
 			"name": "Chain",
-			"type": "@n8n/n8n-nodes-langchain.chainLlm",
+			"type": "@aura/n8n-nodes-langchain.chainLlm",
 			"typeVersion": 1,
 			"position": [1580, 560]
 		},
@@ -63,7 +63,7 @@
 			},
 			"id": "58e12ea5-bd3e-4abf-abec-fcfb5c0a7955",
 			"name": "Model",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1600, 740]
 		},

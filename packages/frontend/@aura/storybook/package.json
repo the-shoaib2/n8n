@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/storybook",
+  "name": "@aura/storybook",
   "private": true,
   "version": "0.0.1",
   "devDependencies": {

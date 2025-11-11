@@ -3,7 +3,7 @@ import type { AuthenticatedRequest } from '@aura/db';
 import { VariablesRepository } from '@aura/db';
 import { Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { IsNull } from '@aura/typeorm';
+import { IsNull } from '@n8n/typeorm';
 import type { Response } from 'express';
 
 import {

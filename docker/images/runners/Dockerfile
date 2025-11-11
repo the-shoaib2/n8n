@@ -2,7 +2,7 @@ ARG NODE_VERSION=22.21.0
 ARG PYTHON_VERSION=3.13
 
 # ==============================================================================
-# STAGE 1: JavaScript runner (@n8n/task-runner) artifact from CI
+# STAGE 1: JavaScript runner (@aura/task-runner) artifact from CI
 # ==============================================================================
 FROM node:${NODE_VERSION}-alpine AS javascript-runner-builder
 COPY ./dist/task-runner-javascript /app/task-runner-javascript
@@ -21,7 +21,7 @@ RUN mv package.json extras.json
 RUN mv package.json.bak package.json
 
 # ==============================================================================
-# STAGE 2: Python runner build (@n8n/task-runner-python) with uv
+# STAGE 2: Python runner build (@aura/task-runner-python) with uv
 # Produces a relocatable venv tied to the python version used
 # ==============================================================================
 FROM python:${PYTHON_VERSION}-alpine AS python-runner-builder
@@ -44,9 +44,9 @@ RUN set -e; \
 
 WORKDIR /app/task-runner-python
 
-COPY packages/@n8n/task-runner-python/pyproject.toml \
-     packages/@n8n/task-runner-python/uv.lock** \
-     packages/@n8n/task-runner-python/.python-version** \
+COPY packages/@aura/task-runner-python/pyproject.toml \
+     packages/@aura/task-runner-python/uv.lock** \
+     packages/@aura/task-runner-python/.python-version** \
      ./
 
 RUN uv venv
@@ -57,7 +57,7 @@ RUN uv sync \
 			--no-dev \
 			--all-extras
 
-COPY packages/@n8n/task-runner-python/ ./
+COPY packages/@aura/task-runner-python/ ./
 RUN uv sync \
       --frozen \
 			--no-dev \

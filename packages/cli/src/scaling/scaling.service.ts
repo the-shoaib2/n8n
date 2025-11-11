@@ -372,10 +372,10 @@ export class ScalingService {
 			typeof response === 'object' &&
 			typeof response.body === 'object' &&
 			response.body !== null &&
-			'__@N8nEncodedBuffer@__' in response.body &&
-			typeof response.body['__@N8nEncodedBuffer@__'] === 'string'
+			'__@auraEncodedBuffer@__' in response.body &&
+			typeof response.body['__@auraEncodedBuffer@__'] === 'string'
 		) {
-			response.body = Buffer.from(response.body['__@N8nEncodedBuffer@__'], BINARY_ENCODING);
+			response.body = Buffer.from(response.body['__@auraEncodedBuffer@__'], BINARY_ENCODING);
 		}
 
 		return response;

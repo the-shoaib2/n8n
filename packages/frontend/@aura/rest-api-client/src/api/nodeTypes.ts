@@ -4,8 +4,8 @@ import type {
 	OptionsRequestDto,
 	ResourceLocatorRequestDto,
 	ResourceMapperFieldsRequestDto,
-} from '@n8n/api-types';
-import type { INodeTranslationHeaders } from '@n8n/i18n';
+} from '@aura/api-types';
+import type { INodeTranslationHeaders } from '@aura/i18n';
 import axios from 'axios';
 import type {
 	INodeListSearchResult,
@@ -14,8 +14,8 @@ import type {
 	INodeTypeNameVersion,
 	NodeParameterValueType,
 	ResourceMapperFields,
-} from 'n8n-workflow';
-import { sleep } from 'n8n-workflow';
+} from 'aura-workflow';
+import { sleep } from 'aura-workflow';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

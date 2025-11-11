@@ -26,7 +26,7 @@ jobs:
           build-command: pnpm turbo build:playwright
 
       - name: Build with Coverage
-        run: pnpm --filter aura-editor-ui build:coverage
+        run: pnpm --filter editor-ui build:coverage
 
       - name: Run Coverage Tests
         run: |

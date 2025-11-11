@@ -1,4 +1,4 @@
-import { NodeOperationError, type IExecuteFunctions, type INode } from 'n8n-workflow';
+import { NodeOperationError, type IExecuteFunctions, type INode } from 'aura-workflow';
 
 import * as transport from '../../v2//transport/discord.api';
 import {

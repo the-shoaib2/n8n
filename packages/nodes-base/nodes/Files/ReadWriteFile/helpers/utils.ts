@@ -1,5 +1,5 @@
-import type { IDataObject, IExecuteFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 export function errorMapper(
 	this: IExecuteFunctions,

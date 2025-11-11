@@ -1,4 +1,4 @@
-# @n8n/composables
+# @aura/composables
 
 A collection of Vue composables that provide common functionality across n8n's Front-End packages.
 

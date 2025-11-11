@@ -211,7 +211,7 @@ echo(
 	),
 );
 
-await $`cd ${config.rootDir} && NODE_ENV=production DOCKER_BUILD=true pnpm --filter=@n8n/task-runner --prod --legacy deploy --no-optional ${config.compiledTaskRunnerDir}`;
+await $`cd ${config.rootDir} && NODE_ENV=production DOCKER_BUILD=true pnpm --filter=@aura/task-runner --prod --legacy deploy --no-optional ${config.compiledTaskRunnerDir}`;
 
 const packageDeployTime = getElapsedTime('package_deploy');
 

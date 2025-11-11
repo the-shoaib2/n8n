@@ -1,6 +1,6 @@
 import { render } from '@testing-library/vue';
 
-import { removeDynamicAttributes } from '@n8n/design-system/utils';
+import { removeDynamicAttributes } from '@aura/design-system/utils';
 
 import { rows, columns } from './__tests__/data';
 import N8nDatatable from './Datatable.vue';

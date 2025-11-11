@@ -3,8 +3,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 type eventType = 'Workflow activated' | 'Workflow updated' | undefined;
 type activationType = 'activate' | 'update';

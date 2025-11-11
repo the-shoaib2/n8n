@@ -3,7 +3,7 @@ import {
 	NodeOperationError,
 	EVALUATION_TRIGGER_NODE_TYPE,
 	jsonStringify,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type {
 	INodeParameters,
 	IDataObject,
@@ -12,7 +12,7 @@ import type {
 	JsonObject,
 	JsonValue,
 	DataTableColumnJsType,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { getGoogleSheet, getSheet } from './evaluationTriggerUtils';
 import { metricHandlers } from './metricHandlers';

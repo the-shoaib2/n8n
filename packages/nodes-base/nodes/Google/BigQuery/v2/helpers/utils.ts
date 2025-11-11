@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
-import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { jsonParse, NodeOperationError } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
+import { jsonParse, NodeOperationError } from 'aura-workflow';
 
 import type { SchemaField, TableRawData, TableSchema } from './interfaces';
 

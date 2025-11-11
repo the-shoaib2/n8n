@@ -1,4 +1,4 @@
-import type { CreateCredentialDto } from '@n8n/api-types';
+import type { CreateCredentialDto } from '@aura/api-types';
 
 import type { n8nPage } from '../pages/n8nPage';
 

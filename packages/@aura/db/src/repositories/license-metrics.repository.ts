@@ -1,6 +1,6 @@
 import { GlobalConfig } from '@aura/config';
 import { Service } from '@aura/di';
-import { DataSource, Repository, Entity } from '@aura/typeorm';
+import { DataSource, Repository, Entity } from '@n8n/typeorm';
 
 @Entity()
 export class LicenseMetrics {}

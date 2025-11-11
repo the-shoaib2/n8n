@@ -6,8 +6,8 @@ import {
 	AI_TRANSFORM_NODE_TYPE,
 	PRE_BUILT_AGENTS_EXPERIMENT,
 } from '@/app/constants';
-import type { INodeTypeDescription } from 'n8n-workflow';
-import { START_NODE_TYPE } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
+import { START_NODE_TYPE } from 'aura-workflow';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { AIView } from './viewsData';
 import { mockNodeTypeDescription } from '@/__tests__/mocks';

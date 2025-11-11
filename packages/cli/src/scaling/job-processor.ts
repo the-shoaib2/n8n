@@ -293,7 +293,7 @@ export class JobProcessor {
 	): IExecuteResponsePromiseData {
 		if (typeof response === 'object' && Buffer.isBuffer(response.body)) {
 			response.body = {
-				'__@N8nEncodedBuffer@__': response.body.toString(BINARY_ENCODING),
+				'__@auraEncodedBuffer@__': response.body.toString(BINARY_ENCODING),
 			};
 		}
 

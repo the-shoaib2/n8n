@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+import { Container } from '@aura/di';
 import alasqlImport from 'alasql';
 import { ErrorReporter } from 'n8n-core';
 
@@ -9,8 +9,8 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	IPairedItemData,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 import { getResolvables, updateDisplayOptions } from '@utils/utilities';
 
 import { numberInputsProperty } from '../../helpers/descriptions';

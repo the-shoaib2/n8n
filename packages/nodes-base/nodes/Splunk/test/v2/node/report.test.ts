@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
 
 import { SPLUNK } from '../../../v1/types';
 import * as report from '../../../v2/actions/report';

@@ -3,7 +3,7 @@ import type {
 	ILoadOptionsFunctions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { IListColumnType } from '../helpers/interfaces';
 import { microsoftSharePointApiRequest } from '../transport';

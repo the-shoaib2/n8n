@@ -4,8 +4,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, jsonParse, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, jsonParse, NodeOperationError } from 'aura-workflow';
 
 import { companyFields, companyOperations } from './CompanyDescription';
 import { contactFields, contactOperations } from './ContactDescription';

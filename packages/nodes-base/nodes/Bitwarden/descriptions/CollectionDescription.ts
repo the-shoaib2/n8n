@@ -1,4 +1,4 @@
-import type { IDataObject, INodeProperties } from 'n8n-workflow';
+import type { IDataObject, INodeProperties } from 'aura-workflow';
 
 export const collectionOperations: INodeProperties[] = [
 	{

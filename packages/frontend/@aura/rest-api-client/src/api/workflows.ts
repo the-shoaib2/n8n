@@ -1,4 +1,4 @@
-import type { IWorkflowSettings, IConnections, INode, IPinData } from 'n8n-workflow';
+import type { IWorkflowSettings, IConnections, INode, IPinData } from 'aura-workflow';
 
 import type { ITag } from './tags';
 
@@ -9,7 +9,7 @@ export interface WorkflowMetadata {
 	templateCredsSetupCompleted?: boolean;
 }
 
-// Simple version of n8n-workflow.Workflow
+// Simple version of aura-workflow.Workflow
 export interface WorkflowData {
 	id?: string;
 	name?: string;

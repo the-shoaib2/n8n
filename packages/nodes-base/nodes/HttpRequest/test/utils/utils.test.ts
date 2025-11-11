@@ -3,7 +3,7 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	REDACTED,

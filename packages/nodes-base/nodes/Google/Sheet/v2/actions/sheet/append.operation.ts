@@ -4,7 +4,7 @@ import {
 	type INodeExecutionData,
 	NodeOperationError,
 	type ResourceMapperField,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { cellFormat, handlingExtraData, useAppendOption } from './commonDescription';
 import type { GoogleSheet } from '../../helpers/GoogleSheet';

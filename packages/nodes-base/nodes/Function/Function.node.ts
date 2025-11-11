@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, deepCopy, NodeOperationError } from 'aura-workflow';
 
 import { vmResolver } from '../Code/JavaScriptSandbox';
 

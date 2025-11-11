@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+import type { INodeTypeBaseDescription, IVersionedNodeType } from 'aura-workflow';
+import { VersionedNodeType } from 'aura-workflow';
 
 import { IfV1 } from './V1/IfV1.node';
 import { IfV2 } from './V2/IfV2.node';

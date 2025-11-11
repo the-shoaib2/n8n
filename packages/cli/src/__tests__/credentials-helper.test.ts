@@ -1,5 +1,5 @@
 import { CredentialsEntity, type CredentialsRepository } from '@aura/db';
-import { EntityNotFoundError } from '@aura/typeorm';
+import { EntityNotFoundError } from '@n8n/typeorm';
 import { Container } from '@aura/di';
 import { mock } from 'jest-mock-extended';
 import type {

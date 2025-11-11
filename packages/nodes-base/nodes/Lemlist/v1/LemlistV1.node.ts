@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type INodeTypeBaseDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	activityFields,

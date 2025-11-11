@@ -1,4 +1,4 @@
-import { type IExecuteFunctions, NodeOperationError } from 'n8n-workflow';
+import { type IExecuteFunctions, NodeOperationError } from 'aura-workflow';
 
 import { configureResponseOptimizer } from './optimizeResponse';
 

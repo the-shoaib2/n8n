@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue';
 
-import type { ChatMessage } from '@n8n/chat/types';
+import type { ChatMessage } from '@aura/chat/types';
 
 import { Message } from './index';
 

@@ -1,4 +1,4 @@
-import type { IWebhookFunctions } from 'n8n-workflow';
+import type { IWebhookFunctions } from 'aura-workflow';
 
 import { Github } from '../../Github.node';
 

@@ -3,7 +3,7 @@ import { GlobalConfig } from '@aura/config';
 import type { User, WorkflowEntity } from '@aura/db';
 import { WorkflowRepository, DbConnection, AuthRolesService } from '@aura/db';
 import { Container } from '@aura/di';
-import { type SelectQueryBuilder } from '@aura/typeorm';
+import { type SelectQueryBuilder } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import type { IRun } from 'aura-workflow';
 

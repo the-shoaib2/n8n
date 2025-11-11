@@ -5,7 +5,7 @@ import { setActivePinia } from 'pinia';
 import { waitFor } from '@testing-library/vue';
 import userEvent from '@testing-library/user-event';
 import { SET_NODE_TYPE } from '@/app/constants';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { defaultSettings } from '@/__tests__/defaults';
 import { useSettingsStore } from '@/app/stores/settings.store';

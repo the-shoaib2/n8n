@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import type { IMenuItem } from '@n8n/design-system/types';
+import type { IMenuItem } from '@aura/design-system/types';
 
 import N8nIcon from '../N8nIcon';
 import type { IconName } from '../N8nIcon/icons';

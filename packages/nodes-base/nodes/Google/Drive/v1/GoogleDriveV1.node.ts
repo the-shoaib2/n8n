@@ -6,8 +6,8 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes } from 'aura-workflow';
 import type { Readable } from 'stream';
 import { v4 as uuid } from 'uuid';
 

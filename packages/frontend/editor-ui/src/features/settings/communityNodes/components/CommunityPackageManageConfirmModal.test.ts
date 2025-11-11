@@ -6,7 +6,7 @@ import { useSettingsStore } from '@/app/stores/settings.store';
 import { defaultSettings } from '@/__tests__/defaults';
 import { mockNodeTypeDescription } from '@/__tests__/mocks';
 import { createTestingPinia } from '@pinia/testing';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { COMMUNITY_PACKAGE_CONFIRM_MODAL_KEY } from '../communityNodes.constants';
 
 const fetchWorkflowsWithNodesIncluded = vi.fn();

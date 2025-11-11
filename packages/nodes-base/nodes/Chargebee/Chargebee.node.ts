@@ -8,8 +8,8 @@ import type {
 	NodeParameterValue,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 interface CustomProperty {
 	name: string;

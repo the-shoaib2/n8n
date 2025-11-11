@@ -3,8 +3,8 @@ import type {
 	IExecuteSingleFunctions,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeApiError, updateDisplayOptions } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, updateDisplayOptions } from 'aura-workflow';
 
 import { validateArn } from '../../helpers/utils';
 import { groupResourceLocator, userPoolResourceLocator } from '../common.description';

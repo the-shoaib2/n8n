@@ -23,19 +23,19 @@ export const Member = Template.bind({});
 Member.args = {
 	firstName: 'Oscar',
 	lastName: 'Wilde',
-	email: 'test@n8n.io',
+	email: 'test@aura.io',
 };
 
 export const Current = Template.bind({});
 Current.args = {
 	firstName: 'Ham',
 	lastName: 'Sam',
-	email: 'test@n8n.io',
+	email: 'test@aura.io',
 	isCurrentUser: true,
 };
 
 export const Invited = Template.bind({});
 Invited.args = {
-	email: 'test@n8n.io',
+	email: 'test@aura.io',
 	isPendingUser: true,
 };

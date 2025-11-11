@@ -1,5 +1,5 @@
-import type { TableForeignKeyOptions, TableIndexOptions, QueryRunner } from '@aura/typeorm';
-import { Table, TableColumn, TableForeignKey, TableUnique } from '@aura/typeorm';
+import type { TableForeignKeyOptions, TableIndexOptions, QueryRunner } from '@n8n/typeorm';
+import { Table, TableColumn, TableForeignKey, TableUnique } from '@n8n/typeorm';
 import { UnexpectedError } from 'aura-workflow';
 import LazyPromise from 'p-lazy';
 

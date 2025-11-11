@@ -1,5 +1,5 @@
 import { readFileSync } from 'fs';
-import type { IWorkflowBase, ExecutionSummary } from 'n8n-workflow';
+import type { IWorkflowBase, ExecutionSummary } from 'aura-workflow';
 import { nanoid } from 'nanoid';
 
 // Type for execution responses from the n8n API

@@ -1,13 +1,13 @@
 import { mockLogger } from '@aura/backend-test-utils';
 import type { GlobalConfig } from '@aura/config';
-import { LicenseManager } from '@aura_io/license-sdk';
+import { LicenseManager } from '@n8n_io/license-sdk';
 import { mock } from 'jest-mock-extended';
 import type { InstanceSettings } from 'aura-core';
 
 import { N8N_VERSION } from '@/constants';
 import { License } from '@/license';
 
-jest.mock('@aura_io/license-sdk');
+jest.mock('@n8n_io/license-sdk');
 
 const MOCK_SERVER_URL = 'https://server.com/v1';
 const MOCK_RENEW_OFFSET = 259200;

@@ -1,5 +1,5 @@
-import type { CreateRoleDto, UpdateRoleDto } from '@n8n/api-types';
-import type { AllRolesMap, Role } from '@n8n/permissions';
+import type { CreateRoleDto, UpdateRoleDto } from '@aura/api-types';
+import type { AllRolesMap, Role } from '@aura/permissions';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

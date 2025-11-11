@@ -8,7 +8,7 @@ import type {
 	IWebhookFunctions,
 	FormFieldsParameter,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	FORM_NODE_TYPE,
 	FORM_TRIGGER_NODE_TYPE,
@@ -16,7 +16,7 @@ import {
 	WAIT_NODE_TYPE,
 	WorkflowConfigurationError,
 	jsonParse,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import sanitize from 'sanitize-html';
 
 import { getResolvables } from '../../../utils/utilities';

@@ -1,7 +1,7 @@
 import type { IResult } from 'mssql';
 import mssql from 'mssql';
-import type { IDataObject, INodeExecutionData } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import type { IDataObject, INodeExecutionData } from 'aura-workflow';
+import { deepCopy } from 'aura-workflow';
 
 import { chunk, flatten } from '@utils/utilities';
 

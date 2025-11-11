@@ -1,7 +1,7 @@
 import { NPM_PACKAGE_DOCS_BASE_URL } from '../constants';
 import { useNodeDocsUrl } from './useNodeDocsUrl';
 
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
 import { mock } from 'vitest-mock-extended';
 
 describe('useNodeDocsUrl', () => {

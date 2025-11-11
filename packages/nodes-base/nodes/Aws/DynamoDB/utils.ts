@@ -1,5 +1,5 @@
-import type { IDataObject, INodeExecutionData } from 'n8n-workflow';
-import { deepCopy, assert, ApplicationError } from 'n8n-workflow';
+import type { IDataObject, INodeExecutionData } from 'aura-workflow';
+import { deepCopy, assert, ApplicationError } from 'aura-workflow';
 
 import type {
 	AdjustedPutItem,

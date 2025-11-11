@@ -5,13 +5,13 @@ import {
 } from '@langchain/core/prompts';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { distance } from 'fastest-levenshtein';
-import { NodeOperationError, nodeNameToToolName } from 'n8n-workflow';
+import { NodeOperationError, nodeNameToToolName } from 'aura-workflow';
 import type {
 	FieldType,
 	AssignmentCollectionValue,
 	IDataObject,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { z } from 'zod';
 
 import { validateEntry } from '../../Set/v2/helpers/utils';

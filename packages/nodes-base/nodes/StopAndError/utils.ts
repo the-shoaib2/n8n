@@ -1,5 +1,5 @@
-import type { JsonObject } from 'n8n-workflow';
-import { jsonParse } from 'n8n-workflow';
+import type { JsonObject } from 'aura-workflow';
+import { jsonParse } from 'aura-workflow';
 
 export interface ErrorHandlerResult {
 	message: string;

@@ -8,14 +8,14 @@ import type {
 	IExecutionResponse,
 	IExecutionsCurrentSummaryExtended,
 } from '@/features/execution/executions/executions.types';
-import type { IRestApiContext } from '@n8n/rest-api-client';
+import type { IRestApiContext } from '@aura/rest-api-client';
 import type {
 	ExecutionFilters,
 	ExecutionOptions,
 	ExecutionSummary,
 	IDataObject,
-} from 'n8n-workflow';
-import { getFullApiResponse, makeRestApiRequest } from '@n8n/rest-api-client';
+} from 'aura-workflow';
+import { getFullApiResponse, makeRestApiRequest } from '@aura/rest-api-client';
 
 export async function getNewWorkflow(context: IRestApiContext, data?: IDataObject) {
 	const response = await makeRestApiRequest<NewWorkflowResponse>(

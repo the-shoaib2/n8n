@@ -12,7 +12,7 @@ import {
 	type INodeTypeDescription,
 	type JsonObject,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	clientFields,

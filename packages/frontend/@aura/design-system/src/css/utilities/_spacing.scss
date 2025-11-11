@@ -25,13 +25,13 @@ $spacing-sides: 'top', 'right', 'bottom', 'left';
 	@each $property in $spacing-properties {
 		@each $side in $spacing-sides {
 			.#{string.slice($property, 0, 1)}#{string.slice($side, 0, 1)}-#{$size} {
-				/* stylelint-disable-next-line @n8n/css-var-naming */
+				/* stylelint-disable-next-line @aura/css-var-naming */
 				#{$property}-#{$side}: var(--spacing--#{get-spacing-token($size)}) !important;
 			}
 		}
 
 		.#{string.slice($property, 0, 1)}-#{$size} {
-			/* stylelint-disable-next-line @n8n/css-var-naming */
+			/* stylelint-disable-next-line @aura/css-var-naming */
 			#{$property}: var(--spacing--#{get-spacing-token($size)}) !important;
 		}
 	}

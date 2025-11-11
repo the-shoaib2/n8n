@@ -8,9 +8,9 @@ import {
 import { useCloudPlanStore } from '@/app/stores/cloudPlan.store';
 import { usePostHog } from '@/app/stores/posthog.store';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
-import type { ITemplatesWorkflowFull } from '@n8n/rest-api-client';
-import { STORES } from '@n8n/stores';
-import { jsonParse } from 'n8n-workflow';
+import type { ITemplatesWorkflowFull } from '@aura/rest-api-client';
+import { STORES } from '@aura/stores';
+import { jsonParse } from 'aura-workflow';
 import { defineStore } from 'pinia';
 import { computed, ref, watch } from 'vue';
 
@@ -20,8 +20,8 @@ const PREDEFINED_TEMPLATES_BY_NODE = {
 	'n8n-nodes-base.gmail': [5678, 4722, 5694],
 	'n8n-nodes-base.googleSheets': [5694, 5690, 5906],
 	'n8n-nodes-base.telegram': [5626, 2114, 4875],
-	'@n8n/n8n-nodes-langchain.openAi': [2462, 2722, 2178],
-	'@n8n/n8n-nodes-langchain.googleGemini': [5993, 6270, 5677],
+	'@aura/n8n-nodes-langchain.openAi': [2462, 2722, 2178],
+	'@aura/n8n-nodes-langchain.googleGemini': [5993, 6270, 5677],
 	'n8n-nodes-base.googleCalendar': [2328, 3393, 2110],
 	'n8n-nodes-base.youTube': [3188, 4846, 4506],
 	'n8n-nodes-base.airtable': [3053, 2700, 2579],

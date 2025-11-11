@@ -7,7 +7,7 @@ describe('UserStack', () => {
 	it('should render flat user list', () => {
 		const { container } = render(UserStack, {
 			props: {
-				currentUserEmail: 'hello@n8n.io',
+				currentUserEmail: 'hello@aura.io',
 				users: {
 					Owners: [
 						{
@@ -15,7 +15,7 @@ describe('UserStack', () => {
 							firstName: 'Sunny',
 							lastName: 'Side',
 							fullName: 'Sunny Side',
-							email: 'hello@n8n.io',
+							email: 'hello@aura.io',
 							isPendingUser: false,
 							isOwner: true,
 							signInType: 'email',
@@ -26,7 +26,7 @@ describe('UserStack', () => {
 							firstName: 'Kobi',
 							lastName: 'Dog',
 							fullName: 'Kobi Dog',
-							email: 'kobi@n8n.io',
+							email: 'kobi@aura.io',
 							isPendingUser: false,
 							isOwner: false,
 							signInType: 'ldap',
@@ -49,7 +49,7 @@ describe('UserStack', () => {
 	it('should not show all avatars', async () => {
 		const { container } = render(UserStack, {
 			props: {
-				currentUserEmail: 'hello@n8n.io',
+				currentUserEmail: 'hello@aura.io',
 				users: {
 					Owners: [
 						{
@@ -57,7 +57,7 @@ describe('UserStack', () => {
 							firstName: 'Sunny',
 							lastName: 'Side',
 							fullName: 'Sunny Side',
-							email: 'hello@n8n.io',
+							email: 'hello@aura.io',
 							isPendingUser: false,
 							isOwner: true,
 							signInType: 'email',
@@ -68,7 +68,7 @@ describe('UserStack', () => {
 							firstName: 'Kobi',
 							lastName: 'Dog',
 							fullName: 'Kobi Dog',
-							email: 'kobi@n8n.io',
+							email: 'kobi@aura.io',
 							isPendingUser: false,
 							isOwner: false,
 							signInType: 'ldap',
@@ -79,7 +79,7 @@ describe('UserStack', () => {
 							firstName: 'John',
 							lastName: 'Doe',
 							fullName: 'John Doe',
-							email: 'john@n8n.io',
+							email: 'john@aura.io',
 							isPendingUser: false,
 							isOwner: false,
 							signInType: 'email',
@@ -90,7 +90,7 @@ describe('UserStack', () => {
 							firstName: 'Jane',
 							lastName: 'Doe',
 							fullName: 'Jane Doe',
-							email: 'jane@n8n.io',
+							email: 'jane@aura.io',
 							isPendingUser: false,
 							isOwner: false,
 							signInType: 'ldap',

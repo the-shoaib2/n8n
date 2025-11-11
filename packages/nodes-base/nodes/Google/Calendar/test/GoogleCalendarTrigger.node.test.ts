@@ -1,7 +1,7 @@
 import { mockDeep } from 'jest-mock-extended';
 import moment from 'moment-timezone';
-import type { IPollFunctions, INode } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+import type { IPollFunctions, INode } from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import * as GenericFunctions from '../GenericFunctions';
 import { GoogleCalendarTrigger } from '../GoogleCalendarTrigger.node';

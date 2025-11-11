@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+import type { INodeTypeBaseDescription, IVersionedNodeType } from 'aura-workflow';
+import { VersionedNodeType } from 'aura-workflow';
 
 import { TwitterV1 } from './V1/TwitterV1.node';
 import { TwitterV2 } from './V2/TwitterV2.node';

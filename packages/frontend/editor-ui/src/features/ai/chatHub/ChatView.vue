@@ -22,8 +22,8 @@ import {
 	type ChatMessageId,
 	type ChatHubSendMessageRequest,
 	type ChatModelDto,
-} from '@n8n/api-types';
-import { N8nIconButton, N8nScrollArea } from '@n8n/design-system';
+} from '@aura/api-types';
+import { N8nIconButton, N8nScrollArea } from '@aura/design-system';
 import { useLocalStorage, useMediaQuery, useScroll } from '@vueuse/core';
 import { v4 as uuidv4 } from 'uuid';
 import { computed, nextTick, ref, useTemplateRef, watch } from 'vue';

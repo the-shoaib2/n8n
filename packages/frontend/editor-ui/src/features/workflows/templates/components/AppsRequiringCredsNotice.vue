@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { formatList } from '@/app/utils/formatters/listFormatter';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import type { AppCredentials, BaseNode } from '../templates.types';
 import { I18nT } from 'vue-i18n';
 
-import { N8nNotice } from '@n8n/design-system';
+import { N8nNotice } from '@aura/design-system';
 const i18n = useI18n();
 
 const props = defineProps<{

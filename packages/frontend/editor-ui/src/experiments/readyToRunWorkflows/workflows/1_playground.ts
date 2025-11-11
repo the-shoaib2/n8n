@@ -1,4 +1,4 @@
-import type { WorkflowDataCreate } from '@n8n/rest-api-client';
+import type { WorkflowDataCreate } from '@aura/rest-api-client';
 
 export const PLAYGROUND_1: WorkflowDataCreate = {
 	meta: {

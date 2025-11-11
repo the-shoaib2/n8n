@@ -21,9 +21,9 @@ import {
 	isAssignableProjectRoleSlug,
 } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { FindOptionsWhere, EntityManager } from '@aura/typeorm';
+import type { FindOptionsWhere, EntityManager } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { UserError } from 'aura-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

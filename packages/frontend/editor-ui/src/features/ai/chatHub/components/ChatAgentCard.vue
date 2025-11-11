@@ -2,8 +2,8 @@
 import TimeAgo from '@/app/components/TimeAgo.vue';
 import { getAgentRoute } from '@/features/ai/chatHub/chat.utils';
 import ChatAgentAvatar from '@/features/ai/chatHub/components/ChatAgentAvatar.vue';
-import type { ChatModelDto } from '@n8n/api-types';
-import { N8nIconButton, N8nText } from '@n8n/design-system';
+import type { ChatModelDto } from '@aura/api-types';
+import { N8nIconButton, N8nText } from '@aura/design-system';
 import { RouterLink } from 'vue-router';
 
 const { agent } = defineProps<{

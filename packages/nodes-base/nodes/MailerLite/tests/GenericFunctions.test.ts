@@ -4,7 +4,7 @@ import {
 	type ILoadOptionsFunctions,
 	type IHookFunctions,
 	NodeApiError,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	getCustomFields,

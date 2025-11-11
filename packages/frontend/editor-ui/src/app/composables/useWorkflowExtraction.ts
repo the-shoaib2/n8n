@@ -5,14 +5,14 @@ import {
 	extractReferencesInNodeExpressions,
 	EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type {
 	ExtractableSubgraphData,
 	ExtractableErrorResult,
 	IConnections,
 	INode,
 	Workflow,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { computed } from 'vue';
 import { useToast } from './useToast';
 import { useRouter } from 'vue-router';
@@ -21,8 +21,8 @@ import { useHistoryStore } from '@/app/stores/history.store';
 import { useCanvasOperations } from './useCanvasOperations';
 
 import type { AddedNode, INodeUi, IWorkflowDb } from '@/Interface';
-import type { WorkflowDataCreate } from '@n8n/rest-api-client/api/workflows';
-import { useI18n } from '@n8n/i18n';
+import type { WorkflowDataCreate } from '@aura/rest-api-client/api/workflows';
+import { useI18n } from '@aura/i18n';
 import { PUSH_NODES_OFFSET } from '@/app/utils/nodeViewUtils';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

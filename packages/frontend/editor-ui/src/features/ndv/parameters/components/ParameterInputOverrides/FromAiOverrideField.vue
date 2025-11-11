@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { i18n } from '@n8n/i18n';
+import { i18n } from '@aura/i18n';
 
-import { N8nIconButton, N8nText } from '@n8n/design-system';
+import { N8nIconButton, N8nText } from '@aura/design-system';
 import AiStarsIcon from '@/app/components/AiStarsIcon.vue';
 defineProps<{
 	isReadOnly?: boolean;

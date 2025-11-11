@@ -8,7 +8,7 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { versionDescription } from './VersionDescription';
 import type { SortData } from '../shared/GenericFunctions';

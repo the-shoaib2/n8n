@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NodeDiffStatus } from 'n8n-workflow';
+import { NodeDiffStatus } from 'aura-workflow';
 import { computed } from 'vue';
 const props = defineProps<{
 	type: NodeDiffStatus;

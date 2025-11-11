@@ -4,7 +4,7 @@ import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { processJsonInput, updateDisplayOptions } from '@utils/utilities';
 

@@ -1,6 +1,6 @@
 import { DatabaseConfig } from '@aura/config';
 import { Service } from '@aura/di';
-import { DataSource, EntityManager, In, Repository } from '@aura/typeorm';
+import { DataSource, EntityManager, In, Repository } from '@n8n/typeorm';
 import { UserError } from 'aura-workflow';
 
 import { ProjectRelation, Role, User } from '../entities';

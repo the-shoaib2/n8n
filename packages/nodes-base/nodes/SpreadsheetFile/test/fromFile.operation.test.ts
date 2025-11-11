@@ -1,6 +1,6 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IBinaryData, IExecuteFunctions, INode, INodeExecutionData } from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError } from 'n8n-workflow';
+import type { IBinaryData, IExecuteFunctions, INode, INodeExecutionData } from 'aura-workflow';
+import { BINARY_ENCODING, NodeOperationError } from 'aura-workflow';
 import { Readable } from 'stream';
 
 jest.mock('xlsx', () => ({

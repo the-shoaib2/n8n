@@ -1,4 +1,4 @@
-import { Column, Entity, OneToMany } from '@aura/typeorm';
+import { Column, Entity, OneToMany } from '@n8n/typeorm';
 
 import { WithTimestampsAndStringId } from './abstract-entity';
 import type { ProjectRelation } from './project-relation';

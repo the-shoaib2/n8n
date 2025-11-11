@@ -1,16 +1,16 @@
-import type { SharedWorkflow, IWorkflowDb } from '@n8n/db';
+import type { SharedWorkflow, IWorkflowDb } from '@aura/db';
 import {
 	Project,
 	User,
 	ProjectRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { WorkflowSharingRole } from '@n8n/permissions';
-import type { DeepPartial } from '@aura/typeorm';
-import type { IWorkflowBase } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from '@aura/db';
+import { Container } from '@aura/di';
+import type { WorkflowSharingRole } from '@aura/permissions';
+import type { DeepPartial } from '@n8n/typeorm';
+import type { IWorkflowBase } from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 export function newWorkflow(attributes: Partial<IWorkflowDb> = {}): IWorkflowDb {

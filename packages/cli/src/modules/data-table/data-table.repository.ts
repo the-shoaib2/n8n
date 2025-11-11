@@ -6,7 +6,7 @@ import {
 import { GlobalConfig } from '@aura/config';
 import { Project, withTransaction } from '@aura/db';
 import { Service } from '@aura/di';
-import { DataSource, EntityManager, Repository, SelectQueryBuilder } from '@aura/typeorm';
+import { DataSource, EntityManager, Repository, SelectQueryBuilder } from '@n8n/typeorm';
 import { UnexpectedError } from 'aura-workflow';
 import type { DataTableInfo, DataTablesSizeData } from 'aura-workflow';
 

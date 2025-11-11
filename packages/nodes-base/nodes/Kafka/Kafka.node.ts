@@ -11,8 +11,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { generatePairedItemData } from '../../utils/utilities';
 

@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne } from '@aura/typeorm';
+import { Column, Entity, ManyToOne } from '@n8n/typeorm';
 
 import { WithStringId } from './abstract-entity';
 import type { Project } from './project';

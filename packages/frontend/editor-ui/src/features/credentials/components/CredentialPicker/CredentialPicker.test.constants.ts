@@ -13,7 +13,7 @@ export const TEST_CREDENTIALS: ICredentialMap = {
 		homeProject: {
 			id: '1',
 			type: 'personal',
-			name: 'Kobi Dog <kobi@n8n.io>',
+			name: 'Kobi Dog <kobi@aura.io>',
 			icon: null,
 			createdAt: new Date().toISOString(),
 			updatedAt: new Date().toISOString(),
@@ -78,7 +78,7 @@ export const TEST_CREDENTIALS: ICredentialMap = {
 		homeProject: {
 			id: '1',
 			type: 'personal',
-			name: 'Kobi Dog <kobi@n8n.io>',
+			name: 'Kobi Dog <kobi@aura.io>',
 			icon: null,
 			createdAt: new Date().toISOString(),
 			updatedAt: new Date().toISOString(),
@@ -168,9 +168,9 @@ export const TEST_CREDENTIAL_TYPES: ICredentialTypeMap = {
 		},
 		supportedNodes: [
 			'n8n-nodes-base.openAi',
-			'@n8n/n8n-nodes-langchain.embeddingsOpenAi',
-			'@n8n/n8n-nodes-langchain.lmChatOpenAi',
-			'@n8n/n8n-nodes-langchain.lmOpenAi',
+			'@aura/n8n-nodes-langchain.embeddingsOpenAi',
+			'@aura/n8n-nodes-langchain.lmChatOpenAi',
+			'@aura/n8n-nodes-langchain.lmOpenAi',
 		],
 	},
 	supabaseApi: {

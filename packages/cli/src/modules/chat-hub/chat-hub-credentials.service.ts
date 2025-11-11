@@ -5,7 +5,7 @@ import {
 } from '@aura/api-types';
 import type { User, CredentialsEntity } from '@aura/db';
 import { Service } from '@aura/di';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import type { INodeCredentials } from 'aura-workflow';
 
 import { CredentialsFinderService } from '@/credentials/credentials-finder.service';

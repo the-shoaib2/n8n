@@ -18,7 +18,7 @@
 				"authentication": "oAuth2",
 				"title": "Test",
 				"serviceId": "PO5XHDI",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"additionalFields": {}
 			},
 			"name": "PagerDuty",
@@ -56,7 +56,7 @@
 				"authentication": "oAuth2",
 				"operation": "update",
 				"incidentId": "={{$json[\"id\"]}}",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"updateFields": {
 					"status": "acknowledged"
 				}
@@ -98,7 +98,7 @@
 				"resource": "incidentNote",
 				"incidentId": "={{$json[\"id\"]}}",
 				"content": "Simple note for an incident",
-				"email": "nodeqa@n8n.io"
+				"email": "nodeqa@aura.io"
 			},
 			"name": "PagerDuty4",
 			"type": "n8n-nodes-base.pagerDuty",

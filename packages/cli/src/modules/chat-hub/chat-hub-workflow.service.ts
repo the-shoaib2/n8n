@@ -8,7 +8,7 @@ import {
 	WorkflowRepository,
 } from '@aura/db';
 import { Service } from '@aura/di';
-import { EntityManager } from '@aura/typeorm';
+import { EntityManager } from '@n8n/typeorm';
 import {
 	AGENT_LANGCHAIN_NODE_TYPE,
 	CHAT_TRIGGER_NODE_TYPE,

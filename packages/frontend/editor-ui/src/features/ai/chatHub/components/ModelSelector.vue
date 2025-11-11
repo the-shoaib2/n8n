@@ -1,22 +1,22 @@
 <script setup lang="ts">
 import { computed, ref, useTemplateRef, watch } from 'vue';
-import { N8nNavigationDropdown, N8nIcon, N8nButton, N8nText, N8nAvatar } from '@n8n/design-system';
+import { N8nNavigationDropdown, N8nIcon, N8nButton, N8nText, N8nAvatar } from '@aura/design-system';
 import { type ComponentProps } from 'vue-component-type-helpers';
 import {
 	PROVIDER_CREDENTIAL_TYPE_MAP,
 	chatHubLLMProviderSchema,
 	emptyChatModelsResponse,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import type {
 	ChatHubProvider,
 	ChatHubLLMProvider,
 	ChatModelDto,
 	ChatModelsResponse,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import { providerDisplayNames } from '@/features/ai/chatHub/constants';
 import CredentialIcon from '@/features/credentials/components/CredentialIcon.vue';
 import { onClickOutside } from '@vueuse/core';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 
 import type { CredentialsMap } from '../chat.types';
 import CredentialSelectorModal from './CredentialSelectorModal.vue';
@@ -30,7 +30,7 @@ import {
 	stringifyModel,
 } from '@/features/ai/chatHub/chat.utils';
 import { fetchChatModelsApi } from '@/features/ai/chatHub/chat.api';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 
 const NEW_AGENT_MENU_ID = 'agent::new';

@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/chat",
+  "name": "@aura/chat",
   "version": "0.65.0",
   "scripts": {
     "dev": "pnpm run storybook",
@@ -38,7 +38,7 @@
     }
   },
   "dependencies": {
-    "@n8n/design-system": "workspace:*",
+    "@aura/design-system": "workspace:*",
     "@vueuse/core": "catalog:frontend",
     "highlight.js": "catalog:frontend",
     "markdown-it-link-attributes": "^4.0.1",
@@ -48,11 +48,11 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@n8n/storybook": "workspace:*",
-    "@n8n/eslint-config": "workspace:*",
-    "@n8n/stylelint-config": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@aura/storybook": "workspace:*",
+    "@aura/eslint-config": "workspace:*",
+    "@aura/stylelint-config": "workspace:*",
+    "@aura/typescript-config": "workspace:*",
+    "@aura/vitest-config": "workspace:*",
     "@vitejs/plugin-vue": "catalog:frontend",
     "@vitest/coverage-v8": "catalog:",
     "unplugin-icons": "^0.19.0",

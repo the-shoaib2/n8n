@@ -3,9 +3,9 @@ import { SharedWorkflowRepository, FolderRepository } from '@aura/db';
 import { Service } from '@aura/di';
 import { hasGlobalScope, type Scope } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager, FindOptionsWhere } from '@aura/typeorm';
+import type { EntityManager, FindOptionsWhere } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 
 import { RoleService } from '@/services/role.service';
 

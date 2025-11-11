@@ -1,10 +1,10 @@
-import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@n8n/imap';
-import { connect as imapConnect, getParts } from '@n8n/imap';
+import type { ImapSimple, ImapSimpleOptions, Message, SearchCriteria } from '@aura/imap';
+import { connect as imapConnect, getParts } from '@aura/imap';
 import find from 'lodash/find';
 import isEmpty from 'lodash/isEmpty';
 import type { Source as ParserSource } from 'mailparser';
 import { simpleParser } from 'mailparser';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type {
 	ITriggerFunctions,
 	IBinaryData,
@@ -19,7 +19,7 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	ITriggerResponse,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export async function parseRawEmail(
 	this: ITriggerFunctions,

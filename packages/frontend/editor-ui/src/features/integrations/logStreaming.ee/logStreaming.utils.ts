@@ -2,7 +2,7 @@ import type {
 	INodeCredentials,
 	INodeParameters,
 	MessageEventBusDestinationOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type { INodeUi } from '@/Interface';
 
 export function destinationToFakeINodeUi(

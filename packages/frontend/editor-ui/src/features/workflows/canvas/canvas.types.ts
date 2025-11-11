@@ -1,4 +1,4 @@
-import type { ExecutionStatus, INodeConnections, NodeConnectionType } from 'n8n-workflow';
+import type { ExecutionStatus, INodeConnections, NodeConnectionType } from 'aura-workflow';
 import type {
 	DefaultEdge,
 	Node,
@@ -10,7 +10,7 @@ import type {
 import type { INodeUi } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import type { ComputedRef, Ref } from 'vue';
-import type { EventBus } from '@n8n/utils/event-bus';
+import type { EventBus } from '@aura/utils/event-bus';
 import type { CanvasLayoutSource } from '@/features/workflows/canvas/composables/useCanvasLayout';
 import type { NodeIconSource } from '@/app/utils/nodeIcon';
 

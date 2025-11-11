@@ -9,8 +9,8 @@ import type {
 	INodeTypeDescription,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, randomString } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes, randomString } from 'aura-workflow';
 
 import type {
 	ITypeformAnswer,

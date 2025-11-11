@@ -1,4 +1,4 @@
-import { Column, Entity, ManyToOne, OneToOne } from '@aura/typeorm';
+import { Column, Entity, ManyToOne, OneToOne } from '@n8n/typeorm';
 import type { IDataObject, JsonObject } from 'aura-workflow';
 
 import { WithStringId, DateTimeColumn, JsonColumn } from './abstract-entity';

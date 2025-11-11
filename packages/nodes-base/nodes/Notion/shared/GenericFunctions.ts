@@ -17,8 +17,8 @@ import type {
 	IPollFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 import { validate as uuidValidate } from 'uuid';
 
 import { blockUrlExtractionRegexp, databasePageUrlValidationRegexp } from './constants';

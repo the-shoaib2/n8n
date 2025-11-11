@@ -5,14 +5,14 @@ import type {
 	INodeProperties,
 	IDisplayOptions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	NodeConnectionTypes,
 	WAIT_INDEFINITELY,
 	FORM_TRIGGER_NODE_TYPE,
 	tryToParseDateTime,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { validateWaitAmount, validateWaitUnit } from './validation';
 import { updateDisplayOptions } from '../../utils/utilities';

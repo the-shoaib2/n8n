@@ -9,8 +9,8 @@ import type {
 	INodeParameters,
 	IRunExecutionData,
 	ITaskData,
-} from 'n8n-workflow';
-import type { ChatUI } from '@n8n/design-system/types/assistant';
+} from 'aura-workflow';
+import type { ChatUI } from '@aura/design-system/types/assistant';
 
 export namespace ChatRequest {
 	export interface NodeExecutionSchema {

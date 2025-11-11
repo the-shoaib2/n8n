@@ -394,7 +394,7 @@
 				"resource": "user",
 				"operation": "invite",
 				"organization": "OrgnodeQA",
-				"email": "nodeqa@n8n.io"
+				"email": "nodeqa@aura.io"
 			},
 			"name": "GitHub17",
 			"type": "n8n-nodes-base.github",

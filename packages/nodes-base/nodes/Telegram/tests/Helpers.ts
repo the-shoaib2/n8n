@@ -1,5 +1,5 @@
 import get from 'lodash/get';
-import type { IDataObject, IExecuteFunctions, IGetNodeParameterOptions, INode } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions, IGetNodeParameterOptions, INode } from 'aura-workflow';
 
 export const telegramNode: INode = {
 	id: 'b3039263-29ad-4476-9894-51dfcc5a706d',

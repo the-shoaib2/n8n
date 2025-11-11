@@ -15,7 +15,7 @@
 		},
 		{
 			"parameters": {
-				"fromEmail": "nodeqa@n8n.io",
+				"fromEmail": "nodeqa@aura.io",
 				"toEmail": "node8qa@gmail.com",
 				"subject": "=Mailgun{{Date.now()}}",
 				"text": "=Test text {{(new Date).toUTCString()}}"

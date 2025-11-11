@@ -10,8 +10,8 @@ import type {
 	IWebhookResponseData,
 	MultiPartFormData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError, Node } from 'n8n-workflow';
+} from 'aura-workflow';
+import { BINARY_ENCODING, NodeOperationError, Node } from 'aura-workflow';
 import { pipeline } from 'stream/promises';
 import { file as tmpFile } from 'tmp-promise';
 import { v4 as uuid } from 'uuid';

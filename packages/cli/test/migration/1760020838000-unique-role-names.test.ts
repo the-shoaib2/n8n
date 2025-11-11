@@ -7,7 +7,7 @@ import {
 } from '@aura/backend-test-utils';
 import { DbConnection } from '@aura/db';
 import { Container } from '@aura/di';
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 
 const MIGRATION_NAME = 'UniqueRoleNames1760020838000';
 

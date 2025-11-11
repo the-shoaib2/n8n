@@ -9,8 +9,8 @@ import type {
 	INodeCredentialDescription,
 	FromAIArgument,
 	INodePropertyOptions,
-} from 'n8n-workflow';
-import { NodeHelpers, traverseNodeParameters } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeHelpers, traverseNodeParameters } from 'aura-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 
 /**

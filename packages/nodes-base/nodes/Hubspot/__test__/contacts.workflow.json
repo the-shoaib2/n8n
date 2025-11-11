@@ -57,7 +57,7 @@
 		},
 		{
 			"parameters": {
-				"email": "elias@n8n.io",
+				"email": "elias@aura.io",
 				"additionalFields": {
 					"annualRevenue": 123,
 					"associatedCompanyId": "=123",
@@ -74,7 +74,7 @@
 					"firstName": "Elias",
 					"postalCode": "9000",
 					"websiteUrl": "example.com",
-					"workEmail": "elias@n8n.io"
+					"workEmail": "elias@aura.io"
 				},
 				"options": {}
 			},

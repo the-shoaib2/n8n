@@ -1,5 +1,5 @@
 import { CredentialSharingRole } from '@aura/permissions';
-import { Column, Entity, ManyToOne, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, ManyToOne, PrimaryColumn } from '@n8n/typeorm';
 
 import { WithTimestamps } from './abstract-entity';
 import { CredentialsEntity } from './credentials-entity';

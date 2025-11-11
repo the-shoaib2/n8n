@@ -39,5 +39,5 @@ export { DbConnectionOptions } from './connection/db-connection-options';
 
 export { AuthRolesService } from './services/auth.roles.service';
 
-export { In, Like, DataSource } from '@aura/typeorm';
-export type { FindOptionsWhere } from '@aura/typeorm';
+export { In, Like, DataSource } from '@n8n/typeorm';
+export type { FindOptionsWhere } from '@n8n/typeorm';

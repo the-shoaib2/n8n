@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/backend-test-utils",
+  "name": "@aura/backend-test-utils",
   "version": "0.23.0",
   "scripts": {
     "clean": "rimraf dist .turbo",
@@ -21,19 +21,19 @@
     "dist/**/*"
   ],
   "dependencies": {
-    "@n8n/backend-common": "workspace:^",
-    "@n8n/config": "workspace:^",
-    "@n8n/constants": "workspace:^",
-    "@n8n/db": "workspace:^",
-    "@n8n/di": "workspace:^",
-    "@n8n/permissions": "workspace:^",
-    "@aura/typeorm": "catalog:",
+    "@aura/backend-common": "workspace:^",
+    "@aura/config": "workspace:^",
+    "@aura/constants": "workspace:^",
+    "@aura/db": "workspace:^",
+    "@aura/di": "workspace:^",
+    "@aura/permissions": "workspace:^",
+    "@n8n/typeorm": "catalog:",
     "jest-mock-extended": "^3.0.4",
-    "n8n-workflow": "workspace:^",
+    "aura-workflow": "workspace:^",
     "reflect-metadata": "catalog:",
     "uuid": "catalog:"
   },
   "devDependencies": {
-    "@n8n/typescript-config": "workspace:*"
+    "@aura/typescript-config": "workspace:*"
   }
 }

@@ -1,4 +1,4 @@
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 import type { PostgresNodeCredentials } from 'aura-nodes-base/dist/nodes/Postgres/v2/helpers/interfaces';
 import { type IExecuteFunctions } from 'aura-workflow';
 import type { TlsOptions } from 'tls';

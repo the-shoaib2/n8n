@@ -5,7 +5,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { generatePairedItemData } from '../../utils/utilities';
 

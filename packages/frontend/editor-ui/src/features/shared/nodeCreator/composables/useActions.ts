@@ -4,7 +4,7 @@ import {
 	NodeConnectionTypes,
 	type IDataObject,
 	type INodeParameters,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type {
 	ActionTypeDescription,
 	AddedNode,
@@ -35,7 +35,7 @@ import {
 	WEBHOOK_NODE_TYPE,
 } from '@/app/constants';
 
-import type { BaseTextKey } from '@n8n/i18n';
+import type { BaseTextKey } from '@aura/i18n';
 import type { Telemetry } from '@/app/plugins/telemetry';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
@@ -43,7 +43,7 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useExternalHooks } from '@/app/composables/useExternalHooks';
 
 import { sortNodeCreateElements, transformNodeType } from '../nodeCreator.utils';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { PUSH_NODES_OFFSET } from '@/app/utils/nodeViewUtils';
 import { useCanvasStore } from '@/app/stores/canvas.store';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';

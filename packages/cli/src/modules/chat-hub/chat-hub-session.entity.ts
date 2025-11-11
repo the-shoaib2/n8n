@@ -8,7 +8,7 @@ import {
 	JoinColumn,
 	type Relation,
 	PrimaryGeneratedColumn,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 
 import type { ChatHubMessage } from './chat-hub-message.entity';
 

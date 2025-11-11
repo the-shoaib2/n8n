@@ -8,7 +8,7 @@ import {
 	makeOverrideValue,
 	parseOverrides,
 } from './fromAIOverride.utils';
-import type { INodeTypeDescription, NodePropertyTypes } from 'n8n-workflow';
+import type { INodeTypeDescription, NodePropertyTypes } from 'aura-workflow';
 
 const getNodeType = vi.fn();
 

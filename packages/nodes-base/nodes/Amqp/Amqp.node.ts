@@ -8,8 +8,8 @@ import type {
 	INodeCredentialTestResult,
 	ICredentialsDecrypted,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type { Connection, ConnectionOptions, Dictionary, EventContext, Sender } from 'rhea';
 import { create_container } from 'rhea';
 

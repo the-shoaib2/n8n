@@ -1,4 +1,4 @@
-import type { INodeExecutionData } from 'n8n-workflow';
+import type { INodeExecutionData } from 'aura-workflow';
 
 import { ReservedKeyFoundError } from './reserved-key-found-error';
 import { isObject } from './utils';

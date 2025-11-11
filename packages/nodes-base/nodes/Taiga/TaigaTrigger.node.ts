@@ -8,7 +8,7 @@ import {
 	type IWebhookFunctions,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { getAutomaticSecret, taigaApiRequest } from './GenericFunctions';
 import type { Operations, Resources, WebhookPayload } from './types';

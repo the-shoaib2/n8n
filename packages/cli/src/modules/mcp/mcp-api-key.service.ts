@@ -1,6 +1,6 @@
 import { ApiKey, ApiKeyRepository, User, UserRepository } from '@aura/db';
 import { Service } from '@aura/di';
-import { EntityManager } from '@aura/typeorm';
+import { EntityManager } from '@n8n/typeorm';
 import { randomUUID } from 'crypto';
 import { ApiKeyAudience } from 'aura-workflow';
 

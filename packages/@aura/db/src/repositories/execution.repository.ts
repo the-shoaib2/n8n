@@ -7,7 +7,7 @@ import type {
 	FindOperator,
 	FindOptionsWhere,
 	SelectQueryBuilder,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import {
 	Brackets,
 	DataSource,
@@ -19,8 +19,8 @@ import {
 	Not,
 	Repository,
 	And,
-} from '@aura/typeorm';
-import { DateUtils } from '@aura/typeorm/util/DateUtils';
+} from '@n8n/typeorm';
+import { DateUtils } from '@n8n/typeorm/util/DateUtils';
 import { parse, stringify } from 'flatted';
 import pick from 'lodash/pick';
 import { BinaryDataService, ErrorReporter } from 'aura-core';

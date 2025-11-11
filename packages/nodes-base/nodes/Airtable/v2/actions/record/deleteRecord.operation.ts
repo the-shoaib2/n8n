@@ -4,7 +4,7 @@ import type {
 	INodeProperties,
 	NodeApiError,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { updateDisplayOptions, wrapData } from '../../../../../utils/utilities';
 import { processAirtableError } from '../../helpers/utils';

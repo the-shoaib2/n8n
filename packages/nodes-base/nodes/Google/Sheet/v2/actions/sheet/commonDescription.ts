@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const dataLocationOnSheet: INodeProperties = {
 	displayName: 'Data Location on Sheet',

@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/rest-api-client",
+  "name": "@aura/rest-api-client",
   "type": "module",
   "version": "1.23.0",
   "files": [
@@ -33,20 +33,20 @@
     "format:check": "biome ci . && prettier --check . --ignore-path ../../../../.prettierignore"
   },
   "dependencies": {
-    "@n8n/api-types": "workspace:*",
-    "@n8n/constants": "workspace:*",
-    "@n8n/permissions": "workspace:*",
-    "@n8n/utils": "workspace:*",
+    "@aura/api-types": "workspace:*",
+    "@aura/constants": "workspace:*",
+    "@aura/permissions": "workspace:*",
+    "@aura/utils": "workspace:*",
     "js-base64": "catalog:",
-    "n8n-workflow": "workspace:*",
+    "aura-workflow": "workspace:*",
     "axios": "catalog:",
     "flatted": "catalog:"
   },
   "devDependencies": {
-    "@n8n/eslint-config": "workspace:*",
-    "@n8n/i18n": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@aura/eslint-config": "workspace:*",
+    "@aura/i18n": "workspace:*",
+    "@aura/typescript-config": "workspace:*",
+    "@aura/vitest-config": "workspace:*",
     "@testing-library/jest-dom": "catalog:frontend",
     "@testing-library/user-event": "catalog:frontend",
     "tsdown": "catalog:",

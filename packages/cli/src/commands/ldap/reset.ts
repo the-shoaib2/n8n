@@ -13,7 +13,7 @@ import {
 import { Command } from '@aura/decorators';
 import { Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { UserError } from 'aura-workflow';
 import { z } from 'zod';
 

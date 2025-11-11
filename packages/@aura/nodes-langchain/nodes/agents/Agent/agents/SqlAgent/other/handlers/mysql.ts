@@ -1,4 +1,4 @@
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 import { type IExecuteFunctions } from 'aura-workflow';
 
 export async function getMysqlDataSource(this: IExecuteFunctions): Promise<DataSource> {

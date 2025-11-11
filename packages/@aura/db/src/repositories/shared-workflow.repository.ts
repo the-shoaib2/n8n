@@ -1,7 +1,7 @@
 import { Service } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG, type WorkflowSharingRole } from '@aura/permissions';
-import { DataSource, Repository, In, Not } from '@aura/typeorm';
-import type { EntityManager, FindManyOptions, FindOptionsWhere } from '@aura/typeorm';
+import { DataSource, Repository, In, Not } from '@n8n/typeorm';
+import type { EntityManager, FindManyOptions, FindOptionsWhere } from '@n8n/typeorm';
 
 import type { Project } from '../entities';
 import { SharedWorkflow } from '../entities';

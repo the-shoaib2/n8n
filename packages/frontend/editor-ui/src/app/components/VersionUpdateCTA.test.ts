@@ -6,7 +6,7 @@ import { mockedStore, type MockedStore } from '@/__tests__/utils';
 import { useUIStore } from '@/app/stores/ui.store';
 import { WHATS_NEW_MODAL_KEY, VERSIONS_MODAL_KEY } from '@/app/constants';
 import { useVersionsStore } from '@/app/stores/versions.store';
-import type { Version } from '@n8n/rest-api-client/api/versions';
+import type { Version } from '@aura/rest-api-client/api/versions';
 
 import VersionUpdateCTA from './VersionUpdateCTA.vue';
 import { useTelemetry } from '@/app/composables/useTelemetry';

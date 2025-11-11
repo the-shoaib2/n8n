@@ -1,4 +1,4 @@
-import type { WorkflowDataCreate } from '@n8n/rest-api-client';
+import type { WorkflowDataCreate } from '@aura/rest-api-client';
 
 export const READY_TO_RUN_WORKFLOW_V4: WorkflowDataCreate = {
 	name: 'AI Agent workflow',
@@ -36,7 +36,7 @@ export const READY_TO_RUN_WORKFLOW_V4: WorkflowDataCreate = {
 				},
 				options: {},
 			},
-			type: '@n8n/n8n-nodes-langchain.lmChatOpenAi',
+			type: '@aura/n8n-nodes-langchain.lmChatOpenAi',
 			typeVersion: 1.2,
 			position: [32, 160],
 			id: '95986360-8ca1-4b8a-af7e-f101e89e3654',
@@ -51,7 +51,7 @@ export const READY_TO_RUN_WORKFLOW_V4: WorkflowDataCreate = {
 				text: '=Summarize world news and tech news from the last 24 hours. \nSkip your comments. \nThe titles should be "World news:" and "Tech news:" \nLimit to 10 bullet points. \nToday is {{ $today }}',
 				options: {},
 			},
-			type: '@n8n/n8n-nodes-langchain.agent',
+			type: '@aura/n8n-nodes-langchain.agent',
 			typeVersion: 2.2,
 			position: [32, -64],
 			id: 'd36975bc-d51f-472f-a51f-f6c745b29a8d',

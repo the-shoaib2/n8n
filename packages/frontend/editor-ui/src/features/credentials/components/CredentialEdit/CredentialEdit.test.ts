@@ -2,12 +2,12 @@ import { createComponentRenderer } from '@/__tests__/render';
 import CredentialEdit from './CredentialEdit.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { CREDENTIAL_EDIT_MODAL_KEY } from '../../credentials.constants';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { retry, mockedStore } from '@/__tests__/utils';
 import { useCredentialsStore } from '../../credentials.store';
 import type { ICredentialsResponse } from '../../credentials.types';
 import { within } from '@testing-library/vue';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'aura-workflow';
 
 const oAuth2Api: ICredentialType = {
 	name: 'oAuth2Api',
@@ -180,7 +180,7 @@ const googleBigQueryOAuth2Api: ICredentialType = {
 	supportedNodes: ['n8n-nodes-base.googleBigQuery'],
 };
 
-vi.mock('@n8n/permissions', () => ({
+vi.mock('@aura/permissions', () => ({
 	getResourcePermissions: vi.fn(() => ({
 		credential: {
 			create: true,

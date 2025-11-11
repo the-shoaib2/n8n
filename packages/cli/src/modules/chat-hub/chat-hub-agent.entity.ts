@@ -1,6 +1,6 @@
 import { ChatHubProvider } from '@aura/api-types';
 import { WithTimestamps, User, CredentialsEntity } from '@aura/db';
-import { Column, Entity, ManyToOne, JoinColumn, PrimaryGeneratedColumn } from '@aura/typeorm';
+import { Column, Entity, ManyToOne, JoinColumn, PrimaryGeneratedColumn } from '@n8n/typeorm';
 
 @Entity({ name: 'chat_hub_agents' })
 export class ChatHubAgent extends WithTimestamps {

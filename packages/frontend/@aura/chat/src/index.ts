@@ -2,10 +2,10 @@ import './main.scss';
 
 import { createApp } from 'vue';
 
-import { defaultMountingTarget, defaultOptions } from '@n8n/chat/constants';
-import { ChatPlugin } from '@n8n/chat/plugins';
-import type { ChatOptions } from '@n8n/chat/types';
-import { createDefaultMountingTarget } from '@n8n/chat/utils';
+import { defaultMountingTarget, defaultOptions } from '@aura/chat/constants';
+import { ChatPlugin } from '@aura/chat/plugins';
+import type { ChatOptions } from '@aura/chat/types';
+import { createDefaultMountingTarget } from '@aura/chat/utils';
 
 import App from './App.vue';
 

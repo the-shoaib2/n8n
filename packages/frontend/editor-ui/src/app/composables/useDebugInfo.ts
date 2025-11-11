@@ -1,7 +1,7 @@
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useSettingsStore } from '@/app/stores/settings.store';
-import { useDeviceSupport } from '@n8n/composables/useDeviceSupport';
-import type { WorkflowSettings } from 'n8n-workflow';
+import { useDeviceSupport } from '@aura/composables/useDeviceSupport';
+import type { WorkflowSettings } from 'aura-workflow';
 
 type DebugInfo = {
 	core: {

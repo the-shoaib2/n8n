@@ -7,7 +7,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	type JsonObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { certificateDescription } from './CertificateDescription';
 import { fileDescription } from './FileDescription';

@@ -2,9 +2,9 @@ import type {
 	INodeTypeDescription,
 	NodeConnectionType,
 	TriggerPanelDefinition,
-} from 'n8n-workflow';
-import { nodeConnectionTypes } from 'n8n-workflow';
-import type { ProjectRole, TeamProjectRole } from '@n8n/permissions';
+} from 'aura-workflow';
+import { nodeConnectionTypes } from 'aura-workflow';
+import type { ProjectRole, TeamProjectRole } from '@aura/permissions';
 import type {
 	NewCredentialsModal,
 	CredentialsResource,
@@ -22,7 +22,7 @@ import type { RouteLocationRaw } from 'vue-router';
 import type { CanvasConnectionMode } from '@/features/workflows/canvas/canvas.types';
 import { canvasConnectionModes } from '@/features/workflows/canvas/canvas.types';
 import type { ComponentPublicInstance } from 'vue';
-import { type BaseTextKey, useI18n } from '@n8n/i18n';
+import { type BaseTextKey, useI18n } from '@aura/i18n';
 
 /*
 	Type guards used in editor-ui project

@@ -7,7 +7,7 @@ import {
 	ManyToMany,
 	ManyToOne,
 	OneToMany,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import { Length } from 'class-validator';
 import { IConnections, IDataObject, IWorkflowSettings, WorkflowFEMeta } from 'aura-workflow';
 import type { INode } from 'aura-workflow';

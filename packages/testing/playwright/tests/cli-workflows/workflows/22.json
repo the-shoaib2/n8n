@@ -78,7 +78,7 @@
 		{
 			"parameters": {
 				"resource": "contactList",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"listId": "2"
 			},
 			"name": "Hubspot3",

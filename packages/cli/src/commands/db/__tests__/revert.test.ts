@@ -1,7 +1,7 @@
 import { Logger } from '@aura/backend-common';
 import { mockInstance } from '@aura/backend-test-utils';
 import type { IrreversibleMigration, ReversibleMigration } from '@aura/db';
-import type { Migration, MigrationExecutor, DataSource } from '@aura/typeorm';
+import type { Migration, MigrationExecutor, DataSource } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 
 import { main } from '@/commands/db/revert';

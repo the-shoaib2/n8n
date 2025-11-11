@@ -1,7 +1,7 @@
 import { Logger } from '@aura/backend-common';
 import { Container } from '@aura/di';
-import type { EntitySubscriberInterface, UpdateEvent } from '@aura/typeorm';
-import { EventSubscriber } from '@aura/typeorm';
+import type { EntitySubscriberInterface, UpdateEvent } from '@n8n/typeorm';
+import { EventSubscriber } from '@n8n/typeorm';
 import { ErrorReporter } from 'aura-core';
 import { UnexpectedError } from 'aura-workflow';
 

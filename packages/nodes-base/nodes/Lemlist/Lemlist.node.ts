@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+import type { INodeTypeBaseDescription, IVersionedNodeType } from 'aura-workflow';
+import { VersionedNodeType } from 'aura-workflow';
 
 import { LemlistV1 } from './v1/LemlistV1.node';
 import { LemlistV2 } from './v2/LemlistV2.node';

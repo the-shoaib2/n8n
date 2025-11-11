@@ -6,7 +6,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookFunctions,
 	type IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	downloadAttachments,

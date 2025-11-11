@@ -1,4 +1,4 @@
-import { baseConfig } from '@n8n/eslint-config/base';
+import { baseConfig } from '@aura/eslint-config/base';
 import playwrightPlugin from 'eslint-plugin-playwright';
 
 export default [

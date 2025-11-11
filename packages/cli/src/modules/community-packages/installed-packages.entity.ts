@@ -1,5 +1,5 @@
 import { WithTimestamps } from '@aura/db';
-import { Column, Entity, JoinColumn, OneToMany, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, JoinColumn, OneToMany, PrimaryColumn } from '@n8n/typeorm';
 
 import type { InstalledNodes } from './installed-nodes.entity';
 

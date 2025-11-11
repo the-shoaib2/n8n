@@ -5,8 +5,8 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { getActivatableTriggerNodes } from '@/app/utils/nodeTypesUtils';
 import type { VNode } from 'vue';
 import { computed, h, watch } from 'vue';
-import { useI18n } from '@n8n/i18n';
-import type { PermissionsRecord } from '@n8n/permissions';
+import { useI18n } from '@aura/i18n';
+import type { PermissionsRecord } from '@aura/permissions';
 import {
 	WORKFLOW_ACTIVATION_CONFLICTING_WEBHOOK_MODAL_KEY,
 	EXECUTE_WORKFLOW_TRIGGER_NODE_TYPE,
@@ -16,13 +16,13 @@ import WorkflowActivationErrorMessage from './WorkflowActivationErrorMessage.vue
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
 import type { INodeUi } from '@/Interface';
 import type { IUsedCredential } from '@/features/credentials/credentials.types';
-import { OPEN_AI_API_CREDENTIAL_TYPE } from 'n8n-workflow';
+import { OPEN_AI_API_CREDENTIAL_TYPE } from 'aura-workflow';
 import { useUIStore } from '@/app/stores/ui.store';
 
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';
 
 import { ElSwitch } from 'element-plus';
-import { N8nIcon, N8nText, N8nTooltip } from '@n8n/design-system';
+import { N8nIcon, N8nText, N8nTooltip } from '@aura/design-system';
 const props = defineProps<{
 	isArchived: boolean;
 	workflowActive: boolean;

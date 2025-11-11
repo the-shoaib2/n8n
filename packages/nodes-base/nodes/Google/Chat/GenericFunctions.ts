@@ -6,8 +6,8 @@ import type {
 	INodeProperties,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { getSendAndWaitConfig } from '../../../utils/sendAndWait/utils';
 import { createUtmCampaignLink } from '../../../utils/utilities';

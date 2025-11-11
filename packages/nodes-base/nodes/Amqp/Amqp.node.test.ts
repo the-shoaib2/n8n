@@ -4,8 +4,8 @@ import type {
 	IExecuteFunctions,
 	ICredentialTestFunctions,
 	ICredentialsDecrypted,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { Amqp } from './Amqp.node';
 

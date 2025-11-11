@@ -9,8 +9,8 @@ import type {
 	INodePropertyOptions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 function convertLosslessNumber(_: any, value: any) {
 	if (value?.isLosslessNumber) {

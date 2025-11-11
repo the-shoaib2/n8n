@@ -1,5 +1,5 @@
-import type { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { INodeType, INodeTypeDescription } from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 import { binFields, binOperations } from './BinDescription';
 import { requestFields, requestOperations } from './RequestDescription';

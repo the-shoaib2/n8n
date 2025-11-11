@@ -7,7 +7,7 @@ import type {
 	INodeExecutionData,
 	IWebhookFunctions,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { Form } from '../Form.node';
 

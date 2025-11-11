@@ -1,5 +1,5 @@
-import { ApplicationError } from '@n8n/errors';
-import type { IExecuteFunctions, IDataObject, INodeExecutionData, JsonObject } from 'n8n-workflow';
+import { ApplicationError } from '@aura/errors';
+import type { IExecuteFunctions, IDataObject, INodeExecutionData, JsonObject } from 'aura-workflow';
 import type pgPromise from 'pg-promise';
 import type pg from 'pg-promise/typescript/pg-subset';
 

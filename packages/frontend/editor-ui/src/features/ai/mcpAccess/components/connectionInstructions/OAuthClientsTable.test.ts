@@ -3,7 +3,7 @@ import OAuthClientsTable from './OAuthClientsTable.vue';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { createPinia, setActivePinia } from 'pinia';
 import userEvent from '@testing-library/user-event';
-import type { OAuthClientResponseDto } from '@n8n/api-types';
+import type { OAuthClientResponseDto } from '@aura/api-types';
 
 const renderComponent = createComponentRenderer(OAuthClientsTable);
 

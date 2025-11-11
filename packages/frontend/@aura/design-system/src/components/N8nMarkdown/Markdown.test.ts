@@ -1,6 +1,6 @@
 import { render, fireEvent } from '@testing-library/vue';
 
-import { n8nHtml } from '@n8n/design-system/directives';
+import { n8nHtml } from '@aura/design-system/directives';
 
 import N8nMarkdown from './Markdown.vue';
 

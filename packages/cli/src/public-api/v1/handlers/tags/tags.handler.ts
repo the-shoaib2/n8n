@@ -2,7 +2,7 @@ import type { TagEntity } from '@aura/db';
 import { TagRepository } from '@aura/db';
 import { Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { FindManyOptions } from '@aura/typeorm';
+import type { FindManyOptions } from '@n8n/typeorm';
 import type express from 'express';
 
 import { TagService } from '@/services/tag.service';

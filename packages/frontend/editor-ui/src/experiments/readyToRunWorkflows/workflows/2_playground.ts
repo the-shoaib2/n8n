@@ -1,5 +1,5 @@
 /* eslint-disable n8n-local-rules/no-interpolation-in-regular-string */
-import type { WorkflowDataCreate } from '@n8n/rest-api-client';
+import type { WorkflowDataCreate } from '@aura/rest-api-client';
 
 export const PLAYGROUND_2: WorkflowDataCreate = {
 	meta: {

@@ -1,6 +1,6 @@
 import { GlobalConfig } from '@aura/config';
 import { Service } from '@aura/di';
-import { DataSource, Repository, In, Like } from '@aura/typeorm';
+import { DataSource, Repository, In, Like } from '@n8n/typeorm';
 import type {
 	SelectQueryBuilder,
 	UpdateResult,
@@ -9,7 +9,7 @@ import type {
 	FindManyOptions,
 	FindOptionsRelations,
 	EntityManager,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import { PROJECT_ROOT } from 'aura-workflow';
 
 import { FolderRepository } from './folder.repository';

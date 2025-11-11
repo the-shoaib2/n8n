@@ -6,7 +6,7 @@ import {
 import { GlobalConfig } from '@aura/config';
 import { DslColumn } from '@aura/db';
 import { Container } from '@aura/di';
-import type { DataSourceOptions } from '@aura/typeorm';
+import type { DataSourceOptions } from '@n8n/typeorm';
 import type {
 	DataTableColumnJsType,
 	DataTableColumnType,

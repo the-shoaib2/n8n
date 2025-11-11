@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	NodeConnectionTypes,
 	type INodeTypeBaseDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { getColumns, rowFormatColumns, seaTableApiRequest, simplify } from './GenericFunctions';
 import type { ICtx, IRow, IRowResponse } from './Interfaces';

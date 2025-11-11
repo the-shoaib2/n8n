@@ -29,7 +29,7 @@ import {
 	SQLite,
 	StandardSQL,
 	keywordCompletionSource,
-} from '@n8n/codemirror-lang-sql';
+} from '@aura/codemirror-lang-sql';
 import { onClickOutside } from '@vueuse/core';
 import { computed, onBeforeUnmount, onMounted, ref, toRaw, watch } from 'vue';
 import { codeEditorTheme } from '../CodeNodeEditor/theme';

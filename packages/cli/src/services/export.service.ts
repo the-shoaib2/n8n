@@ -4,7 +4,7 @@ import { mkdir, rm, readdir, appendFile } from 'fs/promises';
 import { Service } from '@aura/di';
 
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 import { validateDbTypeForExportEntities } from '@/utils/validate-database-type';
 import { Cipher } from 'aura-core';
 import { compressFolder } from '@/utils/compression.util';

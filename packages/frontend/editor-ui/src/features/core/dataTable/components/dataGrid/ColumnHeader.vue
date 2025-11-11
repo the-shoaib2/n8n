@@ -2,9 +2,9 @@
 import type { IHeaderParams, SortDirection } from 'ag-grid-community';
 import { useDataTableTypes } from '@/features/core/dataTable/composables/useDataTableTypes';
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { isAGGridCellType } from '@/features/core/dataTable/typeGuards';
-import { N8nActionDropdown, N8nIcon, N8nIconButton } from '@n8n/design-system';
+import { N8nActionDropdown, N8nIcon, N8nIconButton } from '@aura/design-system';
 
 export type HeaderParamsWithDelete = IHeaderParams & {
 	onDelete?: (columnId: string) => void;

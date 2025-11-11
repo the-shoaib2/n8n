@@ -49,7 +49,7 @@
 				"operation": "addConfig",
 				"repositoryPath": "/tmp/nodeQA",
 				"key": "user.email",
-				"value": "nodeqa@n8n.io",
+				"value": "nodeqa@aura.io",
 				"options": {
 					"mode": "set"
 				}

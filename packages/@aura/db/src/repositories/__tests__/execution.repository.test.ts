@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { Container } from '@aura/di';
-import { In, LessThan, And, Not } from '@aura/typeorm';
+import { In, LessThan, And, Not } from '@n8n/typeorm';
 
 import type { IExecutionResponse } from 'entities/types-db';
 

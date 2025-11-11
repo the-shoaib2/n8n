@@ -1,7 +1,7 @@
 import type { StoryFn } from '@storybook/vue3-vite';
 import { action } from 'storybook/actions';
 
-import type { IUser } from '@n8n/design-system/types';
+import type { IUser } from '@aura/design-system/types';
 
 import N8nUsersList from './UsersList.vue';
 
@@ -47,7 +47,7 @@ UsersList.args = {
 			firstName: 'Sunny',
 			lastName: 'Side',
 			fullName: 'Sunny Side',
-			email: 'sunny@n8n.io',
+			email: 'sunny@aura.io',
 			isDefaultUser: false,
 			isPendingUser: false,
 			isOwner: true,
@@ -59,7 +59,7 @@ UsersList.args = {
 			firstName: 'Kobi',
 			lastName: 'Dog',
 			fullName: 'Kobi Dog',
-			email: 'kobi@n8n.io',
+			email: 'kobi@aura.io',
 			isDefaultUser: false,
 			isPendingUser: false,
 			isOwner: false,
@@ -68,7 +68,7 @@ UsersList.args = {
 		},
 		{
 			id: '3',
-			email: 'invited@n8n.io',
+			email: 'invited@aura.io',
 			isDefaultUser: false,
 			isPendingUser: true,
 			isOwner: false,

@@ -1,11 +1,11 @@
 import { ModuleRegistry } from '@aura/backend-common';
 import { DatabaseConfig, InstanceSettingsConfig } from '@aura/config';
 import { Service } from '@aura/di';
-import type { DataSourceOptions, LoggerOptions } from '@aura/typeorm';
-import type { MysqlConnectionOptions } from '@aura/typeorm/driver/mysql/MysqlConnectionOptions';
-import type { PostgresConnectionOptions } from '@aura/typeorm/driver/postgres/PostgresConnectionOptions';
-import type { SqliteConnectionOptions } from '@aura/typeorm/driver/sqlite/SqliteConnectionOptions';
-import type { SqlitePooledConnectionOptions } from '@aura/typeorm/driver/sqlite-pooled/SqlitePooledConnectionOptions';
+import type { DataSourceOptions, LoggerOptions } from '@n8n/typeorm';
+import type { MysqlConnectionOptions } from '@n8n/typeorm/driver/mysql/MysqlConnectionOptions';
+import type { PostgresConnectionOptions } from '@n8n/typeorm/driver/postgres/PostgresConnectionOptions';
+import type { SqliteConnectionOptions } from '@n8n/typeorm/driver/sqlite/SqliteConnectionOptions';
+import type { SqlitePooledConnectionOptions } from '@n8n/typeorm/driver/sqlite-pooled/SqlitePooledConnectionOptions';
 import { UserError } from 'aura-workflow';
 import type { TlsOptions } from 'node:tls';
 import path from 'path';

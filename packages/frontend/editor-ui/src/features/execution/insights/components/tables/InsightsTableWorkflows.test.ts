@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import { useEmitters } from '@/__tests__/utils';
 import InsightsTableWorkflows from '@/features/execution/insights/components/tables/InsightsTableWorkflows.vue';
-import type { InsightsByWorkflow } from '@n8n/api-types';
+import type { InsightsByWorkflow } from '@aura/api-types';
 
 const { emitters, addEmitter } = useEmitters<'n8nDataTableServer'>();
 
@@ -17,7 +17,7 @@ vi.mock('@/app/composables/useTelemetry', () => ({
 	useTelemetry: () => mockTelemetry,
 }));
 
-vi.mock('@n8n/design-system', async (importOriginal) => {
+vi.mock('@aura/design-system', async (importOriginal) => {
 	const original = await importOriginal<object>();
 	return {
 		...original,

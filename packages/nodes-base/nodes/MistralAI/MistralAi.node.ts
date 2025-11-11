@@ -6,8 +6,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 import { document } from './descriptions';
 import { encodeBinaryData, mistralApiRequest, processResponseData } from './GenericFunctions';

@@ -3,20 +3,20 @@ import { ref, computed, onMounted } from 'vue';
 import snakeCase from 'lodash/snakeCase';
 import { useSessionStorage } from '@vueuse/core';
 
-import { N8nButton, N8nCircleLoader, N8nIcon, N8nInput, N8nTooltip } from '@n8n/design-system';
-import { randomInt } from 'n8n-workflow';
-import type { CodeExecutionMode, INodeExecutionData } from 'n8n-workflow';
+import { N8nButton, N8nCircleLoader, N8nIcon, N8nInput, N8nTooltip } from '@aura/design-system';
+import { randomInt } from 'aura-workflow';
+import type { CodeExecutionMode, INodeExecutionData } from 'aura-workflow';
 
-import type { BaseTextKey } from '@n8n/i18n';
+import type { BaseTextKey } from '@aura/i18n';
 import type { INodeUi, Schema } from '@/Interface';
 import { generateCodeForPrompt } from '@/features/ai/assistant/assistant.api';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useDataSchema } from '@/app/composables/useDataSchema';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useMessage } from '@/app/composables/useMessage';
 import { useToast } from '@/app/composables/useToast';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { executionDataToJson } from '@/app/utils/nodeTypesUtils';
 import {

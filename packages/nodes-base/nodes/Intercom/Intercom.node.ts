@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import { companyFields, companyOperations } from './CompanyDescription';
 import type { ICompany } from './CompanyInteface';

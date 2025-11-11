@@ -1,6 +1,6 @@
 import { Service } from '@aura/di';
-import type { EntityManager, FindManyOptions } from '@aura/typeorm';
-import { DataSource, In, Repository } from '@aura/typeorm';
+import type { EntityManager, FindManyOptions } from '@n8n/typeorm';
+import { DataSource, In, Repository } from '@n8n/typeorm';
 import { UnexpectedError, type IDataObject } from 'aura-workflow';
 
 import { TestRun } from '../entities';

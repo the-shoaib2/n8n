@@ -1,6 +1,6 @@
 import set from 'lodash/set';
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import * as alert from './alert';
 import type { SplunkType } from './node.type';

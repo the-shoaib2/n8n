@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import { MICROSOFT_DRIVE_FILE_URL_REGEX, MICROSOFT_DRIVE_FOLDER_URL_REGEX } from './constants';
 

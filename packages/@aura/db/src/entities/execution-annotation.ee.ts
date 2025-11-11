@@ -9,7 +9,7 @@ import {
 	OneToOne,
 	PrimaryGeneratedColumn,
 	RelationId,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import type { AnnotationVote } from 'aura-workflow';
 
 import type { AnnotationTagEntity } from './annotation-tag-entity.ee';

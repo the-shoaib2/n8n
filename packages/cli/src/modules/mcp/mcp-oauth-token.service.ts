@@ -4,7 +4,7 @@ import { Logger } from '@aura/backend-common';
 import { Time } from '@aura/constants';
 import { User, UserRepository, withTransaction } from '@aura/db';
 import { Service } from '@aura/di';
-import { MoreThanOrEqual } from '@aura/typeorm';
+import { MoreThanOrEqual } from '@n8n/typeorm';
 import { randomBytes, randomUUID } from 'node:crypto';
 
 import { JwtService } from '@/services/jwt.service';

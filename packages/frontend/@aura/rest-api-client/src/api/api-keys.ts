@@ -3,8 +3,8 @@ import type {
 	UpdateApiKeyRequestDto,
 	ApiKey,
 	ApiKeyWithRawValue,
-} from '@n8n/api-types';
-import type { ApiKeyScope } from '@n8n/permissions';
+} from '@aura/api-types';
+import type { ApiKeyScope } from '@aura/permissions';
 
 import type { IRestApiContext } from '../types';
 import { makeRestApiRequest } from '../utils';

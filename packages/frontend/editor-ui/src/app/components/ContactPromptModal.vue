@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-import type { N8nPromptResponse } from '@n8n/rest-api-client/api/prompts';
+import type { N8nPromptResponse } from '@aura/rest-api-client/api/prompts';
 import type { ModalKey } from '@/Interface';
 import { VALID_EMAIL_REGEX } from '@/app/constants';
 import Modal from '@/app/components/Modal.vue';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import { createEventBus } from '@n8n/utils/event-bus';
+import { createEventBus } from '@aura/utils/event-bus';
 import { useToast } from '@/app/composables/useToast';
 import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 
-import { N8nButton, N8nHeading, N8nInput, N8nText } from '@n8n/design-system';
+import { N8nButton, N8nHeading, N8nInput, N8nText } from '@aura/design-system';
 defineProps<{
 	modalName: ModalKey;
 }>();

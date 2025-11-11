@@ -1,6 +1,6 @@
 import { Service } from '@aura/di';
-import { DataSource, In, Repository, Like } from '@aura/typeorm';
-import type { FindManyOptions } from '@aura/typeorm';
+import { DataSource, In, Repository, Like } from '@n8n/typeorm';
+import type { FindManyOptions } from '@n8n/typeorm';
 
 import { CredentialsEntity } from '../entities';
 import type { User } from '../entities';

@@ -7,7 +7,7 @@ import type {
 	IOAuth2Options,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export async function shopifyApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

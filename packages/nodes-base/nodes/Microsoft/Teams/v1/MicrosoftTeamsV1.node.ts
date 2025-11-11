@@ -8,7 +8,7 @@ import {
 	type INodeTypeDescription,
 	type INodeTypeBaseDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { channelFields, channelOperations } from './ChannelDescription';
 import { channelMessageFields, channelMessageOperations } from './ChannelMessageDescription';

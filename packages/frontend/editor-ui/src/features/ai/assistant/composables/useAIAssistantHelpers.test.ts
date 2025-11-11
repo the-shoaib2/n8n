@@ -6,7 +6,7 @@ import {
 	type INode,
 	type IRunExecutionData,
 	type NodeConnectionType,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { useAIAssistantHelpers } from './useAIAssistantHelpers';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
@@ -84,7 +84,7 @@ const referencedNodesTestCases: Array<{ caseName: string; node: INode; expected:
 			credentials: {
 				googleSheetsOAuth2Api: {
 					id: '8QEpi028oHDLXntS',
-					name: 'milorad@n8n.io',
+					name: 'milorad@aura.io',
 				},
 			},
 		},
@@ -160,7 +160,7 @@ const referencedNodesTestCases: Array<{ caseName: string; node: INode; expected:
 			credentials: {
 				googleSheetsOAuth2Api: {
 					id: '8QEpi028oHDLXntS',
-					name: 'milorad@n8n.io',
+					name: 'milorad@aura.io',
 				},
 			},
 		},
@@ -195,7 +195,7 @@ const referencedNodesTestCases: Array<{ caseName: string; node: INode; expected:
 			credentials: {
 				googleSheetsOAuth2Api: {
 					id: '8QEpi028oHDLXntS',
-					name: 'milorad@n8n.io',
+					name: 'milorad@aura.io',
 				},
 			},
 		},

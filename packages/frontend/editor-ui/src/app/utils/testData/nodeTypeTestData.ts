@@ -1,4 +1,4 @@
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
 import { mock } from 'vitest-mock-extended';
 
 export const nodeTypeTwitter = mock<INodeTypeDescription>({

@@ -4,9 +4,9 @@ import { Service } from '@aura/di';
 import { hasGlobalScope } from '@aura/permissions';
 import type { CredentialSharingRole, ProjectRole, Scope } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager, FindOptionsWhere } from '@aura/typeorm';
+import type { EntityManager, FindOptionsWhere } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 
 import { RoleService } from '@/services/role.service';
 

@@ -1,4 +1,4 @@
-import { parserWithMetaData as n8nParser } from '@n8n/codemirror-lang';
+import { parserWithMetaData as n8nParser } from '@aura/codemirror-lang';
 import { LanguageSupport, LRLanguage } from '@codemirror/language';
 import { parseMixed, type SyntaxNodeRef } from '@lezer/common';
 import { javascriptLanguage } from '@codemirror/lang-javascript';

@@ -10,7 +10,7 @@ import {
 	ObjectLiteral,
 	EntityManager,
 	DeleteQueryBuilder,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import {
 	DataTableColumnJsType,
 	DataTableRows,

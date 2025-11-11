@@ -13,7 +13,7 @@ import {
 import { Service } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { rmSync } from 'fs';
 import { Credentials, InstanceSettings } from 'aura-core';
 import { UnexpectedError, type ICredentialDataDecryptedObject } from 'aura-workflow';

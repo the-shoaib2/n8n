@@ -1,10 +1,10 @@
 import { createPinia, setActivePinia } from 'pinia';
 import { useVersionsStore } from './versions.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import * as versionsApi from '@n8n/rest-api-client/api/versions';
-import type { IVersionNotificationSettings } from '@n8n/api-types';
-import type { Version, WhatsNewArticle, WhatsNewSection } from '@n8n/rest-api-client/api/versions';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import * as versionsApi from '@aura/rest-api-client/api/versions';
+import type { IVersionNotificationSettings } from '@aura/api-types';
+import type { Version, WhatsNewArticle, WhatsNewSection } from '@aura/rest-api-client/api/versions';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useSettingsStore } from './settings.store';
 import { useToast } from '@/app/composables/useToast';
 import { reactive } from 'vue';

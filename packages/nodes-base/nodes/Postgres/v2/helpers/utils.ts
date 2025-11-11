@@ -5,8 +5,8 @@ import type {
 	INodeExecutionData,
 	INodePropertyOptions,
 	NodeParameterValueType,
-} from 'n8n-workflow';
-import { NodeOperationError, jsonParse } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError, jsonParse } from 'aura-workflow';
 
 import type {
 	ColumnInfo,

@@ -1,8 +1,8 @@
-import type { Project, User, ProjectRelation } from '@n8n/db';
-import { ProjectRelationRepository, ProjectRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { AssignableProjectRole } from '@n8n/permissions';
-import { PROJECT_OWNER_ROLE_SLUG } from '@n8n/permissions';
+import type { Project, User, ProjectRelation } from '@aura/db';
+import { ProjectRelationRepository, ProjectRepository } from '@aura/db';
+import { Container } from '@aura/di';
+import type { AssignableProjectRole } from '@aura/permissions';
+import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 
 import { randomName } from '../random';
 

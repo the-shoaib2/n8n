@@ -5,8 +5,8 @@ import type {
 	IHttpRequestOptions,
 	INode,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, OperationalError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError, OperationalError } from 'aura-workflow';
 
 const azureCosmosDbApiRequest = jest.fn();
 jest.mock('../../transport', () => ({ azureCosmosDbApiRequest }));

@@ -2,7 +2,7 @@ import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import type { Request, Response } from 'express';
 import fs from 'fs/promises';
 import { mock } from 'jest-mock-extended';
-import type { IWebhookFunctions } from 'n8n-workflow';
+import type { IWebhookFunctions } from 'aura-workflow';
 
 import { Webhook } from '../Webhook.node';
 

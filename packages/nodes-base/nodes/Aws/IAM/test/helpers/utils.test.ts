@@ -1,5 +1,5 @@
-import type { IHttpRequestOptions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IHttpRequestOptions } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import {
 	preprocessTags,

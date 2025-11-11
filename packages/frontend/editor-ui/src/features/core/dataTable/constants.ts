@@ -1,4 +1,4 @@
-import { DATA_TABLE_COLUMN_REGEX } from '@n8n/api-types';
+import { DATA_TABLE_COLUMN_REGEX } from '@aura/api-types';
 
 // Route and view identifiers
 export const DATA_TABLE_VIEW = 'data-tables';

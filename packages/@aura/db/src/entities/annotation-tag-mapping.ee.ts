@@ -1,4 +1,4 @@
-import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from '@aura/typeorm';
+import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from '@n8n/typeorm';
 
 import type { AnnotationTagEntity } from './annotation-tag-entity.ee';
 import type { ExecutionAnnotation } from './execution-annotation.ee';

@@ -41,13 +41,13 @@ test.describe('Data transformation expressions', () => {
 		await n8n.workflows.addResource.workflow();
 
 		await n8n.canvas.addNode('Schedule Trigger');
-		await n8n.ndv.setPinnedData([{ myStr: 'hello@n8n.io is an email' }]);
+		await n8n.ndv.setPinnedData([{ myStr: 'hello@aura.io is an email' }]);
 		await n8n.ndv.close();
 
 		await addEditFields(n8n);
 
 		const input = '{{$json.myStr.extractEmail() + " " + $json.myStr.isEmpty()}}';
-		const output = 'hello@n8n.io false';
+		const output = 'hello@aura.io false';
 
 		await n8n.ndv.clearExpressionEditor();
 		await n8n.ndv.typeInExpressionEditor(input);
@@ -83,13 +83,13 @@ test.describe('Data transformation expressions', () => {
 		await n8n.workflows.addResource.workflow();
 
 		await n8n.canvas.addNode('Schedule Trigger');
-		await n8n.ndv.setPinnedData([{ myStr: 'hello@n8n.io is an email' }]);
+		await n8n.ndv.setPinnedData([{ myStr: 'hello@aura.io is an email' }]);
 		await n8n.ndv.close();
 
 		await addEditFields(n8n);
 
 		const input = '{{$json.myStr.extractEmail() + " " + $json.myStr.isEmpty()}}';
-		const output = 'hello@n8n.io false';
+		const output = 'hello@aura.io false';
 
 		await n8n.ndv.clearExpressionEditor();
 		await n8n.ndv.typeInExpressionEditor(input);

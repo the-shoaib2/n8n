@@ -5,7 +5,7 @@ import { ModuleMetadata } from './module-metadata';
 
 /**
  * Structurally similar (not identical) interface to typeorm's `BaseEntity`
- * to prevent importing `@aura/typeorm` into `@aura/decorators`.
+ * to prevent importing `@n8n/typeorm` into `@aura/decorators`.
  */
 export interface BaseEntity {
 	hasId(): boolean;

@@ -6,7 +6,7 @@ import {
 	PLACEHOLDER_FILLED_AT_EXECUTION_TIME,
 } from '@/app/constants';
 
-import { NodeHelpers, NodeConnectionTypes } from 'n8n-workflow';
+import { NodeHelpers, NodeConnectionTypes } from 'aura-workflow';
 import type {
 	INodeProperties,
 	INodeCredentialDescription,
@@ -30,7 +30,7 @@ import type {
 	IRunExecutionData,
 	NodeHint,
 	INodeCredentials,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
 import type { AddedNode, INodeUi, INodeUpdatePropertiesInformation } from '@/Interface';
@@ -41,7 +41,7 @@ import { isObject } from '@/app/utils/objectUtils';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useCredentialsStore } from '@/features/credentials/credentials.store';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { EnableNodeToggleCommand } from '@/app/models/history';
 import { useTelemetry } from './useTelemetry';
 import { hasPermission } from '@/app/utils/rbac/permissions';

@@ -4,7 +4,7 @@ import {
 	type INodeExecutionData,
 	type INodeType,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { googleApiRequest } from './GenericFunctions';
 import type { IData } from './Interface';

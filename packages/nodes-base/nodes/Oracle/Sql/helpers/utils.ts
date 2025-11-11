@@ -6,8 +6,8 @@ import type {
 	INode,
 	IPairedItemData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeOperationError, UserError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError, UserError } from 'aura-workflow';
 import oracledb from 'oracledb';
 
 import { generatePairedItemData, wrapData } from '@utils/utilities';

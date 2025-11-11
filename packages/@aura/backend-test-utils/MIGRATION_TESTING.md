@@ -32,9 +32,9 @@ Undoes the last single migration.
 ## Usage Example
 
 ```typescript
-import { Container } from '@n8n/di';
-import { DataSource } from '@aura/typeorm';
-import { initDbUpToMigration, runSingleMigration } from '@n8n/backend-test-utils';
+import { Container } from '@aura/di';
+import { DataSource } from '@n8n/typeorm';
+import { initDbUpToMigration, runSingleMigration } from '@aura/backend-test-utils';
 
 describe('AddUserRole1234567890 Migration', () => {
   let dataSource: DataSource;

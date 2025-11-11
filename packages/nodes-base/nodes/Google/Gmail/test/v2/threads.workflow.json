@@ -171,8 +171,8 @@
 							}
 						]
 					},
-					"bccList": "test-bcc@n8n.io",
-					"ccList": "test-cc@n8n.io",
+					"bccList": "test-bcc@aura.io",
+					"ccList": "test-cc@aura.io",
 					"senderName": "Test Sender Name",
 					"replyToSenderOnly": true
 				}

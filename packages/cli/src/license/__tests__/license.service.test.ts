@@ -1,6 +1,6 @@
 import type { LicenseState } from '@aura/backend-common';
 import type { WorkflowRepository } from '@aura/db';
-import type { TEntitlement } from '@aura_io/license-sdk';
+import type { TEntitlement } from '@n8n_io/license-sdk';
 import axios, { AxiosError } from 'axios';
 import { mock } from 'jest-mock-extended';
 

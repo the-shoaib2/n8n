@@ -1,8 +1,8 @@
 import type { UsersListFilterDto } from '@aura/api-types';
 import { Service } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
-import type { DeepPartial, EntityManager, SelectQueryBuilder } from '@aura/typeorm';
-import { Brackets, DataSource, In, IsNull, Not, Repository } from '@aura/typeorm';
+import type { DeepPartial, EntityManager, SelectQueryBuilder } from '@n8n/typeorm';
+import { Brackets, DataSource, In, IsNull, Not, Repository } from '@n8n/typeorm';
 
 import { ApiKey, Project, ProjectRelation, User } from '../entities';
 

@@ -27,7 +27,7 @@ import {
 } from '@aura/decorators';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { deepCopy } from 'aura-workflow';
 import type { ICredentialDataDecryptedObject } from 'aura-workflow';
 import { z } from 'zod';

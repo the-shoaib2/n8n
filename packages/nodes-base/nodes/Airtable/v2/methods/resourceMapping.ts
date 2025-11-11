@@ -5,8 +5,8 @@ import type {
 	INodePropertyOptions,
 	ResourceMapperField,
 	ResourceMapperFields,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { apiRequest } from '../transport';
 

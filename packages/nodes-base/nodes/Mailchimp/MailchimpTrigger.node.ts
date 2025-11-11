@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	IWebhookResponseData,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 import { mailchimpApiRequest } from './GenericFunctions';
 

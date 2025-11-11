@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import type { WorkflowListItem, UserAction } from '@/Interface';
-import { type TableHeader } from '@n8n/design-system/components/N8nDataTableServer';
+import { type TableHeader } from '@aura/design-system/components/N8nDataTableServer';
 import {
 	N8nActionBox,
 	N8nActionToggle,
@@ -14,11 +14,11 @@ import {
 	N8nLoading,
 	N8nText,
 	N8nTooltip,
-} from '@n8n/design-system';
+} from '@aura/design-system';
 import ProjectIcon from '@/features/collaboration/projects/components/ProjectIcon.vue';
 import { VIEWS } from '@/app/constants';
 import router from '@/app/router';
-import { isIconOrEmoji, type IconOrEmoji } from '@n8n/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@aura/design-system/components/N8nIconPicker/types';
 
 type Props = {
 	workflows: WorkflowListItem[];

@@ -4,9 +4,9 @@ import { EventDestinationsRepository, ExecutionRepository, WorkflowRepository } 
 import { OnPubSubEvent } from '@aura/decorators';
 import { Service } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { DeleteResult } from '@aura/typeorm';
+import type { DeleteResult } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import EventEmitter from 'events';
 import uniqby from 'lodash/uniqBy';
 import type { MessageEventBusDestinationOptions } from 'aura-workflow';

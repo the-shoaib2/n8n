@@ -4,9 +4,9 @@ import { wrapMigration, DbConnectionOptions } from '@aura/db';
 import { Command } from '@aura/decorators';
 import { Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { DataSourceOptions as ConnectionOptions } from '@aura/typeorm';
+import type { DataSourceOptions as ConnectionOptions } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { MigrationExecutor, DataSource as Connection } from '@aura/typeorm';
+import { MigrationExecutor, DataSource as Connection } from '@n8n/typeorm';
 
 // This function is extracted to make it easier to unit test it.
 // Mocking turned into a mess due to this command using typeorm and the db

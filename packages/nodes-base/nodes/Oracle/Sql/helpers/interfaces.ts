@@ -1,5 +1,5 @@
 import type { DateTime } from 'luxon';
-import type { IDataObject, INodeExecutionData } from 'n8n-workflow';
+import type { IDataObject, INodeExecutionData } from 'aura-workflow';
 import type * as oracleDBTypes from 'oracledb';
 
 export type QueryMode = 'single' | 'transaction' | 'independently';

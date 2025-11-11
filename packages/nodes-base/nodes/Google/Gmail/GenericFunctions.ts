@@ -13,8 +13,8 @@ import type {
 	IPollFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 import MailComposer from 'nodemailer/lib/mail-composer';
 
 import type { IEmail } from '../../../utils/sendAndWait/interfaces';

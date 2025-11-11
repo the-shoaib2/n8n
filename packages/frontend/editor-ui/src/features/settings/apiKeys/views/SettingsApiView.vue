@@ -8,16 +8,16 @@ import { useSettingsStore } from '@/app/stores/settings.store';
 import { useCloudPlanStore } from '@/app/stores/cloudPlan.store';
 import { DOCS_DOMAIN, MODAL_CONFIRM } from '@/app/constants';
 import { API_KEY_CREATE_OR_EDIT_MODAL_KEY } from '../apiKeys.constants';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useApiKeysStore } from '../apiKeys.store';
 import { storeToRefs } from 'pinia';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 
 import { ElCol, ElRow } from 'element-plus';
-import { N8nActionBox, N8nButton, N8nHeading, N8nLink, N8nText } from '@n8n/design-system';
+import { N8nActionBox, N8nButton, N8nHeading, N8nLink, N8nText } from '@aura/design-system';
 import { I18nT } from 'vue-i18n';
 import ApiKeyCard from '../components/ApiKeyCard.vue';
 

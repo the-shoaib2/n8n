@@ -5,8 +5,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 import { activityFields, activityOperations } from './ActivityDescription';
 import { memberFields, memberOperations } from './MemberDescription';

@@ -7,7 +7,7 @@ import {
 	type INodeTypeDescription,
 	type IDataObject,
 	type IGetNodeParameterOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import * as IfV2 from '../../V2/IfV2.node';
 

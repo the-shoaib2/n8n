@@ -4,14 +4,14 @@ import { renameSync, writeFileSync, readFileSync } from 'fs';
 import vue from '@vitejs/plugin-vue';
 import icons from 'unplugin-icons/vite';
 import dts from 'vite-plugin-dts';
-import { vitestConfig } from '@n8n/vitest-config/frontend';
+import { vitestConfig } from '@aura/vitest-config/frontend';
 import pkg from './package.json';
 
 const includeVue = process.env.INCLUDE_VUE === 'true';
 const srcPath = resolve(__dirname, 'src');
 const packagesDir = resolve(__dirname, '..', '..', '..');
 
-const banner = `/*! Package version @n8n/chat@${pkg.version} */`;
+const banner = `/*! Package version @aura/chat@${pkg.version} */`;
 
 // https://vitejs.dev/config/
 export default mergeConfig(
@@ -27,7 +27,7 @@ export default mergeConfig(
 				name: 'rename-css-file',
 				closeBundle() {
 					// The chat.css is automatically named based on vite.config.ts library name.
-					// ChatTrigger Node requires https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css
+					// ChatTrigger Node requires https://cdn.jsdelivr.net/npm/@aura/chat/dist/style.css
 					// As such for backwards compatibility, we need to maintain the same name file
 					const cssPath = resolve(__dirname, 'dist', 'chat.css');
 					const newCssPath = resolve(__dirname, 'dist', 'style.css');
@@ -59,16 +59,16 @@ export default mergeConfig(
 					replacement: srcPath,
 				},
 				{
-					find: '@n8n/chat',
+					find: '@aura/chat',
 					replacement: srcPath,
 				},
 				{
-					find: /^@n8n\/chat(.+)$/,
+					find: /^@aura\/chat(.+)$/,
 					replacement: srcPath + '$1',
 				},
 				{
-					find: /^@n8n\/design-system(.+)$/,
-					replacement: resolve(packagesDir, 'frontend', '@n8n', 'design-system', 'src$1'),
+					find: /^@aura\/design-system(.+)$/,
+					replacement: resolve(packagesDir, 'frontend', '@aura', 'design-system', 'src$1'),
 				},
 			],
 		},

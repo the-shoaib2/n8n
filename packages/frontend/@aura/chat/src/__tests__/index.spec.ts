@@ -16,8 +16,8 @@ import {
 	getChatWrapper,
 	getGetStartedButton,
 	getMountingTarget,
-} from '@n8n/chat/__tests__/utils';
-import { createChat } from '@n8n/chat/index';
+} from '@aura/chat/__tests__/utils';
+import { createChat } from '@aura/chat/index';
 
 describe('createChat()', () => {
 	let app: ReturnType<typeof createChat>;

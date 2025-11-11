@@ -10,8 +10,8 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 function getOptions(
 	this: IExecuteFunctions | ILoadOptionsFunctions | IPollFunctions,

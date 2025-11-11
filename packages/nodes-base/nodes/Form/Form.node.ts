@@ -6,7 +6,7 @@ import type {
 	INodeTypeDescription,
 	IWebhookFunctions,
 	IWebhookResponseData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	Node,
 	updateDisplayOptions,
@@ -15,7 +15,7 @@ import {
 	FORM_TRIGGER_NODE_TYPE,
 	tryToParseJsonToFormFields,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { cssVariables } from './cssVariables';
 import { renderFormCompletion } from './utils/formCompletionUtils';

@@ -27,7 +27,7 @@ import {
 } from '@aura/decorators';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In, type FindOptionsRelations } from '@aura/typeorm';
+import { In, type FindOptionsRelations } from '@n8n/typeorm';
 import axios from 'axios';
 import express from 'express';
 import { UnexpectedError } from 'aura-workflow';

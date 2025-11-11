@@ -1,4 +1,4 @@
-import { updateDisplayOptions, type INodeProperties } from 'n8n-workflow';
+import { updateDisplayOptions, type INodeProperties } from 'aura-workflow';
 
 import { itemColumnsPreSend } from '../../helpers/utils';
 import { listRLC, siteRLC, untilListSelected, untilSiteSelected } from '../common.descriptions';

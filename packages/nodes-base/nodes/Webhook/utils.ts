@@ -1,12 +1,12 @@
 import basicAuth from 'basic-auth';
 import jwt from 'jsonwebtoken';
-import { WorkflowConfigurationError } from 'n8n-workflow';
+import { WorkflowConfigurationError } from 'aura-workflow';
 import type {
 	IWebhookFunctions,
 	INodeExecutionData,
 	IDataObject,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { WebhookAuthorizationError } from './error';
 import { formatPrivateKey } from '../../utils/utilities';

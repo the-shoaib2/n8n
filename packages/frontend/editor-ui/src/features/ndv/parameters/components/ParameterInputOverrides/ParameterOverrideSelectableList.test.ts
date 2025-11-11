@@ -3,7 +3,7 @@ import { createComponentRenderer } from '@/__tests__/render';
 import ParameterOverrideSelectableList from './ParameterOverrideSelectableList.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { ref } from 'vue';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { waitFor } from '@testing-library/vue';
 import type { FromAIOverride } from '../../utils/fromAIOverride.utils';
 

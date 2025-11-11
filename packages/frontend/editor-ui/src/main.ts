@@ -7,8 +7,8 @@ import '@vue-flow/minimap/dist/style.css';
 import '@vue-flow/node-resizer/dist/style.css';
 
 import 'vue-json-pretty/lib/styles.css';
-import '@n8n/design-system/css/index.scss';
-// import '@n8n/design-system/css/tailwind/index.css';
+import '@aura/design-system/css/index.scss';
+// import '@aura/design-system/css/tailwind/index.css';
 
 import '@/main.scss';
 // Ensure i18n HMR owner is evaluated as early as possible in dev
@@ -17,7 +17,7 @@ import '@/app/dev/i18nHmr';
 import App from '@/app/App.vue';
 import router from '@/app/router';
 
-import { i18nInstance } from '@n8n/i18n';
+import { i18nInstance } from '@aura/i18n';
 
 import { TelemetryPlugin } from '@/app/plugins/telemetry';
 import { GlobalComponentsPlugin } from '@/app/plugins/components';

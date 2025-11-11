@@ -6,7 +6,7 @@ import {
 	type IExecuteFunctions,
 	type INodeTypes,
 	type NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { GoogleSheet } from '../../Google/Sheet/v2/helpers/GoogleSheet';
 import { Evaluation } from '../Evaluation/Evaluation.node.ee';

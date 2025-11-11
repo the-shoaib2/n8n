@@ -9,8 +9,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { BINARY_ENCODING, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type { Readable } from 'stream';
 
 import {

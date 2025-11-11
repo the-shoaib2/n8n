@@ -1,6 +1,6 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode, ILoadOptionsFunctions } from 'n8n-workflow';
-import { jsonParse } from 'n8n-workflow';
+import type { IExecuteFunctions, INode, ILoadOptionsFunctions } from 'aura-workflow';
+import { jsonParse } from 'aura-workflow';
 
 import * as GenericFunctions from '../GenericFunctions';
 import { Salesforce } from '../Salesforce.node';

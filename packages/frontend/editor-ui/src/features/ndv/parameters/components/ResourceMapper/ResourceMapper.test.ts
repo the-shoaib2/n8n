@@ -10,7 +10,7 @@ import userEvent from '@testing-library/user-event';
 import { createComponentRenderer } from '@/__tests__/render';
 import type { MockInstance } from 'vitest';
 import { useProjectsStore } from '@/features/collaboration/projects/projects.store';
-import type { ResourceMapperTypeOptions } from 'n8n-workflow';
+import type { ResourceMapperTypeOptions } from 'aura-workflow';
 import { createTestNode, createTestNodeProperties } from '@/__tests__/mocks';
 import { createTestingPinia } from '@pinia/testing';
 import {

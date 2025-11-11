@@ -4,7 +4,7 @@ import type {
 	ILoadOptionsFunctions,
 	IDataObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { lemlistApiRequest, lemlistApiRequestAllItems, getEvents } from '../GenericFunctions';
 

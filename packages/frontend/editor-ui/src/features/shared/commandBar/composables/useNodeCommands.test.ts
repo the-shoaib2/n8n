@@ -6,8 +6,8 @@ import { useSourceControlStore } from '@/features/integrations/sourceControl.ee/
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
-import type { INodeTypeDescription } from 'n8n-workflow';
-import { getResourcePermissions } from '@n8n/permissions';
+import type { INodeTypeDescription } from 'aura-workflow';
+import { getResourcePermissions } from '@aura/permissions';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 import { canvasEventBus } from '@/features/workflows/canvas/canvas.eventBus';
 
@@ -44,11 +44,11 @@ vi.mock('@/features/shared/nodeCreator/composables/useActionsGeneration', () => 
 	}),
 }));
 
-vi.mock('@n8n/permissions', () => ({
+vi.mock('@aura/permissions', () => ({
 	getResourcePermissions: vi.fn(),
 }));
 
-vi.mock('@n8n/i18n', async (importOriginal) => ({
+vi.mock('@aura/i18n', async (importOriginal) => ({
 	...(await importOriginal()),
 	useI18n: () => ({
 		baseText: (key: string) => key,

@@ -1,6 +1,6 @@
 import { Service } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG, type ProjectRole } from '@aura/permissions';
-import { DataSource, In, Repository } from '@aura/typeorm';
+import { DataSource, In, Repository } from '@n8n/typeorm';
 
 import { ProjectRelation } from '../entities';
 

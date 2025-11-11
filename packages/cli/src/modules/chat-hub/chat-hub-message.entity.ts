@@ -8,7 +8,7 @@ import {
 	OneToMany,
 	type Relation,
 	PrimaryGeneratedColumn,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 
 import type { ChatHubSession } from './chat-hub-session.entity';
 

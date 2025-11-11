@@ -1,6 +1,6 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import type { INodeUi } from '@/Interface';
-import type { WorkflowDataCreate } from '@n8n/rest-api-client/api/workflows';
+import type { WorkflowDataCreate } from '@aura/rest-api-client/api/workflows';
 
 export const DUMMY_PIN_DATA = [
 	{

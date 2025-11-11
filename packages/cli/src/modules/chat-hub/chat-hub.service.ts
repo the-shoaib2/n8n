@@ -20,7 +20,7 @@ import {
 import { Logger } from '@aura/backend-common';
 import { ExecutionRepository, IExecutionResponse, User, WorkflowRepository } from '@aura/db';
 import { Service } from '@aura/di';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import type { Response } from 'express';
 import {
 	CHAT_TRIGGER_NODE_TYPE,

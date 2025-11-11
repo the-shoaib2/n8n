@@ -1,5 +1,5 @@
 import type { ApiKeyScope } from '@aura/permissions';
-import { Column, Entity, Index, ManyToOne, Unique } from '@aura/typeorm';
+import { Column, Entity, Index, ManyToOne, Unique } from '@n8n/typeorm';
 import { ApiKeyAudience } from 'aura-workflow';
 
 import { JsonColumn, WithTimestampsAndStringId } from './abstract-entity';

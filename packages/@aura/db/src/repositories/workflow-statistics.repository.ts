@@ -1,7 +1,7 @@
 import { GlobalConfig } from '@aura/config';
 import { Service } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
-import { DataSource, MoreThanOrEqual, QueryFailedError, Repository } from '@aura/typeorm';
+import { DataSource, MoreThanOrEqual, QueryFailedError, Repository } from '@n8n/typeorm';
 
 import { WorkflowStatistics } from '../entities';
 import type { User } from '../entities';

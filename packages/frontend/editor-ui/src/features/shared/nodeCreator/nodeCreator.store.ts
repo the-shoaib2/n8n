@@ -8,7 +8,7 @@ import {
 	REGULAR_NODE_CREATOR_VIEW,
 	TRIGGER_NODE_CREATOR_VIEW,
 } from '@/app/constants';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import type {
 	NodeFilterType,
 	NodeCreatorOpenSource,
@@ -25,8 +25,8 @@ import type {
 	INodeInputConfiguration,
 	NodeConnectionType,
 	Workflow,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers, isCommunityPackageName } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeHelpers, isCommunityPackageName } from 'aura-workflow';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';

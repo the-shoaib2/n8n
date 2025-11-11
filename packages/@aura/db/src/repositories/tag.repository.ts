@@ -1,6 +1,6 @@
 import { Service } from '@aura/di';
-import type { EntityManager } from '@aura/typeorm';
-import { DataSource, In, Repository } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
+import { DataSource, In, Repository } from '@n8n/typeorm';
 import intersection from 'lodash/intersection';
 
 import { TagEntity } from '../entities';

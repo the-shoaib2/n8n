@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import CredentialIcon from '@/features/credentials/components/CredentialIcon.vue';
-import { type ChatModelDto, PROVIDER_CREDENTIAL_TYPE_MAP } from '@n8n/api-types';
-import { N8nAvatar, N8nIcon, N8nTooltip } from '@n8n/design-system';
+import { type ChatModelDto, PROVIDER_CREDENTIAL_TYPE_MAP } from '@aura/api-types';
+import { N8nAvatar, N8nIcon, N8nTooltip } from '@aura/design-system';
 
 defineProps<{
 	agent: ChatModelDto | null;

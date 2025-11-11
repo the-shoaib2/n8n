@@ -1,4 +1,4 @@
-import type { INodeProperties, INodePropertyOptions } from 'n8n-workflow';
+import type { INodeProperties, INodePropertyOptions } from 'aura-workflow';
 
 export const resource = {
 	name: 'Asset',

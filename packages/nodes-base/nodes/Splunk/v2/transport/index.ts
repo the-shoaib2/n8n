@@ -6,8 +6,8 @@ import type {
 	IHttpRequestMethods,
 	IHttpRequestOptions,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError, sleep } from 'aura-workflow';
 
 import type { SplunkCredentials, SplunkError } from '../helpers/interfaces';
 import { extractErrorDescription, formatEntry, parseXml } from '../helpers/utils';

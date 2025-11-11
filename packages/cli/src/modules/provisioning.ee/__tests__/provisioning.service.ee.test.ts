@@ -17,7 +17,7 @@ import { PROVISIONING_PREFERENCES_DB_KEY } from '../constants';
 import { type ProvisioningConfigDto } from '@aura/api-types';
 import { type Publisher } from '@/scaling/pubsub/publisher.service';
 import { type ProjectService } from '@/services/project.service.ee';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import { type InstanceSettings } from 'aura-core';
 
 const globalConfig = mock<GlobalConfig>();

@@ -11,8 +11,8 @@ import type {
 	INodeExecutionData,
 	INodeParameters,
 	IPairedItemData,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeConnectionTypes, NodeHelpers } from 'aura-workflow';
 
 import { fuzzyCompare, preparePairedItemDataArray } from '@utils/utilities';
 

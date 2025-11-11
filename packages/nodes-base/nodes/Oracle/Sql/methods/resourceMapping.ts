@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, ResourceMapperFields, FieldType } from 'n8n-workflow';
+import type { ILoadOptionsFunctions, ResourceMapperFields, FieldType } from 'aura-workflow';
 
 import type { OracleDBNodeCredentials } from '../helpers/interfaces';
 import { getColumnMetaData, mapDbType } from '../helpers/utils';

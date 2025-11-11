@@ -18,7 +18,7 @@ import {
 } from '@aura/db';
 import { Service } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In, type EntityManager } from '@aura/typeorm';
+import { In, type EntityManager } from '@n8n/typeorm';
 import omit from 'lodash/omit';
 import type { IWorkflowBase, WorkflowId } from 'aura-workflow';
 import { NodeOperationError, PROJECT_ROOT, UserError, WorkflowActivationError } from 'aura-workflow';

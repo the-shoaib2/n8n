@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const userDescription: INodeProperties[] = [
 	// ----------------------------------
@@ -414,7 +414,7 @@ export const userDescription: INodeProperties[] = [
 				name: 'email',
 				type: 'string',
 				default: '',
-				placeholder: 'hello@n8n.io',
+				placeholder: 'hello@aura.io',
 			},
 			{
 				displayName: 'Fax',

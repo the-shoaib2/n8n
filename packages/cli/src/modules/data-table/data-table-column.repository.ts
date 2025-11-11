@@ -1,7 +1,7 @@
 import { DataTableCreateColumnSchema } from '@aura/api-types';
 import { withTransaction } from '@aura/db';
 import { Service } from '@aura/di';
-import { DataSource, EntityManager, Repository } from '@aura/typeorm';
+import { DataSource, EntityManager, Repository } from '@n8n/typeorm';
 import {
 	DATA_TABLE_SYSTEM_COLUMNS,
 	DATA_TABLE_SYSTEM_TESTING_COLUMN,

@@ -5,8 +5,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IPollFunctions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import {
 	encodeURIComponentOnce,

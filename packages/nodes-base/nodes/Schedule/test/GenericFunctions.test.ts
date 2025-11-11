@@ -1,4 +1,4 @@
-import * as n8nWorkflow from 'n8n-workflow';
+import * as n8nWorkflow from 'aura-workflow';
 
 import { intervalToRecurrence, recurrenceCheck, toCronExpression } from '../GenericFunctions';
 import type { IRecurrenceRule } from '../SchedulerInterface';

@@ -1,6 +1,6 @@
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+import type { ILoadOptionsFunctions } from 'aura-workflow';
 
 import { MicrosoftSharePoint } from '../../MicrosoftSharePoint.node';
 import { credentials } from '../credentials';

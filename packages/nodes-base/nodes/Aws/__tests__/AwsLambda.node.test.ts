@@ -1,6 +1,6 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, ILoadOptionsFunctions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+import type { IExecuteFunctions, ILoadOptionsFunctions } from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { AwsLambda } from '../AwsLambda.node';
 import * as GenericFunctions from '../GenericFunctions';

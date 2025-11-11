@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+import type { ILoadOptionsFunctions } from 'aura-workflow';
 
 import { getContacts } from '../GenericFunctions';
 

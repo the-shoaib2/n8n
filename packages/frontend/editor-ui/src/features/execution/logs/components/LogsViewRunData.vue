@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import RunData from '@/features/ndv/runData/components/RunData.vue';
 import { type LogEntry } from '@/features/execution/logs/logs.types';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import type { IRunDataDisplayMode } from '@/Interface';
 import type { NodePanelType } from '@/features/ndv/shared/ndv.types';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
@@ -14,7 +14,7 @@ import RunDataItemCount from '@/features/ndv/runData/components/RunDataItemCount
 import { type SearchShortcut } from '@/features/workflows/canvas/canvas.types';
 import NDVEmptyState from '@/features/ndv/panel/components/NDVEmptyState.vue';
 
-import { N8nLink, N8nText } from '@n8n/design-system';
+import { N8nLink, N8nText } from '@aura/design-system';
 const { title, logEntry, paneType, collapsingTableColumnName } = defineProps<{
 	title: string;
 	paneType: NodePanelType;

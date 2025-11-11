@@ -1,5 +1,5 @@
-import type { QueryRunner } from '@aura/typeorm';
-import { TableIndex, TypeORMError } from '@aura/typeorm';
+import type { QueryRunner } from '@n8n/typeorm';
+import { TableIndex, TypeORMError } from '@n8n/typeorm';
 import LazyPromise from 'p-lazy';
 
 abstract class IndexOperation extends LazyPromise<void> {

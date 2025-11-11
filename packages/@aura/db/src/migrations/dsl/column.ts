@@ -1,4 +1,4 @@
-import type { Driver, TableColumnOptions } from '@aura/typeorm';
+import type { Driver, TableColumnOptions } from '@n8n/typeorm';
 
 export class Column {
 	private type:

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const fromEmailProperty: INodeProperties = {
 	displayName: 'From Email',
@@ -8,7 +8,7 @@ export const fromEmailProperty: INodeProperties = {
 	required: true,
 	placeholder: 'admin@example.com',
 	description:
-		'Email address of the sender. You can also specify a name: Nathan Doe &lt;nate@n8n.io&gt;.',
+		'Email address of the sender. You can also specify a name: Nathan Doe &lt;nate@aura.io&gt;.',
 };
 
 export const toEmailProperty: INodeProperties = {
@@ -19,5 +19,5 @@ export const toEmailProperty: INodeProperties = {
 	required: true,
 	placeholder: 'info@example.com',
 	description:
-		'Email address of the recipient. You can also specify a name: Nathan Doe &lt;nate@n8n.io&gt;.',
+		'Email address of the recipient. You can also specify a name: Nathan Doe &lt;nate@aura.io&gt;.',
 };

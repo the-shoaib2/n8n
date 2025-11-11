@@ -1,11 +1,11 @@
 import { vi, describe, it, expect } from 'vitest';
 import { createApp } from 'vue';
 
-import * as api from '@n8n/chat/api';
+import * as api from '@aura/chat/api';
 
 import { ChatPlugin } from '../../plugins/chat';
 
-vi.mock('@n8n/chat/api');
+vi.mock('@aura/chat/api');
 
 describe('ChatPlugin', () => {
 	it('should return sendMessageResponse when executionStarted is true', async () => {

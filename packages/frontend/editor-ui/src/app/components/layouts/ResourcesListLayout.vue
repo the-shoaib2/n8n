@@ -5,7 +5,7 @@ import PageViewLayout from '@/app/components/layouts/PageViewLayout.vue';
 import PageViewLayoutList from '@/app/components/layouts/PageViewLayoutList.vue';
 import ResourceFiltersDropdown from '@/app/components/forms/ResourceFiltersDropdown.vue';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import type { DatatableColumn } from '@n8n/design-system';
+import type { DatatableColumn } from '@aura/design-system';
 import { useDebounce } from '@/app/composables/useDebounce';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useRoute, useRouter } from 'vue-router';
@@ -28,7 +28,7 @@ import {
 	N8nRecycleScroller,
 	N8nSelect,
 	N8nText,
-} from '@n8n/design-system';
+} from '@aura/design-system';
 type UIConfig = {
 	searchEnabled: boolean;
 	showFiltersDropdown: boolean;

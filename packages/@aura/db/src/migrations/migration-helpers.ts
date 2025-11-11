@@ -1,8 +1,8 @@
 import { Logger } from '@aura/backend-common';
 import { GlobalConfig } from '@aura/config';
 import { Container } from '@aura/di';
-import type { ObjectLiteral } from '@aura/typeorm';
-import type { QueryRunner } from '@aura/typeorm/query-runner/QueryRunner';
+import type { ObjectLiteral } from '@n8n/typeorm';
+import type { QueryRunner } from '@n8n/typeorm/query-runner/QueryRunner';
 import { readFileSync, rmSync } from 'fs';
 import { InstanceSettings } from 'aura-core';
 import { jsonParse, UnexpectedError } from 'aura-workflow';

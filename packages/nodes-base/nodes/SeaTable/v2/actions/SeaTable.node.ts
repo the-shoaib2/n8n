@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INodeTypeDescription } from 'n8n-workflow';
+import { NodeConnectionTypes, type INodeTypeDescription } from 'aura-workflow';
 
 import * as asset from './asset';
 import * as base from './base';

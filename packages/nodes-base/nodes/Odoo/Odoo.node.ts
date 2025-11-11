@@ -11,8 +11,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, deepCopy, randomInt } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, deepCopy, randomInt } from 'aura-workflow';
 
 import {
 	contactDescription,

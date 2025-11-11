@@ -2,7 +2,7 @@
 import { useAssistantStore } from '@/features/ai/assistant/assistant.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { computed, ref } from 'vue';
-import { N8nAskAssistantChat } from '@n8n/design-system';
+import { N8nAskAssistantChat } from '@aura/design-system';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 

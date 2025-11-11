@@ -12,7 +12,7 @@ import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { INodeUi, IWorkflowDb, IWorkflowSettings } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 
-import { deepCopy, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+import { deepCopy, SEND_AND_WAIT_OPERATION } from 'aura-workflow';
 import type {
 	IPinData,
 	IConnection,
@@ -20,15 +20,15 @@ import type {
 	INodeExecutionData,
 	INode,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { stringSizeInBytes } from '@/app/utils/typesUtils';
 import { dataPinningEventBus } from '@/app/event-bus';
 import { useUIStore } from '@/app/stores/ui.store';
-import type { PushPayload } from '@n8n/api-types';
+import type { PushPayload } from '@aura/api-types';
 import { flushPromises } from '@vue/test-utils';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { mock } from 'vitest-mock-extended';
-import * as apiUtils from '@n8n/rest-api-client';
+import * as apiUtils from '@aura/rest-api-client';
 import {
 	createTestNode,
 	createTestTaskData,
@@ -86,7 +86,7 @@ vi.mock('@/features/integrations/sourceControl.ee/sourceControl.store', () => ({
 	})),
 }));
 
-vi.mock('@n8n/permissions', () => ({
+vi.mock('@aura/permissions', () => ({
 	getResourcePermissions: vi.fn((scopes: string[] = []) => ({
 		workflow: {
 			update: scopes.includes('workflow:update'),

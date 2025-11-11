@@ -3,8 +3,8 @@ import type {
 	ICredentialsDecrypted,
 	ICredentialTestFunctions,
 	IExecuteFunctions,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 const mockClient = mock<RedisClient>();
 const createClient = jest.fn().mockReturnValue(mockClient);

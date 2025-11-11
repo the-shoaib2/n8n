@@ -1,6 +1,6 @@
 import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import { Collection, MongoClient } from 'mongodb';
-import type { INodeParameters, WorkflowTestData } from 'n8n-workflow';
+import type { INodeParameters, WorkflowTestData } from 'aura-workflow';
 
 MongoClient.connect = async function () {
 	const driverInfo = {

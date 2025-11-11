@@ -1,5 +1,5 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { UserError } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
+import { UserError } from 'aura-workflow';
 
 import { setInputs, setOutputs } from '../utils/evaluationUtils';
 

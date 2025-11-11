@@ -1,4 +1,4 @@
-import type { WorkflowDataCreate } from '@n8n/rest-api-client';
+import type { WorkflowDataCreate } from '@aura/rest-api-client';
 
 export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 	meta: {
@@ -10,7 +10,7 @@ export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 			parameters: {
 				options: {},
 			},
-			type: '@n8n/n8n-nodes-langchain.chatTrigger',
+			type: '@aura/n8n-nodes-langchain.chatTrigger',
 			typeVersion: 1.1,
 			position: [-48, -16],
 			id: 'f6c9fe3c-cbde-4514-9fcf-9d618526965c',
@@ -21,7 +21,7 @@ export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 			parameters: {
 				options: {},
 			},
-			type: '@n8n/n8n-nodes-langchain.agent',
+			type: '@aura/n8n-nodes-langchain.agent',
 			typeVersion: 2.1,
 			position: [208, -16],
 			id: '5db1043f-de79-425a-a66b-8288c3aaa7df',
@@ -29,7 +29,7 @@ export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 		},
 		{
 			parameters: {},
-			type: '@n8n/n8n-nodes-langchain.memoryBufferWindow',
+			type: '@aura/n8n-nodes-langchain.memoryBufferWindow',
 			typeVersion: 1.3,
 			position: [208, 288],
 			id: '29f1ba2f-7511-4771-958a-be6463a64d83',
@@ -252,7 +252,7 @@ export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 		},
 		{
 			parameters: {},
-			type: '@n8n/n8n-nodes-langchain.toolCalculator',
+			type: '@aura/n8n-nodes-langchain.toolCalculator',
 			typeVersion: 1,
 			position: [624, 288],
 			id: '49030d8b-0818-455b-a472-356b620566c4',
@@ -267,7 +267,7 @@ export const AGENT_WITH_TOOLS: WorkflowDataCreate = {
 				},
 				options: {},
 			},
-			type: '@n8n/n8n-nodes-langchain.lmChatOpenAi',
+			type: '@aura/n8n-nodes-langchain.lmChatOpenAi',
 			typeVersion: 1.2,
 			position: [48, 288],
 			id: '67c78b12-b088-41b4-aeb4-70a7f056c9a7',

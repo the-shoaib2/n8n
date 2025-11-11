@@ -2,9 +2,9 @@ import { GlobalConfig } from '@aura/config';
 import { WorkflowEntity, ProjectRepository, TagRepository, WorkflowRepository } from '@aura/db';
 import { Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { In, Like, QueryFailedError } from '@aura/typeorm';
+import { In, Like, QueryFailedError } from '@n8n/typeorm';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { FindOptionsWhere } from '@aura/typeorm';
+import type { FindOptionsWhere } from '@n8n/typeorm';
 import type express from 'express';
 import { v4 as uuid } from 'uuid';
 import { z } from 'zod';

@@ -13,7 +13,7 @@ import {
 import { Service } from '@aura/di';
 import { jsonParse } from 'aura-workflow';
 import { PROVISIONING_PREFERENCES_DB_KEY } from './constants';
-import { Not, In } from '@aura/typeorm';
+import { Not, In } from '@n8n/typeorm';
 import { OnPubSubEvent } from '@aura/decorators';
 import { type Publisher } from '@/scaling/pubsub/publisher.service';
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';

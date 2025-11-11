@@ -9,8 +9,8 @@ import {
 	parseCanvasConnectionHandleString,
 	shouldIgnoreCanvasShortcut,
 } from './canvas.utils';
-import type { IConnection, IConnections, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IConnection, IConnections, INodeTypeDescription } from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import type { CanvasConnection } from './canvas.types';
 import { CanvasConnectionMode } from './canvas.types';
 import type { INodeUi } from '@/Interface';

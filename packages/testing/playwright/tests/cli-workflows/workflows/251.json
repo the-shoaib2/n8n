@@ -13,7 +13,7 @@
 			},
 			"id": "b8fb087e-fb91-4b67-b1fe-7c8f94db59bc",
 			"name": "OpenAI Chat Model1",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1000, 580],
 			"credentials": {
@@ -28,7 +28,7 @@
 			"parameters": {},
 			"id": "0ccb184e-0fd7-4da4-a25c-2b95e0793e8b",
 			"name": "Calculator1",
-			"type": "@n8n/n8n-nodes-langchain.toolCalculator",
+			"type": "@aura/n8n-nodes-langchain.toolCalculator",
 			"typeVersion": 1,
 			"position": [1160, 580]
 		},
@@ -50,7 +50,7 @@
 			},
 			"id": "5f23aaf0-0649-4e26-926d-9bdf59e89aa7",
 			"name": "AI Agent1",
-			"type": "@n8n/n8n-nodes-langchain.agent",
+			"type": "@aura/n8n-nodes-langchain.agent",
 			"typeVersion": 1.4,
 			"position": [980, 420]
 		}

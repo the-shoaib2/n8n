@@ -1,4 +1,4 @@
-import { NodeVM } from '@aura/vm2';
+import { NodeVM } from '@n8n/vm2';
 import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
 import { NodeOperationError } from 'aura-workflow';
 

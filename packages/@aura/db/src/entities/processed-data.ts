@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn } from '@aura/typeorm';
+import { Entity, PrimaryColumn } from '@n8n/typeorm';
 import type { IProcessedDataEntries, IProcessedDataLatest } from 'aura-workflow';
 
 import { JsonColumn, WithTimestamps } from './abstract-entity';

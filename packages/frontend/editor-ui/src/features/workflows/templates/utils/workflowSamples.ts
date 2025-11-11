@@ -1,4 +1,4 @@
-import { ApplicationError, type INodeTypeNameVersion } from 'n8n-workflow';
+import { ApplicationError, type INodeTypeNameVersion } from 'aura-workflow';
 import type { WorkflowDataWithTemplateId } from '@/Interface';
 import { isWorkflowDataWithTemplateId } from './typeGuards';
 /* eslint-disable import-x/extensions */

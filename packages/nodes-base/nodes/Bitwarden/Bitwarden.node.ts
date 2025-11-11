@@ -1,6 +1,6 @@
 import isEmpty from 'lodash/isEmpty';
 import partialRight from 'lodash/partialRight';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,7 +8,7 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { CollectionUpdateFields } from './descriptions/CollectionDescription';
 import { collectionFields, collectionOperations } from './descriptions/CollectionDescription';

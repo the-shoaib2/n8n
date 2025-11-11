@@ -1,13 +1,13 @@
 import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import { mock } from 'vitest-mock-extended';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'aura-workflow';
 
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
 import type {
 	ITemplatesWorkflowFull,
 	IWorkflowTemplateNode,
-} from '@n8n/rest-api-client/api/templates';
+} from '@aura/rest-api-client/api/templates';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
 import { keyFromCredentialTypeAndName } from './utils/templateTransforms';
 import { useSetupTemplateStore } from './setupTemplate.store';

@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, IHookFunctions } from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, IHookFunctions } from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import {
 	githubApiRequest,

@@ -1,4 +1,4 @@
-import type { INodeProperties, IExecuteFunctions, IDataObject } from 'n8n-workflow';
+import type { INodeProperties, IExecuteFunctions, IDataObject } from 'aura-workflow';
 
 import { updateDisplayOptions } from '../../../../../utils/utilities';
 import { splunkApiJsonRequest } from '../../transport';

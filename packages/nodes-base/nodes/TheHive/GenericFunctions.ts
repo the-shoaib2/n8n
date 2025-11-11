@@ -6,8 +6,8 @@ import type {
 	IDataObject,
 	IHttpRequestMethods,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { ApplicationError, jsonParse } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, jsonParse } from 'aura-workflow';
 
 import { Eq } from './QueryFunctions';
 

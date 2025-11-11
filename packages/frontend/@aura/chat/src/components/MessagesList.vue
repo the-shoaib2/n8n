@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import { N8nIcon, N8nText } from '@n8n/design-system';
+import { N8nIcon, N8nText } from '@aura/design-system';
 import { ref, watch } from 'vue';
 
-import Message from '@n8n/chat/components/Message.vue';
-import MessageTyping from '@n8n/chat/components/MessageTyping.vue';
-import { useChat } from '@n8n/chat/composables';
-import type { ChatMessage } from '@n8n/chat/types';
+import Message from '@aura/chat/components/Message.vue';
+import MessageTyping from '@aura/chat/components/MessageTyping.vue';
+import { useChat } from '@aura/chat/composables';
+import type { ChatMessage } from '@aura/chat/types';
 
 defineProps<{
 	messages: ChatMessage[];

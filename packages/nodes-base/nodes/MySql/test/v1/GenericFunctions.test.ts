@@ -1,6 +1,6 @@
 /* eslint-disable n8n-nodes-base/node-param-display-name-miscased */
 import mysql2 from 'mysql2/promise';
-import type { ILoadOptionsFunctions, INodeListSearchResult } from 'n8n-workflow';
+import type { ILoadOptionsFunctions, INodeListSearchResult } from 'aura-workflow';
 
 import { searchTables } from '../../v1/GenericFunctions';
 

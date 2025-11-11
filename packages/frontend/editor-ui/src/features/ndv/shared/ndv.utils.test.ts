@@ -8,7 +8,7 @@ import type {
 	INodePropertyOptions,
 	INodeParameters,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	updateDynamicConnections,
 	updateParameterByPath,

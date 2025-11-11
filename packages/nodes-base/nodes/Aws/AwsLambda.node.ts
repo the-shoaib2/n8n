@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeApiError } from 'aura-workflow';
 
 import { awsApiRequestREST } from './GenericFunctions';
 import { awsNodeAuthOptions, awsNodeCredentials } from './utils';

@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { createEventBus } from '@n8n/utils/event-bus';
+import { createEventBus } from '@aura/utils/event-bus';
 import Modal from './Modal.vue';
 import { ABOUT_MODAL_KEY } from '../constants';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useToast } from '@/app/composables/useToast';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { useDebugInfo } from '@/app/composables/useDebugInfo';
-import { useI18n } from '@n8n/i18n';
-import { getThirdPartyLicenses } from '@n8n/rest-api-client';
+import { useI18n } from '@aura/i18n';
+import { getThirdPartyLicenses } from '@aura/rest-api-client';
 
 import { ElCol, ElRow } from 'element-plus';
-import { N8nButton, N8nLink, N8nText } from '@n8n/design-system';
+import { N8nButton, N8nLink, N8nText } from '@aura/design-system';
 const modalBus = createEventBus();
 const toast = useToast();
 const i18n = useI18n();

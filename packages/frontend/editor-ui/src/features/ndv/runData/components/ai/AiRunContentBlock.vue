@@ -2,15 +2,15 @@
 import type { IAiDataContent } from '@/Interface';
 import capitalize from 'lodash/capitalize';
 import { computed, onMounted, ref, watch } from 'vue';
-import type { NodeConnectionType, NodeError } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { NodeConnectionType, NodeError } from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import RunDataAi from '../RunDataParsedAiContent.vue';
 import { parseAiContent } from '@/app/utils/aiUtils';
-import { N8nButton, N8nIcon, N8nRadioButtons } from '@n8n/design-system';
+import { N8nButton, N8nIcon, N8nRadioButtons } from '@aura/design-system';
 import NodeErrorView from '../error/NodeErrorView.vue';
 import { saveAs } from 'file-saver';
 import { MAX_DISPLAY_DATA_SIZE_LOGS_VIEW } from '@/app/constants';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import NDVEmptyState from '@/features/ndv/panel/components/NDVEmptyState.vue';
 
 const props = defineProps<{

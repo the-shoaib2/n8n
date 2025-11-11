@@ -12,7 +12,7 @@ import {
 import { Service } from '@aura/di';
 import { PROJECT_ADMIN_ROLE_SLUG, PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { EntityNotFoundError, In } from '@aura/typeorm';
+import { EntityNotFoundError, In } from '@n8n/typeorm';
 import { Credentials, getAdditionalKeys } from 'aura-core';
 import type {
 	ICredentialDataDecryptedObject,

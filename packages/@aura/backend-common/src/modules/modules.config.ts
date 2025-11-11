@@ -1,4 +1,4 @@
-import { CommaSeparatedStringArray, Config, Env } from '@n8n/config';
+import { CommaSeparatedStringArray, Config, Env } from '@aura/config';
 
 import { UnknownModuleError } from './errors/unknown-module.error';
 

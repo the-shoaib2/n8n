@@ -11,7 +11,7 @@ import {
 	NodeConnectionTypes,
 	NodeHelpers,
 	WORKFLOW_TOOL_LANGCHAIN_NODE_TYPE,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 const nodeFactory = (data: Partial<INodeUi> = {}): INodeUi => ({
 	id: faker.string.uuid(),

@@ -13,7 +13,7 @@ import {
 	WorkflowRepository,
 } from '@aura/db';
 import { Container } from '@aura/di';
-import { EntityNotFoundError } from '@aura/typeorm';
+import { EntityNotFoundError } from '@n8n/typeorm';
 import { v4 as uuid } from 'uuid';
 
 import { Reset } from '@/commands/ldap/reset';

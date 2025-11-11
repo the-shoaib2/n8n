@@ -19,7 +19,7 @@ import { createUser } from '@/__tests__/data/users';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useRolesStore } from '@/app/stores/roles.store';
-import type { FrontendSettings } from '@n8n/api-types';
+import type { FrontendSettings } from '@aura/api-types';
 
 const mockTrack = vi.fn();
 const mockShowMessage = vi.fn();
@@ -94,7 +94,7 @@ vi.mock('../components/ProjectMembersTable.vue', () => ({
 	}),
 }));
 
-vi.mock('@n8n/design-system', async (importOriginal) => {
+vi.mock('@aura/design-system', async (importOriginal) => {
 	const original = await importOriginal<object>();
 	return {
 		...original,

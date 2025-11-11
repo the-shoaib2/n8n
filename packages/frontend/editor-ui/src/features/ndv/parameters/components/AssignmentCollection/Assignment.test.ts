@@ -2,7 +2,7 @@ import { defaultSettings } from '@/__tests__/defaults';
 import { createComponentRenderer, type RenderOptions } from '@/__tests__/render';
 import * as useResolvedExpression from '@/app/composables/useResolvedExpression';
 import * as workflowHelpers from '@/app/composables/useWorkflowHelpers';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { cleanup, fireEvent, waitFor } from '@testing-library/vue';

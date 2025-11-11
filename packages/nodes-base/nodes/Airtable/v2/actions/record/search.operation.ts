@@ -3,7 +3,7 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	IExecuteFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { generatePairedItemData, updateDisplayOptions } from '../../../../../utils/utilities';
 import type { IRecord } from '../../helpers/interfaces';

@@ -1,7 +1,7 @@
 import userEvent from '@testing-library/user-event';
 import { render, screen, waitFor, within } from '@testing-library/vue';
 
-import { createComponentRenderer } from '@n8n/design-system/__tests__/render';
+import { createComponentRenderer } from '@aura/design-system/__tests__/render';
 
 import N8nDataTableServer, { type TableHeader } from './N8nDataTableServer.vue';
 

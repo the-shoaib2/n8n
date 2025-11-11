@@ -1,6 +1,6 @@
 import type { Plugin } from 'vue';
-import type { ITelemetrySettings } from '@n8n/api-types';
-import type { ITelemetryTrackProperties, IDataObject } from 'n8n-workflow';
+import type { ITelemetrySettings } from '@aura/api-types';
+import type { ITelemetryTrackProperties, IDataObject } from 'aura-workflow';
 import type { RouteLocation } from 'vue-router';
 
 import type { IUpdateInformation } from '@/Interface';
@@ -11,7 +11,7 @@ import {
 	SLACK_NODE_TYPE,
 	TELEGRAM_NODE_TYPE,
 } from '@/app/constants';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUIStore } from '@/app/stores/ui.store';

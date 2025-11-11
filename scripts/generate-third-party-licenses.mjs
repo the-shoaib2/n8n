@@ -74,12 +74,12 @@ function parsePackageKey(packageKey) {
 
 function shouldExcludePackage(packageName) {
 	const n8nPatterns = [
-		/^@n8n\//,      // @n8n/package
-		/^@n8n_/,       // @n8n_io/package  
+		/^@aura\//,      // @aura/package
+		/^@aura_/,       // @n8n_io/package
 		/^n8n-/,        // n8n-package
 		/-n8n/          // package-n8n
 	];
-	
+
 	return n8nPatterns.some(pattern => pattern.test(packageName));
 }
 
@@ -89,7 +89,7 @@ function isValidLicenseFile(filePath) {
 	const fileName = path.basename(filePath).toLowerCase();
 
 	// Exclude non-license files
-	const isInvalidFile = config.invalidLicenseFiles.some((invalid) => 
+	const isInvalidFile = config.invalidLicenseFiles.some((invalid) =>
 		fileName === invalid || fileName.endsWith(invalid)
 	);
 	if (isInvalidFile) return false;
@@ -134,7 +134,7 @@ function processLicenseText(licenseTexts, licenseType, pkg) {
 	if (!licenseTexts.has(licenseType)) {
 		licenseTexts.set(licenseType, null);
 	}
-	
+
 	if (!licenseTexts.get(licenseType) && pkg.licenseText?.trim() && isValidLicenseFile(pkg.licenseFile)) {
 		licenseTexts.set(licenseType, cleanLicenseText(pkg.licenseText));
 	}
@@ -143,7 +143,7 @@ function processLicenseText(licenseTexts, licenseType, pkg) {
 function applyFallbackLicenseTexts(licenseTexts, licenseGroups) {
 	const missingTexts = [];
 	const fallbacksUsed = [];
-	
+
 	for (const [licenseType, text] of licenseTexts.entries()) {
 		if (!text || !text.trim()) {
 			const packagesForLicense = licenseGroups.get(licenseType) || [];
@@ -162,11 +162,11 @@ function applyFallbackLicenseTexts(licenseTexts, licenseGroups) {
 
 function logProcessingResults(processedCount, licenseGroupCount, fallbacksUsed, missingTexts) {
 	echo(chalk.cyan(`📦 Processed ${processedCount} packages in ${licenseGroupCount} license groups`));
-	
+
 	if (fallbacksUsed.length > 0) {
 		echo(chalk.blue(`ℹ️  Used fallback texts for: ${fallbacksUsed.join(', ')}`));
 	}
-	
+
 	if (missingTexts.length > 0) {
 		echo(chalk.yellow(`⚠️  Still missing license texts for: ${missingTexts.join(', ')}`));
 	} else {
@@ -232,7 +232,7 @@ function createPackageSection(licenseType, packages) {
 
 function createLicenseTextSection(licenseType, licenseText) {
 	let section = `## ${licenseType} License Text\n\n`;
-	
+
 	if (licenseText && licenseText.trim()) {
 		section += `\`\`\`\n${licenseText}\n\`\`\`\n\n`;
 	} else {
@@ -267,7 +267,7 @@ function buildMarkdownDocument(packages) {
 
 	// Second: Add license texts section
 	document += '# License Texts\n\n';
-	
+
 	for (const licenseType of sortedLicenseTypes) {
 		const licenseText = licenseTexts.get(licenseType);
 		document += createLicenseTextSection(licenseType, licenseText);

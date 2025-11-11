@@ -1,16 +1,16 @@
 <script setup lang="ts">
 import { computed, onMounted, onBeforeUnmount, ref } from 'vue';
-import type { WorkerStatus } from '@n8n/api-types';
+import type { WorkerStatus } from '@aura/api-types';
 
 import { useOrchestrationStore } from '../orchestration.store';
 import { averageWorkerLoadFromLoadsAsString, memAsGb } from '../orchestration.utils';
 import WorkerJobAccordion from './WorkerJobAccordion.vue';
 import WorkerNetAccordion from './WorkerNetAccordion.vue';
 import WorkerChartsAccordion from './WorkerChartsAccordion.vue';
-import { sortByProperty } from '@n8n/utils/sort/sortByProperty';
-import { useI18n } from '@n8n/i18n';
+import { sortByProperty } from '@aura/utils/sort/sortByProperty';
+import { useI18n } from '@aura/i18n';
 
-import { N8nCard, N8nHeading, N8nText } from '@n8n/design-system';
+import { N8nCard, N8nHeading, N8nText } from '@aura/design-system';
 let interval: NodeJS.Timeout;
 
 const orchestrationStore = useOrchestrationStore();

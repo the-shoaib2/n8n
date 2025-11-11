@@ -1,5 +1,5 @@
 import { User } from '@aura/db';
-import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn, Unique } from '@aura/typeorm';
+import { Column, Entity, Index, ManyToOne, PrimaryGeneratedColumn, Unique } from '@n8n/typeorm';
 
 import { OAuthClient } from './oauth-client.entity';
 

@@ -1,4 +1,4 @@
 import { defineConfig, mergeConfig } from 'vite';
-import { vitestConfig } from '@n8n/vitest-config/frontend';
+import { vitestConfig } from '@aura/vitest-config/frontend';
 
 export default mergeConfig(defineConfig({}), vitestConfig);

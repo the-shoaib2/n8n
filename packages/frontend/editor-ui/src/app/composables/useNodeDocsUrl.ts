@@ -1,4 +1,4 @@
-import { type INodeTypeDescription, isCommunityPackageName } from 'n8n-workflow';
+import { type INodeTypeDescription, isCommunityPackageName } from 'aura-workflow';
 import { computed, toValue, type MaybeRefOrGetter } from 'vue';
 import { BUILTIN_NODES_DOCS_URL, NPM_PACKAGE_DOCS_BASE_URL } from '../constants';
 

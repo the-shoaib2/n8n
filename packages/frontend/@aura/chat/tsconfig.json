@@ -1,5 +1,5 @@
 {
-	"extends": "@n8n/typescript-config/tsconfig.common.json",
+	"extends": "@aura/typescript-config/tsconfig.common.json",
 	"compilerOptions": {
 		"rootDir": "src",
 		"outDir": "dist",
@@ -14,8 +14,8 @@
 		"resolveJsonModule": true,
 		"types": ["vitest/globals"],
 		"paths": {
-			"@n8n/chat/*": ["./*"],
-			"@n8n/design-system*": ["../../design-system/src*"]
+			"@aura/chat/*": ["./*"],
+			"@aura/design-system*": ["../../design-system/src*"]
 		},
 		"lib": ["esnext", "dom", "dom.iterable", "scripthost"],
 		// TODO: remove all options below this line

@@ -1,5 +1,5 @@
 import { mockInstance } from '@aura/backend-test-utils';
-import { DataSource, EntityManager, type EntityMetadata } from '@aura/typeorm';
+import { DataSource, EntityManager, type EntityMetadata } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import type { Cipher, Class } from 'aura-core';
 

@@ -7,7 +7,7 @@
 			"args": [
 				"--disallow-code-generation-from-strings",
 				"--disable-proto=delete",
-				"/usr/local/lib/node_modules/n8n/node_modules/@n8n/task-runner/dist/start.js"
+				"/usr/local/lib/node_modules/n8n/node_modules/@aura/task-runner/dist/start.js"
 			],
 			"allowed-env": [
 				"PATH",

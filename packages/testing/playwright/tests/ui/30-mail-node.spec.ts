@@ -39,7 +39,7 @@ test('EmailSend node sends via SMTP @capability:email', async ({ api, n8n, chaos
 				typeVersion: 2,
 				position: [300, 0],
 				parameters: {
-					fromEmail: 'test@n8n.local',
+					fromEmail: 'test@aura.local',
 					toEmail,
 					subject,
 					emailFormat: 'text',

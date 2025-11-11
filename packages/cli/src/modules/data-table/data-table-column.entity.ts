@@ -1,5 +1,5 @@
 import { WithTimestampsAndStringId } from '@aura/db';
-import { Column, Entity, Index, JoinColumn, ManyToOne } from '@aura/typeorm';
+import { Column, Entity, Index, JoinColumn, ManyToOne } from '@n8n/typeorm';
 
 import { type DataTable } from './data-table.entity';
 

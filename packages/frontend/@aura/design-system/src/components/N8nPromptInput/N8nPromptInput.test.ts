@@ -4,7 +4,7 @@ import { fireEvent } from '@testing-library/vue';
 import { mount } from '@vue/test-utils';
 import { vi } from 'vitest';
 
-import { createComponentRenderer } from '@n8n/design-system/__tests__/render';
+import { createComponentRenderer } from '@aura/design-system/__tests__/render';
 
 import N8nPromptInput from './N8nPromptInput.vue';
 

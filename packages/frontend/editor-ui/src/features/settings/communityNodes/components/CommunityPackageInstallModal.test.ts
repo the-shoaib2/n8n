@@ -2,7 +2,7 @@ import { createComponentRenderer } from '@/__tests__/render';
 import { retry } from '@/__tests__/utils';
 import { useInstallNode } from '../composables/useInstallNode';
 import { COMMUNITY_PACKAGE_INSTALL_MODAL_KEY } from '../communityNodes.constants';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { vi, type MockedFunction } from 'vitest';

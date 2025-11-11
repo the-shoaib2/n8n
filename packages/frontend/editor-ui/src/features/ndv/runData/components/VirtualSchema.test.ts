@@ -26,7 +26,7 @@ import {
 	NodeConnectionTypes,
 	type IBinaryData,
 	type INodeExecutionData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { setActivePinia } from 'pinia';
 import { mock } from 'vitest-mock-extended';
 import { defaultSettings } from '@/__tests__/defaults';
@@ -65,7 +65,7 @@ const ifNode = createTestNode({
 
 const aiTool = createTestNode({
 	name: 'AI Tool',
-	type: '@n8n/n8n-nodes-langchain.memoryBufferWindow',
+	type: '@aura/n8n-nodes-langchain.memoryBufferWindow',
 	typeVersion: 1,
 	disabled: false,
 });

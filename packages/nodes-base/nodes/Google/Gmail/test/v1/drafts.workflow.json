@@ -45,8 +45,8 @@
 				"subject": "Test Subject",
 				"message": "Test Message",
 				"additionalFields": {
-					"ccList": ["test_cc@n8n.io"],
-					"bccList": ["test_bcc@n8n.io"],
+					"ccList": ["test_cc@aura.io"],
+					"bccList": ["test_bcc@aura.io"],
 					"attachmentsUi": {
 						"attachmentsBinary": [
 							{

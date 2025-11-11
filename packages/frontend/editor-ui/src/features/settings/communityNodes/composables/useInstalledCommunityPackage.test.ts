@@ -8,9 +8,9 @@ import { useInstalledCommunityPackage } from './useInstalledCommunityPackage';
 import { useCommunityNodesStore } from '../communityNodes.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import type { ExtendedPublicInstalledPackage } from '../communityNodes.utils';
-import type * as n8nWorkflow from 'n8n-workflow';
+import type * as n8nWorkflow from 'aura-workflow';
 
-vi.mock('n8n-workflow', async (importOriginal) => {
+vi.mock('aura-workflow', async (importOriginal) => {
 	const original = await importOriginal();
 	return {
 		...(original as typeof n8nWorkflow),
@@ -23,7 +23,7 @@ vi.mock('../communityNodes.utils', () => ({
 }));
 
 // Import mocked functions
-import { isCommunityPackageName } from 'n8n-workflow';
+import { isCommunityPackageName } from 'aura-workflow';
 import { fetchInstalledPackageInfo } from '../communityNodes.utils';
 
 const mockIsCommunityPackageName = vi.mocked(isCommunityPackageName);

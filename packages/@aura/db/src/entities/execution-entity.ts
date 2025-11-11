@@ -9,8 +9,8 @@ import {
 	PrimaryColumn,
 	Relation,
 	DeleteDateColumn,
-} from '@aura/typeorm';
-import type { SimpleColumnType } from '@aura/typeorm/driver/types/ColumnTypes';
+} from '@n8n/typeorm';
+import type { SimpleColumnType } from '@n8n/typeorm/driver/types/ColumnTypes';
 import { ExecutionStatus, WorkflowExecuteMode } from 'aura-workflow';
 
 import { DateTimeColumn, datetimeColumnType } from './abstract-entity';

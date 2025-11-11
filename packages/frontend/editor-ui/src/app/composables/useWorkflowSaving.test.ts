@@ -6,10 +6,10 @@ import { createTestingPinia } from '@pinia/testing';
 import { setActivePinia } from 'pinia';
 import { useNpsSurveyStore } from '@/app/stores/npsSurvey.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import type { WorkflowDataUpdate } from '@n8n/rest-api-client/api/workflows';
+import type { WorkflowDataUpdate } from '@aura/rest-api-client/api/workflows';
 import { mockedStore } from '@/__tests__/utils';
 import { createTestNode, createTestWorkflow, mockNodeTypeDescription } from '@/__tests__/mocks';
-import { CHAT_TRIGGER_NODE_TYPE } from 'n8n-workflow';
+import { CHAT_TRIGGER_NODE_TYPE } from 'aura-workflow';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 
 const modalConfirmSpy = vi.fn();

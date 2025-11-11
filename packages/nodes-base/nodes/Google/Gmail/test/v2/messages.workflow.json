@@ -62,7 +62,7 @@
 		},
 		{
 			"parameters": {
-				"sendTo": "test@n8n.io",
+				"sendTo": "test@aura.io",
 				"subject": "Test Subject",
 				"message": "Test Message",
 				"options": {
@@ -70,10 +70,10 @@
 					"attachmentsUi": {
 						"attachmentsBinary": [{}, {}]
 					},
-					"bccList": "test-bcc@n8n.io",
-					"ccList": "test-cc@n8n.io",
+					"bccList": "test-bcc@aura.io",
+					"ccList": "test-cc@aura.io",
 					"senderName": "Test Sender",
-					"replyTo": "test-reply-to@n8n.io",
+					"replyTo": "test-reply-to@aura.io",
 					"replyToSenderOnly": true
 				}
 			},
@@ -93,7 +93,7 @@
 		{
 			"parameters": {
 				"operation": "sendAndWait",
-				"sendTo": "test@n8n.io",
+				"sendTo": "test@aura.io",
 				"subject": "Test Subject",
 				"message": "Test Message"
 			},
@@ -247,7 +247,7 @@
 				"message": "Test reply",
 				"options": {
 					"appendAttribution": false,
-					"bccList": "test-bcc@n8n.io",
+					"bccList": "test-bcc@aura.io",
 					"senderName": "Test Sender Name",
 					"replyToSenderOnly": false
 				}

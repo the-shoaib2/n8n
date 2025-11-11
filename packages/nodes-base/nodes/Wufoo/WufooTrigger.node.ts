@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, jsonParse } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, jsonParse } from 'aura-workflow';
 
 import { wufooApiRequest } from './GenericFunctions';
 import type { IField, IWebhook } from './Interface';

@@ -1,6 +1,6 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, ILoadOptionsFunctions, IWebhookFunctions } from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+import type { IExecuteFunctions, ILoadOptionsFunctions, IWebhookFunctions } from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { awsApiRequest, awsApiRequestREST, awsApiRequestSOAP } from '../GenericFunctions';
 

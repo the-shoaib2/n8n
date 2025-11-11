@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import * as deleteTable from './deleteTable.operation';
 import * as executeQuery from './executeQuery.operation';

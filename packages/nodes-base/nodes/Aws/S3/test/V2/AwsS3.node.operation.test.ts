@@ -1,6 +1,6 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { AwsS3V2 } from '../../V2/AwsS3V2.node';
 import * as GenericFunctions from '../../V2/GenericFunctions';

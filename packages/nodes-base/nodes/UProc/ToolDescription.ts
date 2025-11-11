@@ -1,5 +1,5 @@
-import type { IDataObject, INodeProperties } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import type { IDataObject, INodeProperties } from 'aura-workflow';
+import { deepCopy } from 'aura-workflow';
 
 import { groups } from './Json/Groups';
 import { tools } from './Json/Tools';

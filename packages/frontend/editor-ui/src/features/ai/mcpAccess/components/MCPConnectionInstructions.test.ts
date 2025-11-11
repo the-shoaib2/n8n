@@ -3,7 +3,7 @@ import MCPConnectionInstructions from './MCPConnectionInstructions.vue';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { createPinia, setActivePinia } from 'pinia';
 import userEvent from '@testing-library/user-event';
-import type { ApiKey, OAuthClientResponseDto } from '@n8n/api-types';
+import type { ApiKey, OAuthClientResponseDto } from '@aura/api-types';
 import { MCP_DOCS_PAGE_URL } from '@/features/ai/mcpAccess/mcp.constants';
 
 const renderComponent = createComponentRenderer(MCPConnectionInstructions);

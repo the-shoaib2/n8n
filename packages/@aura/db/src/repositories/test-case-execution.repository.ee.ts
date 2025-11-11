@@ -1,7 +1,7 @@
 import { Service } from '@aura/di';
-import type { EntityManager } from '@aura/typeorm';
-import { DataSource, In, Not, Repository } from '@aura/typeorm';
-import type { DeepPartial } from '@aura/typeorm/common/DeepPartial';
+import type { EntityManager } from '@n8n/typeorm';
+import { DataSource, In, Not, Repository } from '@n8n/typeorm';
+import type { DeepPartial } from '@n8n/typeorm/common/DeepPartial';
 import type { IDataObject } from 'aura-workflow';
 
 import { TestCaseExecution } from '../entities';

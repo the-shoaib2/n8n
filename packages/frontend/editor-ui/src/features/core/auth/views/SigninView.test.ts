@@ -68,7 +68,7 @@ describe('SigninView', () => {
 		await userEvent.tab();
 		expect(document.activeElement).toBe(emailInput);
 
-		await userEvent.type(emailInput, 'test@n8n.io');
+		await userEvent.type(emailInput, 'test@aura.io');
 		await userEvent.type(passwordInput, 'password');
 
 		await userEvent.click(submitButton);
@@ -95,7 +95,7 @@ describe('SigninView', () => {
 		await signInWithValidUser();
 
 		expect(usersStore.loginWithCreds).toHaveBeenCalledWith({
-			emailOrLdapLoginId: 'test@n8n.io',
+			emailOrLdapLoginId: 'test@aura.io',
 			password: 'password',
 			mfaCode: undefined,
 			mfaRecoveryCode: undefined,

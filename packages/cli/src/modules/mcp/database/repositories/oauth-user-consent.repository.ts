@@ -1,5 +1,5 @@
 import { Service } from '@aura/di';
-import { DataSource, Repository } from '@aura/typeorm';
+import { DataSource, Repository } from '@n8n/typeorm';
 
 import { UserConsent } from '../entities/oauth-user-consent.entity';
 

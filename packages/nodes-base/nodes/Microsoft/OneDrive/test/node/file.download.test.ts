@@ -1,7 +1,7 @@
 import type { IncomingMessage } from 'http';
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { type IHttpRequestMethods, type IExecuteFunctions, ApplicationError } from 'n8n-workflow';
+import { type IHttpRequestMethods, type IExecuteFunctions, ApplicationError } from 'aura-workflow';
 
 import * as genericFunctions from '../../GenericFunctions';
 import { MicrosoftOneDrive } from '../../MicrosoftOneDrive.node';

@@ -11,11 +11,11 @@ import type { ActionsRecord, INodeCreateElement, INodeUi, SimplifiedNodeType } f
 import { CanvasConnectionMode } from '@/features/workflows/canvas/canvas.types';
 import { parseCanvasConnectionHandleString } from '@/features/workflows/canvas/canvas.utils';
 import { getNodeIconSource } from '@/app/utils/nodeIcon';
-import type { CommunityNodeType } from '@n8n/api-types';
+import type { CommunityNodeType } from '@aura/api-types';
 import { createTestingPinia } from '@pinia/testing';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
 import { setActivePinia } from 'pinia';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';

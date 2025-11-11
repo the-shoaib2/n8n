@@ -1,4 +1,4 @@
-import type { QueryRunner } from '@aura/typeorm';
+import type { QueryRunner } from '@n8n/typeorm';
 
 import { Column } from './column';
 import { CreateIndex, DropIndex } from './indices';

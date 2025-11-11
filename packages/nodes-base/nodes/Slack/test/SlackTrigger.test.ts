@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IWebhookFunctions, INodeType } from 'n8n-workflow';
+import type { IWebhookFunctions, INodeType } from 'aura-workflow';
 
 import { SlackTrigger } from '../SlackTrigger.node';
 

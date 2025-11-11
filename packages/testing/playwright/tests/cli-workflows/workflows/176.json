@@ -190,7 +190,7 @@
 			"parameters": {
 				"group": "company",
 				"tool": "getCompanyByEmail",
-				"email": "hello@n8n.io",
+				"email": "hello@aura.io",
 				"additionalOptions": {}
 			},
 			"name": "uProc17",
@@ -423,7 +423,7 @@
 			"parameters": {
 				"group": "company",
 				"tool": "getCompanyExtendedByEmail",
-				"email": "hello@n8n.io",
+				"email": "hello@aura.io",
 				"additionalOptions": {}
 			},
 			"name": "uProc29",
@@ -577,7 +577,7 @@
 				"tool": "getPersonListByParams",
 				"country": "DE",
 				"phone": "932187670",
-				"email": "hello@n8n.io",
+				"email": "hello@aura.io",
 				"company": "n8n.io",
 				"area": "Information technology",
 				"seniority": "Intermediate",

@@ -1,4 +1,4 @@
-import type { INodeProperties, INodeTypeDescription, IWebhookDescription } from 'n8n-workflow';
+import type { INodeProperties, INodeTypeDescription, IWebhookDescription } from 'aura-workflow';
 
 import { getResponseCode, getResponseData } from './utils';
 

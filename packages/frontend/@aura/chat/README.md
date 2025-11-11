@@ -34,9 +34,9 @@ Open the **Webhook** node and replace `YOUR_PRODUCTION_WEBHOOK_URL` with your pr
 Add the following code to your HTML page.
 
 ```html
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/@aura/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@aura/chat/dist/chat.bundle.es.js';
 
 	createChat({
 		webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
@@ -48,14 +48,14 @@ Add the following code to your HTML page.
 Install and save n8n Chat as a production dependency.
 
 ```sh
-npm install @n8n/chat
+npm install @aura/chat
 ```
 
 Import the CSS and use the `createChat` function to initialize your Chat window.
 
 ```ts
-import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
+import '@aura/chat/style.css';
+import { createChat } from '@aura/chat';
 
 createChat({
 	webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
@@ -68,8 +68,8 @@ createChat({
 <script lang="ts" setup>
 // App.vue
 import { onMounted } from 'vue';
-import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
+import '@aura/chat/style.css';
+import { createChat } from '@aura/chat';
 
 onMounted(() => {
 	createChat({
@@ -87,8 +87,8 @@ onMounted(() => {
 ```tsx
 // App.tsx
 import { useEffect } from 'react';
-import '@n8n/chat/style.css';
-import { createChat } from '@n8n/chat';
+import '@aura/chat/style.css';
+import { createChat } from '@aura/chat';
 
 export const App = () => {
 	useEffect(() => {

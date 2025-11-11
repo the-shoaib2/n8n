@@ -16,7 +16,7 @@
 		{
 			"parameters": {
 				"resource": "contact",
-				"email": "nodeqa@n8n.io",
+				"email": "nodeqa@aura.io",
 				"additionalFields": {}
 			},
 			"name": "Hubspot",

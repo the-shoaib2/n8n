@@ -1,5 +1,5 @@
 import { indexedDbCache } from '@/app/plugins/cache';
-import { jsonParse } from 'n8n-workflow';
+import { jsonParse } from 'aura-workflow';
 import { ref } from 'vue';
 
 const actionTypes = ['evaluations', 'errorWorkflow', 'timeSaved', 'mcp-access'] as const;

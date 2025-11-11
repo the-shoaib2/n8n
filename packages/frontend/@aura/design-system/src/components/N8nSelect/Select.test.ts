@@ -2,7 +2,7 @@ import userEvent from '@testing-library/user-event';
 import { render, waitFor, within } from '@testing-library/vue';
 import { defineComponent, ref } from 'vue';
 
-import { removeDynamicAttributes } from '@n8n/design-system/utils';
+import { removeDynamicAttributes } from '@aura/design-system/utils';
 
 import N8nSelect from './Select.vue';
 import N8nOption from '../N8nOption/Option.vue';

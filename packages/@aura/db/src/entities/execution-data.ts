@@ -1,4 +1,4 @@
-import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, JoinColumn, OneToOne, PrimaryColumn } from '@n8n/typeorm';
 import { IWorkflowBase } from 'aura-workflow';
 
 import { JsonColumn } from './abstract-entity';

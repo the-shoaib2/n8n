@@ -5,7 +5,7 @@ import { Service } from '@aura/di';
 import type { ApiKeyScope, AuthPrincipal } from '@aura/permissions';
 import { getApiKeyScopesForRole, getOwnerOnlyApiKeyScopes } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import type { NextFunction, Request, Response } from 'express';
 import { TokenExpiredError } from 'jsonwebtoken';
 import type { OpenAPIV3 } from 'openapi-types';

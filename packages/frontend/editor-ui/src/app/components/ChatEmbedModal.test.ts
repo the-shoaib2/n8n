@@ -1,7 +1,7 @@
 import ChatEmbedModal from '@/app/components/ChatEmbedModal.vue';
 import { createTestingPinia } from '@pinia/testing';
 import { CHAT_EMBED_MODAL_KEY, WEBHOOK_NODE_TYPE } from '@/app/constants';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { createComponentRenderer } from '@/__tests__/render';
 import { waitFor } from '@testing-library/vue';
 

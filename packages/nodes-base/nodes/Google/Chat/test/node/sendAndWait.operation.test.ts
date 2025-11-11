@@ -1,6 +1,6 @@
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { type INode, SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'n8n-workflow';
+import { type INode, SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'aura-workflow';
 
 import * as genericFunctions from '../../GenericFunctions';
 import { GoogleChat } from '../../GoogleChat.node';

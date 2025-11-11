@@ -1,5 +1,5 @@
-import type { IHookFunctions, IDataObject } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IHookFunctions, IDataObject } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type { TeamResponse, ChannelResponse, SubscriptionResponse } from './types';
 import { microsoftApiRequest } from '../transport';

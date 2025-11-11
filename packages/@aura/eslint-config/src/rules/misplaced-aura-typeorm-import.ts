@@ -4,7 +4,7 @@ export const MisplacedN8nTypeormImportRule = ESLintUtils.RuleCreator.withoutDocs
 	meta: {
 		type: 'problem',
 		docs: {
-			description: 'Ensure `@aura/typeorm` is imported only from within the `@aura/db` package.',
+			description: 'Ensure `@n8n/typeorm` is imported only from within the `@aura/db` package.',
 		},
 		messages: {
 			moveImport: 'Please move this import to `@aura/db`.',
@@ -15,7 +15,7 @@ export const MisplacedN8nTypeormImportRule = ESLintUtils.RuleCreator.withoutDocs
 	create(context) {
 		return {
 			ImportDeclaration(node) {
-				if (node.source.value === '@aura/typeorm' && !context.filename.includes('@aura/db')) {
+				if (node.source.value === '@n8n/typeorm' && !context.filename.includes('@aura/db')) {
 					context.report({ node, messageId: 'moveImport' });
 				}
 			},

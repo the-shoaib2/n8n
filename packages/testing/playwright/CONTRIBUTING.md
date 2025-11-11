@@ -425,7 +425,7 @@ const NOTIFICATIONS = {
 ```typescript
 // From test-users.ts
 export const INSTANCE_OWNER_CREDENTIALS: UserCredentials = {
-  email: 'nathan@n8n.io',
+  email: 'nathan@aura.io',
   password: DEFAULT_USER_PASSWORD,
   firstName: randFirstName(),
   lastName: randLastName(),

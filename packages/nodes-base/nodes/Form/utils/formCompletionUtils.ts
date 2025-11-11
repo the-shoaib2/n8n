@@ -6,7 +6,7 @@ import {
 	type IBinaryData,
 	type IDataObject,
 	OperationalError,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { sanitizeCustomCss, sanitizeHtml } from './utils';
 

@@ -17,7 +17,7 @@ import {
 	type EntityManager,
 	type FindOptionsRelations,
 	type FindOptionsWhere,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import { CredentialDataError, Credentials, ErrorReporter } from 'aura-core';
 import type {
 	ICredentialDataDecryptedObject,

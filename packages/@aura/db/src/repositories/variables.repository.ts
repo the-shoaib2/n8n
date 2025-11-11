@@ -1,5 +1,5 @@
 import { Service } from '@aura/di';
-import { DataSource, In, Repository } from '@aura/typeorm';
+import { DataSource, In, Repository } from '@n8n/typeorm';
 
 import { Variables } from '../entities';
 

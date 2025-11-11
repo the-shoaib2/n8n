@@ -14,9 +14,9 @@ import type {
 	INodePropertyCollection,
 	INodePropertyOptions,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
-import { i18n } from '@n8n/i18n';
+import { i18n } from '@aura/i18n';
 
 import { getCredentialOnlyNodeType } from '@/app/utils/credentialOnlyNodes';
 import { formatTriggerActionName } from '../nodeCreator.utils';

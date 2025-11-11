@@ -1,4 +1,4 @@
-import { ApplicationError, type IExecuteFunctions, type INodeExecutionData } from 'n8n-workflow';
+import { ApplicationError, type IExecuteFunctions, type INodeExecutionData } from 'aura-workflow';
 import type { PyDict } from 'pyodide/ffi';
 
 import { LoadPyodide } from './Pyodide';

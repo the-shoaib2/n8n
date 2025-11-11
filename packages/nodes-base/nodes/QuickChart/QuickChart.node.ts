@@ -6,8 +6,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { jsonParse, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import {
 	CHART_TYPE_OPTIONS,

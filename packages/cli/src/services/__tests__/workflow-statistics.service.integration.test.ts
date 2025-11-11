@@ -8,7 +8,7 @@ import {
 	type DataSource,
 	type EntityManager,
 	type EntityMetadata,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import { createUser } from '@test-integration/db/users';
 import { mocked } from 'jest-mock';
 import { mock } from 'jest-mock-extended';

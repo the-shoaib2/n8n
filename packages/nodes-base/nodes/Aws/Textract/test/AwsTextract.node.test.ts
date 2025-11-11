@@ -1,5 +1,5 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'aura-workflow';
 import nock from 'nock';
 
 import { AwsTextract } from '../AwsTextract.node';

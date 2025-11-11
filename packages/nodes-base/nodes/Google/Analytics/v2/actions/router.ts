@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type { GoogleAnalytics, ReportBasedOnProperty } from './node.type';
 import * as report from './report/Report.resource';

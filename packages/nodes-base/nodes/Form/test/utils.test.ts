@@ -9,7 +9,7 @@ import type {
 	IWebhookFunctions,
 	MultiPartFormData,
 	NodeTypeAndVersion,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	formWebhook,

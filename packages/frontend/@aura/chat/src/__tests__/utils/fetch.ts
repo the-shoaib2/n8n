@@ -1,4 +1,4 @@
-import type { LoadPreviousSessionResponse, SendMessageResponse } from '@n8n/chat/types';
+import type { LoadPreviousSessionResponse, SendMessageResponse } from '@aura/chat/types';
 
 export function createFetchResponse<T>(data: T) {
 	const jsonData = JSON.stringify(data);

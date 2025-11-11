@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { DEFAULT_EVALUATION_METRIC } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
+import { DEFAULT_EVALUATION_METRIC } from 'aura-workflow';
 
 import {
 	CORRECTNESS_PROMPT,

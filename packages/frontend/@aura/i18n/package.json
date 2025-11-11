@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/i18n",
+  "name": "@aura/i18n",
   "type": "module",
   "version": "1.24.0",
   "files": [
@@ -33,13 +33,13 @@
     "format:check": "biome ci . && prettier --check . --ignore-path ../../../../.prettierignore"
   },
   "dependencies": {
-    "n8n-workflow": "workspace:*",
+    "aura-workflow": "workspace:*",
     "vue-i18n": "catalog:frontend"
   },
   "devDependencies": {
-    "@n8n/eslint-config": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@aura/eslint-config": "workspace:*",
+    "@aura/typescript-config": "workspace:*",
+    "@aura/vitest-config": "workspace:*",
     "@testing-library/jest-dom": "catalog:frontend",
     "@testing-library/user-event": "catalog:frontend",
     "@testing-library/vue": "catalog:frontend",

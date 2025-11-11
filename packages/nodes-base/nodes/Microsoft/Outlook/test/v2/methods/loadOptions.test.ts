@@ -1,5 +1,5 @@
 import { mockDeep } from 'jest-mock-extended';
-import type { ILoadOptionsFunctions } from 'n8n-workflow';
+import type { ILoadOptionsFunctions } from 'aura-workflow';
 
 import { getCategoriesNames, getFolders, getCalendarGroups } from '../../../v2/methods/loadOptions';
 import * as transport from '../../../v2/transport';

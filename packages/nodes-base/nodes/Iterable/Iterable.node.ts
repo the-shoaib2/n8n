@@ -8,8 +8,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import { eventFields, eventOperations } from './EventDescription';
 import { iterableApiRequest } from './GenericFunctions';

@@ -9,7 +9,7 @@ import { setActivePinia } from 'pinia';
 import { createTestingPinia } from '@pinia/testing';
 import { useApiKeysStore } from '../apiKeys.store';
 import { DateTime } from 'luxon';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import { useRootStore } from '@aura/stores/useRootStore';
 
 setActivePinia(createTestingPinia());
 
@@ -72,7 +72,7 @@ describe('SettingsApiView', () => {
 				'To prevent abuse, we limit API access to your workspace during your trial. If this is hindering your evaluation of n8n, please contact',
 			),
 		).toBeInTheDocument();
-		expect(screen.getByText('support@n8n.io')).toBeInTheDocument();
+		expect(screen.getByText('support@aura.io')).toBeInTheDocument();
 
 		expect(screen.getByText('Upgrade plan')).toBeInTheDocument();
 	});

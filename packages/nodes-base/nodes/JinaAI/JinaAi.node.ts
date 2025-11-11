@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'n8n-workflow';
+import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from 'aura-workflow';
 
 export class JinaAi implements INodeType {
 	description: INodeTypeDescription = {

@@ -20,7 +20,7 @@ import type {
 	InsightsByTime,
 	InsightsByWorkflow,
 	InsightsSummaryType,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import { INSIGHT_TYPES } from '@/features/execution/insights/insights.constants';
 import type { InsightsSummaryDisplay } from '@/features/execution/insights/insights.types';
 import { vi } from 'vitest';
@@ -49,7 +49,7 @@ vi.mock('vue-chartjs', () => ({
 	},
 }));
 
-vi.mock('@n8n/design-system', async (importOriginal) => {
+vi.mock('@aura/design-system', async (importOriginal) => {
 	const original = await importOriginal<object>();
 	return {
 		...original,

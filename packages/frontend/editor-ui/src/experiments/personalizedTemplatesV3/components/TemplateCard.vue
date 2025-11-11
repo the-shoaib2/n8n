@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import { type ITemplatesWorkflowResponse } from '@n8n/rest-api-client';
+import { type ITemplatesWorkflowResponse } from '@aura/rest-api-client';
 import { usePersonalizedTemplatesV3Store } from '../stores/personalizedTemplatesV3.store';
 import { useRouter } from 'vue-router';
 import { useUIStore } from '@/app/stores/ui.store';
 import { EXPERIMENT_TEMPLATE_RECO_V3_KEY } from '@/app/constants';
 import NodeIcon from '@/app/components/NodeIcon.vue';
-import { N8nCard, N8nText } from '@n8n/design-system';
+import { N8nCard, N8nText } from '@aura/design-system';
 
 const props = defineProps<{
 	template: ITemplatesWorkflowResponse;

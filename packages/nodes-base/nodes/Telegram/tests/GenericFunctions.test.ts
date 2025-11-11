@@ -6,7 +6,7 @@ import {
 	type IHttpRequestMethods,
 	type ILoadOptionsFunctions,
 	type IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	addAdditionalFields,

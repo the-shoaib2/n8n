@@ -3,8 +3,8 @@ import NodeIcon from './NodeIcon.vue';
 import TimeAgo from './TimeAgo.vue';
 import Badge from './Badge.vue';
 import WarningTooltip from './WarningTooltip.vue';
-import type { Version, VersionNode } from '@n8n/rest-api-client/api/versions';
-import { useI18n } from '@n8n/i18n';
+import type { Version, VersionNode } from '@aura/rest-api-client/api/versions';
+import { useI18n } from '@aura/i18n';
 
 defineProps<{
 	version: Version;

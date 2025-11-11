@@ -6,7 +6,7 @@ import {
 	ManyToMany,
 	ManyToOne,
 	OneToMany,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 
 import { WithTimestampsAndStringId } from './abstract-entity';
 import { Project } from './project';

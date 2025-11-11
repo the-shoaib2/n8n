@@ -1,6 +1,6 @@
 import type { ChatRequest } from '@/features/ai/assistant/assistant.types';
 import { useAIAssistantHelpers } from '@/features/ai/assistant/composables/useAIAssistantHelpers';
-import type { IRunExecutionData } from 'n8n-workflow';
+import type { IRunExecutionData } from 'aura-workflow';
 import type { IWorkflowDb } from '@/Interface';
 
 export function generateMessageId(): string {

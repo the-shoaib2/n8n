@@ -1,5 +1,5 @@
 import { Service } from '@aura/di';
-import { DataSource, IsNull, Repository } from '@aura/typeorm';
+import { DataSource, IsNull, Repository } from '@n8n/typeorm';
 
 import { WebhookEntity } from '../entities';
 

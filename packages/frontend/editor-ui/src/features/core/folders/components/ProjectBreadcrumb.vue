@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { type Project, ProjectTypes } from '@/features/collaboration/projects/projects.types';
-import { isIconOrEmoji, type IconOrEmoji } from '@n8n/design-system/components/N8nIconPicker/types';
+import { isIconOrEmoji, type IconOrEmoji } from '@aura/design-system/components/N8nIconPicker/types';
 
-import { N8nLink, N8nText } from '@n8n/design-system';
+import { N8nLink, N8nText } from '@aura/design-system';
 import ProjectIcon from '@/features/collaboration/projects/components/ProjectIcon.vue';
 type Props = {
 	currentProject?: Project;

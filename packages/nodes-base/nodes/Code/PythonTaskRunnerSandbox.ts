@@ -3,7 +3,7 @@ import {
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { TextKeys } from './result-validation';
 import { validateRunCodeAllItems, validateRunCodeEachItem } from './result-validation';

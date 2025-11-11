@@ -126,8 +126,8 @@ For automated coverage reporting:
 - name: Generate Coverage Report
   run: |
     pnpm --filter n8n-editor-ui build:coverage
-    pnpm --filter n8n-playwright test:ui:coverage
-    pnpm --filter n8n-playwright coverage:report
+    pnpm --filter aura-playwright test:ui:coverage
+    pnpm --filter aura-playwright coverage:report
   env:
     COVERAGE_ENABLED: true
 ```

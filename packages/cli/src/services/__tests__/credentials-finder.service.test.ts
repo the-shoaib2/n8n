@@ -13,7 +13,7 @@ import {
 	PROJECT_OWNER_ROLE_SLUG,
 	PROJECT_VIEWER_ROLE_SLUG,
 } from '@aura/permissions';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { mockInstance } from '@aura/backend-test-utils';
 

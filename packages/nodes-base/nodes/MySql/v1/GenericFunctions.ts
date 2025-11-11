@@ -4,7 +4,7 @@ import type {
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export async function createConnection(
 	credentials: ICredentialDataDecryptedObject,

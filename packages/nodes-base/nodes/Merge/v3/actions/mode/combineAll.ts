@@ -4,7 +4,7 @@ import type {
 	INodeExecutionData,
 	INodeProperties,
 	IPairedItemData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

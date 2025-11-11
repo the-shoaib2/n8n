@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { usePushConnectionStore } from '@/app/stores/pushConnection.store';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { computed } from 'vue';
 
-import { N8nIcon, N8nTooltip } from '@n8n/design-system';
+import { N8nIcon, N8nTooltip } from '@aura/design-system';
 const pushConnectionStore = usePushConnectionStore();
 const i18n = useI18n();
 

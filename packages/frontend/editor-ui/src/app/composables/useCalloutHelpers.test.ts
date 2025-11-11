@@ -1,5 +1,5 @@
 import { useCalloutHelpers } from '@/app/composables/useCalloutHelpers';
-import { updateCurrentUserSettings } from '@n8n/rest-api-client/api/users';
+import { updateCurrentUserSettings } from '@aura/rest-api-client/api/users';
 import { createTestingPinia } from '@pinia/testing';
 import {
 	PrebuiltAgentTemplates,
@@ -57,13 +57,13 @@ vi.mock('@/app/stores/workflows.store', () => ({
 	}),
 }));
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@aura/stores/useRootStore', () => ({
 	useRootStore: () => ({
 		restApiContext: mocks.restApiContext,
 	}),
 }));
 
-vi.mock('@n8n/rest-api-client/api/users', () => ({
+vi.mock('@aura/rest-api-client/api/users', () => ({
 	updateCurrentUserSettings: vi.fn(),
 }));
 

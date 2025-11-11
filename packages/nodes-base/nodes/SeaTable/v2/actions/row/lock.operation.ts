@@ -1,4 +1,4 @@
-import type { IDataObject, INodeExecutionData, IExecuteFunctions } from 'n8n-workflow';
+import type { IDataObject, INodeExecutionData, IExecuteFunctions } from 'aura-workflow';
 
 import { seaTableApiRequest } from '../../GenericFunctions';
 

@@ -7,8 +7,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { BINARY_ENCODING, NodeOperationError, deepCopy, jsonParse } from 'n8n-workflow';
+} from 'aura-workflow';
+import { BINARY_ENCODING, NodeOperationError, deepCopy, jsonParse } from 'aura-workflow';
 import { icsCalendarToObject } from 'ts-ics';
 
 import { encodeDecodeOptions } from '@utils/descriptions';

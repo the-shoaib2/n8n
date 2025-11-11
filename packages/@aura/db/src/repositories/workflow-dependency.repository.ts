@@ -1,6 +1,6 @@
 import { DatabaseConfig } from '@aura/config';
 import { Service } from '@aura/di';
-import { DataSource, EntityManager, LessThan, Repository } from '@aura/typeorm';
+import { DataSource, EntityManager, LessThan, Repository } from '@n8n/typeorm';
 
 import { WorkflowDependency } from '../entities';
 

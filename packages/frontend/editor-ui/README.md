@@ -41,7 +41,7 @@ pnpm lint
 ### Run your end-to-end tests
 
 ```
-pnpm --filter=n8n-playwright test:local
+pnpm --filter=aura-playwright test:local
 ```
 
 ### Run your unit tests

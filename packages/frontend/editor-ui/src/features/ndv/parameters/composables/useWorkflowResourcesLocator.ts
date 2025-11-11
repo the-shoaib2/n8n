@@ -4,7 +4,7 @@ import type { Router } from 'vue-router';
 import { VIEWS } from '@/app/constants';
 
 import type { IWorkflowDb, WorkflowListResource } from '@/Interface';
-import type { NodeParameterValue } from 'n8n-workflow';
+import type { NodeParameterValue } from 'aura-workflow';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 

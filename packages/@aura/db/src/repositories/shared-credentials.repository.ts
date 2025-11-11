@@ -1,7 +1,7 @@
 import { Service } from '@aura/di';
 import type { CredentialSharingRole } from '@aura/permissions';
-import type { EntityManager, FindOptionsWhere } from '@aura/typeorm';
-import { DataSource, In, Not, Repository } from '@aura/typeorm';
+import type { EntityManager, FindOptionsWhere } from '@n8n/typeorm';
+import { DataSource, In, Not, Repository } from '@n8n/typeorm';
 
 import type { Project } from '../entities';
 import { SharedCredentials } from '../entities';

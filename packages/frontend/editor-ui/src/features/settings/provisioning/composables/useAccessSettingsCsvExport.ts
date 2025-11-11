@@ -1,7 +1,7 @@
-import { type UsersListFilterDto } from '@n8n/api-types';
+import { type UsersListFilterDto } from '@aura/api-types';
 import { ref } from 'vue';
-import * as usersApi from '@n8n/rest-api-client/api/users';
-import { useRootStore } from '@n8n/stores/useRootStore';
+import * as usersApi from '@aura/rest-api-client/api/users';
+import { useRootStore } from '@aura/stores/useRootStore';
 
 interface AccessSettingsUserData {
 	count: number;

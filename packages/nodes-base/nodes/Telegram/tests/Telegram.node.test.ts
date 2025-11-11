@@ -4,7 +4,7 @@ import type {
 	INode,
 	INodeExecutionData,
 	NodeExecutionWithMetadata,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import * as GenericFunctions from '../GenericFunctions';
 import { Telegram } from '../Telegram.node';

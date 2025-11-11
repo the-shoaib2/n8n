@@ -1,4 +1,4 @@
-import { Column, Entity, Index, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, Index, PrimaryColumn } from '@n8n/typeorm';
 import { IHttpRequestMethods } from 'aura-workflow';
 
 @Entity()

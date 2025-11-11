@@ -19,7 +19,7 @@ const Template: StoryFn = (args) => ({
 
 export const WithGroups = Template.bind({});
 WithGroups.args = {
-	currentUserEmail: 'sunny@n8n.io',
+	currentUserEmail: 'sunny@aura.io',
 	users: {
 		Owners: [
 			{
@@ -27,7 +27,7 @@ WithGroups.args = {
 				firstName: 'Sunny',
 				lastName: 'Side',
 				fullName: 'Sunny Side',
-				email: 'sunny@n8n.io',
+				email: 'sunny@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: true,
@@ -39,7 +39,7 @@ WithGroups.args = {
 				firstName: 'Kobi',
 				lastName: 'Dog',
 				fullName: 'Kobi Dog',
-				email: 'kobi@n8n.io',
+				email: 'kobi@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -53,7 +53,7 @@ WithGroups.args = {
 				firstName: 'John',
 				lastName: 'Doe',
 				fullName: 'John Doe',
-				email: 'john@n8n.io',
+				email: 'john@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -65,7 +65,7 @@ WithGroups.args = {
 				firstName: 'Jane',
 				lastName: 'Doe',
 				fullName: 'Jane Doe',
-				email: 'jane@n8n.io',
+				email: 'jane@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -77,7 +77,7 @@ WithGroups.args = {
 				firstName: 'Test',
 				lastName: 'User',
 				fullName: 'Test User',
-				email: 'test@n8n.io',
+				email: 'test@aura.io',
 				isDefaultUser: false,
 				isPendingUser: true,
 				isOwner: false,
@@ -91,7 +91,7 @@ WithGroups.args = {
 
 export const SingleGroup = Template.bind({});
 SingleGroup.args = {
-	currentUserEmail: 'sunny@n8n.io',
+	currentUserEmail: 'sunny@aura.io',
 	users: {
 		Owners: [
 			{
@@ -99,7 +99,7 @@ SingleGroup.args = {
 				firstName: 'Sunny',
 				lastName: 'Side',
 				fullName: 'Sunny Side',
-				email: 'sunny@n8n.io',
+				email: 'sunny@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: true,
@@ -111,7 +111,7 @@ SingleGroup.args = {
 				firstName: 'Kobi',
 				lastName: 'Dog',
 				fullName: 'Kobi Dog',
-				email: 'kobi@n8n.io',
+				email: 'kobi@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -123,7 +123,7 @@ SingleGroup.args = {
 				firstName: 'Jane',
 				lastName: 'Doe',
 				fullName: 'Jane Doe',
-				email: 'jane@n8n.io',
+				email: 'jane@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -135,7 +135,7 @@ SingleGroup.args = {
 				firstName: 'Test',
 				lastName: 'User',
 				fullName: 'Test User',
-				email: 'test@n8n.io',
+				email: 'test@aura.io',
 				isDefaultUser: false,
 				isPendingUser: true,
 				isOwner: false,
@@ -148,7 +148,7 @@ SingleGroup.args = {
 
 export const NoCutoff = Template.bind({});
 NoCutoff.args = {
-	currentUserEmail: 'sunny@n8n.io',
+	currentUserEmail: 'sunny@aura.io',
 	users: {
 		Owners: [
 			{
@@ -156,7 +156,7 @@ NoCutoff.args = {
 				firstName: 'Sunny',
 				lastName: 'Side',
 				fullName: 'Sunny Side',
-				email: 'sunny@n8n.io',
+				email: 'sunny@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: true,
@@ -168,7 +168,7 @@ NoCutoff.args = {
 				firstName: 'Kobi',
 				lastName: 'Dog',
 				fullName: 'Kobi Dog',
-				email: 'kobi@n8n.io',
+				email: 'kobi@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,
@@ -180,7 +180,7 @@ NoCutoff.args = {
 				firstName: 'John',
 				lastName: 'Doe',
 				fullName: 'John Doe',
-				email: 'john@n8n.io',
+				email: 'john@aura.io',
 				isDefaultUser: false,
 				isPendingUser: false,
 				isOwner: false,

@@ -1,21 +1,21 @@
 import { v4 as uuidv4 } from 'uuid';
 import { type Plugin, computed, nextTick, ref, type Ref } from 'vue';
 
-import * as api from '@n8n/chat/api';
-import { ChatOptionsSymbol, ChatSymbol, localStorageSessionIdKey } from '@n8n/chat/constants';
-import { chatEventBus } from '@n8n/chat/event-buses';
+import * as api from '@aura/chat/api';
+import { ChatOptionsSymbol, ChatSymbol, localStorageSessionIdKey } from '@aura/chat/constants';
+import { chatEventBus } from '@aura/chat/event-buses';
 import type {
 	ChatMessage,
 	ChatOptions,
 	ChatMessageText,
 	SendMessageResponse,
-} from '@n8n/chat/types';
-import { StreamingMessageManager, createBotMessage } from '@n8n/chat/utils/streaming';
+} from '@aura/chat/types';
+import { StreamingMessageManager, createBotMessage } from '@aura/chat/utils/streaming';
 import {
 	handleStreamingChunk,
 	handleNodeStart,
 	handleNodeComplete,
-} from '@n8n/chat/utils/streamingHandlers';
+} from '@aura/chat/utils/streamingHandlers';
 
 /**
  * Creates a new user message object with a unique ID

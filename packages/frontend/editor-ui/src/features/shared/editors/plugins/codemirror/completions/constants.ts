@@ -1,5 +1,5 @@
 import type { Completion, CompletionSection } from '@codemirror/autocomplete';
-import { i18n } from '@n8n/i18n';
+import { i18n } from '@aura/i18n';
 import { withSectionHeader } from './utils';
 import { createInfoBoxRenderer } from './infoBoxRenderer';
 import { Facet } from '@codemirror/state';

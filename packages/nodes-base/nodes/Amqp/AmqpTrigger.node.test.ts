@@ -1,4 +1,4 @@
-import { NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { testTriggerNode } from '@test/nodes/TriggerHelpers';
 

@@ -1,5 +1,5 @@
 /* eslint-disable n8n-nodes-base/node-filename-against-convention */
-import { NodeConnectionTypes, type INodeTypeDescription, type INodeProperties } from 'n8n-workflow';
+import { NodeConnectionTypes, type INodeTypeDescription, type INodeProperties } from 'aura-workflow';
 
 import * as drive from './drive/Drive.resource';
 import * as file from './file/File.resource';

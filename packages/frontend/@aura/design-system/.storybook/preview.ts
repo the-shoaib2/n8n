@@ -1,4 +1,4 @@
-import { sharedTags } from '@n8n/storybook/main';
+import { sharedTags } from '@aura/storybook/main';
 import { withThemeByDataAttribute } from '@storybook/addon-themes';
 import { setup } from '@storybook/vue3';
 import ElementPlus from 'element-plus';

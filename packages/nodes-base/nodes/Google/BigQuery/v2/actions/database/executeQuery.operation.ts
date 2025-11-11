@@ -3,8 +3,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { ApplicationError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeOperationError, sleep } from 'aura-workflow';
 
 import { getResolvables, updateDisplayOptions } from '@utils/utilities';
 

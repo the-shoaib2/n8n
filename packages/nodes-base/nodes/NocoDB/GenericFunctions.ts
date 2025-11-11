@@ -9,8 +9,8 @@ import type {
 	IPairedItemData,
 	IPollFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
-import { jsonParse, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, NodeOperationError } from 'aura-workflow';
 
 interface IAttachment {
 	url: string;

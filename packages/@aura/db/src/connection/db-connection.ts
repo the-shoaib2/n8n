@@ -3,7 +3,7 @@ import { DatabaseConfig } from '@aura/config';
 import { Time } from '@aura/constants';
 import { Memoized } from '@aura/decorators';
 import { Container, Service } from '@aura/di';
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 import { ErrorReporter } from 'aura-core';
 import { DbConnectionTimeoutError, ensureError } from 'aura-workflow';
 

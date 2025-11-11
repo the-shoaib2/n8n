@@ -1,4 +1,4 @@
-import { baseConfig } from '@n8n/stylelint-config/base';
+import { baseConfig } from '@aura/stylelint-config/base';
 
 export default {
 	...baseConfig,
@@ -8,6 +8,6 @@ export default {
 		// Because most var names seem to be breaking
 		// And it needs to continue to be backwards compatible
 		// As users could be using it directly on websites and customizing css variables
-		'@n8n/css-var-naming': null,
+		'@aura/css-var-naming': null,
 	},
 };

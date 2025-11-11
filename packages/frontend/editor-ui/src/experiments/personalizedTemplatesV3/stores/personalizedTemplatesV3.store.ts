@@ -5,7 +5,7 @@ import { usePostHog } from '@/app/stores/posthog.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useTemplatesStore } from '@/features/workflows/templates/templates.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { defineStore } from 'pinia';
 import { computed, ref, watch } from 'vue';
 

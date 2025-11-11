@@ -1,5 +1,5 @@
 import type { Tool } from '@langchain/core/tools';
-import { makeResolverFromLegacyOptions } from '@aura/vm2';
+import { makeResolverFromLegacyOptions } from '@n8n/vm2';
 import { JavaScriptSandbox } from 'aura-nodes-base/dist/nodes/Code/JavaScriptSandbox';
 import { getSandboxContext } from 'aura-nodes-base/dist/nodes/Code/Sandbox';
 import { standardizeOutput } from 'aura-nodes-base/dist/nodes/Code/utils';

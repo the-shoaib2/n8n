@@ -47,7 +47,7 @@ const openAiNode: INodeUi = {
 		jsonOutput: false,
 		options: {},
 	},
-	type: '@n8n/n8n-nodes-langchain.openAi',
+	type: '@aura/n8n-nodes-langchain.openAi',
 	typeVersion: 1.8,
 	position: [440, 0],
 	id: '17241295-a277-4cdf-8c46-6c3f85b335e9',

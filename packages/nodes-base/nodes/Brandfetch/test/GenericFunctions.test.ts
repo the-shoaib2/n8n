@@ -4,7 +4,7 @@ import type {
 	ILoadOptionsFunctions,
 	IHttpRequestMethods,
 	INode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { brandfetchApiRequest } from '../GenericFunctions';
 

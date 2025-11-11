@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import {
 	CRON_NODE_TYPE,
@@ -19,7 +19,7 @@ import {
 	type NodeConnectionType,
 	NodeConnectionTypes,
 	NodeHelpers,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { computed, ref, watch } from 'vue';
 import InputNodeSelect from './InputNodeSelect.vue';
 import NodeExecuteButton from '@/app/components/NodeExecuteButton.vue';
@@ -33,7 +33,7 @@ import { type SearchShortcut } from '@/features/workflows/canvas/canvas.types';
 import { useRouter } from 'vue-router';
 import { useRunWorkflow } from '@/app/composables/useRunWorkflow';
 
-import { N8nIcon, N8nRadioButtons, N8nText, N8nTooltip } from '@n8n/design-system';
+import { N8nIcon, N8nRadioButtons, N8nText, N8nTooltip } from '@aura/design-system';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 type MappingMode = 'debugging' | 'mapping';
 

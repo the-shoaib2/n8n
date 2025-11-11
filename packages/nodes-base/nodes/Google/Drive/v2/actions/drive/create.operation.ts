@@ -3,7 +3,7 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { updateDisplayOptions } from '@utils/utilities';

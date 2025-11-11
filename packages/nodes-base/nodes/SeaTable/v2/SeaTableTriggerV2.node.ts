@@ -7,7 +7,7 @@ import {
 	NodeConnectionTypes,
 	type INodeTypeBaseDescription,
 	type IDataObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type {
 	ICtx,

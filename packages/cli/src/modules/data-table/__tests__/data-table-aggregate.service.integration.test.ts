@@ -10,7 +10,7 @@ import {
 	GLOBAL_ADMIN_ROLE,
 } from '@aura/db';
 import { Container } from '@aura/di';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 
 import { createUser } from '@test-integration/db/users';

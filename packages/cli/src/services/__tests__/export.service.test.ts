@@ -1,6 +1,6 @@
 import { type Logger } from '@aura/backend-common';
 import { ExportService } from '../export.service';
-import { type DataSource } from '@aura/typeorm';
+import { type DataSource } from '@n8n/typeorm';
 import { mkdir, rm, readdir, appendFile } from 'fs/promises';
 import { mock } from 'jest-mock-extended';
 import type { Cipher } from 'aura-core';

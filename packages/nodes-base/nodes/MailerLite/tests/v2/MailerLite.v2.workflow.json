@@ -11,7 +11,7 @@
 		},
 		{
 			"parameters": {
-				"email": "user@n8n.io",
+				"email": "user@aura.io",
 				"additionalFields": {
 					"status": "active"
 				}
@@ -47,7 +47,7 @@
 		{
 			"parameters": {
 				"operation": "get",
-				"subscriberId": "user@n8n.io"
+				"subscriberId": "user@aura.io"
 			},
 			"type": "n8n-nodes-base.mailerLite",
 			"typeVersion": 2,
@@ -64,7 +64,7 @@
 		{
 			"parameters": {
 				"operation": "update",
-				"subscriberId": "user@n8n.io",
+				"subscriberId": "user@aura.io",
 				"additionalFields": {
 					"status": "junk",
 					"optin_ip": "8.8.8.8"
@@ -124,7 +124,7 @@
 			{
 				"json": {
 					"id": "139872142007207563",
-					"email": "user@n8n.io",
+					"email": "user@aura.io",
 					"status": "junk",
 					"source": "api",
 					"sent": 0,
@@ -157,7 +157,7 @@
 			{
 				"json": {
 					"id": "139872142007207563",
-					"email": "user@n8n.io",
+					"email": "user@aura.io",
 					"status": "junk",
 					"source": "api",
 					"sent": 0,
@@ -191,7 +191,7 @@
 				"json": {
 					"data": {
 						"id": "139872142007207563",
-						"email": "user@n8n.io",
+						"email": "user@aura.io",
 						"status": "junk",
 						"source": "api",
 						"sent": 0,
@@ -225,7 +225,7 @@
 			{
 				"json": {
 					"id": "139872142007207563",
-					"email": "user@n8n.io",
+					"email": "user@aura.io",
 					"status": "junk",
 					"source": "api",
 					"sent": 0,
@@ -255,7 +255,7 @@
 			{
 				"json": {
 					"id": "139059851540038710",
-					"email": "nathan@n8n.io",
+					"email": "nathan@aura.io",
 					"status": "junk",
 					"source": "api",
 					"sent": 0,

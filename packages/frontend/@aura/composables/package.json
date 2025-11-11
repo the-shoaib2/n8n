@@ -1,5 +1,5 @@
 {
-  "name": "@n8n/composables",
+  "name": "@aura/composables",
   "type": "module",
   "version": "1.12.0",
   "files": [
@@ -25,9 +25,9 @@
     "format:check": "biome ci . && prettier --check . --ignore-path ../../../../.prettierignore"
   },
   "devDependencies": {
-    "@n8n/eslint-config": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@aura/eslint-config": "workspace:*",
+    "@aura/typescript-config": "workspace:*",
+    "@aura/vitest-config": "workspace:*",
     "@testing-library/jest-dom": "catalog:frontend",
     "@testing-library/user-event": "catalog:frontend",
     "@testing-library/vue": "catalog:frontend",

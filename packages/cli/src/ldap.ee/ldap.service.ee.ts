@@ -6,7 +6,7 @@ import { isValidEmail, SettingsRepository } from '@aura/db';
 import type { User, RunningMode, SyncStatus } from '@aura/db';
 import { Service, Container } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { QueryFailedError } from '@aura/typeorm';
+import { QueryFailedError } from '@n8n/typeorm';
 import type { Entry as LdapUser, ClientOptions } from 'ldapts';
 import { Client } from 'ldapts';
 import { Cipher } from 'aura-core';

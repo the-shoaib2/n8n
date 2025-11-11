@@ -1,6 +1,6 @@
 import type { MockProxy } from 'jest-mock-extended';
 import { mock } from 'jest-mock-extended';
-import { SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'n8n-workflow';
+import { SEND_AND_WAIT_OPERATION, type IExecuteFunctions } from 'aura-workflow';
 
 import { versionDescription } from '../../../../v2/actions/versionDescription';
 import { DiscordV2 } from '../../../../v2/DiscordV2.node';

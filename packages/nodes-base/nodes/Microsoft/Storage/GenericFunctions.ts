@@ -13,8 +13,8 @@ import type {
 	INodeListSearchItems,
 	INodeParameterResourceLocator,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 import { Parser } from 'xml2js';
 import { firstCharLowerCase, parseBooleans, parseNumbers } from 'xml2js/lib/processors';
 

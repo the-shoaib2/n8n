@@ -3,7 +3,7 @@ import type {
 	ILoadOptionsFunctions,
 	INodeListSearchItems,
 	INodeListSearchResult,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { IDriveItem, IList, IListItem, ISite } from '../helpers/interfaces';
 import { microsoftSharePointApiRequest } from '../transport';

@@ -53,7 +53,7 @@
 		{
 			"parameters": {
 				"resource": "person",
-				"email": "jan@n8n.io",
+				"email": "jan@aura.io",
 				"additionalFields": {
 					"company": "n8n"
 				}

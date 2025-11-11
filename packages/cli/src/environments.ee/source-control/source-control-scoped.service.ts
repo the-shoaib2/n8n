@@ -10,7 +10,7 @@ import {
 import { Service } from '@aura/di';
 import { hasGlobalScope } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { FindOptionsWhere } from '@aura/typeorm';
+import type { FindOptionsWhere } from '@n8n/typeorm';
 
 import { SourceControlContext } from './types/source-control-context';
 

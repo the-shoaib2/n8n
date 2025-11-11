@@ -7,8 +7,8 @@ import type {
 	INodeExecutionData,
 	IRun,
 	ITriggerFunctions,
-} from 'n8n-workflow';
-import { jsonParse, sleep } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, sleep } from 'aura-workflow';
 
 import { formatPrivateKey } from '@utils/utilities';
 

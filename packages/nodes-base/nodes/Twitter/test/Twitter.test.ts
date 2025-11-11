@@ -1,5 +1,5 @@
 import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import type { INodeParameterResourceLocator } from 'n8n-workflow';
+import type { INodeParameterResourceLocator } from 'aura-workflow';
 import nock from 'nock';
 
 import { returnId } from '../V2/GenericFunctions';

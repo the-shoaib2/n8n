@@ -15,7 +15,7 @@
 		},
 		{
 			"parameters": {
-				"email": "jan@n8n.io"
+				"email": "jan@aura.io"
 			},
 			"name": "Mailcheck",
 			"type": "n8n-nodes-base.mailcheck",

@@ -24,7 +24,7 @@ vi.mock('virtual:icons/mdi/send', () => ({
 	default: { name: 'IconSend' },
 }));
 
-vi.mock('@n8n/chat/composables', () => ({
+vi.mock('@aura/chat/composables', () => ({
 	useI18n: () => ({
 		t: (key: string) => key,
 	}),
@@ -45,7 +45,7 @@ vi.mock('@n8n/chat/composables', () => ({
 	}),
 }));
 
-vi.mock('@n8n/chat/event-buses', () => ({
+vi.mock('@aura/chat/event-buses', () => ({
 	chatEventBus: {
 		on: vi.fn(),
 		off: vi.fn(),

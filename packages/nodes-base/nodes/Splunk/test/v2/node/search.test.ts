@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
 
 import * as search from '../../../v2/actions/search';
 import * as transport from '../../../v2/transport';

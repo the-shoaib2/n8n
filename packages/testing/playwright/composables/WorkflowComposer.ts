@@ -1,6 +1,6 @@
 import type { Request } from '@playwright/test';
 import { expect } from '@playwright/test';
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'aura-workflow';
 import { nanoid } from 'nanoid';
 
 import type { n8nPage } from '../pages/n8nPage';
@@ -154,7 +154,7 @@ export class WorkflowComposer {
 		const workflows = await response.json();
 		return workflows.data[0];
   }
- 
+
   /**
 	 * Moves a workflow to a different project or user.
 	 * @param workflowName - The name of the workflow to move

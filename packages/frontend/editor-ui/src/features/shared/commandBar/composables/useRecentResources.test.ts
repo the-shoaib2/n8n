@@ -50,7 +50,7 @@ vi.mock('vue-router', async (importOriginal) => {
 	};
 });
 
-vi.mock('@n8n/i18n', async (importOriginal) => ({
+vi.mock('@aura/i18n', async (importOriginal) => ({
 	...(await importOriginal()),
 	useI18n: () => ({
 		baseText: (key: string) => key,

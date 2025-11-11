@@ -7,7 +7,7 @@ import {
 	type INodeTypeBaseDescription,
 	type INodeTypeDescription,
 	type IWebhookFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	appendAttributionToForm,

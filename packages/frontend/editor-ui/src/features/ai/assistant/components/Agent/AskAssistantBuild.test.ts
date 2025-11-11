@@ -35,7 +35,7 @@ vi.mock('./ExecuteMessage.vue', () => ({
 }));
 
 // Mock AskAssistantChat component
-vi.mock('@n8n/design-system/components/AskAssistantChat/AskAssistantChat.vue', () => ({
+vi.mock('@aura/design-system/components/AskAssistantChat/AskAssistantChat.vue', () => ({
 	default: defineComponent({
 		name: 'AskAssistantChat',
 		props: [
@@ -105,7 +105,7 @@ import { faker } from '@faker-js/faker';
 import AskAssistantBuild from './AskAssistantBuild.vue';
 import { useBuilderStore } from '../../builder.store';
 import { mockedStore } from '@/__tests__/utils';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import type { INodeUi } from '@/Interface';
 import { useUsersStore } from '@/features/settings/users/users.store';
@@ -125,7 +125,7 @@ vi.mock('@/app/composables/useTelemetry', () => ({
 }));
 
 // Mock i18n
-vi.mock('@n8n/i18n', async (importOriginal) => ({
+vi.mock('@aura/i18n', async (importOriginal) => ({
 	...(await importOriginal()),
 	useI18n: () => ({
 		baseText: (key: string) => key,

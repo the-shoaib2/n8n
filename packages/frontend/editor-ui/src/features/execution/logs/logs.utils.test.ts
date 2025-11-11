@@ -16,8 +16,8 @@ import {
 	processFiles,
 	extractBotResponse,
 } from './logs.utils';
-import { AGENT_LANGCHAIN_NODE_TYPE, NodeConnectionTypes } from 'n8n-workflow';
-import type { ExecutionError, ITaskStartedData, IRunExecutionData } from 'n8n-workflow';
+import { AGENT_LANGCHAIN_NODE_TYPE, NodeConnectionTypes } from 'aura-workflow';
+import type { ExecutionError, ITaskStartedData, IRunExecutionData } from 'aura-workflow';
 import {
 	aiAgentNode,
 	aiChatWorkflow,

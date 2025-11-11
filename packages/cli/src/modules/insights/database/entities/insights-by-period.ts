@@ -6,7 +6,7 @@ import {
 	JoinColumn,
 	ManyToOne,
 	PrimaryGeneratedColumn,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import { UnexpectedError } from 'aura-workflow';
 
 import { InsightsMetadata } from './insights-metadata';

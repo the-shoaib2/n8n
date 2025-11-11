@@ -9,7 +9,7 @@ import type {
 	INodeTypeDescription,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	NodeApiError,
 	NodeOperationError,
@@ -17,7 +17,7 @@ import {
 	removeCircularRefs,
 	NodeConnectionTypes,
 	isDomainAllowed,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type { Readable } from 'stream';
 
 import type { IAuthDataSanitizeKeys } from '../GenericFunctions';
@@ -852,7 +852,7 @@ export class HttpRequestV2 implements INodeType {
 							const contentTypesAllowed = ['raw', 'multipart-form-data'];
 
 							if (!contentTypesAllowed.includes(options.bodyContentType as string)) {
-								// As n8n-workflow.NodeHelpers.getParameterResolveOrder can not be changed
+								// As aura-workflow.NodeHelpers.getParameterResolveOrder can not be changed
 								// easily to handle parameters in dot.notation simply error for now.
 								throw new NodeOperationError(
 									this.getNode(),

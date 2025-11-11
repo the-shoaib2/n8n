@@ -41,7 +41,7 @@ This is only a template - your module may not need all of these files, or it may
 Backend modules currently live at `packages/cli/src/modules`, so imports can be:
 
 - from inside the module dir
-- from common packages like `@n8n/db`, `@n8n/backend-common`, `@n8n/backend-test-utils`, etc.
+- from common packages like `@aura/db`, `@aura/backend-common`, `@aura/backend-test-utils`, etc.
 - from `cli`
 - from third-party libs available in, or added to, `cli`
 
@@ -150,7 +150,7 @@ Module-level decorators to be aware of:
 
 ## Controller
 
-To register a controller with the server, simply import the controller file in the module entrypoint: 
+To register a controller with the server, simply import the controller file in the module entrypoint:
 
 ```ts
 @BackendModule({ name: 'my-feature' })
@@ -246,7 +246,7 @@ export class MyFeatureRepository extends Repository<MyFeatureEntity> {
   }
 
   async getSummary() {
-    return await /* typeorm query on entities */; 
+    return await /* typeorm query on entities */;
   }
 }
 ```
@@ -278,7 +278,7 @@ Entities must be registered with `typeorm` in the module entrypoint:
 class MyFeatureModule implements ModuleInterface {
   async entities() {
     const { MyFeatureEntity } = await import('./my-feature.entity');
-    
+
     return [MyFeatureEntity];
   }
 }
@@ -290,7 +290,7 @@ Entity-level decorators to be aware of:
 
 ## Migrations
 
-As an exception, migrations remain centralized at `@n8n/db/src/migrations`, because conditionally running migrations would introduce unwanted complexity at this time. This means that schema changes from modules are _always_ applied to the database, even when modules are disabled.
+As an exception, migrations remain centralized at `@aura/db/src/migrations`, because conditionally running migrations would introduce unwanted complexity at this time. This means that schema changes from modules are _always_ applied to the database, even when modules are disabled.
 
 ## Configuration
 
@@ -321,29 +321,29 @@ Occasionally, a module may need to define a module-specific CLI command. To do s
 
 Place unit and integration tests for a backend module at `packages/cli/src/modules/{featureName}/__tests__`. Use the `.test.ts` infix.
 
-Currently, testing utilities live partly at `cli` and partly at `@n8n/backend-test-utils`. In future, all testing utilities will be moved to common packages, to make modules more decoupled from `cli`.
+Currently, testing utilities live partly at `cli` and partly at `@aura/backend-test-utils`. In future, all testing utilities will be moved to common packages, to make modules more decoupled from `cli`.
 
 ## Future work
 
 1. A few aspects of modules continue to be defined outside a module's dir:
 
-- Add a license flag to `LICENSE_FEATURES` at `packages/@n8n/constants/src/index.ts`
+- Add a license flag to `LICENSE_FEATURES` at `packages/@aura/constants/src/index.ts`
 - Add a logging scope to `LOG_SCOPES` at `packages/cli/src/logging.config.ts`
-- Add a license check to `LicenseState` at `packages/@n8n/backend-common/src/license-state.ts`
-- Add a migration (as discussed above) at `packages/@n8n/db/src/migrations`
-- Add request payload validation using `zod` at `@n8n/api-types`
-- Add a module to default modules at `packages/@n8n/backend-common/src/modules/module-registry.ts`
+- Add a license check to `LicenseState` at `packages/@aura/backend-common/src/license-state.ts`
+- Add a migration (as discussed above) at `packages/@aura/db/src/migrations`
+- Add request payload validation using `zod` at `@aura/api-types`
+- Add a module to default modules at `packages/@aura/backend-common/src/modules/module-registry.ts`
 
 2. License events (e.g. expiration) currently do not trigger module shutdown or initialization at runtime.
 
-3. Some core functionality is yet to be moved from `cli` into common packages. This is not a blocker for module adoption, but this is desirable so that (a) modules become decoupled from `cli` in the long term, and (b) future external extensions can access some of that functionality. 
+3. Some core functionality is yet to be moved from `cli` into common packages. This is not a blocker for module adoption, but this is desirable so that (a) modules become decoupled from `cli` in the long term, and (b) future external extensions can access some of that functionality.
 
 4. Existing features that are not modules (e.g. LDAP) should be turned into modules over time.
 
 ## FAQs
 
-- **What is a good example of a backend module?** Our first backend module is the `insights` module at `packages/@n8n/modules/insights`.
-- **My feature is already a separate _package_ at `packages/@n8n/{feature}`. How does this work with modules?** If your feature is already fully decoupled from `cli`, or if you know in advance that your feature will have zero dependencies on `cli`, then you already stand to gain most of the benefits of modularity. In this case, you can add a thin module to `cli` containing an entrypoint to your feature imported from your package, so that your feature is loaded only when needed.
+- **What is a good example of a backend module?** Our first backend module is the `insights` module at `packages/@aura/modules/insights`.
+- **My feature is already a separate _package_ at `packages/@aura/{feature}`. How does this work with modules?** If your feature is already fully decoupled from `cli`, or if you know in advance that your feature will have zero dependencies on `cli`, then you already stand to gain most of the benefits of modularity. In this case, you can add a thin module to `cli` containing an entrypoint to your feature imported from your package, so that your feature is loaded only when needed.
 - **Does all new functionality need to be added as a module?** If your feature relies heavily on internals, e.g. workflow archival, then a module may not be a good fit. Consider a module first, but use your best judgment. Reach out if unsure.
 - **Are backend modules meant for use by external contributors?** No, they are meant for features developed by the core team.
 - **How do I hot reload a module?** Modules are part of `cli` so you can use the usual `watch` command.

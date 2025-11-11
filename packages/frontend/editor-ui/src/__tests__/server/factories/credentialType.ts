@@ -1,5 +1,5 @@
 import { Factory } from 'miragejs';
-import type { ICredentialType } from 'n8n-workflow';
+import type { ICredentialType } from 'aura-workflow';
 
 const credentialTypes = [
 	'airtableApi',

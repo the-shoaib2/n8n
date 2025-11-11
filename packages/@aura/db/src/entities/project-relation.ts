@@ -1,4 +1,4 @@
-import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from '@aura/typeorm';
+import { Entity, JoinColumn, ManyToOne, PrimaryColumn } from '@n8n/typeorm';
 
 import { WithTimestamps } from './abstract-entity';
 import { Project } from './project';

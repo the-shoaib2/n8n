@@ -6,7 +6,7 @@ import {
 	ManyToOne,
 	PrimaryGeneratedColumn,
 	Relation,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 
 import { WithCreatedAt } from './abstract-entity';
 import type { WorkflowEntity } from './workflow-entity';

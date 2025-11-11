@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import { TIMEZONE_VALIDATION_REGEX } from './GenericFunctions';
 

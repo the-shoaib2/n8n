@@ -3,8 +3,8 @@ import type {
 	IExecuteFunctions,
 	ILoadOptionsFunctions,
 	INodeTypeBaseDescription,
-} from 'n8n-workflow';
-import { NodeOperationError, ApplicationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError, ApplicationError } from 'aura-workflow';
 
 import { SwitchV3 } from '../SwitchV3.node';
 

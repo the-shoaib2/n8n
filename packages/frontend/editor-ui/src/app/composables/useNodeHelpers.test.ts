@@ -5,8 +5,8 @@ import type {
 	INode,
 	INodeTypeDescription,
 	Workflow,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeHelpers } from 'aura-workflow';
 import { createTestingPinia } from '@pinia/testing';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { createTestNode, createMockEnterpriseSettings } from '@/__tests__/mocks';

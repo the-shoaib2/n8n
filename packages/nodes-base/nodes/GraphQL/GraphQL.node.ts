@@ -9,8 +9,8 @@ import type {
 	IRequestOptionsSimplified,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError, jsonParse } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError, jsonParse } from 'aura-workflow';
 
 export class GraphQL implements INodeType {
 	description: INodeTypeDescription = {

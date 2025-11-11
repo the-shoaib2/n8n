@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { usePersonalizedTemplatesV3Store } from '../stores/personalizedTemplatesV3.store';
 import NodeRecommendationCard from './NodeRecommendationCard.vue';
-import { useI18n } from '@n8n/i18n';
-import { N8nHeading } from '@n8n/design-system';
+import { useI18n } from '@aura/i18n';
+import { N8nHeading } from '@aura/design-system';
 
 const personalizedTemplateStore = usePersonalizedTemplatesV3Store();
 const locale = useI18n();

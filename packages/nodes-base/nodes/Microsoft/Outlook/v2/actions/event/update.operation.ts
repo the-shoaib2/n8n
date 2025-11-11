@@ -1,5 +1,5 @@
 import { DateTime } from 'luxon';
-import type { IDataObject, IExecuteFunctions, INodeProperties } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions, INodeProperties } from 'aura-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

@@ -4,9 +4,9 @@ import hljsJavascript from 'highlight.js/lib/languages/javascript';
 import hljsXML from 'highlight.js/lib/languages/xml';
 import { computed, onMounted } from 'vue';
 
-import Chat from '@n8n/chat/components/Chat.vue';
-import ChatWindow from '@n8n/chat/components/ChatWindow.vue';
-import { useOptions } from '@n8n/chat/composables';
+import Chat from '@aura/chat/components/Chat.vue';
+import ChatWindow from '@aura/chat/components/ChatWindow.vue';
+import { useOptions } from '@aura/chat/composables';
 
 defineProps({});
 

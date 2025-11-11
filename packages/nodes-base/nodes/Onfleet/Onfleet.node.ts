@@ -9,7 +9,7 @@ import {
 	type INodeTypeDescription,
 	type IRequestOptions,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { adminFields, adminOperations } from './descriptions/AdministratorDescription';
 import { containerFields, containerOperations } from './descriptions/ContainerDescription';

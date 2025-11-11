@@ -1,10 +1,10 @@
-import { GlobalConfig } from '@n8n/config';
-import type { entities } from '@n8n/db';
-import { AuthRolesService, DbConnection, DbConnectionOptions } from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { DataSourceOptions } from '@aura/typeorm';
-import { DataSource as Connection } from '@aura/typeorm';
-import { randomString } from 'n8n-workflow';
+import { GlobalConfig } from '@aura/config';
+import type { entities } from '@aura/db';
+import { AuthRolesService, DbConnection, DbConnectionOptions } from '@aura/db';
+import { Container } from '@aura/di';
+import type { DataSourceOptions } from '@n8n/typeorm';
+import { DataSource as Connection } from '@n8n/typeorm';
+import { randomString } from 'aura-workflow';
 
 export const testDbPrefix = 'n8n_test_';
 let isInitialized = false;

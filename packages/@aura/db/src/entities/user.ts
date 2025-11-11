@@ -11,7 +11,7 @@ import {
 	BeforeInsert,
 	JoinColumn,
 	ManyToOne,
-} from '@aura/typeorm';
+} from '@n8n/typeorm';
 import type { IUser, IUserSettings } from 'aura-workflow';
 
 import { JsonColumn, WithTimestamps } from './abstract-entity';

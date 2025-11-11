@@ -1,11 +1,11 @@
-import { ApplicationError } from '@n8n/errors';
+import { ApplicationError } from '@aura/errors';
 import type {
 	ITriggerFunctions,
 	IDataObject,
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { configurePostgres } from './transport';
 import type { PgpDatabase, PostgresNodeCredentials } from './v2/helpers/interfaces';

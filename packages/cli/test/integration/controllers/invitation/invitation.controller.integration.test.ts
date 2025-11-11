@@ -14,7 +14,7 @@ import {
 } from '@aura/db';
 import { Container } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
-import { Not } from '@aura/typeorm';
+import { Not } from '@n8n/typeorm';
 
 import {
 	assertReturnedUserProps,

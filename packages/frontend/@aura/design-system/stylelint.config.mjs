@@ -1,9 +1,9 @@
-import { baseConfig } from '@n8n/stylelint-config/base';
+import { baseConfig } from '@aura/stylelint-config/base';
 
 export default {
 	...baseConfig,
 	rules: {
 		...baseConfig.rules,
-		'@n8n/css-var-naming': [true, { severity: 'error' }],
+		'@aura/css-var-naming': [true, { severity: 'error' }],
 	},
 };

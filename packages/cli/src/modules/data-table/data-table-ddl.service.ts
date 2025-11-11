@@ -1,6 +1,6 @@
 import { CreateTable, DslColumn, withTransaction } from '@aura/db';
 import { Service } from '@aura/di';
-import { DataSource, DataSourceOptions, EntityManager } from '@aura/typeorm';
+import { DataSource, DataSourceOptions, EntityManager } from '@n8n/typeorm';
 import { UnexpectedError } from 'aura-workflow';
 
 import { DataTableColumn } from './data-table-column.entity';

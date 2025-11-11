@@ -9,8 +9,8 @@ import type {
 	ILoadOptionsFunctions,
 	JsonObject,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 import type { WebhookNotification, SubscriptionResponse } from './v2/helpers/types';
 import { createSubscription, getResourcePath } from './v2/helpers/utils-trigger';

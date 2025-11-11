@@ -1,5 +1,5 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import {
 	slackApiRequest,
@@ -8,8 +8,8 @@ import {
 	getMessageContent,
 } from '../../V2/GenericFunctions';
 
-jest.mock('n8n-workflow', () => ({
-	...jest.requireActual('n8n-workflow'),
+jest.mock('aura-workflow', () => ({
+	...jest.requireActual('aura-workflow'),
 	NodeApiError: jest.fn(),
 }));
 

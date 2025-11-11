@@ -10,7 +10,7 @@ import { Command } from '@aura/decorators';
 import { Container } from '@aura/di';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import glob from 'fast-glob';
 import fs from 'fs';
 import { Cipher } from 'aura-core';

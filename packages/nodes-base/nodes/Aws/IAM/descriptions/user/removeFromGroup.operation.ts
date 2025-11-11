@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { updateDisplayOptions } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
+import { updateDisplayOptions } from 'aura-workflow';
 
 import { groupLocator, userLocator } from '../common';
 

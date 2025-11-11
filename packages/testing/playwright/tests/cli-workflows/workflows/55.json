@@ -53,7 +53,7 @@
 		{
 			"parameters": {
 				"operation": "emailVerifier",
-				"email": "nodeqa@n8n.io"
+				"email": "nodeqa@aura.io"
 			},
 			"name": "Hunter2",
 			"type": "n8n-nodes-base.hunter",

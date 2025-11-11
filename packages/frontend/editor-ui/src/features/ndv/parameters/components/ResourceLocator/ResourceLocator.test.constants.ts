@@ -1,4 +1,4 @@
-import type { INode, INodeParameterResourceLocator, INodeProperties } from 'n8n-workflow';
+import type { INode, INodeParameterResourceLocator, INodeProperties } from 'aura-workflow';
 
 export const TEST_MODEL_VALUE: INodeParameterResourceLocator = {
 	__rl: true,

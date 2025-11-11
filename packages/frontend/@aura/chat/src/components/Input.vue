@@ -5,9 +5,9 @@ import IconPaperclip from 'virtual:icons/mdi/paperclip';
 import IconSend from 'virtual:icons/mdi/send';
 import { computed, onMounted, onUnmounted, ref, unref } from 'vue';
 
-import { useI18n, useChat, useOptions } from '@n8n/chat/composables';
-import { chatEventBus } from '@n8n/chat/event-buses';
-import { constructChatWebsocketUrl } from '@n8n/chat/utils';
+import { useI18n, useChat, useOptions } from '@aura/chat/composables';
+import { chatEventBus } from '@aura/chat/event-buses';
+import { constructChatWebsocketUrl } from '@aura/chat/utils';
 
 import ChatFile from './ChatFile.vue';
 import type { ChatMessage } from '../types';

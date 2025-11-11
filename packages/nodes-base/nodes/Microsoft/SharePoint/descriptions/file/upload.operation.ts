@@ -1,4 +1,4 @@
-import { updateDisplayOptions, type INodeProperties } from 'n8n-workflow';
+import { updateDisplayOptions, type INodeProperties } from 'aura-workflow';
 
 import { uploadFilePreSend } from '../../helpers/utils';
 import { folderRLC, siteRLC, untilSiteSelected } from '../common.descriptions';

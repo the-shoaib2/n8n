@@ -6,14 +6,14 @@ import type {
 	Workflow,
 	INodeConnections,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeHelpers, UserError, TelemetryHelpers } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeHelpers, UserError, TelemetryHelpers } from 'aura-workflow';
 import type { CanvasConnection, CanvasNode } from '@/features/workflows/canvas/canvas.types';
 import { CanvasConnectionMode } from '@/features/workflows/canvas/canvas.types';
 import type { AddedNode, INodeUi, IWorkflowDb, WorkflowDataWithTemplateId } from '@/Interface';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';
 import type { ICredentialsResponse } from '@/features/credentials/credentials.types';
-import type { IWorkflowTemplate, IWorkflowTemplateNode } from '@n8n/rest-api-client/api/templates';
+import type { IWorkflowTemplate, IWorkflowTemplateNode } from '@aura/rest-api-client/api/templates';
 import { RemoveNodeCommand, ReplaceNodeParametersCommand } from '@/app/models/history';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useUIStore } from '@/app/stores/ui.store';
@@ -43,7 +43,7 @@ import {
 	VIEWS,
 	WEBHOOK_NODE_TYPE,
 } from '@/app/constants';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import type { Connection } from '@vue-flow/core';
 import { useClipboard } from '@/app/composables/useClipboard';
 import { createCanvasConnectionHandleString } from '@/features/workflows/canvas/canvas.utils';
@@ -78,9 +78,9 @@ vi.mock('vue-router', async (importOriginal) => ({
 import { useCanvasOperations } from '@/app/composables/useCanvasOperations';
 import { GRID_SIZE, PUSH_NODES_OFFSET } from '@/app/utils/nodeViewUtils';
 
-vi.mock('n8n-workflow', async (importOriginal) => {
+vi.mock('aura-workflow', async (importOriginal) => {
 	// eslint-disable-next-line @typescript-eslint/consistent-type-imports
-	const actual = await importOriginal<typeof import('n8n-workflow')>();
+	const actual = await importOriginal<typeof import('aura-workflow')>();
 	return {
 		...actual,
 		TelemetryHelpers: {

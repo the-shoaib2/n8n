@@ -1,5 +1,5 @@
 import type { DatabaseConfig } from '@aura/config';
-import { DataSource, type DataSourceOptions } from '@aura/typeorm';
+import { DataSource, type DataSourceOptions } from '@n8n/typeorm';
 import { mock, mockDeep } from 'jest-mock-extended';
 import type { ErrorReporter } from 'aura-core';
 import { DbConnectionTimeoutError } from 'aura-workflow';
@@ -9,9 +9,9 @@ import type { Migration } from '../../migrations/migration-types';
 import { DbConnection } from '../db-connection';
 import type { DbConnectionOptions } from '../db-connection-options';
 
-jest.mock('@aura/typeorm', () => ({
+jest.mock('@n8n/typeorm', () => ({
 	DataSource: jest.fn(),
-	...jest.requireActual('@aura/typeorm'),
+	...jest.requireActual('@n8n/typeorm'),
 }));
 
 describe('DbConnection', () => {

@@ -5,8 +5,8 @@ import type {
 	ILoadOptionsFunctions,
 	IPollFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { BASE_URL } from '../helpers/constants';
 

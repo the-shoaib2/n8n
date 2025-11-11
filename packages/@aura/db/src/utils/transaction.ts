@@ -1,4 +1,4 @@
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 
 type Tx = EntityManager | null | undefined;
 

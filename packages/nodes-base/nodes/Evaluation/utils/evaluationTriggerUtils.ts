@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, INodeExecutionData, IDataObject } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData, IDataObject } from 'aura-workflow';
 
 import { readSheet } from '../../Google/Sheet/v2/actions/utils/readOperation';
 import { GoogleSheet } from '../../Google/Sheet/v2/helpers/GoogleSheet';

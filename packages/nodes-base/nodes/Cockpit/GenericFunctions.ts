@@ -5,8 +5,8 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, NodeApiError } from 'aura-workflow';
 
 export async function cockpitApiRequest(
 	this: IExecuteFunctions | ILoadOptionsFunctions,

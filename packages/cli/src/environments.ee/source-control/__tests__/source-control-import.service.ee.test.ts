@@ -13,7 +13,7 @@ import {
 	WorkflowEntity,
 	type WorkflowRepository,
 } from '@aura/db';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import * as fastGlob from 'fast-glob';
 import { mock } from 'jest-mock-extended';
 import { type InstanceSettings } from 'aura-core';

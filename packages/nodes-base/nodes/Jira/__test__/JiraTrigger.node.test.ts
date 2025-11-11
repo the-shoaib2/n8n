@@ -4,7 +4,7 @@ import type {
 	IDataObject,
 	IHookFunctions,
 	INode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { testWebhookTriggerNode } from '@test/nodes/TriggerHelpers';
 
@@ -23,7 +23,7 @@ describe('JiraTrigger', () => {
 		) {
 			const baseUrl = 'https://jira.local';
 			const credential = {
-				email: 'test@n8n.io',
+				email: 'test@aura.io',
 				password: 'secret',
 				domain: baseUrl,
 			};

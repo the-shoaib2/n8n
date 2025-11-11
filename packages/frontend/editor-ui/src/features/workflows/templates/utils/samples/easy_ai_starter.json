@@ -6,7 +6,7 @@
 			"parameters": { "options": {} },
 			"id": "b24b05a7-d802-4413-bfb1-23e1e76f6203",
 			"name": "When chat message received",
-			"type": "@n8n/n8n-nodes-langchain.chatTrigger",
+			"type": "@aura/n8n-nodes-langchain.chatTrigger",
 			"typeVersion": 1.1,
 			"position": [340, 20],
 			"webhookId": "a889d2ae-2159-402f-b326-5f61e90f602e"
@@ -27,7 +27,7 @@
 			"parameters": { "options": {} },
 			"id": "d5e60eb2-267c-4f68-aefe-439031bcaceb",
 			"name": "OpenAI Model",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [500, 240]
 		},
@@ -41,7 +41,7 @@
 			},
 			"id": "41174c8a-6ac8-42bd-900e-ca15196600c5",
 			"name": "Agent",
-			"type": "@n8n/n8n-nodes-langchain.agent",
+			"type": "@aura/n8n-nodes-langchain.agent",
 			"typeVersion": 1.7,
 			"position": [580, 20]
 		}

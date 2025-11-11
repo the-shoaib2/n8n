@@ -6,7 +6,7 @@
 			},
 			"id": "535fd3dd-e78f-4ffa-a085-79723fc81b38",
 			"name": "When chat message received",
-			"type": "@n8n/n8n-nodes-langchain.chatTrigger",
+			"type": "@aura/n8n-nodes-langchain.chatTrigger",
 			"typeVersion": 1.1,
 			"position": [320, -380],
 			"webhookId": "4fb58136-3481-494a-a30f-d9e064dac186"

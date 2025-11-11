@@ -22,9 +22,9 @@ export interface Props {
 	expanded?: boolean;
 }
 
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 
-import { N8nIcon, N8nTooltip } from '@n8n/design-system';
+import { N8nIcon, N8nTooltip } from '@aura/design-system';
 const props = withDefaults(defineProps<Props>(), {
 	elements: () => [],
 });

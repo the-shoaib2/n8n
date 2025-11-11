@@ -1,4 +1,4 @@
-# @n8n/i18n
+# @aura/i18n
 
 A package for managing internationalization (i18n) in n8n's Frontend codebase. It provides a structured way to handle translations and localization, ensuring that the application can be easily adapted to different languages and regions.
 

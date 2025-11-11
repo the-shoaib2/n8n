@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { postWithFiles } from '@n8n/chat/api/generic';
+import { postWithFiles } from '@aura/chat/api/generic';
 
 describe('postWithFiles', () => {
 	beforeEach(() => {

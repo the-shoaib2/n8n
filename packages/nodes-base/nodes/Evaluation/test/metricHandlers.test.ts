@@ -1,6 +1,6 @@
 import { mock } from 'jest-mock-extended';
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, INode, AssignmentCollectionValue } from 'n8n-workflow';
+import { NodeOperationError } from 'aura-workflow';
+import type { IExecuteFunctions, INode, AssignmentCollectionValue } from 'aura-workflow';
 import type { BaseLanguageModel } from '@langchain/core/language_models/base';
 import { ChatPromptTemplate } from '@langchain/core/prompts';
 import type { Runnable } from '@langchain/core/runnables';

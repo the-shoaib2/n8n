@@ -4,8 +4,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { metricRequiresModelConnection } from 'n8n-workflow'; // See packages/workflow/src/evaluation-helpers.ts
+} from 'aura-workflow';
+import { metricRequiresModelConnection } from 'aura-workflow'; // See packages/workflow/src/evaluation-helpers.ts
 
 import {
 	setCheckIfEvaluatingProperties,

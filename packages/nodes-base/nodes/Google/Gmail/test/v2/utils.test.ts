@@ -1,6 +1,6 @@
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
-import type { IExecuteFunctions, INode } from 'n8n-workflow';
+import type { IExecuteFunctions, INode } from 'aura-workflow';
 
 import type { IEmail } from '@utils/sendAndWait/interfaces';
 

@@ -9,7 +9,7 @@ import {
 	TagRepository,
 } from '@aura/db';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import { DataSource, EntityManager } from '@aura/typeorm';
+import { DataSource, EntityManager } from '@n8n/typeorm';
 import { Service } from '@aura/di';
 import { type INode, type INodeCredentialsDetails, type IWorkflowBase } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';

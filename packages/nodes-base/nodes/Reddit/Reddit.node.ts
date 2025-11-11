@@ -5,8 +5,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes } from 'aura-workflow';
 
 import { handleListing, redditApiRequest } from './GenericFunctions';
 import { postCommentFields, postCommentOperations } from './PostCommentDescription';

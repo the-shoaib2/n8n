@@ -1,4 +1,4 @@
-import type { INodeExecutionData, IExecuteFunctions, INodeProperties } from 'n8n-workflow';
+import type { INodeExecutionData, IExecuteFunctions, INodeProperties } from 'aura-workflow';
 
 import { updateDisplayOptions } from '@utils/utilities';
 

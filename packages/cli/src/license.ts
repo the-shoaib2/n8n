@@ -13,8 +13,8 @@ import {
 import { SettingsRepository } from '@aura/db';
 import { OnLeaderStepdown, OnLeaderTakeover, OnPubSubEvent, OnShutdown } from '@aura/decorators';
 import { Container, Service } from '@aura/di';
-import type { TEntitlement, TLicenseBlock } from '@aura_io/license-sdk';
-import { LicenseManager } from '@aura_io/license-sdk';
+import type { TEntitlement, TLicenseBlock } from '@n8n_io/license-sdk';
+import { LicenseManager } from '@n8n_io/license-sdk';
 import { InstanceSettings } from 'aura-core';
 
 import { LicenseMetricsService } from '@/metrics/license-metrics.service';

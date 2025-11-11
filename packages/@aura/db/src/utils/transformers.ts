@@ -1,6 +1,6 @@
 import { GlobalConfig } from '@aura/config';
 import { Container } from '@aura/di';
-import type { ValueTransformer, FindOperator } from '@aura/typeorm';
+import type { ValueTransformer, FindOperator } from '@n8n/typeorm';
 import { jsonParse } from 'aura-workflow';
 
 export const idStringifier = {

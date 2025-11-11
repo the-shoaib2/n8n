@@ -1,6 +1,6 @@
 import type { StoryFn } from '@storybook/vue3-vite';
 
-import type { IUser, UserAction } from '@n8n/design-system/types';
+import type { IUser, UserAction } from '@aura/design-system/types';
 
 import AsyncLoadingCacheDemo from './AsyncLoadingCacheDemo.vue';
 import Breadcrumbs from './Breadcrumbs.vue';

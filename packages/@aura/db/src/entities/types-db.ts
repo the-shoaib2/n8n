@@ -1,5 +1,5 @@
 import type { Scope } from '@aura/permissions';
-import type { FindOperator } from '@aura/typeorm';
+import type { FindOperator } from '@n8n/typeorm';
 import type express from 'express';
 import type {
 	ICredentialsEncrypted,

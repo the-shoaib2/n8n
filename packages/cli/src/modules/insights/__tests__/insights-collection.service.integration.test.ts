@@ -8,7 +8,7 @@ import {
 import type { Project, WorkflowEntity, IWorkflowDb, SharedWorkflowRepository } from '@aura/db';
 import type { WorkflowExecuteAfterContext } from '@aura/decorators';
 import { Container } from '@aura/di';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { DateTime } from 'luxon';
 import {

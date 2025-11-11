@@ -1,5 +1,5 @@
-import { INSTANCE_ID_HEADER, INSTANCE_VERSION_HEADER } from '@n8n/constants';
-import type { INodeParameters } from 'n8n-workflow';
+import { INSTANCE_ID_HEADER, INSTANCE_VERSION_HEADER } from '@aura/constants';
+import type { INodeParameters } from 'aura-workflow';
 
 import { get } from '../utils';
 

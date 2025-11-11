@@ -11,13 +11,13 @@ import { computed, ref } from 'vue';
 
 import NodeIcon from '@/app/components/NodeIcon.vue';
 import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.store';
-import { isCommunityPackageName } from 'n8n-workflow';
+import { isCommunityPackageName } from 'aura-workflow';
 import OfficialIcon from 'virtual:icons/mdi/verified';
 
 import { useNodeType } from '@/app/composables/useNodeType';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useActions } from '../../composables/useActions';
 import { useViewStacks } from '../../composables/useViewStacks';
 import {
@@ -26,7 +26,7 @@ import {
 	shouldShowCommunityNodeDetails,
 } from '../../nodeCreator.utils';
 
-import { N8nIcon, N8nNodeCreatorNode, N8nTooltip } from '@n8n/design-system';
+import { N8nIcon, N8nNodeCreatorNode, N8nTooltip } from '@aura/design-system';
 export interface Props {
 	nodeType: SimplifiedNodeType;
 	subcategory?: string;

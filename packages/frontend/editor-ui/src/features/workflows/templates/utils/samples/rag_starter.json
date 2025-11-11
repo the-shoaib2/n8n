@@ -30,7 +30,7 @@
 			"parameters": {
 				"options": {}
 			},
-			"type": "@n8n/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
 			"typeVersion": 1.2,
 			"position": [528, 480],
 			"id": "6ea78663-cf2f-4f2d-8e68-43047c2afd87",
@@ -47,7 +47,7 @@
 				"dataType": "binary",
 				"options": {}
 			},
-			"type": "@n8n/n8n-nodes-langchain.documentDefaultDataLoader",
+			"type": "@aura/n8n-nodes-langchain.documentDefaultDataLoader",
 			"typeVersion": 1.1,
 			"position": [320, 160],
 			"id": "94aecac0-03f9-4915-932b-d14a2576607b",
@@ -89,7 +89,7 @@
 					"cachedResultName": "vector_store_key"
 				}
 			},
-			"type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+			"type": "@aura/n8n-nodes-langchain.vectorStoreInMemory",
 			"typeVersion": 1.2,
 			"position": [64, 0],
 			"id": "bf50a11f-ca6a-4e04-a6d2-42fee272b260",
@@ -106,7 +106,7 @@
 					"value": "vector_store_key"
 				}
 			},
-			"type": "@n8n/n8n-nodes-langchain.vectorStoreInMemory",
+			"type": "@aura/n8n-nodes-langchain.vectorStoreInMemory",
 			"typeVersion": 1.2,
 			"position": [944, 208],
 			"id": "09c0db62-5413-440e-8c13-fb6bb66d9b6a",
@@ -116,7 +116,7 @@
 			"parameters": {
 				"options": {}
 			},
-			"type": "@n8n/n8n-nodes-langchain.agent",
+			"type": "@aura/n8n-nodes-langchain.agent",
 			"typeVersion": 2,
 			"position": [944, -16],
 			"id": "579aed76-9644-42d1-ac13-7369059ff1c2",
@@ -126,7 +126,7 @@
 			"parameters": {
 				"options": {}
 			},
-			"type": "@n8n/n8n-nodes-langchain.chatTrigger",
+			"type": "@aura/n8n-nodes-langchain.chatTrigger",
 			"typeVersion": 1.1,
 			"position": [720, -16],
 			"id": "9c30de61-935a-471f-ae88-ec5f67beeefc",
@@ -142,7 +142,7 @@
 				},
 				"options": {}
 			},
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [720, 208],
 			"id": "b5aa8942-9cd5-4c2f-bd77-7a0ceb921bac",

@@ -3,7 +3,7 @@ import type {
 	ILoadOptionsFunctions,
 	INodeListSearchResult,
 	INodeListSearchItems,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { HeaderConstants } from '../helpers/constants';
 import { azureCosmosDbApiRequest } from '../transport';

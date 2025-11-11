@@ -9,7 +9,7 @@ import type {
 	INodeProperties,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	jsonParse,
 	NodeOperationError,
@@ -19,7 +19,7 @@ import {
 	CHAT_TRIGGER_NODE_TYPE,
 	WAIT_NODE_TYPE,
 	WAIT_INDEFINITELY,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type { Readable } from 'stream';
 
 import { getBinaryResponse } from './utils/binary';

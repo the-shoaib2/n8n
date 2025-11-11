@@ -7,7 +7,7 @@ import type {
 import { Folder, FolderTagMappingRepository, FolderRepository, WorkflowRepository } from '@aura/db';
 import { Service } from '@aura/di';
 // eslint-disable-next-line aura-local-rules/misplaced-aura-typeorm-import
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import { UserError, PROJECT_ROOT } from 'aura-workflow';
 
 import { FolderNotFoundError } from '@/errors/folder-not-found.error';

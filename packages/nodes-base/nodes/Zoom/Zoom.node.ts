@@ -8,7 +8,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { zoomApiRequest, zoomApiRequestAllItems } from './GenericFunctions';
 import { meetingFields, meetingOperations } from './MeetingDescription';

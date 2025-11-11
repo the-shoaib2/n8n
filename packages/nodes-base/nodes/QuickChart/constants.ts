@@ -1,4 +1,4 @@
-import type { INodePropertyOptions } from 'n8n-workflow';
+import type { INodePropertyOptions } from 'aura-workflow';
 
 // Disable some charts that use different datasets for now
 export const CHART_TYPE_OPTIONS: INodePropertyOptions[] = [

@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, PrimaryColumn } from '@n8n/typeorm';
 import type { IDataObject } from 'aura-workflow';
 
 interface ISettingsDb {

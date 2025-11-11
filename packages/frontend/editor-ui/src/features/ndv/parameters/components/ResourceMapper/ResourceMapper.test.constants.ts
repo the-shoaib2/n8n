@@ -3,7 +3,7 @@ import {
 	type INode,
 	type INodeProperties,
 	type INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export const WORKFLOW_INPUTS_TEST_PARAMETER_PATH = 'parameters.workflowInputs';
 

@@ -3,19 +3,19 @@ import { useBuilderStore } from '../../builder.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { computed, watch, ref } from 'vue';
 import { useTelemetry } from '@/app/composables/useTelemetry';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useRoute, useRouter } from 'vue-router';
 import { useWorkflowSaving } from '@/app/composables/useWorkflowSaving';
-import type { RatingFeedback, WorkflowSuggestion } from '@n8n/design-system/types/assistant';
-import { isTaskAbortedMessage, isWorkflowUpdatedMessage } from '@n8n/design-system/types/assistant';
+import type { RatingFeedback, WorkflowSuggestion } from '@aura/design-system/types/assistant';
+import { isTaskAbortedMessage, isWorkflowUpdatedMessage } from '@aura/design-system/types/assistant';
 import { nodeViewEventBus } from '@/app/event-bus';
 import ExecuteMessage from './ExecuteMessage.vue';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
 import { WORKFLOW_SUGGESTIONS } from '@/app/constants/workflowSuggestions';
 import shuffle from 'lodash/shuffle';
 
-import { N8nAskAssistantChat, N8nText } from '@n8n/design-system';
+import { N8nAskAssistantChat, N8nText } from '@aura/design-system';
 
 const emit = defineEmits<{
 	close: [];

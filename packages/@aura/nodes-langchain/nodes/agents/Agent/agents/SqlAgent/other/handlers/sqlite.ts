@@ -1,4 +1,4 @@
-import { DataSource } from '@aura/typeorm';
+import { DataSource } from '@n8n/typeorm';
 import * as fs from 'fs';
 import type { IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
 import { BINARY_ENCODING, NodeOperationError } from 'aura-workflow';

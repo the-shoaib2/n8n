@@ -1,7 +1,7 @@
 import { reactive } from 'vue';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
-import type { NodeError } from 'n8n-workflow';
+import type { NodeError } from 'aura-workflow';
 import { mockedStore } from '@/__tests__/utils';
 import { createComponentRenderer } from '@/__tests__/render';
 import type { IExecutionResponse } from '@/features/execution/executions/executions.types';

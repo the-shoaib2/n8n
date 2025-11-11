@@ -7,7 +7,7 @@ import type {
 	IWebhookFunctions,
 	IHttpRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import { parseString } from 'xml2js';
 import { getAwsCredentials } from '../../GenericFunctions';
 

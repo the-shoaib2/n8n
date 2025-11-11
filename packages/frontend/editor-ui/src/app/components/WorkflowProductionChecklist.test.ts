@@ -21,7 +21,7 @@ import {
 	TIME_SAVED_DOCS_URL,
 	EVALUATIONS_DOCS_URL,
 } from '@/app/constants';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
 import { createTestNode } from '@/__tests__/mocks';
 
 vi.mock('vue-router', async (importOriginal) => {
@@ -45,9 +45,9 @@ vi.mock('@/app/composables/useTelemetry', () => ({
 	useTelemetry: vi.fn(),
 }));
 
-vi.mock('@n8n/i18n', async (importOriginal) => {
+vi.mock('@aura/i18n', async (importOriginal) => {
 	// eslint-disable-next-line @typescript-eslint/consistent-type-imports
-	const actual = await importOriginal<typeof import('@n8n/i18n')>();
+	const actual = await importOriginal<typeof import('@aura/i18n')>();
 	return {
 		...actual,
 		useI18n: () => ({

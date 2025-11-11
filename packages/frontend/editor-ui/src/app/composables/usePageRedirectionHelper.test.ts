@@ -1,11 +1,11 @@
-import { ROLE } from '@n8n/api-types';
+import { ROLE } from '@aura/api-types';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import merge from 'lodash/merge';
 import { usePageRedirectionHelper } from './usePageRedirectionHelper';
 import { defaultSettings } from '@/__tests__/defaults';
 import { useUsersStore } from '@/features/settings/users/users.store';
 import { createPinia, setActivePinia } from 'pinia';
-import * as cloudPlanApi from '@n8n/rest-api-client/api/cloudPlans';
+import * as cloudPlanApi from '@aura/rest-api-client/api/cloudPlans';
 import { useVersionsStore } from '@/app/stores/versions.store';
 import { useTelemetry } from './useTelemetry';
 

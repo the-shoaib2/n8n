@@ -8,17 +8,17 @@ import { useLogStreamingStore } from '../logStreaming.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { LOG_STREAM_MODAL_KEY, EnterpriseEditionFeature } from '@/app/constants';
-import type { MessageEventBusDestinationOptions } from 'n8n-workflow';
-import { deepCopy, defaultMessageEventBusDestinationOptions } from 'n8n-workflow';
+import type { MessageEventBusDestinationOptions } from 'aura-workflow';
+import { deepCopy, defaultMessageEventBusDestinationOptions } from 'aura-workflow';
 import EventDestinationCard from '../components/EventDestinationCard.vue';
-import { createEventBus } from '@n8n/utils/event-bus';
+import { createEventBus } from '@aura/utils/event-bus';
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { usePageRedirectionHelper } from '@/app/composables/usePageRedirectionHelper';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 
 import { ElCol, ElRow, ElSwitch } from 'element-plus';
-import { N8nActionBox, N8nButton, N8nHeading, N8nInfoTip } from '@n8n/design-system';
+import { N8nActionBox, N8nButton, N8nHeading, N8nInfoTip } from '@aura/design-system';
 const environment = process.env.NODE_ENV;
 
 const settingsStore = useSettingsStore();

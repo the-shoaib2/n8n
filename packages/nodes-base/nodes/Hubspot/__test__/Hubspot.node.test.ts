@@ -124,7 +124,7 @@ describe('Hubspot Node', () => {
 			hubspotNock
 				.delete('/contacts/v1/contact/vid/123', {})
 				.reply(200, contacts.contacts[0])
-				.post('/contacts/v1/contact/createOrUpdate/email/elias@n8n.io', {
+				.post('/contacts/v1/contact/createOrUpdate/email/elias@aura.io', {
 					properties: [
 						{
 							property: 'annualrevenue',
@@ -152,7 +152,7 @@ describe('Hubspot Node', () => {
 						},
 						{
 							property: 'work_email',
-							value: 'elias@n8n.io',
+							value: 'elias@aura.io',
 						},
 						{
 							property: 'test_custom_prop_name',

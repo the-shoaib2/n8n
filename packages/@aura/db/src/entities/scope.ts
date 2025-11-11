@@ -1,5 +1,5 @@
 import type { Scope as ScopeType } from '@aura/permissions';
-import { Column, Entity, PrimaryColumn } from '@aura/typeorm';
+import { Column, Entity, PrimaryColumn } from '@n8n/typeorm';
 
 @Entity({
 	name: 'scope',

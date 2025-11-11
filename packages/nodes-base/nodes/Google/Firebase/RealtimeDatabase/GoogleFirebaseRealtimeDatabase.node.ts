@@ -8,8 +8,8 @@ import type {
 	INodeTypeDescription,
 	JsonObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { googleApiRequest, googleApiRequestAllItems } from './GenericFunctions';
 

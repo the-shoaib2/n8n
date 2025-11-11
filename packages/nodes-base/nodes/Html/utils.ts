@@ -1,5 +1,5 @@
 import { convert } from 'html-to-text';
-import type { IDataObject } from 'n8n-workflow';
+import type { IDataObject } from 'aura-workflow';
 
 import type { IValueData, Cheerio } from './types';
 

@@ -1,4 +1,4 @@
-import type { IBinaryData, IRequestOptions } from 'n8n-workflow';
+import type { IBinaryData, IRequestOptions } from 'aura-workflow';
 
 import { setFilename } from '../../V3/utils/binaryData';
 

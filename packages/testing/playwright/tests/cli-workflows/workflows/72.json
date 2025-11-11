@@ -15,7 +15,7 @@
 		},
 		{
 			"parameters": {
-				"to": ["nodeqa@n8n.io"],
+				"to": ["nodeqa@aura.io"],
 				"content": "=Message {{Date.now()}}"
 			},
 			"name": "Zulip",

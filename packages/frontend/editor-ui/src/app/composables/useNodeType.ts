@@ -1,9 +1,9 @@
 import type { MaybeRef } from 'vue';
 import { computed, unref } from 'vue';
-import type { INodeTypeDescription } from 'n8n-workflow';
+import type { INodeTypeDescription } from 'aura-workflow';
 import type { INodeUi, SimplifiedNodeType } from '@/Interface';
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
-import { NodeHelpers } from 'n8n-workflow';
+import { NodeHelpers } from 'aura-workflow';
 
 export function useNodeType(
 	options: {

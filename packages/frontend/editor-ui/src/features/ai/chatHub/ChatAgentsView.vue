@@ -11,14 +11,14 @@ import {
 	N8nOption,
 	N8nSelect,
 	N8nText,
-} from '@n8n/design-system';
+} from '@aura/design-system';
 import { computed, ref, watch } from 'vue';
 import { useUIStore } from '@/app/stores/ui.store';
 import AgentEditorModal from '@/features/ai/chatHub/components/AgentEditorModal.vue';
 import ChatAgentCard from '@/features/ai/chatHub/components/ChatAgentCard.vue';
 import { useChatCredentials } from '@/features/ai/chatHub/composables/useChatCredentials';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import { type ChatHubConversationModel } from '@n8n/api-types';
+import { type ChatHubConversationModel } from '@aura/api-types';
 import { filterAndSortAgents, stringifyModel } from '@/features/ai/chatHub/chat.utils';
 import type { ChatAgentFilter } from '@/features/ai/chatHub/chat.types';
 import { useChatHubSidebarState } from '@/features/ai/chatHub/composables/useChatHubSidebarState';

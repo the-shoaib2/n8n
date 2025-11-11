@@ -32,7 +32,7 @@
 			},
 			"id": "d3f2e53d-c5dd-42b8-b10f-2b2fa2f37ef6",
 			"name": "OpenAI Chat Model4",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1140, 1020],
 			"credentials": {
@@ -51,7 +51,7 @@
 			},
 			"id": "418a75ed-c4aa-46a1-96d9-f2a3f9c55ab9",
 			"name": "OpenAI Chat Model5",
-			"type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1500, 1020],
 			"credentials": {
@@ -101,7 +101,7 @@
 			},
 			"id": "9d6d0cac-034e-42ed-90fb-d9c2cfe0166f",
 			"name": "Summary - Simple - Map - Binary",
-			"type": "@n8n/n8n-nodes-langchain.chainSummarization",
+			"type": "@aura/n8n-nodes-langchain.chainSummarization",
 			"typeVersion": 2,
 			"position": [1120, 880]
 		},
@@ -136,7 +136,7 @@
 			},
 			"id": "f7e12c5f-6445-4924-8fc7-c426d21549ed",
 			"name": "Evaluate to Baseline",
-			"type": "@n8n/n8n-nodes-langchain.code",
+			"type": "@aura/n8n-nodes-langchain.code",
 			"typeVersion": 1,
 			"position": [1480, 880]
 		}

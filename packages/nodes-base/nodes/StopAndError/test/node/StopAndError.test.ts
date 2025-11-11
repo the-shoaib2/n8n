@@ -1,5 +1,5 @@
 import { NodeTestHarness } from '@nodes-testing/node-test-harness';
-import { NodeConnectionTypes, type WorkflowTestData } from 'n8n-workflow';
+import { NodeConnectionTypes, type WorkflowTestData } from 'aura-workflow';
 
 describe('Execute Stop and Error Node', () => {
 	const testHarness = new NodeTestHarness();

@@ -1,7 +1,7 @@
 import { createTeamProject, testDb } from '@aura/backend-test-utils';
 import { AuthIdentity, ProjectRepository, UserRepository } from '@aura/db';
 import { Container } from '@aura/di';
-import { EntityNotFoundError } from '@aura/typeorm';
+import { EntityNotFoundError } from '@n8n/typeorm';
 
 import { createMember, createOwner } from '../../shared/db/users';
 

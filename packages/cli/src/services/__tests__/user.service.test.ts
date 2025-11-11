@@ -2,7 +2,7 @@ import { mockInstance } from '@aura/backend-test-utils';
 import { GlobalConfig } from '@aura/config';
 import type { Project } from '@aura/db';
 import { GLOBAL_ADMIN_ROLE, GLOBAL_MEMBER_ROLE, User, UserRepository } from '@aura/db';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 import { v4 as uuid } from 'uuid';
 

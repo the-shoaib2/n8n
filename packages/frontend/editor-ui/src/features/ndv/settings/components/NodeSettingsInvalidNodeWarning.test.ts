@@ -8,7 +8,7 @@ import { useNodeCreatorStore } from '@/features/shared/nodeCreator/nodeCreator.s
 import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useUIStore } from '@/app/stores/ui.store';
 import { useUsersStore } from '@/features/settings/users/users.store';
-import type { CommunityNodeType } from '@n8n/api-types';
+import type { CommunityNodeType } from '@aura/api-types';
 import type { TestingPinia } from '@pinia/testing';
 import { createTestingPinia } from '@pinia/testing';
 import { waitFor } from '@testing-library/vue';

@@ -6,8 +6,8 @@ import type {
 	INodeTypeDescription,
 	ITriggerFunctions,
 	ITriggerResponse,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { rabbitDefaultOptions } from './DefaultOptions';
 import { MessageTracker, rabbitmqConnectQueue, handleMessage } from './GenericFunctions';

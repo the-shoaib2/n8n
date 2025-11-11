@@ -1,7 +1,7 @@
-import type { BooleanLicenseFeature } from '@n8n/constants';
-import { LICENSE_FEATURES, UNLIMITED_LICENSE_QUOTA } from '@n8n/constants';
-import { Service } from '@n8n/di';
-import { UnexpectedError } from 'n8n-workflow';
+import type { BooleanLicenseFeature } from '@aura/constants';
+import { LICENSE_FEATURES, UNLIMITED_LICENSE_QUOTA } from '@aura/constants';
+import { Service } from '@aura/di';
+import { UnexpectedError } from 'aura-workflow';
 
 import type { FeatureReturnType, LicenseProvider } from './types';
 

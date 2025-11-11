@@ -6,7 +6,7 @@ import { createComponentRenderer } from '@/__tests__/render';
 import { type MockedStore, mockedStore } from '@/__tests__/utils';
 import { mockNode, mockNodeTypeDescription } from '@/__tests__/mocks';
 import { nodeViewEventBus } from '@/app/event-bus';
-import { AI_TRANSFORM_NODE_TYPE, AI_TRANSFORM_CODE_GENERATED_FOR_PROMPT } from 'n8n-workflow';
+import { AI_TRANSFORM_NODE_TYPE, AI_TRANSFORM_CODE_GENERATED_FOR_PROMPT } from 'aura-workflow';
 import {
 	CHAT_TRIGGER_NODE_TYPE,
 	FORM_TRIGGER_NODE_TYPE,

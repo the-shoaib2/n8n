@@ -21,7 +21,7 @@ export const sendMessageResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {
@@ -60,7 +60,7 @@ export const sendMediaGroupResponse = {
 			from: {
 				id: 9876543210,
 				is_bot: true,
-				first_name: '@n8n',
+				first_name: '@aura',
 				username: 'n8n_test_bot',
 			},
 			chat: {
@@ -108,7 +108,7 @@ export const sendLocationMessageResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {
@@ -124,7 +124,7 @@ export const sendLocationMessageResponse = {
 			from: {
 				id: 9876543210,
 				is_bot: true,
-				first_name: '@n8n',
+				first_name: '@aura',
 				username: 'n8n_test_bot',
 			},
 			chat: {
@@ -172,7 +172,7 @@ export const sendStickerResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {
@@ -214,7 +214,7 @@ export const editMessageTextResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {
@@ -251,7 +251,7 @@ export const chatAdministratorsResponse = {
 			user: {
 				id: 9876543210,
 				is_bot: true,
-				first_name: '@n8n',
+				first_name: '@aura',
 				username: 'n8n_test_bot',
 			},
 			status: 'administrator',
@@ -293,7 +293,7 @@ export const sendAnimationMessageResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {
@@ -360,7 +360,7 @@ export const sendAudioResponse = {
 		from: {
 			id: 9876543210,
 			is_bot: true,
-			first_name: '@n8n',
+			first_name: '@aura',
 			username: 'n8n_test_bot',
 		},
 		chat: {

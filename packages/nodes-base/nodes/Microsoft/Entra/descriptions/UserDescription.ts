@@ -8,7 +8,7 @@ import {
 	type IN8nHttpFullResponse,
 	type INodeExecutionData,
 	type INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { handleErrorPostReceive, microsoftApiRequest } from '../GenericFunctions';
 

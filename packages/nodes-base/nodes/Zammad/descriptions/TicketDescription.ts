@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const ticketDescription: INodeProperties[] = [
 	// ----------------------------------
@@ -89,7 +89,7 @@ export const ticketDescription: INodeProperties[] = [
 		description:
 			'Email address of the customer concerned in the ticket to create. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 		default: '',
-		placeholder: 'hello@n8n.io',
+		placeholder: 'hello@aura.io',
 		required: true,
 		displayOptions: {
 			show: {

@@ -5,8 +5,8 @@ import type {
 	JsonObject,
 	IRequestOptions,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError, sleep } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError, sleep } from 'aura-workflow';
 import { parseString } from 'xml2js';
 
 import {

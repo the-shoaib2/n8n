@@ -1,9 +1,9 @@
 import { test, expect } from '../../fixtures/base';
 
-const OWNER_EMAIL = 'nathan@n8n.io';
-const ADMIN_EMAIL = 'admin@n8n.io';
-const MEMBER_0_EMAIL = 'member@n8n.io'; // U2
-const MEMBER_1_EMAIL = 'member2@n8n.io'; // U3
+const OWNER_EMAIL = 'nathan@aura.io';
+const ADMIN_EMAIL = 'admin@aura.io';
+const MEMBER_0_EMAIL = 'member@aura.io'; // U2
+const MEMBER_1_EMAIL = 'member2@aura.io'; // U3
 
 const TEST_API_KEY = '1234567890';
 const TEST_ACCESS_TOKEN = '1234567890';
@@ -207,7 +207,7 @@ test.describe('@isolated', () => {
 
 			// Admin can share with self
 			await expect(
-				n8n.credentials.credentialModal.getVisibleDropdown().getByText('admin@n8n.io'),
+				n8n.credentials.credentialModal.getVisibleDropdown().getByText('admin@aura.io'),
 			).toBeVisible();
 
 			await n8n.credentials.credentialModal.getVisibleDropdown().getByText(OWNER_EMAIL).click();

@@ -2,7 +2,7 @@ import vue from '@vitejs/plugin-vue';
 import { resolve } from 'path';
 import { defineConfig, mergeConfig } from 'vite';
 import icons from 'unplugin-icons/vite';
-import { vitestConfig } from '@n8n/vitest-config/frontend';
+import { vitestConfig } from '@aura/vitest-config/frontend';
 import svgLoader from 'vite-svg-loader';
 
 const packagesDir = resolve(__dirname, '..', '..', '..');
@@ -36,9 +36,9 @@ export default mergeConfig(
 		resolve: {
 			alias: {
 				'@': resolve(__dirname, 'src'),
-				'@n8n/design-system': resolve(__dirname, 'src'),
-				'@n8n/composables(.*)': resolve(packagesDir, 'frontend', '@n8n', 'composables', 'src$1'),
-				'@n8n/utils(.*)': resolve(packagesDir, '@n8n', 'utils', 'src$1'),
+				'@aura/design-system': resolve(__dirname, 'src'),
+				'@aura/composables(.*)': resolve(packagesDir, 'frontend', '@aura', 'composables', 'src$1'),
+				'@aura/utils(.*)': resolve(packagesDir, '@aura', 'utils', 'src$1'),
 			},
 		},
 		build: {

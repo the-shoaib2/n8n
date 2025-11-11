@@ -1,6 +1,6 @@
 import { Service } from '@aura/di';
-import type { EntityManager, SelectQueryBuilder } from '@aura/typeorm';
-import { DataSource, Repository } from '@aura/typeorm';
+import type { EntityManager, SelectQueryBuilder } from '@n8n/typeorm';
+import { DataSource, Repository } from '@n8n/typeorm';
 import { PROJECT_ROOT } from 'aura-workflow';
 
 import { Folder, FolderTagMapping, TagEntity } from '../entities';

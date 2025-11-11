@@ -3,9 +3,9 @@ import { useSchemaPreviewStore } from './schemaPreview.store';
 import * as schemaPreviewApi from './schemaPreview.api';
 import type { JSONSchema7 } from 'json-schema';
 import { mock } from 'vitest-mock-extended';
-import type { PushPayload } from '@n8n/api-types';
+import type { PushPayload } from '@aura/api-types';
 import { useTelemetry } from '@/app/composables/useTelemetry';
-import type { INode } from 'n8n-workflow';
+import type { INode } from 'aura-workflow';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 
 vi.mock('./schemaPreview.api');
@@ -18,7 +18,7 @@ vi.mock('@/app/composables/useTelemetry', () => {
 	};
 });
 
-vi.mock('@n8n/stores/useRootStore', () => ({
+vi.mock('@aura/stores/useRootStore', () => ({
 	useRootStore: vi.fn(() => ({
 		baseUrl: 'https://test.com',
 	})),

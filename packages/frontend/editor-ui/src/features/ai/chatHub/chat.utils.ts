@@ -6,7 +6,7 @@ import {
 	type ChatModelDto,
 	type ChatSessionId,
 	type ChatMessageId,
-} from '@n8n/api-types';
+} from '@aura/api-types';
 import type {
 	ChatMessage,
 	GroupedConversations,

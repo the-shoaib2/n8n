@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "@n8n/design-system",
+  "name": "@aura/design-system",
   "version": "1.107.0",
   "main": "src/index.ts",
   "import": "src/index.ts",
@@ -23,11 +23,11 @@
     "lint:styles:fix": "stylelint \"src/**/*.{scss,sass,vue}\" --fix --cache"
   },
   "devDependencies": {
-    "@n8n/eslint-config": "workspace:*",
-    "@n8n/storybook": "workspace:*",
-    "@n8n/stylelint-config": "workspace:*",
-    "@n8n/typescript-config": "workspace:*",
-    "@n8n/vitest-config": "workspace:*",
+    "@aura/eslint-config": "workspace:*",
+    "@aura/storybook": "workspace:*",
+    "@aura/stylelint-config": "workspace:*",
+    "@aura/typescript-config": "workspace:*",
+    "@aura/vitest-config": "workspace:*",
     "@testing-library/jest-dom": "catalog:frontend",
     "@testing-library/user-event": "catalog:frontend",
     "@testing-library/vue": "catalog:frontend",
@@ -51,8 +51,8 @@
   },
   "dependencies": {
     "@internationalized/date": "^3.9.0",
-    "@n8n/composables": "workspace:*",
-    "@n8n/utils": "workspace:*",
+    "@aura/composables": "workspace:*",
+    "@aura/utils": "workspace:*",
     "@tanstack/vue-table": "^8.21.2",
     "element-plus": "catalog:frontend",
     "is-emoji-supported": "^0.0.5",

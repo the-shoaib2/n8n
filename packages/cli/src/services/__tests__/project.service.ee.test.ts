@@ -10,7 +10,7 @@ import {
 	PROJECT_ADMIN_ROLE,
 } from '@aura/db';
 import { PROJECT_OWNER_ROLE_SLUG } from '@aura/permissions';
-import type { EntityManager } from '@aura/typeorm';
+import type { EntityManager } from '@n8n/typeorm';
 import { mock } from 'jest-mock-extended';
 
 import type { CacheService } from '../cache/cache.service';

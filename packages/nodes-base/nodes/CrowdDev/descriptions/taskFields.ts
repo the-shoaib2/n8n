@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import { getAdditionalOptions, getId, showFor } from './utils';
 import { taskPresend } from '../GenericFunctions';

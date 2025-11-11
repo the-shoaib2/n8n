@@ -2,7 +2,7 @@ import { createComponentRenderer } from '@/__tests__/render';
 import { fireEvent, screen, waitFor } from '@testing-library/vue';
 import { vi } from 'vitest';
 import ResourceLocatorDropdown from './ResourceLocatorDropdown.vue';
-import type { INodeParameterResourceLocator } from 'n8n-workflow';
+import type { INodeParameterResourceLocator } from 'aura-workflow';
 import type { IResourceLocatorResultExpanded } from '@/Interface';
 
 const mockResources: IResourceLocatorResultExpanded[] = [

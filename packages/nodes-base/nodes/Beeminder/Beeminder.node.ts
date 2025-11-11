@@ -14,7 +14,7 @@ import {
 	validateNodeParameters,
 	assertParamIsNumber,
 	assertParamIsArray,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { Datapoint } from './Beeminder.node.functions';
 import {

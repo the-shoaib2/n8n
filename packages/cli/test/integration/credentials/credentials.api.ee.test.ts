@@ -12,7 +12,7 @@ import type { Project, User, ListQueryDb } from '@aura/db';
 import { GLOBAL_MEMBER_ROLE, ProjectRepository, SharedCredentialsRepository } from '@aura/db';
 import { Container } from '@aura/di';
 import type { ProjectRole } from '@aura/permissions';
-import { In } from '@aura/typeorm';
+import { In } from '@n8n/typeorm';
 
 import config from '@/config';
 import { CredentialsService } from '@/credentials/credentials.service';

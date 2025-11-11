@@ -19,13 +19,13 @@ import type {
 	INodePropertyOptions,
 	IParameterLabel,
 	NodeParameterValueType,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	CREDENTIAL_EMPTY_VALUE,
 	isResourceLocatorValue,
 	NodeHelpers,
 	resolveRelativePath,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type { CodeNodeLanguageOption } from '@/features/shared/editors/components/CodeNodeEditor/CodeNodeEditor.vue';
 import CodeNodeEditor from '@/features/shared/editors/components/CodeNodeEditor/CodeNodeEditor.vue';
@@ -64,7 +64,7 @@ import {
 
 import { useDebounce } from '@/app/composables/useDebounce';
 import { useExternalHooks } from '@/app/composables/useExternalHooks';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { useNodeHelpers } from '@/app/composables/useNodeHelpers';
 import { useTelemetry } from '@/app/composables/useTelemetry';
 import { useWorkflowHelpers } from '@/app/composables/useWorkflowHelpers';
@@ -76,8 +76,8 @@ import { useNodeTypesStore } from '@/app/stores/nodeTypes.store';
 import { useSettingsStore } from '@/app/stores/settings.store';
 import { useWorkflowsStore } from '@/app/stores/workflows.store';
 import { useUIStore } from '@/app/stores/ui.store';
-import type { EventBus } from '@n8n/utils/event-bus';
-import { createEventBus } from '@n8n/utils/event-bus';
+import type { EventBus } from '@aura/utils/event-bus';
+import { createEventBus } from '@aura/utils/event-bus';
 import { useElementSize } from '@vueuse/core';
 import { captureMessage } from '@sentry/vue';
 import { isCredentialOnlyNodeType } from '@/app/utils/credentialOnlyNodes';
@@ -97,7 +97,7 @@ import { useProjectsStore } from '@/features/collaboration/projects/projects.sto
 import { getParameterDisplayableOptions } from '@/app/utils/nodes/nodeTransforms';
 
 import { ElColorPicker, ElDatePicker, ElDialog, ElSwitch } from 'element-plus';
-import { N8nIcon, N8nInput, N8nInputNumber, N8nOption, N8nSelect } from '@n8n/design-system';
+import { N8nIcon, N8nInput, N8nInputNumber, N8nOption, N8nSelect } from '@aura/design-system';
 import { injectWorkflowState } from '@/app/composables/useWorkflowState';
 type Picker = { $emit: (arg0: string, arg1: Date) => void };
 

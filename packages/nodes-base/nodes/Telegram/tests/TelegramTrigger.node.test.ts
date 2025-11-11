@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import { type INode, type Workflow } from 'n8n-workflow';
+import { type INode, type Workflow } from 'aura-workflow';
 
 import { testWebhookTriggerNode } from '@test/nodes/TriggerHelpers';
 

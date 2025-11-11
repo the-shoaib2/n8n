@@ -1,5 +1,5 @@
 import { JsonColumn, WithTimestamps } from '@aura/db';
-import { Column, Entity, OneToMany } from '@aura/typeorm';
+import { Column, Entity, OneToMany } from '@n8n/typeorm';
 
 import type { AccessToken } from './oauth-access-token.entity';
 import type { AuthorizationCode } from './oauth-authorization-code.entity';

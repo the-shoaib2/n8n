@@ -1,7 +1,7 @@
 import { createComponentRenderer } from '@/__tests__/render';
 import AiRunContentBlock from './AiRunContentBlock.vue';
 import type { IAiDataContent } from '@/Interface';
-import { NodeConnectionTypes, type INodeExecutionData } from 'n8n-workflow';
+import { NodeConnectionTypes, type INodeExecutionData } from 'aura-workflow';
 import { MAX_DISPLAY_DATA_SIZE_LOGS_VIEW } from '@/app/constants';
 import { fireEvent, screen } from '@testing-library/vue';
 

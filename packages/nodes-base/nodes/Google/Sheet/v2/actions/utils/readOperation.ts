@@ -1,4 +1,4 @@
-import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+import type { IDataObject, IExecuteFunctions, INodeExecutionData } from 'aura-workflow';
 
 import { type GoogleSheet } from '../../helpers/GoogleSheet';
 import type {

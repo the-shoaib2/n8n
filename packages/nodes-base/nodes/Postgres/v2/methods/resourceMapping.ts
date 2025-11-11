@@ -1,4 +1,4 @@
-import type { ILoadOptionsFunctions, ResourceMapperFields, FieldType } from 'n8n-workflow';
+import type { ILoadOptionsFunctions, ResourceMapperFields, FieldType } from 'aura-workflow';
 
 import { configurePostgres } from '../../transport';
 import type { PostgresNodeCredentials } from '../helpers/interfaces';

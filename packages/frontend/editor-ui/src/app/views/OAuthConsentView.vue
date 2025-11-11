@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { useConsentStore } from '@/app/stores/consent.store';
 import { useDocumentTitle } from '@/app/composables/useDocumentTitle';
-import { useI18n } from '@n8n/i18n';
+import { useI18n } from '@aura/i18n';
 import { onMounted, computed, ref } from 'vue';
-import type { ConsentDetails } from '@n8n/rest-api-client/api/consent';
-import { N8nButton, N8nHeading, N8nIcon, N8nLogo, N8nNotice, N8nText } from '@n8n/design-system';
+import type { ConsentDetails } from '@aura/rest-api-client/api/consent';
+import { N8nButton, N8nHeading, N8nIcon, N8nLogo, N8nNotice, N8nText } from '@aura/design-system';
 import { MCP_DOCS_PAGE_URL } from '@/features/ai/mcpAccess/mcp.constants';
 import { useToast } from '@/app/composables/useToast';
 

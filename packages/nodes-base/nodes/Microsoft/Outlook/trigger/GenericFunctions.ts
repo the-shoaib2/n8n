@@ -1,5 +1,5 @@
-import { NodeApiError } from 'n8n-workflow';
-import type { JsonObject, IDataObject, INodeExecutionData, IPollFunctions } from 'n8n-workflow';
+import { NodeApiError } from 'aura-workflow';
+import type { JsonObject, IDataObject, INodeExecutionData, IPollFunctions } from 'aura-workflow';
 
 import { prepareFilterString, simplifyOutputMessages } from '../v2/helpers/utils';
 import {

@@ -3,12 +3,12 @@ import { createComponentRenderer, type RenderOptions } from '@/__tests__/render'
 import { SETTINGS_STORE_DEFAULT_STATE } from '@/__tests__/utils';
 import * as workFlowHelpers from '@/app/composables/useWorkflowHelpers';
 import { useNDVStore } from '@/features/ndv/shared/ndv.store';
-import { STORES } from '@n8n/stores';
+import { STORES } from '@aura/stores';
 import { createTestingPinia } from '@pinia/testing';
 import userEvent from '@testing-library/user-event';
 import { cleanup, waitFor, within } from '@testing-library/vue';
 import get from 'lodash/get';
-import type { FilterOptionsValue, FilterTypeOptions, FilterValue } from 'n8n-workflow';
+import type { FilterOptionsValue, FilterTypeOptions, FilterValue } from 'aura-workflow';
 import FilterConditions from './FilterConditions.vue';
 import { getFilterOperator } from './utils';
 

@@ -37,7 +37,7 @@
 				"resource": "message",
 				"subject": "Test Subject",
 				"message": "Test Message",
-				"toList": ["test_to@n8n.io"],
+				"toList": ["test_to@aura.io"],
 				"additionalFields": {
 					"attachmentsUi": {
 						"attachmentsBinary": [
@@ -46,8 +46,8 @@
 							}
 						]
 					},
-					"bccList": ["test_bcc@n8n.io"],
-					"ccList": ["test_cc@n8n.io"]
+					"bccList": ["test_bcc@aura.io"],
+					"ccList": ["test_cc@aura.io"]
 				}
 			},
 			"type": "n8n-nodes-base.gmail",
