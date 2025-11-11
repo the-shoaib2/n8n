@@ -1,0 +1,4 @@
+packages/@n8n/create-node/README.md
+packages/@n8n/create-node/bin/create-node.cjs
+packages/@n8n/create-node/package.json
+packages/@n8n/create-node/tsconfig.json

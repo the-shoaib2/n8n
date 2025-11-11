@@ -1,0 +1,11 @@
+packages/@n8n/constants/eslint.config.mjs
+packages/@n8n/constants/package.json
+packages/@n8n/constants/src/api.ts
+packages/@n8n/constants/src/browser.ts
+packages/@n8n/constants/src/community-nodes.ts
+packages/@n8n/constants/src/execution.ts
+packages/@n8n/constants/src/index.ts
+packages/@n8n/constants/src/instance.ts
+packages/@n8n/constants/src/time.ts
+packages/@n8n/constants/tsconfig.build.json
+packages/@n8n/constants/tsconfig.json

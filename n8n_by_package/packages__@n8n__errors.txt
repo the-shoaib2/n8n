@@ -1,0 +1,7 @@
+packages/@n8n/errors/eslint.config.mjs
+packages/@n8n/errors/package.json
+packages/@n8n/errors/src/application.error.ts
+packages/@n8n/errors/src/index.ts
+packages/@n8n/errors/src/types.ts
+packages/@n8n/errors/tsconfig.build.json
+packages/@n8n/errors/tsconfig.json

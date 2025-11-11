@@ -1,0 +1,16 @@
+packages/frontend/@n8n/composables/.gitignore
+packages/frontend/@n8n/composables/README.md
+packages/frontend/@n8n/composables/biome.jsonc
+packages/frontend/@n8n/composables/eslint.config.mjs
+packages/frontend/@n8n/composables/package.json
+packages/frontend/@n8n/composables/src/__tests__/setup.ts
+packages/frontend/@n8n/composables/src/shims.d.ts
+packages/frontend/@n8n/composables/src/useDeviceSupport.test.ts
+packages/frontend/@n8n/composables/src/useDeviceSupport.ts
+packages/frontend/@n8n/composables/src/useShortKeyPress.test.ts
+packages/frontend/@n8n/composables/src/useShortKeyPress.ts
+packages/frontend/@n8n/composables/src/useThrottleWithReactiveDelay.test.ts
+packages/frontend/@n8n/composables/src/useThrottleWithReactiveDelay.ts
+packages/frontend/@n8n/composables/tsconfig.json
+packages/frontend/@n8n/composables/tsdown.config.ts
+packages/frontend/@n8n/composables/vite.config.ts
