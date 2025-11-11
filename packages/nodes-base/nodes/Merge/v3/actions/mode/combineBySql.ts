@@ -1,6 +1,6 @@
 import { Container } from '@aura/di';
 import alasqlImport from 'alasql';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'aura-core';
 
 import type {
 	IDataObject,

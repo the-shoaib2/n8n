@@ -105,7 +105,7 @@
     "@aura/decorators": "workspace:*",
     "@aura/di": "workspace:*",
     "@aura/errors": "workspace:*",
-    "@aura/localtunnel": "3.0.0",
+    "@n8n/localtunnel": "3.0.0",
     "@aura/aura-nodes-langchain": "workspace:*",
     "@aura/permissions": "workspace:*",
     "@aura/task-runner": "workspace:*",

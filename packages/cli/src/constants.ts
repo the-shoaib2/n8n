@@ -18,7 +18,7 @@ export const EDITOR_UI_DIST_DIR = join(dirname(require.resolve('editor-ui')), 'd
 
 const packageJsonPath = join(CLI_DIR, 'package.json');
 const auraPackageJson = jsonParse<aura.PackageJson>(readFileSync(packageJsonPath, 'utf8'));
-export const N8N_VERSION = auraPackageJson.version;
+export const VERSION = auraPackageJson.version;
 export const N8N_RELEASE_DATE = statSync(packageJsonPath).mtime;
 
 export const STARTING_NODES = [

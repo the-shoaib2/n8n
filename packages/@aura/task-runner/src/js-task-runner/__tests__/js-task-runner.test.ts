@@ -61,7 +61,7 @@ describe('JsTaskRunner', () => {
 				dsn: '',
 				deploymentName: '',
 				environment: '',
-				auraVersion: '',
+				Version: '',
 			},
 		});
 

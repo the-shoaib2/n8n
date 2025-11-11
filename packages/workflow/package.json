@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@aura/errors": "workspace:^",
-    "@aura/tournament": "1.0.6",
+    "@n8n/tournament": "1.0.6",
     "ast-types": "0.15.2",
     "callsites": "catalog:",
     "esprima-next": "5.8.4",

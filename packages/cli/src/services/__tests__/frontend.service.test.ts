@@ -4,7 +4,7 @@ import { Container } from '@aura/di';
 import { mock } from 'jest-mock-extended';
 import type { BinaryDataConfig, InstanceSettings } from 'aura-core';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 
 import type { CredentialTypes } from '@/credential-types';
 import type { CredentialsOverwrites } from '@/credentials-overwrites';
@@ -208,7 +208,7 @@ describe('FrontendService', () => {
 				settingsMode: 'public',
 				instanceId: instanceSettings.instanceId,
 				defaultLocale: globalConfig.defaultLocale,
-				versionCli: N8N_VERSION,
+				versionCli: VERSION,
 				releaseChannel: globalConfig.generic.releaseChannel,
 				versionNotifications: {
 					enabled: globalConfig.versionNotifications.enabled,

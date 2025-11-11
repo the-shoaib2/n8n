@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import { constructExecutionMetaData } from 'n8n-core';
+import { constructExecutionMetaData } from 'aura-core';
 import type { IDataObject, IExecuteFunctions, INode } from 'aura-workflow';
 
 import { prepareOutput } from '../../../v2/helpers/utils';

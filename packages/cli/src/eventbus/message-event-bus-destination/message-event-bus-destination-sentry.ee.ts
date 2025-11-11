@@ -7,7 +7,7 @@ import type {
 	MessageEventBusDestinationSentryOptions,
 } from 'aura-workflow';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 
 import { MessageEventBusDestination } from './message-event-bus-destination.ee';
 import { eventMessageGenericDestinationTestEvent } from '../event-message-classes/event-message-generic';
@@ -46,7 +46,7 @@ export class MessageEventBusDestinationSentry
 			dsn: this.dsn,
 			tracesSampleRate: this.tracesSampleRate,
 			environment,
-			release: N8N_VERSION,
+			release: VERSION,
 			transport: Sentry.makeNodeTransport,
 			integrations: Sentry.getDefaultIntegrations({}),
 			stackParser: Sentry.defaultStackParser,

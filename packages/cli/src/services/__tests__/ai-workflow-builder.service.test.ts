@@ -140,7 +140,7 @@ describe('WorkflowBuilderService', () => {
 				licenseCert: 'test-cert',
 				consumerId: 'test-consumer-id',
 				baseUrl: 'https://ai-assistant.test.com',
-				auraVersion: expect.any(String),
+				n8nVersion: expect.any(String),
 			});
 
 			expect(MockedAiWorkflowBuilderService).toHaveBeenCalledWith(

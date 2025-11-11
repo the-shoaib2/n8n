@@ -100,7 +100,7 @@ FROM node:${NODE_VERSION}-alpine AS node-alpine
 # STAGE 5: Runtime
 # ==============================================================================
 FROM python:${PYTHON_VERSION}-alpine AS runtime
-ARG N8N_VERSION=snapshot
+ARG VERSION=snapshot
 ARG N8N_RELEASE_TYPE=dev
 
 ENV NODE_ENV=production \
@@ -137,4 +137,4 @@ LABEL org.opencontainers.image.title="n8n task runners" \
       org.opencontainers.image.description="Sidecar image providing n8n task runners for JavaScript and Python code execution" \
       org.opencontainers.image.source="https://github.com/n8n-io/n8n" \
       org.opencontainers.image.url="https://n8n.io" \
-      org.opencontainers.image.version="${N8N_VERSION}"
+      org.opencontainers.image.version="${VERSION}"

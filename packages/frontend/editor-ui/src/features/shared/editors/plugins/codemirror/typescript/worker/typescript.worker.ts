@@ -20,8 +20,8 @@ import { getHoverTooltip } from './hoverTooltip';
 import { getDiagnostics } from './linter';
 import { getUsedNodeNames } from './typescriptAst';
 
-import runOnceForAllItemsTypes from './type-declarations/n8n-once-for-all-items.d.ts?raw';
-import runOnceForEachItemTypes from './type-declarations/n8n-once-for-each-item.d.ts?raw';
+import runOnceForAllItemsTypes from './type-declarations/once-for-all-items.d.ts?raw';
+import runOnceForEachItemTypes from './type-declarations/once-for-each-item.d.ts?raw';
 import { loadTypes } from './npmTypesLoader';
 import { ChangeSet, Text } from '@codemirror/state';
 import { until } from '@vueuse/core';
@@ -61,7 +61,7 @@ export const worker: LanguageServiceWorkerInit = {
 			const typeName = pascalCase(nodeName);
 			const jsonType = data?.json
 				? schemaToTypescriptTypes(data.json, `${typeName}Json`)
-				: `type ${typeName}Json = N8nJson`;
+				: `type ${typeName}Json = Json`;
 			const paramsType = data?.params
 				? schemaToTypescriptTypes(data.params, `${typeName}Params`)
 				: `type ${typeName}Params = {}`;

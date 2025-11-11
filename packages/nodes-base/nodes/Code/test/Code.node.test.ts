@@ -1,7 +1,7 @@
 import { NodeVM } from '@n8n/vm2';
 import { NodeTestHarness } from '@nodes-testing/node-test-harness';
 import { anyNumber, mock } from 'jest-mock-extended';
-import { normalizeItems } from 'n8n-core';
+import { normalizeItems } from 'aura-core';
 import type { IExecuteFunctions, IWorkflowDataProxyData } from 'aura-workflow';
 import { ApplicationError } from '@aura/errors';
 

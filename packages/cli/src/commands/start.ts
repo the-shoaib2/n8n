@@ -16,7 +16,7 @@ import { z } from 'zod';
 import { ActiveExecutions } from '@/active-executions';
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
 import config from '@/config';
-import { EDITOR_UI_DIST_DIR, N8N_VERSION } from '@/constants';
+import { EDITOR_UI_DIST_DIR, VERSION } from '@/constants';
 import { FeatureNotLicensedError } from '@/errors/feature-not-licensed.error';
 import { MessageEventBus } from '@/eventbus/message-event-bus/message-event-bus';
 import { EventService } from '@/events/event.service';
@@ -128,7 +128,7 @@ export class Start extends BaseCommand<z.infer<typeof flagsSchema>> {
 			dsn: this.globalConfig.sentry.frontendDsn,
 			environment: process.env.ENVIRONMENT || 'development',
 			serverName: process.env.DEPLOYMENT_NAME,
-			release: `aura@${N8N_VERSION}`,
+			release: `aura@${VERSION}`,
 		});
 		const b64Encode = (value: string) => Buffer.from(value).toString('base64');
 
@@ -312,7 +312,7 @@ export class Start extends BaseCommand<z.infer<typeof flagsSchema>> {
 				this.instanceSettings.update({ tunnelSubdomain });
 			}
 
-			const { default: localtunnel } = await import('@aura/localtunnel');
+			const { default: localtunnel } = await import('@n8n/localtunnel');
 			const { port } = this.globalConfig;
 
 			const webhookTunnel = await localtunnel(port, {

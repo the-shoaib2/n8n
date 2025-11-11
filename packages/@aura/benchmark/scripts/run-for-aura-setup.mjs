@@ -74,7 +74,7 @@ async function main() {
 			verbose: true,
 			env: {
 				PATH: process.env.PATH,
-				N8N_VERSION: auraTag,
+				VERSION: auraTag,
 				N8N_LICENSE_CERT: auraLicenseCert,
 				N8N_LICENSE_ACTIVATION_KEY: auraLicenseActivationKey,
 				N8N_LICENSE_TENANT_ID: auraLicenseTenantId,

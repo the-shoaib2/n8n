@@ -7,7 +7,7 @@ import type {
 } from '@/features/core/dataTable/dataTable.types';
 import { AgGridVue } from 'ag-grid-vue3';
 import type { GetRowIdParams, GridReadyEvent, SortChangedEvent } from 'ag-grid-community';
-import { n8nTheme } from '@/features/core/dataTable/components/dataGrid/n8nTheme';
+import { Theme } from '@/features/core/dataTable/components/dataGrid/Theme';
 import { registerAgGridModulesOnce } from '@/features/core/dataTable/components/dataGrid/registerAgGridModulesOnce';
 import SelectedItemsInfo from '@/app/components/common/SelectedItemsInfo.vue';
 import {
@@ -156,7 +156,7 @@ defineExpose({
 				:row-height="DATA_TABLE_ROW_HEIGHT"
 				:header-height="DATA_TABLE_HEADER_HEIGHT"
 				:animate-rows="false"
-				:theme="n8nTheme"
+				:theme="Theme"
 				:suppress-drag-leave-hides-columns="true"
 				:loading="dataTableOperations.contentLoading.value"
 				:row-selection="selection.rowSelection"

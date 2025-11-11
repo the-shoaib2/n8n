@@ -8,7 +8,7 @@ import { Service } from '@aura/di';
 import { AiAssistantClient } from '@n8n_io/ai-assistant-sdk';
 import { assert, type IUser } from 'aura-workflow';
 
-import { N8N_VERSION } from '../constants';
+import { VERSION } from '../constants';
 import { License } from '../license';
 
 @Service()
@@ -35,7 +35,7 @@ export class AiService {
 		this.client = new AiAssistantClient({
 			licenseCert,
 			consumerId,
-			auraVersion: N8N_VERSION,
+			n8nVersion: VERSION,
 			baseUrl,
 			logLevel,
 		});

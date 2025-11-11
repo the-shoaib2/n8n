@@ -8,8 +8,8 @@ export class SentryConfig {
 
 	//#region Metadata about the environment
 
-	@Env('N8N_VERSION')
-	auraVersion: string = '';
+	@Env('VERSION')
+	Version: string = '';
 
 	@Env('ENVIRONMENT')
 	environment: string = '';

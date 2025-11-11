@@ -18,7 +18,7 @@ import path from 'path';
 import { UrlService } from './url.service';
 
 import config from '@/config';
-import { inE2ETests, N8N_VERSION } from '@/constants';
+import { inE2ETests, VERSION } from '@/constants';
 import { CredentialTypes } from '@/credential-types';
 import { CredentialsOverwrites } from '@/credentials-overwrites';
 import { getLdapLoginLabel } from '@/ldap.ee/helpers.ee';
@@ -161,7 +161,7 @@ export class FrontendService {
 			binaryDataMode: this.binaryDataConfig.mode,
 			nodeJsVersion: process.version.replace(/^v/, ''),
 			nodeEnv: process.env.NODE_ENV,
-			versionCli: N8N_VERSION,
+			versionCli: VERSION,
 			concurrency: this.globalConfig.executions.concurrency.productionLimit,
 			isNativePythonRunnerEnabled:
 				this.globalConfig.taskRunners.enabled &&

@@ -22,14 +22,14 @@ const n8nParserWithNestedJsParser = n8nParser.configure({
 
 const n8nLanguage = LRLanguage.define({ parser: n8nParserWithNestedJsParser });
 
-export function n8nLang() {
+export function Lang() {
 	return new LanguageSupport(n8nLanguage, [
 		n8nLanguage.data.of(expressionCloseBracketsConfig),
 		...n8nCompletionSources().map((source) => n8nLanguage.data.of(source)),
 	]);
 }
 
-export const n8nAutocompletion = () =>
+export const Autocompletion = () =>
 	autocompletion({
 		icons: false,
 		aboveCursor: true,

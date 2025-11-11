@@ -19,7 +19,7 @@ declare global {
 }
 
 export function returnTypeForMode(mode: CodeExecutionMode): string {
-	return mode === 'runOnceForAllItems' ? 'N8nOutputItems' : 'N8nOutputItem';
+	return mode === 'runOnceForAllItems' ? 'OutputItems' : 'OutputItem';
 }
 
 const MAX_CHANGE_BUFFER_CHAR_SIZE = 10_000_000;

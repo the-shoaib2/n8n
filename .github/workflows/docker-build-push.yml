@@ -5,29 +5,29 @@
 # - security-scan: This scans the auraio/aura Docker image for security vulnerabilities using Trivy.
 # - security-scan-runners: This scans the auraio/runners Docker image for security vulnerabilities using Trivy.
 
-name: "Docker: Build and Push"
+name: 'Docker: Build and Push'
 
 env:
-  NODE_OPTIONS: "--max-old-space-size=7168"
-  NODE_VERSION: "22.21.0"
+  NODE_OPTIONS: '--max-old-space-size=7168'
+  NODE_VERSION: '22.21.0'
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: '0 0 * * *'
 
   workflow_call:
     inputs:
       aura_version:
-        description: "N8N version to build"
+        description: 'N8N version to build'
         required: true
         type: string
       release_type:
-        description: "Release type (stable, nightly, dev)"
+        description: 'Release type (stable, nightly, dev)'
         required: false
         type: string
-        default: "stable"
+        default: 'stable'
       push_enabled:
-        description: "Whether to push the built images"
+        description: 'Whether to push the built images'
         required: false
         type: boolean
         default: true
@@ -35,12 +35,12 @@ on:
   workflow_dispatch:
     inputs:
       push_enabled:
-        description: "Push image to registry"
+        description: 'Push image to registry'
         required: false
         type: boolean
         default: true
       success_url:
-        description: "URL to call after the build is successful"
+        description: 'URL to call after the build is successful'
         required: false
         type: string
 
@@ -49,10 +49,10 @@ on:
       - opened
       - ready_for_review
     paths:
-      - ".github/workflows/docker-build-push.yml"
-      - "docker/images/aura/Dockerfile"
-      - "docker/images/runners/Dockerfile"
-      - "docker/images/runners/Dockerfile.distroless"
+      - '.github/workflows/docker-build-push.yml'
+      - 'docker/images/aura/Dockerfile'
+      - 'docker/images/runners/Dockerfile'
+      - 'docker/images/runners/Dockerfile.distroless'
 
 jobs:
   determine-build-context:
@@ -305,7 +305,7 @@ jobs:
           file: ./docker/images/aura/Dockerfile
           build-args: |
             NODE_VERSION=${{ env.NODE_VERSION }}
-            N8N_VERSION=${{ needs.determine-build-context.outputs.aura_version }}
+            VERSION=${{ needs.determine-build-context.outputs.aura_version }}
             N8N_RELEASE_TYPE=${{ needs.determine-build-context.outputs.release_type }}
           platforms: ${{ matrix.docker_platform }}
           provenance: true
@@ -320,7 +320,7 @@ jobs:
           file: ./docker/images/runners/Dockerfile
           build-args: |
             NODE_VERSION=${{ env.NODE_VERSION }}
-            N8N_VERSION=${{ needs.determine-build-context.outputs.aura_version }}
+            VERSION=${{ needs.determine-build-context.outputs.aura_version }}
             N8N_RELEASE_TYPE=${{ needs.determine-build-context.outputs.release_type }}
           platforms: ${{ matrix.docker_platform }}
           provenance: true
@@ -335,7 +335,7 @@ jobs:
           file: ./docker/images/runners/Dockerfile.distroless
           build-args: |
             NODE_VERSION=${{ env.NODE_VERSION }}
-            N8N_VERSION=${{ needs.determine-build-context.outputs.aura_version }}
+            VERSION=${{ needs.determine-build-context.outputs.aura_version }}
             N8N_RELEASE_TYPE=${{ needs.determine-build-context.outputs.release_type }}
           platforms: ${{ matrix.docker_platform }}
           provenance: true
@@ -365,14 +365,14 @@ jobs:
         id: dockerhub_check
         run: |
           RELEASE_TYPE="${{ needs.determine-build-context.outputs.release_type }}"
-          N8N_VERSION="${{ needs.determine-build-context.outputs.aura_version }}"
+          VERSION="${{ needs.determine-build-context.outputs.aura_version }}"
           DOCKER_BASE="${{ secrets.DOCKER_USERNAME }}/aura"
 
           # Determine if Docker Hub manifest is needed and construct the tag
           case "$RELEASE_TYPE" in
             "stable")
               {
-                echo "DOCKER_MANIFEST_TAG=${DOCKER_BASE}:${N8N_VERSION}"
+                echo "DOCKER_MANIFEST_TAG=${DOCKER_BASE}:${VERSION}"
                 echo "CREATE_DOCKERHUB_MANIFEST=true"
               } >> "$GITHUB_OUTPUT"
               ;;
@@ -383,7 +383,7 @@ jobs:
               } >> "$GITHUB_OUTPUT"
               ;;
             "dev")
-              if [[ "$N8N_VERSION" != pr-* ]]; then
+              if [[ "$VERSION" != pr-* ]]; then
                 {
                   echo "DOCKER_MANIFEST_TAG=${DOCKER_BASE}:dev"
                   echo "CREATE_DOCKERHUB_MANIFEST=true"
@@ -401,7 +401,7 @@ jobs:
         id: dockerhub_runners_check
         run: |
           RELEASE_TYPE="${{ needs.determine-build-context.outputs.release_type }}"
-          N8N_VERSION="${{ needs.determine-build-context.outputs.aura_version }}"
+          VERSION="${{ needs.determine-build-context.outputs.aura_version }}"
           DOCKER_BASE="${{ secrets.DOCKER_USERNAME }}/runners"
 
           # Generate manifest tags for both Alpine and distroless variants
@@ -411,7 +411,7 @@ jobs:
 
             case "$RELEASE_TYPE" in
               "stable")
-                echo "DOCKER_MANIFEST_TAG${OUTPUT_SUFFIX}=${DOCKER_BASE}:${N8N_VERSION}${SUFFIX}" >> "$GITHUB_OUTPUT"
+                echo "DOCKER_MANIFEST_TAG${OUTPUT_SUFFIX}=${DOCKER_BASE}:${VERSION}${SUFFIX}" >> "$GITHUB_OUTPUT"
                 echo "CREATE_DOCKERHUB_MANIFEST${OUTPUT_SUFFIX}=true" >> "$GITHUB_OUTPUT"
                 ;;
               "nightly")
@@ -419,7 +419,7 @@ jobs:
                 echo "CREATE_DOCKERHUB_MANIFEST${OUTPUT_SUFFIX}=true" >> "$GITHUB_OUTPUT"
                 ;;
               "dev")
-                if [[ "$N8N_VERSION" != pr-* ]]; then
+                if [[ "$VERSION" != pr-* ]]; then
                   echo "DOCKER_MANIFEST_TAG${OUTPUT_SUFFIX}=${DOCKER_BASE}:dev${SUFFIX}" >> "$GITHUB_OUTPUT"
                   echo "CREATE_DOCKERHUB_MANIFEST${OUTPUT_SUFFIX}=true" >> "$GITHUB_OUTPUT"
                 else
@@ -554,12 +554,7 @@ jobs:
 
   security-scan:
     name: Security Scan
-    needs:
-      [
-        determine-build-context,
-        build-and-push-docker,
-        create_multi_arch_manifest,
-      ]
+    needs: [determine-build-context, build-and-push-docker, create_multi_arch_manifest]
     if: |
       success() &&
       (needs.determine-build-context.outputs.release_type == 'stable' ||
@@ -590,6 +585,6 @@ jobs:
       - uses: act10ns/slack@44541246747a30eb3102d87f7a4cc5471b0ffb7d # v2.1.0
         with:
           status: ${{ needs.build-and-push-docker.result }}
-          channel: "#team-catalysts"
+          channel: '#team-catalysts'
           webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: Nightly Docker build failed - ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

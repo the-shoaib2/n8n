@@ -11,7 +11,7 @@ import type { Server } from 'http';
 import isbot from 'isbot';
 
 import config from '@/config';
-import { N8N_VERSION, TEMPLATES_DIR } from '@/constants';
+import { VERSION, TEMPLATES_DIR } from '@/constants';
 import { ServiceUnavailableError } from '@/errors/response-errors/service-unavailable.error';
 import { ExternalHooks } from '@/external-hooks';
 import { rawBodyReader, bodyParser, corsMiddleware } from '@/middlewares';
@@ -279,7 +279,7 @@ export abstract class AbstractServer {
 		await this.configure();
 
 		if (!inTest) {
-			this.logger.info(`Version: ${N8N_VERSION}`);
+			this.logger.info(`Version: ${VERSION}`);
 
 			const { defaultLocale } = this.globalConfig;
 			if (defaultLocale !== 'en') {

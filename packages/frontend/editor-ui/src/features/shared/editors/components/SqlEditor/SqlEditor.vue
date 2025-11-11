@@ -6,7 +6,7 @@ import { codeNodeEditorEventBus } from '@/app/event-bus';
 import { n8nCompletionSources } from '../../plugins/codemirror/completions/addCompletions';
 import { dropInExpressionEditor, mappingDropCursor } from '../../plugins/codemirror/dragAndDrop';
 import { editorKeymap } from '../../plugins/codemirror/keymap';
-import { n8nAutocompletion } from '../../plugins/codemirror/n8nLang';
+import { Autocompletion } from '../../plugins/codemirror/Lang';
 import { history } from '@codemirror/commands';
 import { bracketMatching, foldGutter, indentOnInput, LanguageSupport } from '@codemirror/language';
 import { Prec, type Line } from '@codemirror/state';
@@ -106,7 +106,7 @@ const extensions = computed(() => {
 		return baseExtensions.concat([
 			history(),
 			Prec.highest(keymap.of(editorKeymap)),
-			n8nAutocompletion(),
+			Autocompletion(),
 			indentOnInput(),
 			highlightActiveLine(),
 			highlightActiveLineGutter(),

@@ -18,10 +18,10 @@ declare global {
 	type OneOutputItem = OutputItemWithJsonKey | OutputItemWithoutJsonKey;
 	type AllOutputItems = OneOutputItem | Array<OneOutputItem>;
 
-	type N8nOutputItem = MaybePromise<OneOutputItem>;
-	type N8nOutputItems = MaybePromise<AllOutputItems>;
+	type OutputItem = MaybePromise<OneOutputItem>;
+	type OutputItems = MaybePromise<AllOutputItems>;
 
-	interface N8nJson {
+	interface Json {
 		[key: string]: any;
 	}
 
@@ -34,54 +34,54 @@ declare global {
 		mimeType: string;
 	}
 
-	interface N8nVars {}
+	interface Vars {}
 
 	// TODO: populate dynamically
-	interface N8nParameter {}
+	interface Parameter {}
 
-	interface N8nItem<J extends N8nJson = N8nJson, B extends string = string> {
-		json: J & N8nJson;
-		binary: Record<B, N8nBinary>;
+	interface Item<J extends Json = Json, B extends string = string> {
+		json: J & Json;
+		binary: Record<B, Binary>;
 	}
 
-	interface N8nCustomData {
+	interface CustomData {
 		set(key: string, value: string): void;
 		get(key: string): string;
 		getAll(): Record<string, string>;
 		setAll(values: Record<string, string>): void;
 	}
 
-	type N8nExecutionMode = 'test' | 'production';
-	interface N8nExecution {
+	type ExecutionMode = 'test' | 'production';
+	interface Execution {
 		id: string;
-		mode: N8nExecutionMode;
+		mode: ExecutionMode;
 		resumeUrl?: string;
 		resumeFormUrl?: string;
-		customData: N8nCustomData;
+		customData: CustomData;
 	}
 
-	interface N8nWorkflow {
+	interface Workflow {
 		id: string;
 		active: boolean;
 		name: string;
 	}
 
-	interface N8nPrevNode {
+	interface PrevNode {
 		name: string;
 		outputIndex: number;
 		runIndex: number;
 	}
 
-	const $input: N8nInput;
-	const $execution: N8nExecution;
-	const $workflow: N8nWorkflow;
-	const $prevNode: N8nPrevNode;
+	const $input: Input;
+	const $execution: Execution;
+	const $workflow: Workflow;
+	const $prevNode: PrevNode;
 	const $runIndex: number;
 	const $now: DateTime;
 	const $today: DateTime;
 
-	const $parameter: N8nInput['params'];
-	const $vars: N8nVars;
+	const $parameter: Parameter;
+	const $vars: Vars;
 	const $nodeVersion: number;
 
 	function $jmespath(object: Object | Array<any>, expression: string): any;
@@ -94,7 +94,7 @@ declare global {
 	function $min(...numbers: number[]): number;
 	function $max(...numbers: number[]): number;
 	function $evaluateExpression(expression: string): any;
-	function $getWorkflowStaticData(type: 'global' | 'node'): N8nJson;
+	function $getWorkflowStaticData(type: 'global' | 'node'): Json;
 
 	type SomeOtherString = string & NonNullable<unknown>;
 	// @ts-expect-error NodeName is created dynamically

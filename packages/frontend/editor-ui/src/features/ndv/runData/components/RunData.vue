@@ -781,7 +781,7 @@ onMounted(() => {
 				node: node.value.type,
 				errorMessage: error.message,
 				nodeVersion: node.value.typeVersion,
-				n8nVersion: rootStore.versionCli,
+				Version: rootStore.versionCli,
 			});
 		}
 	}

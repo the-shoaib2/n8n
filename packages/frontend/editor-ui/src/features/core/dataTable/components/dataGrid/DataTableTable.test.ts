@@ -55,8 +55,8 @@ vi.mock('ag-grid-community', () => ({
 }));
 
 // Mock the n8n theme
-vi.mock('@/features/core/dataTable/components/dataGrid/n8nTheme', () => ({
-	n8nTheme: 'n8n-theme',
+vi.mock('@/features/core/dataTable/components/dataGrid/Theme', () => ({
+	Theme: 'n8n-theme',
 }));
 
 // Mock AddColumnPopover

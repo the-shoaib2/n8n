@@ -11,7 +11,7 @@ import { EventMessageTypeNames } from 'aura-workflow';
 import promClient, { type Counter, type Gauge } from 'prom-client';
 import semverParse from 'semver/functions/parse';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import type { EventMessageTypes } from '@/eventbus';
 import { MessageEventBus } from '@/eventbus/message-event-bus/message-event-bus';
 import { EventService } from '@/events/event.service';
@@ -98,9 +98,9 @@ export class PrometheusMetricsService {
 	 * Set up metric for aura version: `aura_version_info`
 	 */
 	private initN8nVersionMetric() {
-		const auraVersion = semverParse(N8N_VERSION ?? '0.0.0');
+		const Version = semverParse(VERSION ?? '0.0.0');
 
-		if (!auraVersion) return;
+		if (!Version) return;
 
 		const versionGauge = new promClient.Gauge({
 			name: this.prefix + 'version_info',
@@ -108,7 +108,7 @@ export class PrometheusMetricsService {
 			labelNames: ['version', 'major', 'minor', 'patch'],
 		});
 
-		const { version, major, minor, patch } = auraVersion;
+		const { version, major, minor, patch } = Version;
 
 		versionGauge.set({ version: 'v' + version, major, minor, patch }, 1);
 	}
@@ -222,7 +222,8 @@ export class PrometheusMetricsService {
 		const { eventName } = event;
 
 		if (!this.counters[eventName]) {
-			const metricName = this.prefix + eventName.replace('aura.', '').replace(/\./g, '_') + '_total';
+			const metricName =
+				this.prefix + eventName.replace('aura.', '').replace(/\./g, '_') + '_total';
 
 			if (!promClient.validateMetricName(metricName)) {
 				this.counters[eventName] = null;

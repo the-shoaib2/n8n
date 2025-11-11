@@ -1,4 +1,4 @@
-import { Tournament } from '@aura/tournament';
+import { Tournament } from '@n8n/tournament';
 
 import {
 	DollarSignValidator,

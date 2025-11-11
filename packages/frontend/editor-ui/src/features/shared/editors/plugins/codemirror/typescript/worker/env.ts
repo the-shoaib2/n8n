@@ -4,7 +4,7 @@ import ts from 'typescript';
 import type { IndexedDbCache } from '@/app/plugins/cache';
 
 import globalTypes from './type-declarations/globals.d.ts?raw';
-import n8nTypes from './type-declarations/n8n.d.ts?raw';
+import n8nTypes from './type-declarations/aura.d.ts?raw';
 
 import type { CodeExecutionMode } from 'aura-workflow';
 import { wrapInFunction } from './utils';

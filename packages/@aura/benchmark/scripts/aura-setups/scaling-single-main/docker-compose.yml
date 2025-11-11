@@ -2,7 +2,7 @@ services:
   mockapi:
     image: wiremock/wiremock:3.9.1
     ports:
-      - "8088:8080"
+      - '8088:8080'
     volumes:
       - ${MOCK_API_DATA_PATH}/mappings:/home/wiremock/mappings
 
@@ -11,7 +11,7 @@ services:
     ports:
       - 6379:6379
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: ['CMD', 'redis-cli', 'ping']
       interval: 1s
       timeout: 3s
 
@@ -27,13 +27,13 @@ services:
     volumes:
       - ${RUN_DIR}/postgres:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ['CMD-SHELL', 'pg_isready -U postgres']
       interval: 5s
       timeout: 5s
       retries: 10
 
   aura_worker1:
-    image: ghcr.io/aura-io/aura:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/aura:${VERSION:-latest}
     user: root:root
     environment:
       - N8N_DIAGNOSTICS_ENABLED=false
@@ -63,17 +63,13 @@ services:
       redis:
         condition: service_healthy
     healthcheck:
-      test:
-        [
-          "CMD-SHELL",
-          "wget --spider -q http://aura_worker1:5678/healthz || exit 1",
-        ]
+      test: ['CMD-SHELL', 'wget --spider -q http://aura_worker1:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
 
   aura_worker1_runners:
-    image: ghcr.io/aura-io/runners:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/runners:${VERSION:-latest}
     environment:
       - N8N_RUNNERS_TASK_BROKER_URI=http://aura_worker1:5679
       - N8N_RUNNERS_AUTH_TOKEN=test
@@ -82,7 +78,7 @@ services:
         condition: service_healthy
 
   aura_worker2:
-    image: ghcr.io/aura-io/aura:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/aura:${VERSION:-latest}
     user: root:root
     environment:
       - N8N_DIAGNOSTICS_ENABLED=false
@@ -115,17 +111,13 @@ services:
       redis:
         condition: service_healthy
     healthcheck:
-      test:
-        [
-          "CMD-SHELL",
-          "wget --spider -q http://aura_worker2:5678/healthz || exit 1",
-        ]
+      test: ['CMD-SHELL', 'wget --spider -q http://aura_worker2:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
 
   aura_worker2_runners:
-    image: ghcr.io/aura-io/runners:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/runners:${VERSION:-latest}
     environment:
       - N8N_RUNNERS_TASK_BROKER_URI=http://aura_worker2:5679
       - N8N_RUNNERS_AUTH_TOKEN=test
@@ -134,7 +126,7 @@ services:
         condition: service_healthy
 
   aura:
-    image: ghcr.io/aura-io/aura:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/aura:${VERSION:-latest}
     user: root:root
     environment:
       - N8N_DIAGNOSTICS_ENABLED=false
@@ -163,7 +155,7 @@ services:
       mockapi:
         condition: service_started
     healthcheck:
-      test: ["CMD-SHELL", "wget --spider -q http://aura:5678/healthz || exit 1"]
+      test: ['CMD-SHELL', 'wget --spider -q http://aura:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10

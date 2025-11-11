@@ -20,7 +20,7 @@ import type {
 	IBreakingChangeWorkflowRule,
 	IBreakingChangeInstanceRule,
 } from './types';
-import { N8N_VERSION } from '../../constants';
+import { VERSION } from '../../constants';
 
 @Service()
 export class BreakingChangeService {
@@ -264,7 +264,7 @@ export class BreakingChangeService {
 		return {
 			generatedAt: new Date(),
 			targetVersion,
-			currentVersion: N8N_VERSION,
+			currentVersion: VERSION,
 			workflowResults,
 			instanceResults,
 		};

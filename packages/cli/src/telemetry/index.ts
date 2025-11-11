@@ -13,7 +13,7 @@ import axios from 'axios';
 import { ErrorReporter, InstanceSettings } from 'aura-core';
 import type { ITelemetryTrackProperties } from 'aura-workflow';
 
-import { LOWEST_SHUTDOWN_PRIORITY, N8N_VERSION } from '@/constants';
+import { LOWEST_SHUTDOWN_PRIORITY, VERSION } from '@/constants';
 import type { IExecutionTrackProperties } from '@/interfaces';
 import { License } from '@/license';
 import { PostHogClient } from '@/posthog';
@@ -225,7 +225,7 @@ export class Telemetry {
 		const updatedProperties = {
 			...properties,
 			instance_id: instanceId,
-			version_cli: N8N_VERSION,
+			version_cli: VERSION,
 		};
 
 		const payload = {

@@ -5,7 +5,7 @@ import type { WorkflowSettings } from 'aura-workflow';
 
 type DebugInfo = {
 	core: {
-		n8nVersion: string;
+		Version: string;
 		platform: 'docker (cloud)' | 'docker (self-hosted)' | 'npm';
 		nodeJsVersion: string;
 		nodeEnv: string | undefined;
@@ -51,7 +51,7 @@ export function useDebugInfo() {
 
 	const coreInfo = (skipSensitive?: boolean) => {
 		const info = {
-			n8nVersion: rootStore.versionCli,
+			Version: rootStore.versionCli,
 			platform:
 				settingsStore.isDocker && settingsStore.deploymentType === 'cloud'
 					? 'docker (cloud)'

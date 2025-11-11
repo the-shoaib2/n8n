@@ -17,7 +17,7 @@ import {
 import { computed, onMounted, ref, watch } from 'vue';
 
 import { editorKeymap } from '../../plugins/codemirror/keymap';
-import { n8nAutocompletion } from '../../plugins/codemirror/n8nLang';
+import { Autocompletion } from '../../plugins/codemirror/Lang';
 import { codeEditorTheme } from '../CodeNodeEditor/theme';
 
 type Props = {
@@ -93,7 +93,7 @@ const extensions = computed(() => {
 			history(),
 			Prec.highest(keymap.of(editorKeymap)),
 			lintGutter(),
-			n8nAutocompletion(),
+			Autocompletion(),
 			indentOnInput(),
 			highlightActiveLine(),
 			highlightActiveLineGutter(),

@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import { returnJsonArray } from 'n8n-core';
+import { returnJsonArray } from 'aura-core';
 import type { IPollFunctions } from 'aura-workflow';
 import Parser from 'rss-parser';
 

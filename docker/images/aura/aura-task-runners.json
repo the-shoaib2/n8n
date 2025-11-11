@@ -26,7 +26,7 @@
 				"NODE_OPTIONS",
 				"NODE_PATH",
 				"N8N_SENTRY_DSN",
-				"N8N_VERSION",
+				"VERSION",
 				"ENVIRONMENT",
 				"DEPLOYMENT_NAME"
 			]

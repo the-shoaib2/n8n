@@ -6,7 +6,7 @@ import { TaskRunnerSentry } from '../task-runner-sentry';
 
 describe('TaskRunnerSentry', () => {
 	const commonConfig = {
-		auraVersion: '1.0.0',
+		Version: '1.0.0',
 		environment: 'local',
 		deploymentName: 'test',
 	};

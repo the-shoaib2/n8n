@@ -62,7 +62,7 @@ const copyDebugInfoToClipboard = async () => {
 			<div :class="$style.container">
 				<ElRow>
 					<ElCol :span="8" class="info-name">
-						<N8nText>{{ i18n.baseText('about.n8nVersion') }}</N8nText>
+						<N8nText>{{ i18n.baseText('about.Version') }}</N8nText>
 					</ElCol>
 					<ElCol :span="16">
 						<N8nText>{{ rootStore.versionCli }}</N8nText>

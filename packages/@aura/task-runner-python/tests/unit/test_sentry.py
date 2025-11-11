@@ -233,7 +233,7 @@ class TestSentryConfig:
         "os.environ",
         {
             "N8N_SENTRY_DSN": "https://test@sentry.io/789",
-            "N8N_VERSION": "2.0.0",
+            "VERSION": "2.0.0",
             "ENVIRONMENT": "production",
             "DEPLOYMENT_NAME": "prod-deployment",
         },

@@ -116,7 +116,7 @@ export function simulateOutdatedInstanceOnce(versionName = MOCK_01110_N8N_VERSIO
 	const baseUrl = Container.get(GlobalConfig).versionNotifications.endpoint + '/';
 
 	// @ts-expect-error readonly export
-	constants.N8N_VERSION = versionName;
+	constants.VERSION = versionName;
 
 	nock(baseUrl).get(versionName).reply(200, [MOCK_01110_N8N_VERSION, MOCK_09990_N8N_VERSION]);
 }
@@ -125,7 +125,7 @@ export function simulateUpToDateInstance(versionName = MOCK_09990_N8N_VERSION.na
 	const baseUrl = Container.get(GlobalConfig).versionNotifications.endpoint + '/';
 
 	// @ts-expect-error readonly export
-	constants.N8N_VERSION = versionName;
+	constants.VERSION = versionName;
 
 	nock(baseUrl).persist().get(versionName).reply(200, [MOCK_09990_N8N_VERSION]);
 }

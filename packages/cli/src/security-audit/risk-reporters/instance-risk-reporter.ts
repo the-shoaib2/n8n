@@ -6,7 +6,7 @@ import axios from 'axios';
 import { InstanceSettings } from 'aura-core';
 import type { IWorkflowBase } from 'aura-workflow';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { CommunityPackagesConfig } from '@/modules/community-packages/community-packages.config';
 import { isApiEnabled } from '@/public-api';
 import {
@@ -176,7 +176,7 @@ export class InstanceRiskReporter implements RiskReporter {
 	private async getOutdatedState() {
 		let versions = [];
 
-		const localVersion = N8N_VERSION;
+		const localVersion = VERSION;
 
 		try {
 			versions = await this.getNextVersions(localVersion).then((v) => this.removeIconData(v));

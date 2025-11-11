@@ -15,14 +15,14 @@ export class TaskRunnerSentry {
 	) {}
 
 	async initIfEnabled() {
-		const { dsn, auraVersion, environment, deploymentName } = this.config;
+		const { dsn, Version, environment, deploymentName } = this.config;
 
 		if (!dsn) return;
 
 		await this.errorReporter.init({
 			serverType: 'task_runner',
 			dsn,
-			release: `aura@${auraVersion}`,
+			release: `aura@${Version}`,
 			environment,
 			serverName: deploymentName,
 			beforeSendFilter: this.filterOutUserCodeErrors,

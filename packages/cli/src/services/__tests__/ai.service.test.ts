@@ -8,7 +8,7 @@ import { AiAssistantClient, type AiAssistantSDK } from '@n8n_io/ai-assistant-sdk
 import { mock } from 'jest-mock-extended';
 import type { IUser } from 'aura-workflow';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import type { License } from '@/license';
 
 import { AiService } from '../ai.service';
@@ -58,7 +58,7 @@ describe('AiService', () => {
 			expect(AiAssistantClient).toHaveBeenCalledWith({
 				licenseCert: 'mock-license-cert',
 				consumerId: 'mock-consumer-id',
-				auraVersion: N8N_VERSION,
+				n8nVersion: VERSION,
 				baseUrl,
 				logLevel: 'info',
 			});

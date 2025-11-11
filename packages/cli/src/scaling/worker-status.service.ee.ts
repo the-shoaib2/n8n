@@ -4,7 +4,7 @@ import { Service } from '@aura/di';
 import { InstanceSettings } from 'aura-core';
 import os from 'node:os';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { Push } from '@/push';
 
 import { JobProcessor } from './job-processor';
@@ -64,7 +64,7 @@ export class WorkerStatusService {
 					internal: net.internal,
 				})),
 			),
-			version: N8N_VERSION,
+			version: VERSION,
 		};
 	}
 

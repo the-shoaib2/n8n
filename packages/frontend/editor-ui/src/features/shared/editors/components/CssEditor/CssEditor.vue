@@ -20,7 +20,7 @@ import {
 	expressionCloseBracketsConfig,
 } from '../../plugins/codemirror/expressionCloseBrackets';
 import { editorKeymap } from '../../plugins/codemirror/keymap';
-import { n8nAutocompletion } from '../../plugins/codemirror/n8nLang';
+import { Autocompletion } from '../../plugins/codemirror/Lang';
 import { codeEditorTheme } from '../CodeNodeEditor/theme';
 import type { TargetNodeParameterContext } from '@/Interface';
 import DraggableTarget from '@/app/components/DraggableTarget.vue';
@@ -49,7 +49,7 @@ const editorValue = ref<string>(props.modelValue);
 
 const extensions = computed(() => [
 	bracketMatching(),
-	n8nAutocompletion(),
+	Autocompletion(),
 	new LanguageSupport(cssLanguage, [
 		cssLanguage.data.of({ closeBrackets: expressionCloseBracketsConfig }),
 		n8nCompletionSources().map((source) => cssLanguage.data.of(source)),

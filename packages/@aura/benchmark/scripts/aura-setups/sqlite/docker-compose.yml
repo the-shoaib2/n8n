@@ -2,12 +2,12 @@ services:
   mockapi:
     image: wiremock/wiremock:3.9.1
     ports:
-      - "8088:8080"
+      - '8088:8080'
     volumes:
       - ${MOCK_API_DATA_PATH}/mappings:/home/wiremock/mappings
 
   aura:
-    image: ghcr.io/aura-io/aura:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/aura:${VERSION:-latest}
     user: root:root
     environment:
       - N8N_DIAGNOSTICS_ENABLED=false
@@ -25,7 +25,7 @@ services:
     volumes:
       - ${RUN_DIR}:/aura
     healthcheck:
-      test: ["CMD-SHELL", "wget --spider -q http://aura:5678/healthz || exit 1"]
+      test: ['CMD-SHELL', 'wget --spider -q http://aura:5678/healthz || exit 1']
       interval: 5s
       timeout: 5s
       retries: 10
@@ -34,7 +34,7 @@ services:
         condition: service_started
 
   runners:
-    image: ghcr.io/aura-io/runners:${N8N_VERSION:-latest}
+    image: ghcr.io/aura-io/runners:${VERSION:-latest}
     environment:
       - N8N_RUNNERS_TASK_BROKER_URI=http://aura:5679
       - N8N_RUNNERS_AUTH_TOKEN=test

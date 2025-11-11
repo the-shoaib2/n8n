@@ -7,12 +7,12 @@ import type {
 } from 'aura-workflow';
 
 import type { IAirtopResponse } from './types';
-import { BASE_URL, N8N_VERSION } from '../constants';
+import { BASE_URL, VERSION } from '../constants';
 
 const defaultHeaders = {
 	'Content-Type': 'application/json',
 	'x-airtop-sdk-environment': 'aura',
-	'x-airtop-sdk-version': N8N_VERSION,
+	'x-airtop-sdk-version': VERSION,
 };
 
 export async function apiRequest<T extends IAirtopResponse = IAirtopResponse>(

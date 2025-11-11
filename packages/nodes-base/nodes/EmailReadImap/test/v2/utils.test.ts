@@ -1,6 +1,6 @@
 import { type ImapSimple } from '@aura/imap';
 import { mock, mockDeep } from 'jest-mock-extended';
-import { returnJsonArray } from 'n8n-core';
+import { returnJsonArray } from 'aura-core';
 import type { INode, ITriggerFunctions } from 'aura-workflow';
 
 import { getNewEmails } from '../../v2/utils';

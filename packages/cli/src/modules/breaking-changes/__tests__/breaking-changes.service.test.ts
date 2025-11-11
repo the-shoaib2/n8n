@@ -6,7 +6,7 @@ import type { ErrorReporter } from 'aura-core';
 
 import type { CacheService } from '@/services/cache/cache.service';
 
-import { N8N_VERSION } from '../../../constants';
+import { VERSION } from '../../../constants';
 import { RuleRegistry } from '../breaking-changes.rule-registry.service';
 import { BreakingChangeService } from '../breaking-changes.service';
 import { createNode, createWorkflow } from './test-helpers';
@@ -64,7 +64,7 @@ describe('BreakingChangeService', () => {
 
 			expect(report.report).toMatchObject({
 				targetVersion: 'v2',
-				currentVersion: N8N_VERSION,
+				currentVersion: VERSION,
 				instanceResults: [],
 				workflowResults: [],
 			});
@@ -88,7 +88,7 @@ describe('BreakingChangeService', () => {
 
 			// Verify report structure
 			expect(report.report.targetVersion).toBe('v2');
-			expect(report.report.currentVersion).toBe(N8N_VERSION);
+			expect(report.report.currentVersion).toBe(VERSION);
 			expect(report.report.generatedAt).toBeInstanceOf(Date);
 
 			// Verify each rule's result is in the report
@@ -116,7 +116,7 @@ describe('BreakingChangeService', () => {
 
 			expect(report.report).toHaveProperty('generatedAt');
 			expect(report.report).toHaveProperty('targetVersion', 'v2');
-			expect(report.report).toHaveProperty('currentVersion', N8N_VERSION);
+			expect(report.report).toHaveProperty('currentVersion', VERSION);
 			expect(report.report).toHaveProperty('workflowResults');
 			expect(Array.isArray(report.report.workflowResults)).toBe(true);
 		});

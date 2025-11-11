@@ -2945,7 +2945,7 @@ packages/frontend/@aura/storybook/package.json
 packages/frontend/editor-ui/public/static/aura-logo.png
 packages/frontend/editor-ui/src/app/composables/useN8nLocalStorage.test.ts
 packages/frontend/editor-ui/src/app/composables/useN8nLocalStorage.ts
-packages/frontend/editor-ui/src/features/core/dataTable/components/dataGrid/auraTheme.ts
+packages/frontend/editor-ui/src/features/core/dataTable/components/dataGrid/Theme.ts
 packages/frontend/editor-ui/src/features/shared/editors/plugins/codemirror/auraLang.ts
 packages/frontend/editor-ui/src/features/shared/editors/plugins/codemirror/typescript/worker/type-declarations/aura-once-for-all-items.d.ts
 packages/frontend/editor-ui/src/features/shared/editors/plugins/codemirror/typescript/worker/type-declarations/aura-once-for-each-item.d.ts

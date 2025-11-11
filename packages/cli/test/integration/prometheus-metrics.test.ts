@@ -6,7 +6,7 @@ import { DateTime } from 'luxon';
 import { parse as semverParse } from 'semver';
 import request, { type Response } from 'supertest';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { EventService } from '@/events/event.service';
 import { PrometheusMetricsService } from '@/metrics/prometheus-metrics.service';
 import { CacheService } from '@/services/cache/cache.service';
@@ -76,11 +76,11 @@ describe('PrometheusMetricsService', () => {
 		expect(response.status).toEqual(200);
 		expect(response.type).toEqual('text/plain');
 
-		const auraVersion = semverParse(N8N_VERSION);
+		const Version = semverParse(VERSION);
 
-		if (!auraVersion) fail('Failed to parse aura version');
+		if (!Version) fail('Failed to parse aura version');
 
-		const { version, major, minor, patch } = auraVersion;
+		const { version, major, minor, patch } = Version;
 
 		const lines = toLines(response);
 

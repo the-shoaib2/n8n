@@ -1,7 +1,12 @@
 import { mock } from 'jest-mock-extended';
 import get from 'lodash/get';
-import { constructExecutionMetaData } from 'n8n-core';
-import type { IDataObject, IExecuteFunctions, IGetNodeParameterOptions, INode } from 'aura-workflow';
+import { constructExecutionMetaData } from 'aura-core';
+import type {
+	IDataObject,
+	IExecuteFunctions,
+	IGetNodeParameterOptions,
+	INode,
+} from 'aura-workflow';
 
 import {
 	checkRange,

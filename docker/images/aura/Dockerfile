@@ -1,5 +1,5 @@
 ARG NODE_VERSION=22.21.0
-ARG N8N_VERSION=snapshot
+ARG VERSION=snapshot
 ARG LAUNCHER_VERSION=1.4.1
 ARG TARGETPLATFORM
 
@@ -42,7 +42,7 @@ RUN set -e; \
 # ==============================================================================
 FROM system-deps AS runtime
 
-ARG N8N_VERSION
+ARG VERSION
 ARG N8N_RELEASE_TYPE=dev
 ENV NODE_ENV=production
 ENV N8N_RELEASE_TYPE=${N8N_RELEASE_TYPE}
@@ -72,4 +72,4 @@ LABEL org.opencontainers.image.title="n8n" \
       org.opencontainers.image.description="Workflow Automation Tool" \
       org.opencontainers.image.source="https://github.com/n8n-io/n8n" \
       org.opencontainers.image.url="https://n8n.io" \
-      org.opencontainers.image.version=${N8N_VERSION}
+      org.opencontainers.image.version=${VERSION}

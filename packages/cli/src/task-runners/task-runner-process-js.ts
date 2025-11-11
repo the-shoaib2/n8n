@@ -66,7 +66,7 @@ export class JsTaskRunnerProcess extends TaskRunnerProcessBase {
 
 			// sentry
 			N8N_SENTRY_DSN: process.env.N8N_SENTRY_DSN,
-			N8N_VERSION: process.env.N8N_VERSION,
+			VERSION: process.env.VERSION,
 			ENVIRONMENT: process.env.ENVIRONMENT,
 			DEPLOYMENT_NAME: process.env.DEPLOYMENT_NAME,
 

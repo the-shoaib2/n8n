@@ -18,7 +18,7 @@ import { Telemetry } from '../../telemetry';
 import { EventRelay } from './event-relay';
 
 import config from '@/config';
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { EventService } from '@/events/event.service';
 import type { RelayEventMap } from '@/events/maps/relay.event-map';
 import { determineFinalExecutionStatus } from '@/execution-lifecycle/shared/shared-hook-functions';
@@ -634,7 +634,7 @@ export class TelemetryEventRelay extends EventRelay {
 			node_graph_string: JSON.stringify(nodeGraph),
 			notes_count_overlapping: overlappingCount,
 			notes_count_non_overlapping: notesCount - overlappingCount,
-			version_cli: N8N_VERSION,
+			version_cli: VERSION,
 			num_tags: workflow.tags?.length ?? 0,
 			public_api: publicApi,
 			sharing_role: userRole,
@@ -655,7 +655,7 @@ export class TelemetryEventRelay extends EventRelay {
 		const telemetryProperties: IExecutionTrackProperties = {
 			workflow_id: workflow.id,
 			is_manual: false,
-			version_cli: N8N_VERSION,
+			version_cli: VERSION,
 			success: false,
 		};
 
@@ -830,7 +830,7 @@ export class TelemetryEventRelay extends EventRelay {
 		const authenticationMethod = config.getEnv('userManagement.authenticationMethod');
 
 		const info = {
-			version_cli: N8N_VERSION,
+			version_cli: VERSION,
 			db_type: this.globalConfig.database.type,
 			aura_version_notifications_enabled: this.globalConfig.versionNotifications.enabled,
 			aura_disable_production_main_process:

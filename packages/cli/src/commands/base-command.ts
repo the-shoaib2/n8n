@@ -22,7 +22,7 @@ import {
 import { ensureError, sleep, UnexpectedError, UserError } from 'aura-workflow';
 
 import type { AbstractServer } from '@/abstract-server';
-import { N8N_VERSION, N8N_RELEASE_DATE } from '@/constants';
+import { VERSION, N8N_RELEASE_DATE } from '@/constants';
 import * as CrashJournal from '@/crash-journal';
 import { getDataDeduplicationService } from '@/deduplication';
 import { TestRunCleanupService } from '@/evaluation.ee/test-runner/test-run-cleanup.service.ee';
@@ -85,7 +85,7 @@ export abstract class BaseCommand<F = never> {
 			serverType: this.instanceSettings.instanceType,
 			dsn: backendDsn,
 			environment,
-			release: `aura@${N8N_VERSION}`,
+			release: `aura@${VERSION}`,
 			serverName: deploymentName,
 			releaseDate: N8N_RELEASE_DATE,
 			withEventLoopBlockDetection: true,

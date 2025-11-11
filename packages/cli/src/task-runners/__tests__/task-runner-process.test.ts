@@ -74,7 +74,7 @@ describe('TaskRunnerProcess', () => {
 			'NODE_FUNCTION_ALLOW_BUILTIN',
 			'NODE_FUNCTION_ALLOW_EXTERNAL',
 			'N8N_SENTRY_DSN',
-			'N8N_VERSION',
+			'VERSION',
 			'ENVIRONMENT',
 			'DEPLOYMENT_NAME',
 			'NODE_PATH',

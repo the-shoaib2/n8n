@@ -3,7 +3,7 @@ import { Command } from '@aura/decorators';
 import { Container } from '@aura/di';
 import { z } from 'zod';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { CredentialsOverwrites } from '@/credentials-overwrites';
 import { DeprecationService } from '@/deprecation/deprecation.service';
 import { EventMessageGeneric } from '@/eventbus/event-message-classes/event-message-generic';
@@ -163,7 +163,7 @@ export class Worker extends BaseCommand<z.infer<typeof flagsSchema>> {
 
 	async run() {
 		this.logger.info('\naura worker is now ready');
-		this.logger.info(` * Version: ${N8N_VERSION}`);
+		this.logger.info(` * Version: ${VERSION}`);
 		this.logger.info(` * Concurrency: ${this.concurrency}`);
 		this.logger.info('');
 

@@ -4,7 +4,7 @@ import { LicenseManager } from '@n8n_io/license-sdk';
 import { mock } from 'jest-mock-extended';
 import type { InstanceSettings } from 'aura-core';
 
-import { N8N_VERSION } from '@/constants';
+import { VERSION } from '@/constants';
 import { License } from '@/license';
 
 jest.mock('@n8n_io/license-sdk');
@@ -56,7 +56,7 @@ describe('License', () => {
 				offlineMode: false,
 				renewOnInit: true,
 				deviceFingerprint: expect.any(Function),
-				productIdentifier: `aura-${N8N_VERSION}`,
+				productIdentifier: `aura-${VERSION}`,
 				loadCertStr: expect.any(Function),
 				saveCertStr: expect.any(Function),
 				onFeatureChange: expect.any(Function),
@@ -87,7 +87,7 @@ describe('License', () => {
 				offlineMode: true,
 				renewOnInit: false,
 				deviceFingerprint: expect.any(Function),
-				productIdentifier: `aura-${N8N_VERSION}`,
+				productIdentifier: `aura-${VERSION}`,
 				loadCertStr: expect.any(Function),
 				saveCertStr: expect.any(Function),
 				onFeatureChange: expect.any(Function),

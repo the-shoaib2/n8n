@@ -1,5 +1,5 @@
 import { captor, mock } from 'jest-mock-extended';
-import { returnJsonArray } from 'n8n-core';
+import { returnJsonArray } from 'aura-core';
 import type { ICredentialDataDecryptedObject, ITriggerFunctions } from 'aura-workflow';
 
 import { RedisTrigger } from '../RedisTrigger.node';

@@ -19,7 +19,7 @@ import { InstanceSettings } from 'aura-core';
 
 import { LicenseMetricsService } from '@/metrics/license-metrics.service';
 
-import { N8N_VERSION, SETTINGS_LICENSE_CERT_KEY } from './constants';
+import { VERSION, SETTINGS_LICENSE_CERT_KEY } from './constants';
 
 const LICENSE_RENEWAL_DISABLED_WARNING =
 	'Automatic license renewal is disabled. The license will not renew automatically, and access to licensed features may be lost!';
@@ -96,7 +96,7 @@ export class License implements LicenseProvider {
 			this.manager = new LicenseManager({
 				server,
 				tenantId: this.globalConfig.license.tenantId,
-				productIdentifier: `aura-${N8N_VERSION}`,
+				productIdentifier: `aura-${VERSION}`,
 				autoRenewEnabled: shouldRenew,
 				renewOnInit: shouldRenew,
 				autoRenewOffset,

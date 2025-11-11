@@ -81,7 +81,7 @@ const parameters = computed<INodeProperties[]>(() => {
 	return nodeType.properties;
 });
 
-const n8nVersion = computed(() => {
+const Version = computed(() => {
 	const baseUrl = rootStore.urlBaseEditor;
 	let instanceType = 'Self Hosted';
 
@@ -370,7 +370,7 @@ function copyErrorDetails() {
 		n8nDetails.time = new Date(error.timestamp).toLocaleString();
 	}
 
-	n8nDetails.n8nVersion = n8nVersion.value;
+	n8nDetails.Version = Version.value;
 
 	n8nDetails.binaryDataMode = rootStore.binaryDataMode;
 
@@ -642,10 +642,10 @@ async function onAskAssistantClick() {
 
 						<div class="node-error-view__details-row">
 							<p class="node-error-view__details-label">
-								{{ i18n.baseText('nodeErrorView.details.n8nVersion') }}
+								{{ i18n.baseText('nodeErrorView.details.Version') }}
 							</p>
 							<p class="node-error-view__details-value">
-								<code>{{ n8nVersion }}</code>
+								<code>{{ Version }}</code>
 							</p>
 						</div>
 

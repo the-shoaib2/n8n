@@ -163,7 +163,7 @@ RUN mkdir -p /runtime/home/runner && \
 # - NO shell, NO package manager, NO system utilities
 # ==============================================================================
 FROM gcr.io/distroless/cc-debian12:latest AS runtime
-ARG N8N_VERSION=snapshot
+ARG VERSION=snapshot
 ARG N8N_RELEASE_TYPE=dev
 
 ENV NODE_ENV=production \
@@ -186,4 +186,4 @@ LABEL org.opencontainers.image.title="n8n task runners (distroless)" \
       org.opencontainers.image.description="Distroless sidecar image providing n8n task runners for JavaScript and Python code execution" \
       org.opencontainers.image.source="https://github.com/n8n-io/n8n" \
       org.opencontainers.image.url="https://n8n.io" \
-      org.opencontainers.image.version="${N8N_VERSION}"
+      org.opencontainers.image.version="${VERSION}"
