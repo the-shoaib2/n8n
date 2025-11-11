@@ -1,5 +1,5 @@
-import type { IHttpRequestOptions, IWebhookFunctions } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IHttpRequestOptions, IWebhookFunctions } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { createHmac, timingSafeEqual } from 'crypto';
 

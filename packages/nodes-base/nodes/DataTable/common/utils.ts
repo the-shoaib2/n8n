@@ -9,8 +9,8 @@ import type {
 	ILoadOptionsFunctions,
 	DataTableColumnJsType,
 	DataTableColumnType,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type { FieldEntry, FilterType } from './constants';
 import { ALL_CONDITIONS, ANY_CONDITION } from './constants';

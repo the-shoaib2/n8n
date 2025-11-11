@@ -6,8 +6,8 @@ import type {
 	IHttpRequestOptions,
 	JsonObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 import { parseString as parseXml } from 'xml2js';
 import type {
 	AwsAssumeRoleCredentialsType,

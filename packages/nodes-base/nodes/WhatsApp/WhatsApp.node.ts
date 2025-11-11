@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError, SEND_AND_WAIT_OPERATION } from 'aura-workflow';
 
 import { createMessage, WHATSAPP_BASE_URL } from './GenericFunctions';
 import { mediaFields, mediaTypeFields } from './MediaDescription';

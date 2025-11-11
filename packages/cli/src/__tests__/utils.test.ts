@@ -1,4 +1,4 @@
-import type { INodeType } from 'n8n-workflow';
+import type { INodeType } from 'aura-workflow';
 
 import { shouldAssignExecuteMethod, getAllKeyPaths } from '../utils';
 

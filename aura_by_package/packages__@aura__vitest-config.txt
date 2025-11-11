@@ -1,0 +1,5 @@
+packages/@aura/vitest-config/frontend.ts
+packages/@aura/vitest-config/node.ts
+packages/@aura/vitest-config/package.json
+packages/@aura/vitest-config/tsconfig.build.json
+packages/@aura/vitest-config/tsconfig.json

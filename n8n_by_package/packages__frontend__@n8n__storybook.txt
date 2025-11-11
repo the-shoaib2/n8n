@@ -1,2 +1,0 @@
-packages/frontend/@n8n/storybook/main.ts
-packages/frontend/@n8n/storybook/package.json

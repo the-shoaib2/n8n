@@ -4,7 +4,7 @@ import type {
 	IRunExecutionData,
 	ISourceData,
 	ITaskData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { previousTaskData, findPairedItemThroughWorkflowData } from './workflow-backtracking';
 

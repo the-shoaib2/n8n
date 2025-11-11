@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 export const channelOperations: INodeProperties[] = [
 	{
@@ -371,7 +371,7 @@ export const channelFields: INodeProperties[] = [
 		},
 		required: true,
 		description:
-			'The ID of the user to invite into channel. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+			'The ID of the user to invite into channel. Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>.',
 	},
 
 	/* -------------------------------------------------------------------------- */
@@ -529,7 +529,7 @@ export const channelFields: INodeProperties[] = [
 		name: 'userId',
 		type: 'options',
 		description:
-			'Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+			'Choose from the list, or specify an ID using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 		typeOptions: {
 			loadOptionsMethod: 'getUsers',
 		},
@@ -675,12 +675,12 @@ export const channelFields: INodeProperties[] = [
 						value: 'private_channel',
 					},
 					{
-						// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
+						// eslint-disable-next-line aura-nodes-base/node-param-display-name-miscased
 						name: 'mpim',
 						value: 'mpim',
 					},
 					{
-						// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
+						// eslint-disable-next-line aura-nodes-base/node-param-display-name-miscased
 						name: 'im',
 						value: 'im',
 					},
@@ -1039,7 +1039,7 @@ export const channelFields: INodeProperties[] = [
 				},
 				default: [],
 				description:
-					'If only one user is included, this creates a 1:1 DM. The ordering of the users is preserved whenever a multi-person direct message is returned. Supply a channel when not supplying users. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+					'If only one user is included, this creates a 1:1 DM. The ordering of the users is preserved whenever a multi-person direct message is returned. Supply a channel when not supplying users. Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>.',
 			},
 		],
 	},

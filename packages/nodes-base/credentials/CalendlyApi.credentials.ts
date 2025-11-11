@@ -4,7 +4,7 @@ import type {
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 const getAuthenticationType = (data: string): 'accessToken' | 'apiKey' => {
 	// The access token is a JWT, so it will always include dots to separate

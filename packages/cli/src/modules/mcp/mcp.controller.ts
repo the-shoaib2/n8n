@@ -1,9 +1,9 @@
 import { StreamableHTTPServerTransport } from '@modelcontextprotocol/sdk/server/streamableHttp.js';
-import { AuthenticatedRequest } from '@n8n/db';
-import { Head, Post, RootLevelController } from '@n8n/decorators';
-import { Container } from '@n8n/di';
+import { AuthenticatedRequest } from '@aura/db';
+import { Head, Post, RootLevelController } from '@aura/decorators';
+import { Container } from '@aura/di';
 import type { Request, Response } from 'express';
-import { ErrorReporter } from 'n8n-core';
+import { ErrorReporter } from 'aura-core';
 
 import { Telemetry } from '@/telemetry';
 
@@ -62,7 +62,7 @@ export class McpController {
 	})
 	async discoverAuthSchemeHead(_req: Request, res: Response) {
 		this.setCorsHeaders(res);
-		res.header('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+		res.header('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 		res.status(401).end();
 	}
 

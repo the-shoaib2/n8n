@@ -6,8 +6,8 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 import { linkedInApiRequest } from './GenericFunctions';
 import { postFields, postOperations } from './PostDescription';

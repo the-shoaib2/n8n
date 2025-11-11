@@ -1,44 +1,44 @@
 {
-	"node": "n8n-nodes-base.trello",
+	"node": "aura-nodes-base.trello",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Productivity"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/credentials/trello/"
+				"url": "https://docs.aura.io/integrations/builtin/credentials/trello/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.trello/"
+				"url": "https://docs.aura.io/integrations/builtin/app-nodes/aura-nodes-base.trello/"
 			}
 		],
 		"generic": [
 			{
 				"label": "6 e-commerce workflows to power up your Shopify s",
 				"icon": "store",
-				"url": "https://n8n.io/blog/no-code-ecommerce-workflow-automations/"
+				"url": "https://aura.io/blog/no-code-ecommerce-workflow-automations/"
 			},
 			{
 				"label": "5 tasks you can automate with the new Notion API ",
 				"icon": "⚡️",
-				"url": "https://n8n.io/blog/5-tasks-you-can-automate-with-notion-api/"
+				"url": "https://aura.io/blog/5-tasks-you-can-automate-with-notion-api/"
 			},
 			{
 				"label": "Hey founders! Your business doesn't need you to operate",
 				"icon": " 🖥️",
-				"url": "https://n8n.io/blog/your-business-doesnt-need-you-to-operate/"
+				"url": "https://aura.io/blog/your-business-doesnt-need-you-to-operate/"
 			},
 			{
-				"label": "How a digital strategist uses n8n for online marketing",
+				"label": "How a digital strategist uses aura for online marketing",
 				"icon": "💻",
-				"url": "https://n8n.io/blog/how-a-digital-strategist-uses-n8n-for-online-marketing/"
+				"url": "https://aura.io/blog/how-a-digital-strategist-uses-aura-for-online-marketing/"
 			},
 			{
-				"label": "Automating Conference Organization Processes with n8n",
+				"label": "Automating Conference Organization Processes with aura",
 				"icon": "🙋‍♀️",
-				"url": "https://n8n.io/blog/automating-conference-organization-processes-with-n8n/"
+				"url": "https://aura.io/blog/automating-conference-organization-processes-with-aura/"
 			}
 		]
 	}

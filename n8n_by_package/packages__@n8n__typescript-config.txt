@@ -1,7 +1,0 @@
-packages/@n8n/typescript-config/modern/tsconfig.cjs.json
-packages/@n8n/typescript-config/modern/tsconfig.json
-packages/@n8n/typescript-config/package.json
-packages/@n8n/typescript-config/tsconfig.backend.json
-packages/@n8n/typescript-config/tsconfig.build.json
-packages/@n8n/typescript-config/tsconfig.common.json
-packages/@n8n/typescript-config/tsconfig.frontend.json

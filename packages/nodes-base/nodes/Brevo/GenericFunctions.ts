@@ -5,8 +5,8 @@ import type {
 	IRequestOptions,
 	IWebhookFunctions,
 	JsonObject,
-} from 'n8n-workflow';
-import { jsonParse, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, NodeOperationError } from 'aura-workflow';
 import MailComposer from 'nodemailer/lib/mail-composer';
 export namespace BrevoNode {
 	type ValidEmailFields = { to: string } | { sender: string } | { cc: string } | { bcc: string };

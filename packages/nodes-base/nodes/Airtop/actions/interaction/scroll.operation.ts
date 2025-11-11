@@ -3,7 +3,7 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { constructInteractionRequest } from './helpers';
 import {

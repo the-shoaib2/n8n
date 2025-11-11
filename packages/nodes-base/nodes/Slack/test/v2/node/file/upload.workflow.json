@@ -5,7 +5,7 @@
 			"parameters": {},
 			"id": "e679c883-1839-47dc-9511-8f7dc370e6b0",
 			"name": "When clicking ‘Execute workflow’",
-			"type": "n8n-nodes-base.manualTrigger",
+			"type": "aura-nodes-base.manualTrigger",
 			"typeVersion": 1,
 			"position": [440, 360]
 		},
@@ -21,7 +21,7 @@
 			},
 			"id": "2e1937a6-4c8f-4cd1-ae42-11b2bd12cc4c",
 			"name": "Slack",
-			"type": "n8n-nodes-base.slack",
+			"type": "aura-nodes-base.slack",
 			"typeVersion": 2.3,
 			"position": [1100, 360],
 			"webhookId": "04c5e584-45f4-48d0-bcd2-0ecacecb0f53",
@@ -36,7 +36,7 @@
 			"parameters": {},
 			"id": "06652908-6b8e-443a-9508-ab229b011b73",
 			"name": "No Operation, do nothing",
-			"type": "n8n-nodes-base.noOp",
+			"type": "aura-nodes-base.noOp",
 			"typeVersion": 1,
 			"position": [1320, 360]
 		},
@@ -47,7 +47,7 @@
 			},
 			"id": "76e317ed-7f2b-46b9-8c9b-f91a0b5d0fdd",
 			"name": "Convert to File",
-			"type": "n8n-nodes-base.convertToFile",
+			"type": "aura-nodes-base.convertToFile",
 			"typeVersion": 1.1,
 			"position": [860, 360]
 		},
@@ -73,7 +73,7 @@
 			},
 			"id": "773453a7-2bdc-4d50-a3e6-be5e1b86d820",
 			"name": "Edit Fields",
-			"type": "n8n-nodes-base.set",
+			"type": "aura-nodes-base.set",
 			"typeVersion": 3.4,
 			"position": [660, 360]
 		}

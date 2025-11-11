@@ -3,7 +3,7 @@ import type {
 	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export class IterableApi implements ICredentialType {
 	name = 'iterableApi';

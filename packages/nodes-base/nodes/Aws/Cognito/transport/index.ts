@@ -5,7 +5,7 @@ import type {
 	IExecuteSingleFunctions,
 	IDataObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type { AwsIamCredentialsType } from '../../../../credentials/common/aws/types';
 
 export async function awsApiRequest(

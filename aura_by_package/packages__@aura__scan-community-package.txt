@@ -1,0 +1,5 @@
+packages/@aura/scan-community-package/.gitignore
+packages/@aura/scan-community-package/README.md
+packages/@aura/scan-community-package/package.json
+packages/@aura/scan-community-package/scanner/cli.mjs
+packages/@aura/scan-community-package/scanner/scanner.mjs

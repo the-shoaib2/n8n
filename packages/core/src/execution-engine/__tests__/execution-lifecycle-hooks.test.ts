@@ -9,7 +9,7 @@ import type {
 	ITaskStartedData,
 	IWorkflowBase,
 	Workflow,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import type {
 	ExecutionLifecycleHookName,

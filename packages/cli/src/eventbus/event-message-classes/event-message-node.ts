@@ -1,5 +1,5 @@
-import type { JsonObject } from 'n8n-workflow';
-import { EventMessageTypeNames } from 'n8n-workflow';
+import type { JsonObject } from 'aura-workflow';
+import { EventMessageTypeNames } from 'aura-workflow';
 
 import type { EventNamesNodeType } from '.';
 import { AbstractEventMessage, isEventMessageOptionsWithType } from './abstract-event-message';

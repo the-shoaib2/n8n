@@ -8,8 +8,8 @@ import type {
 	IHttpRequestOptions,
 	JsonObject,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { jsonParse, NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { jsonParse, NodeApiError } from 'aura-workflow';
 import { getAwsCredentials } from '../GenericFunctions';
 
 export async function awsApiRequest(

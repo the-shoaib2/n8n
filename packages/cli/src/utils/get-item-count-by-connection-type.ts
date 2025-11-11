@@ -1,5 +1,5 @@
-import type { NodeConnectionType, ITaskData } from 'n8n-workflow';
-import { isNodeConnectionType } from 'n8n-workflow';
+import type { NodeConnectionType, ITaskData } from 'aura-workflow';
+import { isNodeConnectionType } from 'aura-workflow';
 
 export function getItemCountByConnectionType(
 	data: ITaskData['data'],

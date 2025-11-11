@@ -13,8 +13,8 @@ import type {
 	INodeType,
 	INodeTypes,
 	ICredentialDataDecryptedObject,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeConnectionTypes } from 'aura-workflow';
 
 import { describeCommonTests } from './shared-tests';
 import { ExecuteSingleContext } from '../execute-single-context';

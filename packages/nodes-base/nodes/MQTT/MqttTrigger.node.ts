@@ -7,8 +7,8 @@ import type {
 	INodeTypeDescription,
 	ITriggerResponse,
 	IRun,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { createClient, type MqttCredential } from './GenericFunctions';
 

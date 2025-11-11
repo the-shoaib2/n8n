@@ -1,0 +1,7 @@
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/README.md
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/nodes/Example/Example.node.json
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/nodes/Example/Example.node.ts
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/nodes/Example/example.dark.svg
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/nodes/Example/example.svg
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/package.json
+packages/@aura/node-cli/src/template/templates/programmatic/example/template/tsconfig.json

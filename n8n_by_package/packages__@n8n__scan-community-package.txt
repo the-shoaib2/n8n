@@ -1,5 +1,0 @@
-packages/@n8n/scan-community-package/.gitignore
-packages/@n8n/scan-community-package/README.md
-packages/@n8n/scan-community-package/package.json
-packages/@n8n/scan-community-package/scanner/cli.mjs
-packages/@n8n/scan-community-package/scanner/scanner.mjs

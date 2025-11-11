@@ -7,8 +7,8 @@
 // 1  means the output has run data
 // PD denotes that the node has pinned data
 
-import type { IPinData, IRunData } from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import type { IPinData, IRunData } from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 import { createNodeData, toITaskData } from './helpers';
 import { DirectedGraph } from '../directed-graph';

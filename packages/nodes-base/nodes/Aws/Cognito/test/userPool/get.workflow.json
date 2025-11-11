@@ -4,7 +4,7 @@
 			"parameters": {},
 			"id": "4570d7a2-f10a-495d-8a0e-8520b638649e",
 			"name": "When clicking ‘Execute workflow’",
-			"type": "n8n-nodes-base.manualTrigger",
+			"type": "aura-nodes-base.manualTrigger",
 			"typeVersion": 1,
 			"position": [-700, 320]
 		},
@@ -19,7 +19,7 @@
 				},
 				"requestOptions": {}
 			},
-			"type": "n8n-nodes-base.awsCognito",
+			"type": "aura-nodes-base.awsCognito",
 			"typeVersion": 1,
 			"position": [-700, 500],
 			"id": "fc734bb9-acd3-4b7d-a2a3-0a7b664e3c5a",

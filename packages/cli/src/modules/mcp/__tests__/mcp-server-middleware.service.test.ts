@@ -1,8 +1,8 @@
-import { mockInstance } from '@n8n/backend-test-utils';
-import type { User } from '@n8n/db';
+import { mockInstance } from '@aura/backend-test-utils';
+import type { User } from '@aura/db';
 import type { Request, Response, NextFunction } from 'express';
 import { mock, mockDeep } from 'jest-mock-extended';
-import type { InstanceSettings } from 'n8n-core';
+import type { InstanceSettings } from 'aura-core';
 
 import { JwtService } from '@/services/jwt.service';
 import { Telemetry } from '@/telemetry';
@@ -151,7 +151,7 @@ describe('McpServerMiddlewareService', () => {
 
 			await middleware(req, res, next);
 
-			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 			expect(res.status).toHaveBeenCalledWith(401);
 			expect(res.send).toHaveBeenCalledWith({ message: 'Unauthorized' });
 			expect(next).not.toHaveBeenCalled();
@@ -256,7 +256,7 @@ describe('McpServerMiddlewareService', () => {
 
 			await middleware(req, res, next);
 
-			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 			expect(res.status).toHaveBeenCalledWith(401);
 			expect(res.send).toHaveBeenCalledWith({ message: 'Unauthorized' });
 			expect(next).not.toHaveBeenCalled();
@@ -281,7 +281,7 @@ describe('McpServerMiddlewareService', () => {
 
 			await middleware(req, res, next);
 
-			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 			expect(telemetry.track).toHaveBeenCalledWith('User connected to MCP server', {
 				mcp_connection_status: 'error',
 				error: 'Unauthorized',
@@ -304,7 +304,7 @@ describe('McpServerMiddlewareService', () => {
 
 			await middleware(req, res, next);
 
-			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+			expect(res.header).toHaveBeenCalledWith('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 			expect(res.status).toHaveBeenCalledWith(401);
 			expect(res.send).toHaveBeenCalledWith({ message: 'Unauthorized' });
 			expect(next).not.toHaveBeenCalled();

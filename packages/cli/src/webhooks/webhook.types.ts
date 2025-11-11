@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import type { IDataObject, IHttpRequestMethods } from 'n8n-workflow';
+import type { IDataObject, IHttpRequestMethods } from 'aura-workflow';
 
 export type WebhookOptionsRequest = Request & { method: 'OPTIONS' };
 

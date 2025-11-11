@@ -6,7 +6,7 @@ import type {
 	IDataObject,
 	IHttpRequestMethods,
 	IHttpRequestOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export async function customerIoApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

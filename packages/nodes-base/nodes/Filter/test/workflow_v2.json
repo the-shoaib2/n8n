@@ -7,7 +7,7 @@
 		},
 		"id": "d8f7d6a2-02f5-40f6-83ca-540467f80ad8",
 		"name": "Code",
-		"type": "n8n-nodes-base.code",
+		"type": "aura-nodes-base.code",
 		"typeVersion": 1,
 		"position": [
 		  2480,
@@ -18,7 +18,7 @@
 		"parameters": {},
 		"id": "e112277f-9c6a-404f-a8f2-9b69fd88db16",
 		"name": "When clicking \"Execute Workflow\"",
-		"type": "n8n-nodes-base.manualTrigger",
+		"type": "aura-nodes-base.manualTrigger",
 		"typeVersion": 1,
 		"position": [
 		  2320,
@@ -61,7 +61,7 @@
 		},
 		"id": "daaa1445-f279-4edb-b2d6-b6415cb5fb55",
 		"name": "Filter Boolean",
-		"type": "n8n-nodes-base.filter",
+		"type": "aura-nodes-base.filter",
 		"typeVersion": 2,
 		"position": [
 		  2700,
@@ -102,7 +102,7 @@
 		},
 		"id": "816b4bac-2213-4057-b50e-1f7f39542476",
 		"name": "Filter Date",
-		"type": "n8n-nodes-base.filter",
+		"type": "aura-nodes-base.filter",
 		"typeVersion": 2,
 		"position": [
 		  2700,
@@ -155,7 +155,7 @@
 		},
 		"id": "66fe5d53-2652-4860-8d31-cb033af3a7c3",
 		"name": "Filter Number",
-		"type": "n8n-nodes-base.filter",
+		"type": "aura-nodes-base.filter",
 		"typeVersion": 2,
 		"position": [
 		  2700,
@@ -198,7 +198,7 @@
 		},
 		"id": "b625a4d4-4bd7-4480-a76a-622d460f4392",
 		"name": "Filter String",
-		"type": "n8n-nodes-base.filter",
+		"type": "aura-nodes-base.filter",
 		"typeVersion": 2,
 		"position": [
 		  2700,

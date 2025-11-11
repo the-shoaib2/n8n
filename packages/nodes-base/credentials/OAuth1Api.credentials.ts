@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'aura-workflow';
 
 export class OAuth1Api implements ICredentialType {
 	name = 'oAuth1Api';

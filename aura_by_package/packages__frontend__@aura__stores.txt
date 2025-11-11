@@ -1,0 +1,17 @@
+packages/frontend/@aura/stores/.gitignore
+packages/frontend/@aura/stores/README.md
+packages/frontend/@aura/stores/biome.jsonc
+packages/frontend/@aura/stores/eslint.config.mjs
+packages/frontend/@aura/stores/package.json
+packages/frontend/@aura/stores/src/__tests__/metaTagConfig.test.ts
+packages/frontend/@aura/stores/src/__tests__/setup.ts
+packages/frontend/@aura/stores/src/constants.ts
+packages/frontend/@aura/stores/src/index.ts
+packages/frontend/@aura/stores/src/metaTagConfig.ts
+packages/frontend/@aura/stores/src/shims.d.ts
+packages/frontend/@aura/stores/src/useAgentRequestStore.test.ts
+packages/frontend/@aura/stores/src/useAgentRequestStore.ts
+packages/frontend/@aura/stores/src/useRootStore.ts
+packages/frontend/@aura/stores/tsconfig.json
+packages/frontend/@aura/stores/tsdown.config.ts
+packages/frontend/@aura/stores/vite.config.ts

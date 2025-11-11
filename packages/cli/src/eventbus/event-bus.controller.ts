@@ -1,11 +1,11 @@
-import { AuthenticatedRequest } from '@n8n/db';
-import { RestController, Get, Post, Delete, GlobalScope, Licensed } from '@n8n/decorators';
+import { AuthenticatedRequest } from '@aura/db';
+import { RestController, Get, Post, Delete, GlobalScope, Licensed } from '@aura/decorators';
 import express from 'express';
 import type {
 	MessageEventBusDestinationWebhookOptions,
 	MessageEventBusDestinationOptions,
-} from 'n8n-workflow';
-import { MessageEventBusDestinationTypeNames } from 'n8n-workflow';
+} from 'aura-workflow';
+import { MessageEventBusDestinationTypeNames } from 'aura-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 

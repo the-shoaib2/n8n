@@ -1,6 +1,6 @@
-import { Container, Service } from '@n8n/di';
-import type { IDataObject } from 'n8n-workflow';
-import { deepCopy } from 'n8n-workflow';
+import { Container, Service } from '@aura/di';
+import type { IDataObject } from 'aura-workflow';
+import { deepCopy } from 'aura-workflow';
 
 import { CREDENTIAL_BLANKING_VALUE } from '@/constants';
 

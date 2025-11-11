@@ -1,5 +1,5 @@
-import { AuthenticatedRequest, User } from '@n8n/db';
-import { Service } from '@n8n/di';
+import { AuthenticatedRequest, User } from '@aura/db';
+import { Service } from '@aura/di';
 import { NextFunction, Response, Request } from 'express';
 
 import { AuthError } from '@/errors/response-errors/auth.error';
@@ -93,7 +93,7 @@ export class McpServerMiddlewareService {
 	private responseWithUnauthorized(res: Response, req: Request) {
 		this.trackUnauthorizedEvent(req);
 		// RFC 6750 Section 3: Include WWW-Authenticate header for 401 responses
-		res.header('WWW-Authenticate', 'Bearer realm="n8n MCP Server"');
+		res.header('WWW-Authenticate', 'Bearer realm="aura MCP Server"');
 		res.status(401).send({ message: UNAUTHORIZED_ERROR_MESSAGE });
 	}
 

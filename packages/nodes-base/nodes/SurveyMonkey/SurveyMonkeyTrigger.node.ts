@@ -9,8 +9,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IWebhookResponseData,
-} from 'n8n-workflow';
-import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { deepCopy, jsonParse, NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { idsExist, surveyMonkeyApiRequest, surveyMonkeyRequestAllItems } from './GenericFunctions';
 import type { IAnswer, IChoice, IOther, IQuestion, IRow } from './Interfaces';
@@ -229,7 +229,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 				name: 'surveyIds',
 				type: 'multiOptions',
 				description:
-					'Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+					'Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 				displayOptions: {
 					show: {
 						objectType: ['survey'],
@@ -250,7 +250,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 				name: 'surveyId',
 				type: 'options',
 				description:
-					'Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+					'Choose from the list, or specify an ID using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 				displayOptions: {
 					show: {
 						objectType: ['collector'],
@@ -267,7 +267,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 				name: 'collectorIds',
 				type: 'multiOptions',
 				description:
-					'Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+					'Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 				displayOptions: {
 					show: {
 						objectType: ['collector'],
@@ -291,7 +291,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 					},
 				},
 				default: true,
-				// eslint-disable-next-line n8n-nodes-base/node-param-description-boolean-without-whether
+				// eslint-disable-next-line aura-nodes-base/node-param-description-boolean-without-whether
 				description:
 					'By default the webhook-data only contain the IDs. If this option gets activated, it will resolve the data automatically.',
 			},
@@ -419,7 +419,7 @@ export class SurveyMonkeyTrigger implements INodeType {
 				}
 
 				const body: IDataObject = {
-					name: `n8n - Webhook [${event}]`,
+					name: `aura - Webhook [${event}]`,
 					object_type: objectType,
 					object_ids: ids,
 					subscription_url: webhookUrl,

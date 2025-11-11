@@ -1,23 +1,23 @@
 {
-	"node": "n8n-nodes-base.awsComprehend",
+	"node": "aura-nodes-base.awsComprehend",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/credentials/aws/"
+				"url": "https://docs.aura.io/integrations/builtin/credentials/aws/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.awscomprehend/"
+				"url": "https://docs.aura.io/integrations/builtin/app-nodes/aura-nodes-base.awscomprehend/"
 			}
 		],
 		"generic": [
 			{
 				"label": "7 no-code workflow automations for Amazon Web Services",
-				"url": "https://n8n.io/blog/aws-workflow-automation/"
+				"url": "https://aura.io/blog/aws-workflow-automation/"
 			}
 		]
 	}

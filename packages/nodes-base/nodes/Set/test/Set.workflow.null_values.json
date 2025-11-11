@@ -5,7 +5,7 @@
       "parameters": {},
       "id": "9fe8b524-b618-4abb-821f-227ae5cc1f12",
       "name": "When clicking \"Execute Workflow\"",
-      "type": "n8n-nodes-base.manualTrigger",
+      "type": "aura-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
         560,
@@ -32,7 +32,7 @@
       },
       "id": "78f2ad0d-e129-448b-ae78-5bfdba587186",
       "name": "Edit Fields",
-      "type": "n8n-nodes-base.set",
+      "type": "aura-nodes-base.set",
       "typeVersion": 3.2,
       "position": [
         1000,
@@ -61,7 +61,7 @@
       },
       "id": "ceaad5a1-b78c-4d38-b80d-f608f8c95f71",
       "name": "Edit Fields1",
-      "type": "n8n-nodes-base.set",
+      "type": "aura-nodes-base.set",
       "typeVersion": 3.2,
       "position": [
         1000,
@@ -90,7 +90,7 @@
       },
       "id": "0048be99-0bce-4073-86e6-2622169fe9ab",
       "name": "Edit Fields2",
-      "type": "n8n-nodes-base.set",
+      "type": "aura-nodes-base.set",
       "typeVersion": 3.2,
       "position": [
         1000,
@@ -119,7 +119,7 @@
       },
       "id": "aa254a34-9267-42a2-9730-c2ab64760721",
       "name": "Edit Fields3",
-      "type": "n8n-nodes-base.set",
+      "type": "aura-nodes-base.set",
       "typeVersion": 3.2,
       "position": [
         1000,
@@ -148,7 +148,7 @@
       },
       "id": "03e4acf2-ceaf-4a27-adb7-d074a95e9cc9",
       "name": "Edit Fields4",
-      "type": "n8n-nodes-base.set",
+      "type": "aura-nodes-base.set",
       "typeVersion": 3.2,
       "position": [
         1000,

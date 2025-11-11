@@ -1,4 +1,4 @@
-import type { IWorkflowBase } from 'n8n-workflow';
+import type { IWorkflowBase } from 'aura-workflow';
 
 import type { Risk } from '@/security-audit/types';
 

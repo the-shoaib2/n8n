@@ -1,17 +1,17 @@
 {
-	"node": "n8n-nodes-base.slackTrigger",
+	"node": "aura-nodes-base.slackTrigger",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Communication"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/credentials/slack/"
+				"url": "https://docs.aura.io/integrations/builtin/credentials/slack/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.slacktrigger/"
+				"url": "https://docs.aura.io/integrations/builtin/trigger-nodes/aura-nodes-base.slacktrigger/"
 			}
 		]
 	}

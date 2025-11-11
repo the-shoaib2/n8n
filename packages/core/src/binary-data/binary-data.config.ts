@@ -1,4 +1,4 @@
-import { Config, Env } from '@n8n/config';
+import { Config, Env } from '@aura/config';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 import { z } from 'zod';
@@ -33,8 +33,8 @@ export class BinaryDataConfig {
 	@Env('N8N_BINARY_DATA_SIGNING_SECRET')
 	signingSecret: string;
 
-	constructor({ encryptionKey, n8nFolder }: InstanceSettings) {
-		this.localStoragePath = path.join(n8nFolder, 'binaryData');
+	constructor({ encryptionKey, auraFolder }: InstanceSettings) {
+		this.localStoragePath = path.join(auraFolder, 'binaryData');
 		this.signingSecret = createHash('sha256')
 			.update(`url-signing:${encryptionKey}`)
 			.digest('base64');

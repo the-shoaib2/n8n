@@ -1,7 +1,7 @@
 import { mock } from 'jest-mock-extended';
 import type { MockProxy } from 'jest-mock-extended';
-import type { IExecuteSingleFunctions, IHttpRequestOptions } from 'n8n-workflow';
-import { NodeOperationError, NodeApiError } from 'n8n-workflow';
+import type { IExecuteSingleFunctions, IHttpRequestOptions } from 'aura-workflow';
+import { NodeOperationError, NodeApiError } from 'aura-workflow';
 
 import {
 	getUserPool,

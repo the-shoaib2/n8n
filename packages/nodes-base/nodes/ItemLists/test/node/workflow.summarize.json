@@ -5,7 +5,7 @@
 			"parameters": {},
 			"id": "6c90bf81-0c0e-4c5f-9f0c-297f06d9668a",
 			"name": "When clicking \"Execute Workflow\"",
-			"type": "n8n-nodes-base.manualTrigger",
+			"type": "aura-nodes-base.manualTrigger",
 			"typeVersion": 1,
 			"position": [-400, 420]
 		},
@@ -15,7 +15,7 @@
 			},
 			"id": "2e0011d5-c6a0-4a40-ab8c-9d011cde40d5",
 			"name": "Code",
-			"type": "n8n-nodes-base.code",
+			"type": "aura-nodes-base.code",
 			"typeVersion": 1,
 			"position": [-180, 420]
 		},
@@ -47,7 +47,7 @@
 			},
 			"id": "1dedf668-b766-4283-9efd-90db28404f0b",
 			"name": "Item Lists",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [40, 220]
 		},
@@ -81,7 +81,7 @@
 			},
 			"id": "8fd0f819-226c-4b29-87c7-b724dd72605c",
 			"name": "Item Lists1",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [40, 420]
 		},
@@ -121,7 +121,7 @@
 			},
 			"id": "33e0367d-42d9-4f82-8fc8-8e2019aa3734",
 			"name": "Item Lists2",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [40, 620]
 		}

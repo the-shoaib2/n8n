@@ -1,4 +1,4 @@
-import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'n8n-workflow';
+import { SEND_AND_WAIT_OPERATION, type INodeProperties } from 'aura-workflow';
 
 export const messageOperations: INodeProperties[] = [
 	{
@@ -1259,7 +1259,7 @@ export const messageFields: INodeProperties[] = [
 				name: 'searchChannel',
 				type: 'multiOptions',
 				description:
-					'Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+					'Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 				default: [],
 				typeOptions: {
 					loadOptionsMethod: 'getChannelsName',

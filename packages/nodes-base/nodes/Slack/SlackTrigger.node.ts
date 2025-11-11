@@ -11,7 +11,7 @@ import {
 	type IWebhookResponseData,
 	type IBinaryKeyData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { downloadFile, getChannelInfo, getUserInfo, verifySignature } from './SlackTriggerHelpers';
 import { slackApiRequestAllItems } from './V2/GenericFunctions';
@@ -53,7 +53,7 @@ export class SlackTrigger implements INodeType {
 			},
 			{
 				displayName:
-					'Set up a webhook in your Slack app to enable this node. <a href="https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.slacktrigger/#configure-a-webhook-in-slack" target="_blank">More info</a>. We also recommend setting up a <a href="https://docs.n8n.io/integrations/builtin/trigger-nodes/n8n-nodes-base.slacktrigger/#verify-the-webhook" target="_blank">signing secret</a> to ensure the authenticity of requests.',
+					'Set up a webhook in your Slack app to enable this node. <a href="https://docs.aura.io/integrations/builtin/trigger-nodes/aura-nodes-base.slacktrigger/#configure-a-webhook-in-slack" target="_blank">More info</a>. We also recommend setting up a <a href="https://docs.aura.io/integrations/builtin/trigger-nodes/aura-nodes-base.slacktrigger/#verify-the-webhook" target="_blank">signing secret</a> to ensure the authenticity of requests.',
 				name: 'notice',
 				type: 'notice',
 				default: '',
@@ -228,7 +228,7 @@ export class SlackTrigger implements INodeType {
 						},
 						default: [],
 						description:
-							'A comma-separated string of encoded user IDs. Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+							'A comma-separated string of encoded user IDs. Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>.',
 					},
 				],
 			},

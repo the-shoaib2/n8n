@@ -1,0 +1,11 @@
+packages/@aura/di/README.md
+packages/@aura/di/eslint.config.mjs
+packages/@aura/di/jest.config.js
+packages/@aura/di/package.json
+packages/@aura/di/src/__tests__/circular-depedency.test.ts
+packages/@aura/di/src/__tests__/di.test.ts
+packages/@aura/di/src/__tests__/fixtures/service-a.ts
+packages/@aura/di/src/__tests__/fixtures/service-b.ts
+packages/@aura/di/src/di.ts
+packages/@aura/di/tsconfig.build.json
+packages/@aura/di/tsconfig.json

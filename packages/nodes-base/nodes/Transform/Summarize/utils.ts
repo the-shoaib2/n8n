@@ -4,7 +4,7 @@ import {
 	type IDataObject,
 	type IExecuteFunctions,
 	NodeOperationError,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 type AggregationType =
 	| 'append'

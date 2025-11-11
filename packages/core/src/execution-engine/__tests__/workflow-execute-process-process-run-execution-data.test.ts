@@ -8,8 +8,8 @@ import type {
 	IExecuteFunctions,
 	IPairedItemData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { ApplicationError, NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { ApplicationError, NodeConnectionTypes } from 'aura-workflow';
 
 import { NodeTypes } from '@test/helpers';
 

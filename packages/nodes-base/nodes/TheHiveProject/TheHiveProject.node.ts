@@ -1,4 +1,4 @@
-import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeType, INodeTypeDescription } from 'aura-workflow';
 
 import { description } from './actions/node.description';
 import { router } from './actions/router';

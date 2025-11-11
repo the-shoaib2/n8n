@@ -5,8 +5,8 @@ import type {
 	ILoadOptionsFunctions,
 	IRequestOptions,
 	JsonObject,
-} from 'n8n-workflow';
-import { NodeApiError, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError, NodeOperationError } from 'aura-workflow';
 
 import type {
 	GristCredentials,

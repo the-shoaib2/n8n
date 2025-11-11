@@ -10,7 +10,7 @@ import type {
 	StructuredChunk,
 	Workflow,
 	WorkflowExecuteMode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export type ExecutionLifecycleHookHandlers = {
 	nodeExecuteBefore: Array<

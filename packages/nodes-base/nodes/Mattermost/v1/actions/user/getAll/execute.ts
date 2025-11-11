@@ -1,6 +1,6 @@
 import { snakeCase } from 'change-case';
-import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, IDataObject, INodeExecutionData } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { apiRequest, apiRequestAllItems } from '../../../transport';
 

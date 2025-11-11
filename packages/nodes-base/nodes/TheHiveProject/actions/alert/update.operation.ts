@@ -4,8 +4,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { updateDisplayOptions, wrapData } from '@utils/utilities';
 

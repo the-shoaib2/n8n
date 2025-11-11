@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'aura-workflow';
 
 export class SpotifyOAuth2Api implements ICredentialType {
 	name = 'spotifyOAuth2Api';

@@ -5,7 +5,7 @@
       "parameters": {},
       "id": "6b79e1a7-8d17-470a-9423-d97042060170",
       "name": "When clicking \"Execute Workflow\"",
-      "type": "n8n-nodes-base.manualTrigger",
+      "type": "aura-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
         40,
@@ -21,7 +21,7 @@
       },
       "id": "86b957c8-fdec-462e-b55d-40dccf7bc253",
       "name": "AWS Rekognition",
-      "type": "n8n-nodes-base.awsRekognition",
+      "type": "aura-nodes-base.awsRekognition",
       "typeVersion": 1,
       "position": [
         500,

@@ -7,8 +7,8 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IWebhookFunctions,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type { SendAndWaitMessageBody } from './MessageInterface';
 import { getSendAndWaitConfig } from '../../../utils/sendAndWait/utils';
@@ -161,9 +161,9 @@ export function getMessageContent(
 	) as IDataObject;
 
 	const { id } = this.getWorkflow();
-	const automatedMessage = `_Automated with this <${this.getInstanceBaseUrl()}workflow/${id}?utm_source=n8n-internal&utm_medium=powered_by&utm_campaign=${encodeURIComponent(
-		'n8n-nodes-base.slack',
-	)}${instanceId ? '_' + instanceId : ''}|n8n workflow>_`;
+	const automatedMessage = `_Automated with this <${this.getInstanceBaseUrl()}workflow/${id}?utm_source=aura-internal&utm_medium=powered_by&utm_campaign=${encodeURIComponent(
+		'aura-nodes-base.slack',
+	)}${instanceId ? '_' + instanceId : ''}|aura workflow>_`;
 	const messageType = this.getNodeParameter('messageType', i) as string;
 
 	let content: IDataObject = {};
@@ -327,12 +327,12 @@ export function createSendAndWaitMessageBody(context: IExecuteFunctions) {
 	if (config.appendAttribution) {
 		const instanceId = context.getInstanceId();
 		const attributionText = 'This message was sent automatically with ';
-		const link = createUtmCampaignLink('n8n-nodes-base.slack', instanceId);
+		const link = createUtmCampaignLink('aura-nodes-base.slack', instanceId);
 		body.blocks.push({
 			type: 'section',
 			text: {
 				type: 'mrkdwn',
-				text: `${attributionText} _<${link}|n8n>_`,
+				text: `${attributionText} _<${link}|aura>_`,
 			},
 		});
 	}

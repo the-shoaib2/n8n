@@ -1,17 +1,17 @@
-name: 'Release: Standalone Package'
+name: "Release: Standalone Package"
 
 on:
   workflow_dispatch:
     inputs:
       package:
-        description: 'Package to release'
+        description: "Package to release"
         required: true
         type: choice
         options:
-          - '@n8n/node-cli'
-          - '@n8n/create-node'
-          - '@n8n/scan-community-package'
-          - '@n8n/eslint-plugin-community-nodes'
+          - "@aura/node-cli"
+          - "@aura/create-node"
+          - "@aura/scan-community-package"
+          - "@aura/eslint-plugin-community-nodes"
 
 concurrency:
   group: release-package-${{ github.event.inputs.package }}

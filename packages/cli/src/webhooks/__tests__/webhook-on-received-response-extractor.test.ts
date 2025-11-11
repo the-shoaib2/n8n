@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IWebhookResponseData } from 'n8n-workflow';
+import type { IWebhookResponseData } from 'aura-workflow';
 
 import { extractWebhookOnReceivedResponse } from '@/webhooks/webhook-on-received-response-extractor';
 

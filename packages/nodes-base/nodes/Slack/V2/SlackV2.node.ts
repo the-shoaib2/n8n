@@ -12,13 +12,13 @@ import type {
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import {
 	BINARY_ENCODING,
 	NodeConnectionTypes,
 	NodeOperationError,
 	SEND_AND_WAIT_OPERATION,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type { Readable } from 'stream';
 
 import { channelFields, channelOperations } from './ChannelDescription';

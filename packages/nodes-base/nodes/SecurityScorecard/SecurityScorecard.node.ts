@@ -5,8 +5,8 @@ import type {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 import { companyFields, companyOperations } from './descriptions/CompanyDescription';
 import { industryFields, industryOperations } from './descriptions/IndustryDescription';

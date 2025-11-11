@@ -1,5 +1,5 @@
 import { snakeCase } from 'change-case';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type {
 	IExecuteFunctions,
 	IDataObject,
@@ -8,7 +8,7 @@ import type {
 	INodePropertyOptions,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { boardColumnFields, boardColumnOperations } from './BoardColumnDescription';
 import { boardFields, boardOperations } from './BoardDescription';

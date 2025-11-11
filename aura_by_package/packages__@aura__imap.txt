@@ -1,0 +1,13 @@
+packages/@aura/imap/eslint.config.mjs
+packages/@aura/imap/package.json
+packages/@aura/imap/src/errors.ts
+packages/@aura/imap/src/helpers/get-message.ts
+packages/@aura/imap/src/imap-simple.test.ts
+packages/@aura/imap/src/imap-simple.ts
+packages/@aura/imap/src/index.ts
+packages/@aura/imap/src/part-data.test.ts
+packages/@aura/imap/src/part-data.ts
+packages/@aura/imap/src/types.ts
+packages/@aura/imap/tsconfig.build.json
+packages/@aura/imap/tsconfig.json
+packages/@aura/imap/vite.config.ts

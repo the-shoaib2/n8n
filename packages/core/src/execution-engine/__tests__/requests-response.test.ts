@@ -1,5 +1,5 @@
 import { mock } from 'jest-mock-extended';
-import type { IExecuteData, IRunData, EngineRequest, INodeExecutionData } from 'n8n-workflow';
+import type { IExecuteData, IRunData, EngineRequest, INodeExecutionData } from 'aura-workflow';
 
 import { DirectedGraph } from '../partial-execution-utils';
 import { createNodeData } from '../partial-execution-utils/__tests__/helpers';

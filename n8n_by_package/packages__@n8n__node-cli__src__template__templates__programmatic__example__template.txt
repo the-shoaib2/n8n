@@ -1,7 +1,0 @@
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/README.md
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/nodes/Example/Example.node.json
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/nodes/Example/Example.node.ts
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/nodes/Example/example.dark.svg
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/nodes/Example/example.svg
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/package.json
-packages/@n8n/node-cli/src/template/templates/programmatic/example/template/tsconfig.json

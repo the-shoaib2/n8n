@@ -1,9 +1,9 @@
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
 
 import { slackApiRequest, slackApiRequestAllItems, validateJSON } from '../../V1/GenericFunctions';
 
-jest.mock('n8n-workflow', () => ({
-	...jest.requireActual('n8n-workflow'),
+jest.mock('aura-workflow', () => ({
+	...jest.requireActual('aura-workflow'),
 	NodeApiError: jest.fn(),
 }));
 
@@ -16,7 +16,7 @@ describe('Slack V1 > GenericFunctions', () => {
 			helpers: {
 				requestWithAuthentication: jest.fn(),
 			},
-			getNode: jest.fn().mockReturnValue({ type: 'n8n-nodes-base.slack', typeVersion: 1 }),
+			getNode: jest.fn().mockReturnValue({ type: 'aura-nodes-base.slack', typeVersion: 1 }),
 			getNodeParameter: jest.fn().mockReturnValue('accessToken'),
 		} as unknown as IExecuteFunctions;
 	});

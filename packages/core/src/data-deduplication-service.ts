@@ -8,7 +8,7 @@ import type {
 	DeduplicationScope,
 	DeduplicationItemTypes,
 	ICheckProcessedContextData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import * as assert from 'node:assert/strict';
 
 /**

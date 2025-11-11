@@ -3,7 +3,7 @@ import type {
 	ICredentialType,
 	IHttpRequestOptions,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export class MindeeReceiptApi implements ICredentialType {
 	name = 'mindeeReceiptApi';

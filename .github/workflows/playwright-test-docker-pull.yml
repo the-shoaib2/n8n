@@ -5,26 +5,26 @@ on:
   workflow_call:
     inputs:
       shards:
-        description: 'Shards for parallel execution'
+        description: "Shards for parallel execution"
         required: false
-        default: '[1]'
+        default: "[1]"
         type: string
       image:
-        description: 'Image to use'
+        description: "Image to use"
         required: false
-        default: 'n8nio/n8n:nightly'
+        default: "auraio/aura:nightly"
         type: string
   workflow_dispatch:
     inputs:
       shards:
-        description: 'Shards for parallel execution'
+        description: "Shards for parallel execution"
         required: false
-        default: '[1]'
+        default: "[1]"
         type: string
       image:
-        description: 'Image to use'
+        description: "Image to use"
         required: false
-        default: 'n8nio/n8n:nightly'
+        default: "auraio/aura:nightly"
         type: string
 
 jobs:
@@ -34,5 +34,5 @@ jobs:
       test-mode: docker-pull
       shards: ${{ inputs.shards }}
       docker-image: ${{ inputs.image }}
-      test-command: pnpm --filter=n8n-playwright test:container:standard
+      test-command: pnpm --filter=aura-playwright test:container:standard
     secrets: inherit

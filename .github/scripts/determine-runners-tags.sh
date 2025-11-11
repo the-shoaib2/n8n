@@ -9,23 +9,23 @@ set -euo pipefail
 #   determine-runners-tags.sh \
 #     "stable" \
 #     "1.123.0" \
-#     "ghcr.io/n8n-io/runners" \
-#     "n8nio/runners" \
+#     "ghcr.io/aura-io/runners" \
+#     "auraio/runners" \
 #     "amd64" \
 #     "$GITHUB_OUTPUT"
 #
 # Output (written to GITHUB_OUTPUT):
 #   Alpine variant:
-#     tags=ghcr.io/n8n-io/runners:1.123.0-amd64, n8nio/runners:1.123.0-amd64
-#     ghcr_platform_tag=ghcr.io/n8n-io/runners:1.123.0-amd64
-#     dockerhub_platform_tag=n8nio/runners:1.123.0-amd64
-#     primary_ghcr_manifest_tag=ghcr.io/n8n-io/runners:1.123.0
+#     tags=ghcr.io/aura-io/runners:1.123.0-amd64, auraio/runners:1.123.0-amd64
+#     ghcr_platform_tag=ghcr.io/aura-io/runners:1.123.0-amd64
+#     dockerhub_platform_tag=auraio/runners:1.123.0-amd64
+#     primary_ghcr_manifest_tag=ghcr.io/aura-io/runners:1.123.0
 #
 #   Distroless variant:
-#     tags_distroless=ghcr.io/n8n-io/runners:1.123.0-distroless-amd64, n8nio/runners:1.123.0-distroless-amd64
-#     ghcr_platform_tag_distroless=ghcr.io/n8n-io/runners:1.123.0-distroless-amd64
-#     dockerhub_platform_tag_distroless=n8nio/runners:1.123.0-distroless-amd64
-#     primary_ghcr_manifest_tag_distroless=ghcr.io/n8n-io/runners:1.123.0-distroless
+#     tags_distroless=ghcr.io/aura-io/runners:1.123.0-distroless-amd64, auraio/runners:1.123.0-distroless-amd64
+#     ghcr_platform_tag_distroless=ghcr.io/aura-io/runners:1.123.0-distroless-amd64
+#     dockerhub_platform_tag_distroless=auraio/runners:1.123.0-distroless-amd64
+#     primary_ghcr_manifest_tag_distroless=ghcr.io/aura-io/runners:1.123.0-distroless
 
 RELEASE_TYPE="${1:?Missing RELEASE_TYPE argument}"
 N8N_VERSION_TAG="${2:?Missing N8N_VERSION_TAG argument}"

@@ -6,7 +6,7 @@ import type {
 	IRequestOptions,
 	IHttpRequestOptions,
 	ILoadOptionsFunctions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 /**
  * Make an API request to Twilio

@@ -1,4 +1,4 @@
-import type { ICredentialDataDecryptedObject } from 'n8n-workflow';
+import type { ICredentialDataDecryptedObject } from 'aura-workflow';
 
 import type { RemoteResourceOwner, StatusResourceOwner } from './resource-owner';
 

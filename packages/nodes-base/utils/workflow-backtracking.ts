@@ -3,7 +3,7 @@ import type {
 	IPairedItemData,
 	IRunExecutionData,
 	ITaskData,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 /*
  * These functions do not cover all possible edge cases for backtracking through workflow run data.

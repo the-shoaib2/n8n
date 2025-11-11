@@ -8,8 +8,8 @@ import type {
 	WorkflowExecuteMode,
 	TriggerTime,
 	CronExpression,
-} from 'n8n-workflow';
-import { LoggerProxy, TriggerCloseError, WorkflowActivationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { LoggerProxy, TriggerCloseError, WorkflowActivationError } from 'aura-workflow';
 
 import type { ErrorReporter } from '@/errors/error-reporter';
 

@@ -1,4 +1,4 @@
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'aura-workflow';
 
 export class DataTableColumnNotFoundError extends UserError {
 	constructor(dataTableId: string, columnId: string) {

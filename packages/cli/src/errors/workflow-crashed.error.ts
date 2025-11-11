@@ -1,4 +1,4 @@
-import { WorkflowOperationError } from 'n8n-workflow';
+import { WorkflowOperationError } from 'aura-workflow';
 
 export class WorkflowCrashedError extends WorkflowOperationError {
 	constructor() {

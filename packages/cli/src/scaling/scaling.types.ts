@@ -1,11 +1,11 @@
-import type { RunningJobSummary } from '@n8n/api-types';
+import type { RunningJobSummary } from '@aura/api-types';
 import type Bull from 'bull';
 import type {
 	ExecutionError,
 	IExecuteResponsePromiseData,
 	IRun,
 	StructuredChunk,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 import type PCancelable from 'p-cancelable';
 
 export type JobQueue = Bull.Queue<JobData>;
@@ -34,7 +34,7 @@ export type JobOptions = Bull.JobOptions;
 /**
  * Message sent by main to worker and vice versa about a job. `JobMessage` is
  * sent via Bull's internal pubsub setup - do not confuse with `PubSub.Command`
- * and `PubSub.Response`, which are sent via n8n's own pubsub setup to keep
+ * and `PubSub.Response`, which are sent via aura's own pubsub setup to keep
  * main and worker processes in sync outside of a job's lifecycle.
  */
 export type JobMessage =

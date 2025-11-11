@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+import type { INodeTypeBaseDescription, IVersionedNodeType } from 'aura-workflow';
+import { VersionedNodeType } from 'aura-workflow';
 
 import { MattermostV1 } from './v1/MattermostV1.node';
 

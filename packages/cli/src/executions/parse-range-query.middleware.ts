@@ -1,7 +1,7 @@
 import type { NextFunction, Response } from 'express';
 import { validate } from 'jsonschema';
-import type { JsonObject } from 'n8n-workflow';
-import { jsonParse, UnexpectedError } from 'n8n-workflow';
+import type { JsonObject } from 'aura-workflow';
+import { jsonParse, UnexpectedError } from 'aura-workflow';
 
 import { BadRequestError } from '@/errors/response-errors/bad-request.error';
 import * as ResponseHelper from '@/response-helper';

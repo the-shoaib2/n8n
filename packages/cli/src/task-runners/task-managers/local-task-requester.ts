@@ -1,7 +1,7 @@
-import { GlobalConfig, TaskRunnersConfig } from '@n8n/config';
-import { Container, Service } from '@n8n/di';
-import type { RequesterMessage } from '@n8n/task-runner';
-import { ErrorReporter } from 'n8n-core';
+import { GlobalConfig, TaskRunnersConfig } from '@aura/config';
+import { Container, Service } from '@aura/di';
+import type { RequesterMessage } from '@aura/task-runner';
+import { ErrorReporter } from 'aura-core';
 
 import { EventService } from '@/events/event.service';
 import { NodeTypes } from '@/node-types';

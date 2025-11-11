@@ -1,0 +1,12 @@
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/README.md
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/Example.node.json
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/Example.node.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/example.dark.svg
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/example.svg
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/resources/company/getAll.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/resources/company/index.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/resources/user/create.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/resources/user/get.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/nodes/Example/resources/user/index.ts
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/package.json
+packages/@aura/node-cli/src/template/templates/declarative/custom/template/tsconfig.json

@@ -8,19 +8,19 @@ import {
 	randomCredentialPayload,
 	testDb,
 	mockInstance,
-} from '@n8n/backend-test-utils';
-import type { User, ListQueryDb, WorkflowFolderUnionFull } from '@n8n/db';
+} from '@aura/backend-test-utils';
+import type { User, ListQueryDb, WorkflowFolderUnionFull } from '@aura/db';
 import {
 	ProjectRepository,
 	WorkflowHistoryRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { Scope } from '@n8n/permissions';
+} from '@aura/db';
+import { Container } from '@aura/di';
+import type { Scope } from '@aura/permissions';
 import { createFolder } from '@test-integration/db/folders';
 import { DateTime } from 'luxon';
-import { PROJECT_ROOT, type INode, type IPinData, type IWorkflowBase } from 'n8n-workflow';
+import { PROJECT_ROOT, type INode, type IPinData, type IWorkflowBase } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { saveCredential } from '../shared/db/credentials';
@@ -105,7 +105,7 @@ describe('POST /workflows', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Start',
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					position: [240, 300],
 				},
@@ -152,7 +152,7 @@ describe('POST /workflows', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Start',
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					position: [240, 300],
 				},
@@ -184,7 +184,7 @@ describe('POST /workflows', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Start',
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					position: [240, 300],
 				},
@@ -577,7 +577,7 @@ describe('GET /workflows', () => {
 			{
 				id: uuid(),
 				name: 'Action Network',
-				type: 'n8n-nodes-base.actionNetwork',
+				type: 'aura-nodes-base.actionNetwork',
 				parameters: {},
 				typeVersion: 1,
 				position: [0, 0],
@@ -661,7 +661,7 @@ describe('GET /workflows', () => {
 			{
 				id: uuid(),
 				name: 'Action Network',
-				type: 'n8n-nodes-base.actionNetwork',
+				type: 'aura-nodes-base.actionNetwork',
 				parameters: {},
 				typeVersion: 1,
 				position: [0, 0],
@@ -981,7 +981,7 @@ describe('GET /workflows', () => {
 						{
 							id: uuid(),
 							name: 'HTTP Request',
-							type: 'n8n-nodes-base.httpRequest',
+							type: 'aura-nodes-base.httpRequest',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -998,7 +998,7 @@ describe('GET /workflows', () => {
 						{
 							id: uuid(),
 							name: 'Slack',
-							type: 'n8n-nodes-base.slack',
+							type: 'aura-nodes-base.slack',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -1015,7 +1015,7 @@ describe('GET /workflows', () => {
 						{
 							id: uuid(),
 							name: 'HTTP Request',
-							type: 'n8n-nodes-base.httpRequest',
+							type: 'aura-nodes-base.httpRequest',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -1023,7 +1023,7 @@ describe('GET /workflows', () => {
 						{
 							id: uuid(),
 							name: 'Slack',
-							type: 'n8n-nodes-base.slack',
+							type: 'aura-nodes-base.slack',
 							parameters: {},
 							typeVersion: 1,
 							position: [100, 0],
@@ -1036,7 +1036,7 @@ describe('GET /workflows', () => {
 			// Filter by single node type
 			const httpResponse = await authOwnerAgent
 				.get('/workflows')
-				.query('filter={ "nodeTypes": ["n8n-nodes-base.httpRequest"] }&select=["nodes"]')
+				.query('filter={ "nodeTypes": ["aura-nodes-base.httpRequest"] }&select=["nodes"]')
 				.expect(200);
 
 			expect(httpResponse.body.data).toHaveLength(2);
@@ -1049,7 +1049,7 @@ describe('GET /workflows', () => {
 			// Filter by multiple node types (OR operation - returns workflows containing ANY of the specified node types)
 			const multipleResponse = await authOwnerAgent
 				.get('/workflows')
-				.query('filter={ "nodeTypes": ["n8n-nodes-base.httpRequest", "n8n-nodes-base.slack"] }')
+				.query('filter={ "nodeTypes": ["aura-nodes-base.httpRequest", "aura-nodes-base.slack"] }')
 				.expect(200);
 
 			expect(multipleResponse.body.data).toHaveLength(3);
@@ -1061,7 +1061,7 @@ describe('GET /workflows', () => {
 			// Filter by non-existent node type
 			const emptyResponse = await authOwnerAgent
 				.get('/workflows')
-				.query('filter={ "nodeTypes": ["n8n-nodes-base.nonExistent"] }')
+				.query('filter={ "nodeTypes": ["aura-nodes-base.nonExistent"] }')
 				.expect(200);
 
 			expect(emptyResponse.body.data).toHaveLength(0);
@@ -1075,7 +1075,7 @@ describe('GET /workflows', () => {
 						{
 							id: uuid(),
 							name: 'Start',
-							type: 'n8n-nodes-base.start',
+							type: 'aura-nodes-base.start',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -1510,7 +1510,7 @@ describe('GET /workflows?includeFolders=true', () => {
 			{
 				id: uuid(),
 				name: 'Action Network',
-				type: 'n8n-nodes-base.actionNetwork',
+				type: 'aura-nodes-base.actionNetwork',
 				parameters: {},
 				typeVersion: 1,
 				position: [0, 0],
@@ -1614,7 +1614,7 @@ describe('GET /workflows?includeFolders=true', () => {
 			{
 				id: uuid(),
 				name: 'Action Network',
-				type: 'n8n-nodes-base.actionNetwork',
+				type: 'aura-nodes-base.actionNetwork',
 				parameters: {},
 				typeVersion: 1,
 				position: [0, 0],
@@ -1966,7 +1966,7 @@ describe('GET /workflows?includeFolders=true', () => {
 						{
 							id: uuid(),
 							name: 'HTTP Request',
-							type: 'n8n-nodes-base.httpRequest',
+							type: 'aura-nodes-base.httpRequest',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -1983,7 +1983,7 @@ describe('GET /workflows?includeFolders=true', () => {
 						{
 							id: uuid(),
 							name: 'Slack',
-							type: 'n8n-nodes-base.slack',
+							type: 'aura-nodes-base.slack',
 							parameters: {},
 							typeVersion: 1,
 							position: [0, 0],
@@ -1997,7 +1997,7 @@ describe('GET /workflows?includeFolders=true', () => {
 
 			const response = await authOwnerAgent
 				.get('/workflows')
-				.query('filter={ "nodeTypes": ["n8n-nodes-base.httpRequest"] }&includeFolders=true')
+				.query('filter={ "nodeTypes": ["aura-nodes-base.httpRequest"] }&includeFolders=true')
 				.expect(200);
 
 			expect(response.body.data).toHaveLength(2); // 1 folder + 1 matching workflow
@@ -2258,7 +2258,7 @@ describe('PATCH /workflows/:workflowId', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Start',
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					position: [240, 300],
 				},
@@ -2266,7 +2266,7 @@ describe('PATCH /workflows/:workflowId', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Cron',
-					type: 'n8n-nodes-base.cron',
+					type: 'aura-nodes-base.cron',
 					typeVersion: 1,
 					position: [400, 300],
 				},

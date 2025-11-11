@@ -1,8 +1,8 @@
-import type { GlobalConfig, TaskRunnersConfig } from '@n8n/config';
+import type { GlobalConfig, TaskRunnersConfig } from '@aura/config';
 import { mock } from 'jest-mock-extended';
 import get from 'lodash/get';
 import set from 'lodash/set';
-import type { ErrorReporter } from 'n8n-core';
+import type { ErrorReporter } from 'aura-core';
 
 import type { EventService } from '@/events/event.service';
 import type { NodeTypes } from '@/node-types';

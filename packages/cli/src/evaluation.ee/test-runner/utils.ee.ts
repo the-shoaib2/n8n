@@ -3,8 +3,8 @@ import type {
 	INodeParameterResourceLocator,
 	IRunData,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeConnectionTypes } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 
 type TokenUsageValues = {
 	completionTokens: number;

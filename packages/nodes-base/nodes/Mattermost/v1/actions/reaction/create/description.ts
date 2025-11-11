@@ -18,7 +18,7 @@ export const reactionCreateDescription: ReactionProperties = [
 			},
 		},
 		description:
-			'ID of the user sending the reaction. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
+			'ID of the user sending the reaction. Choose from the list, or specify an ID using an <a href="https://docs.aura.io/code/expressions/">expression</a>.',
 	},
 	{
 		displayName: 'Post ID',
@@ -34,7 +34,7 @@ export const reactionCreateDescription: ReactionProperties = [
 			},
 		},
 		description:
-			'ID of the post to react to. Obtainable from the post link: <code>https://mattermost.internal.n8n.io/[server]/pl/[postId]</code>',
+			'ID of the post to react to. Obtainable from the post link: <code>https://mattermost.internal.aura.io/[server]/pl/[postId]</code>',
 	},
 	{
 		displayName: 'Emoji Name',

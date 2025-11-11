@@ -3,8 +3,8 @@ import type {
 	IExecuteSingleFunctions,
 	IN8nHttpFullResponse,
 	INodeExecutionData,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 import { ERROR_MESSAGES } from './constants';
 import type { AwsError, ErrorMessage } from './interfaces';

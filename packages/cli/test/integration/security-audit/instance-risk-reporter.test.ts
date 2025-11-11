@@ -1,9 +1,9 @@
-import { testDb } from '@n8n/backend-test-utils';
-import { GlobalConfig } from '@n8n/config';
-import { generateNanoId, WorkflowRepository } from '@n8n/db';
-import { Container } from '@n8n/di';
+import { testDb } from '@aura/backend-test-utils';
+import { GlobalConfig } from '@aura/config';
+import { generateNanoId, WorkflowRepository } from '@aura/db';
+import { Container } from '@aura/di';
 import { mock } from 'jest-mock-extended';
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { INSTANCE_REPORT, WEBHOOK_VALIDATOR_NODE_TYPES } from '@/security-audit/constants';
@@ -54,7 +54,7 @@ test('should report webhook lacking authentication', async () => {
 				},
 				id: targetNodeId,
 				name: 'Webhook',
-				type: 'n8n-nodes-base.webhook',
+				type: 'aura-nodes-base.webhook',
 				typeVersion: 1,
 				position: [0, 0] as [number, number],
 				webhookId: uuid(),
@@ -99,7 +99,7 @@ test('should not report webhooks having basic or header auth', async () => {
 					},
 					id: uuid(),
 					name: 'Webhook',
-					type: 'n8n-nodes-base.webhook',
+					type: 'aura-nodes-base.webhook',
 					typeVersion: 1,
 					position: [0, 0] as [number, number],
 					webhookId: uuid(),
@@ -143,7 +143,7 @@ test('should not report webhooks validated by direct children', async () => {
 					},
 					id: uuid(),
 					name: 'Webhook',
-					type: 'n8n-nodes-base.webhook',
+					type: 'aura-nodes-base.webhook',
 					typeVersion: 1,
 					position: [0, 0] as [number, number],
 					webhookId: uuid(),

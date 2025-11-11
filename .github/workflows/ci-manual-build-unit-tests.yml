@@ -12,14 +12,14 @@ jobs:
     name: Install & Build
     runs-on: blacksmith-2vcpu-ubuntu-2204
     env:
-      NODE_OPTIONS: '--max-old-space-size=6144'
+      NODE_OPTIONS: "--max-old-space-size=6144"
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           ref: ${{ inputs.ref }}
 
       - name: Setup and Build
-        uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
+        uses: aura-io/aura/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
 
       - name: Run format check
         run: pnpm format:check

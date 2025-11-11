@@ -4,8 +4,8 @@ import type {
 	INodeProperties,
 	IDataObject,
 	INode,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import type { SetNodeOptions } from './helpers/interfaces';
 import { parseJsonParameter, composeReturnItem, resolveRawData } from './helpers/utils';

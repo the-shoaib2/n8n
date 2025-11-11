@@ -1,5 +1,5 @@
-import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+import type { IExecuteFunctions, INodeExecutionData, INodeProperties } from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { ERROR_MESSAGES } from '../../constants';
 import { apiRequest } from '../../transport';

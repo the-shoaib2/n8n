@@ -1,5 +1,5 @@
-import { PaginationDto } from '@n8n/api-types';
-import { RestController, Get, Query } from '@n8n/decorators';
+import { PaginationDto } from '@aura/api-types';
+import { RestController, Get, Query } from '@aura/decorators';
 
 import { NotFoundError } from '@/errors/response-errors/not-found.error';
 import { SharedWorkflowNotFoundError } from '@/errors/shared-workflow-not-found.error';

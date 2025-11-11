@@ -3,7 +3,7 @@ import type {
 	IHttpRequestOptions,
 	INodeProperties,
 	JsonObject,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { BrevoNode } from './GenericFunctions';
 

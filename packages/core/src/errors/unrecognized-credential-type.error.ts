@@ -1,4 +1,4 @@
-import { UserError } from 'n8n-workflow';
+import { UserError } from 'aura-workflow';
 
 export class UnrecognizedCredentialTypeError extends UserError {
 	constructor(credentialType: string) {

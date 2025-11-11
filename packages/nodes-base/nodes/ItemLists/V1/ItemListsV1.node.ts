@@ -5,7 +5,7 @@ import lt from 'lodash/lt';
 import pick from 'lodash/pick';
 import set from 'lodash/set';
 import unset from 'lodash/unset';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 import type {
 	IDataObject,
 	IExecuteFunctions,
@@ -13,7 +13,7 @@ import type {
 	INodeType,
 	INodeTypeBaseDescription,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { flattenKeys, shuffleArray, compareItems } from '@utils/utilities';
 
@@ -161,7 +161,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'A field in the input items to aggregate together',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -221,7 +221,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'The name of a field in the input items to aggregate together',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -313,7 +313,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'A field in the input to exclude from the object in output array',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -350,7 +350,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'Specify fields that will be included in output array',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -422,7 +422,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'A field in the input to exclude from the comparison',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -458,7 +458,7 @@ export class ItemListsV1 implements INodeType {
 									type: 'string',
 									default: '',
 									description: 'A field in the input to add to the comparison',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',
@@ -515,7 +515,7 @@ export class ItemListsV1 implements INodeType {
 									required: true,
 									default: '',
 									description: 'The field to sort by',
-									// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+									// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 									placeholder: 'e.g. id',
 									hint: ' Enter the field name as text',
 									requiresDataPath: 'single',

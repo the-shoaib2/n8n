@@ -1,5 +1,5 @@
-import type { INodeProperties } from 'n8n-workflow';
-import { cronNodeOptions } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
+import { cronNodeOptions } from 'aura-workflow';
 
 export const CUSTOM_NODES_CATEGORY = 'Custom Nodes';
 

@@ -1,5 +1,5 @@
-import { NodeOperationError } from 'n8n-workflow';
-import type { IExecuteFunctions, IDataObject } from 'n8n-workflow';
+import { NodeOperationError } from 'aura-workflow';
+import type { IExecuteFunctions, IDataObject } from 'aura-workflow';
 
 import type { IAirtopNodeExecutionData, IAirtopResponse } from '../../transport/types';
 

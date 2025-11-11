@@ -1,17 +1,17 @@
 {
-	"node": "n8n-nodes-base.awsTranscribe",
+	"node": "aura-nodes-base.awsTranscribe",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/credentials/aws/"
+				"url": "https://docs.aura.io/integrations/builtin/credentials/aws/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.awstranscribe/"
+				"url": "https://docs.aura.io/integrations/builtin/app-nodes/aura-nodes-base.awstranscribe/"
 			}
 		]
 	}

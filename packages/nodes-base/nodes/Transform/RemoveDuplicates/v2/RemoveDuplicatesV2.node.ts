@@ -1,4 +1,4 @@
-import { NodeConnectionTypes, NodeOperationError, tryToParseDateTime } from 'n8n-workflow';
+import { NodeConnectionTypes, NodeOperationError, tryToParseDateTime } from 'aura-workflow';
 import type {
 	INodeTypeBaseDescription,
 	IExecuteFunctions,
@@ -6,7 +6,7 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	DeduplicationScope,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { removeDuplicatesNodeFields } from './RemoveDuplicatesV2.description';
 import { removeDuplicateInputItems } from '../utils';

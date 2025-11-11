@@ -7,8 +7,8 @@ import type {
 	IHttpRequestMethods,
 	IRequestOptions,
 	IHttpRequestOptions,
-} from 'n8n-workflow';
-import { NodeApiError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeApiError } from 'aura-workflow';
 
 export async function bitbucketApiRequest(
 	this: IHookFunctions | IExecuteFunctions | ILoadOptionsFunctions,

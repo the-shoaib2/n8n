@@ -6,8 +6,8 @@ import type {
 	IDataObject,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { shuffleArray, updateDisplayOptions } from '@utils/utilities';
 
@@ -56,7 +56,7 @@ const properties: INodeProperties[] = [
 						required: true,
 						default: '',
 						description: 'The field to sort by',
-						// eslint-disable-next-line n8n-nodes-base/node-param-placeholder-miscased-id
+						// eslint-disable-next-line aura-nodes-base/node-param-placeholder-miscased-id
 						placeholder: 'e.g. id',
 						hint: ' Enter the field name as text',
 						requiresDataPath: 'single',

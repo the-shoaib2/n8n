@@ -1,5 +1,5 @@
-import type { IDataObject, IWorkflowExecuteAdditionalData } from 'n8n-workflow';
-import { ExpressionError } from 'n8n-workflow';
+import type { IDataObject, IWorkflowExecuteAdditionalData } from 'aura-workflow';
+import { ExpressionError } from 'aura-workflow';
 
 function buildSecretsValueProxy(value: IDataObject): unknown {
 	return new Proxy(value, {

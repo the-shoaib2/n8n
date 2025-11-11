@@ -1,4 +1,4 @@
-import type { IWorkflowSettings, WorkflowFEMeta } from 'n8n-workflow';
+import type { IWorkflowSettings, WorkflowFEMeta } from 'aura-workflow';
 import z from 'zod';
 
 export const nodeSchema = z

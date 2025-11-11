@@ -1,5 +1,0 @@
-packages/@n8n/vitest-config/frontend.ts
-packages/@n8n/vitest-config/node.ts
-packages/@n8n/vitest-config/package.json
-packages/@n8n/vitest-config/tsconfig.build.json
-packages/@n8n/vitest-config/tsconfig.json

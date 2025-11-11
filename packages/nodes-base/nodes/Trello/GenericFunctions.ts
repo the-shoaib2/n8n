@@ -5,7 +5,7 @@ import type {
 	IHttpRequestMethods,
 	ILoadOptionsFunctions,
 	IRequestOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 /**
  * Make an API request to Trello

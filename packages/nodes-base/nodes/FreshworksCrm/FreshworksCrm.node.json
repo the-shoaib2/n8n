@@ -1,17 +1,17 @@
 {
-	"node": "n8n-nodes-base.freshworksCrm",
+	"node": "aura-nodes-base.freshworksCrm",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Marketing", "Sales"],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/credentials/freshworkscrm/"
+				"url": "https://docs.aura.io/integrations/builtin/credentials/freshworkscrm/"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.freshworkscrm/"
+				"url": "https://docs.aura.io/integrations/builtin/app-nodes/aura-nodes-base.freshworkscrm/"
 			}
 		]
 	},

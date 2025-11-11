@@ -7,7 +7,7 @@ import {
 	type INodeType,
 	type INodeTypeDescription,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { agentFields, agentOperations } from './AgentDescription';
 import { phantombusterApiRequest, validateJSON } from './GenericFunctions';
@@ -20,7 +20,7 @@ export class Phantombuster implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Phantombuster',
 		name: 'phantombuster',
-		// eslint-disable-next-line n8n-nodes-base/node-class-description-icon-not-svg
+		// eslint-disable-next-line aura-nodes-base/node-class-description-icon-not-svg
 		icon: 'file:phantombuster.png',
 		group: ['input'],
 		version: 1,

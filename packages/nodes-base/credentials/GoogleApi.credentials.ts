@@ -8,7 +8,7 @@ import type {
 	IHttpRequestOptions,
 	INodeProperties,
 	Icon,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 const regions = [
 	{

@@ -5,7 +5,7 @@ import {
 	type INodeTypeDescription,
 	type IWebhookResponseData,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { apiRequest } from './GenericFunctions';
 
@@ -92,7 +92,7 @@ export class TrelloTrigger implements INodeType {
 				const endpoint = `tokens/${credentials.apiToken}/webhooks`;
 
 				const body = {
-					description: `n8n Webhook - ${idModel}`,
+					description: `aura Webhook - ${idModel}`,
 					callbackURL: webhookUrl,
 					idModel,
 				};

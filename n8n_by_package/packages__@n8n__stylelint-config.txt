@@ -1,8 +1,0 @@
-packages/@n8n/stylelint-config/README.md
-packages/@n8n/stylelint-config/jest.config.cjs
-packages/@n8n/stylelint-config/package.json
-packages/@n8n/stylelint-config/src/configs/base.ts
-packages/@n8n/stylelint-config/src/rules/css-var-naming.test.ts
-packages/@n8n/stylelint-config/src/rules/css-var-naming.ts
-packages/@n8n/stylelint-config/src/rules/index.ts
-packages/@n8n/stylelint-config/tsconfig.json

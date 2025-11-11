@@ -3,7 +3,7 @@ import {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 export class ClassNameReplace implements INodeType {
 	description: INodeTypeDescription = {

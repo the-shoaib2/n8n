@@ -1,6 +1,6 @@
-import { Service } from '@n8n/di';
-import { NodeHelpers } from 'n8n-workflow';
-import type { INodeType, INodeTypes, IVersionedNodeType } from 'n8n-workflow';
+import { Service } from '@aura/di';
+import { NodeHelpers } from 'aura-workflow';
+import type { INodeType, INodeTypes, IVersionedNodeType } from 'aura-workflow';
 
 import { LoadNodesAndCredentials } from './load-nodes-and-credentials';
 

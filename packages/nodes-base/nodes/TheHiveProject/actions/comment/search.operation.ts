@@ -3,8 +3,8 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
-import { NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeOperationError } from 'aura-workflow';
 
 import { updateDisplayOptions, wrapData } from '@utils/utilities';
 
@@ -21,7 +21,7 @@ import { theHiveApiQuery } from '../../transport';
 
 const properties: INodeProperties[] = [
 	{
-		// eslint-disable-next-line n8n-nodes-base/node-param-display-name-miscased
+		// eslint-disable-next-line aura-nodes-base/node-param-display-name-miscased
 		displayName: 'Search in',
 		name: 'searchIn',
 		type: 'options',

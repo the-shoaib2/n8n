@@ -5,7 +5,7 @@
 			"parameters": {},
 			"id": "c36aef04-b8ee-4f50-938b-ec64c4f78c97",
 			"name": "When clicking \"Execute Workflow\"",
-			"type": "n8n-nodes-base.manualTrigger",
+			"type": "aura-nodes-base.manualTrigger",
 			"typeVersion": 1,
 			"position": [860, 340]
 		},
@@ -15,7 +15,7 @@
 			},
 			"id": "79f44614-aaf8-421a-9cad-2d92445a5dd5",
 			"name": "Code",
-			"type": "n8n-nodes-base.code",
+			"type": "aura-nodes-base.code",
 			"typeVersion": 1,
 			"position": [1120, 340]
 		},
@@ -34,7 +34,7 @@
 			},
 			"id": "c1f69c55-caba-4d44-b209-445f4bef3756",
 			"name": "Item Lists remove duplicates exclude",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [1320, 340]
 		},
@@ -55,7 +55,7 @@
 			},
 			"id": "7b9f0a7c-25f0-4d1f-b30f-666ddcaf5d98",
 			"name": "Item Lists remove duplicates selected",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [1340, 560]
 		},
@@ -65,7 +65,7 @@
 			},
 			"id": "9762644f-34cb-48ca-b8a3-e0aa0ca05d4a",
 			"name": "Item Lists remove duplicates",
-			"type": "n8n-nodes-base.itemLists",
+			"type": "aura-nodes-base.itemLists",
 			"typeVersion": 1,
 			"position": [1320, 120]
 		}

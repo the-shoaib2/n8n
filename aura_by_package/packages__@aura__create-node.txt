@@ -1,0 +1,4 @@
+packages/@aura/create-node/README.md
+packages/@aura/create-node/bin/create-node.cjs
+packages/@aura/create-node/package.json
+packages/@aura/create-node/tsconfig.json

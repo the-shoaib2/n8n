@@ -10,7 +10,7 @@ import {
 	type INodeTypeDescription,
 	type IRequestOptions,
 	NodeConnectionTypes,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import {
 	gristApiRequest,

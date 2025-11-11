@@ -7,8 +7,8 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 	IHttpRequestMethods,
-} from 'n8n-workflow';
-import { NodeConnectionTypes, NodeOperationError } from 'n8n-workflow';
+} from 'aura-workflow';
+import { NodeConnectionTypes, NodeOperationError } from 'aura-workflow';
 
 import { attachmentFields, attachmentOperations } from './AttachmentDescription';
 import { boardFields, boardOperations } from './BoardDescription';

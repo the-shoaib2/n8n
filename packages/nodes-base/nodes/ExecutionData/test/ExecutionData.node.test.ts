@@ -5,7 +5,7 @@ import type {
 	INodeExecutionData,
 	IWorkflowDataProxyData,
 	INode,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { ExecutionData } from '../ExecutionData.node';
 

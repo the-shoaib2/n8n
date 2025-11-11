@@ -5,18 +5,18 @@ on:
     branches:
       - master
     paths:
-      - 'packages/@n8n/ai-workflow-builder.ee/**'
-      - '.github/workflows/ci-evals.yml'
+      - "packages/@aura/ai-workflow-builder.ee/**"
+      - ".github/workflows/ci-evals.yml"
   workflow_dispatch:
     inputs:
       branch:
-        description: 'GitHub branch to test.'
+        description: "GitHub branch to test."
         required: false
-        default: 'master'
+        default: "master"
       dataset:
-        description: 'LangSmith dataset to use.'
+        description: "LangSmith dataset to use."
         required: false
-        default: 'workflow-builder-canvas-prompts'
+        default: "workflow-builder-canvas-prompts"
 
 jobs:
   evals:
@@ -38,9 +38,9 @@ jobs:
 
       - name: Export Node Types
         run: |
-          ./packages/cli/bin/n8n export:nodes --output ./packages/@n8n/ai-workflow-builder.ee/evaluations/nodes.json
+          ./packages/cli/bin/aura export:nodes --output ./packages/@aura/ai-workflow-builder.ee/evaluations/nodes.json
 
       - name: Run Evaluations
-        working-directory: packages/@n8n/ai-workflow-builder.ee/evaluations
+        working-directory: packages/@aura/ai-workflow-builder.ee/evaluations
         run: |
           pnpm eval:langsmith --repetitions 3

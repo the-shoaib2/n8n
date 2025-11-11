@@ -3,15 +3,15 @@ name: Build, unit test and lint branch
 on:
   pull_request:
     branches:
-      - '**'
-      - '!release/*'
+      - "**"
+      - "!release/*"
 
 jobs:
   install-and-build:
     name: Install & Build
     runs-on: blacksmith-2vcpu-ubuntu-2204
     env:
-      NODE_OPTIONS: '--max-old-space-size=6144'
+      NODE_OPTIONS: "--max-old-space-size=6144"
     outputs:
       frontend_changed: ${{ steps.paths-filter.outputs.frontend == 'true' }}
       non_python_changed: ${{ steps.paths-filter.outputs.non-python == 'true' }}
@@ -27,17 +27,17 @@ jobs:
           filters: |
             frontend:
               - packages/frontend/**
-              - packages/@n8n/design-system/**
-              - packages/@n8n/chat/**
-              - packages/@n8n/codemirror-lang/**
+              - packages/@aura/design-system/**
+              - packages/@aura/chat/**
+              - packages/@aura/codemirror-lang/**
               - .bundlemonrc.json
               - .github/workflows/ci-pull-requests.yml
             non-python:
               - '**'
-              - '!packages/@n8n/task-runner-python/**'
+              - '!packages/@aura/task-runner-python/**'
       - name: Setup and Build
         if: steps.paths-filter.outputs.non-python == 'true'
-        uses: n8n-io/n8n/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
+        uses: aura-io/aura/.github/actions/setup-nodejs-blacksmith@f5fbbbe0a28a886451c886cac6b49192a39b0eea # v1.104.1
 
       - name: Run format check
         if: steps.paths-filter.outputs.non-python == 'true'
@@ -71,7 +71,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          node-version: '22.x'
+          node-version: "22.x"
           cache: pnpm
 
       - name: Install dependencies

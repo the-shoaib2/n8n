@@ -1,4 +1,4 @@
-import { Container } from '@n8n/di';
+import { Container } from '@aura/di';
 
 import { InstanceSettings } from '@/instance-settings';
 import { mockInstance } from '@test/utils';
@@ -6,7 +6,7 @@ import { mockInstance } from '@test/utils';
 import { BinaryDataConfig } from '../binary-data.config';
 
 describe('BinaryDataConfig', () => {
-	const n8nFolder = '/test/n8n';
+	const auraFolder = '/test/aura';
 	const encryptionKey = 'test-encryption-key';
 	console.warn = jest.fn().mockImplementation(() => {});
 
@@ -17,7 +17,7 @@ describe('BinaryDataConfig', () => {
 		process.env = {};
 		jest.resetAllMocks();
 		Container.reset();
-		mockInstance(InstanceSettings, { encryptionKey, n8nFolder });
+		mockInstance(InstanceSettings, { encryptionKey, auraFolder });
 	});
 
 	it('should use default values when no env variables are defined', () => {
@@ -25,7 +25,7 @@ describe('BinaryDataConfig', () => {
 
 		expect(config.availableModes).toEqual(['filesystem']);
 		expect(config.mode).toBe('default');
-		expect(config.localStoragePath).toBe('/test/n8n/binaryData');
+		expect(config.localStoragePath).toBe('/test/aura/binaryData');
 	});
 
 	it('should use values from env variables when defined', () => {

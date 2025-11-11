@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'aura-workflow';
 
 // https://bitwarden.com/help/article/public-api/#authentication
 

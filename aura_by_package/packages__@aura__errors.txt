@@ -1,0 +1,7 @@
+packages/@aura/errors/eslint.config.mjs
+packages/@aura/errors/package.json
+packages/@aura/errors/src/application.error.ts
+packages/@aura/errors/src/index.ts
+packages/@aura/errors/src/types.ts
+packages/@aura/errors/tsconfig.build.json
+packages/@aura/errors/tsconfig.json

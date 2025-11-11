@@ -3,7 +3,7 @@ import type {
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeProperties,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { updateDisplayOptions, wrapData } from '@utils/utilities';
 
@@ -18,7 +18,7 @@ const properties: INodeProperties[] = [
 		name: 'analyzers',
 		type: 'multiOptions',
 		description:
-			'Choose from the list, or specify IDs using an <a href="https://docs.n8n.io/code/expressions/">expression</a>',
+			'Choose from the list, or specify IDs using an <a href="https://docs.aura.io/code/expressions/">expression</a>',
 		required: true,
 		default: [],
 		typeOptions: {

@@ -1,4 +1,4 @@
-import type { INodeProperties } from 'n8n-workflow';
+import type { INodeProperties } from 'aura-workflow';
 
 import * as create from './create';
 import * as deactive from './deactive';

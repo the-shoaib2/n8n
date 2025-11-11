@@ -1,6 +1,6 @@
-import type { IExecutionResponse } from '@n8n/db';
-import type { INode } from 'n8n-workflow';
-import { CHAT_WAIT_USER_REPLY, RESPOND_TO_WEBHOOK_NODE_TYPE } from 'n8n-workflow';
+import type { IExecutionResponse } from '@aura/db';
+import type { INode } from 'aura-workflow';
+import { CHAT_WAIT_USER_REPLY, RESPOND_TO_WEBHOOK_NODE_TYPE } from 'aura-workflow';
 
 /**
  * Returns the message to be sent of the last executed node

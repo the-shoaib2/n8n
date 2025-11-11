@@ -1,11 +1,11 @@
-import { NodeConnectionTypes } from 'n8n-workflow';
+import { NodeConnectionTypes } from 'aura-workflow';
 import type {
 	INodeTypeBaseDescription,
 	IExecuteFunctions,
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { removeDuplicateInputItems } from '../utils';
 

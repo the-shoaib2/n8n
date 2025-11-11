@@ -1,9 +1,9 @@
-import type { DataTableProxyProvider } from 'n8n-workflow';
+import type { DataTableProxyProvider } from 'aura-workflow';
 
 import type { ExecutionLifecycleHooks } from './execution-lifecycle-hooks';
 import type { ExternalSecretsProxy } from './external-secrets-proxy';
 
-declare module 'n8n-workflow' {
+declare module 'aura-workflow' {
 	interface IWorkflowExecuteAdditionalData {
 		hooks?: ExecutionLifecycleHooks;
 		externalSecretsProxy: ExternalSecretsProxy;

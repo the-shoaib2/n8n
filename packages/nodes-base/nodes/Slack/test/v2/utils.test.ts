@@ -1,5 +1,5 @@
 import { type MockProxy, mock } from 'jest-mock-extended';
-import type { IExecuteFunctions } from 'n8n-workflow';
+import type { IExecuteFunctions } from 'aura-workflow';
 
 import { getTarget, createSendAndWaitMessageBody } from '../../V2/GenericFunctions';
 

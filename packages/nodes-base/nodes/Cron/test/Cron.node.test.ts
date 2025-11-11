@@ -3,7 +3,7 @@ import {
 	type ITriggerFunctions,
 	type IDataObject,
 	type IGetNodeParameterOptions,
-} from 'n8n-workflow';
+} from 'aura-workflow';
 
 import { Cron } from '../Cron.node';
 

@@ -9,18 +9,18 @@ import {
 	randomCredentialPayload,
 	testDb,
 	mockInstance,
-} from '@n8n/backend-test-utils';
-import type { Project, User, WorkflowWithSharingsMetaDataAndCredentials } from '@n8n/db';
+} from '@aura/backend-test-utils';
+import type { Project, User, WorkflowWithSharingsMetaDataAndCredentials } from '@aura/db';
 import {
 	ProjectRepository,
 	WorkflowHistoryRepository,
 	SharedWorkflowRepository,
 	WorkflowRepository,
 	GLOBAL_MEMBER_ROLE,
-} from '@n8n/db';
-import { Container } from '@n8n/di';
-import type { ProjectRole } from '@n8n/permissions';
-import { ApplicationError, WorkflowActivationError, type INode } from 'n8n-workflow';
+} from '@aura/db';
+import { Container } from '@aura/di';
+import type { ProjectRole } from '@aura/permissions';
+import { ApplicationError, WorkflowActivationError, type INode } from 'aura-workflow';
 import { v4 as uuid } from 'uuid';
 
 import { ActiveWorkflowManager } from '@/active-workflow-manager';
@@ -712,7 +712,7 @@ describe('POST /workflows', () => {
 					id: 'uuid-1234',
 					parameters: {},
 					name: 'Start',
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					position: [240, 300],
 				},
@@ -783,7 +783,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						name: 'Start',
 						parameters: {},
 						position: [-20, 260],
-						type: 'n8n-nodes-base.start',
+						type: 'aura-nodes-base.start',
 						typeVersion: 1,
 						credentials: {
 							default: {
@@ -818,7 +818,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						name: 'Start',
 						parameters: {},
 						position: [-20, 260],
-						type: 'n8n-nodes-base.start',
+						type: 'aura-nodes-base.start',
 						typeVersion: 1,
 						credentials: {
 							default: {
@@ -841,7 +841,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						name: 'Start',
 						parameters: {},
 						position: [-20, 260],
-						type: 'n8n-nodes-base.start',
+						type: 'aura-nodes-base.start',
 						typeVersion: 1,
 						credentials: {
 							default: {
@@ -933,7 +933,7 @@ describe('PATCH /workflows/:workflowId', () => {
 							name: 'Start',
 							parameters: {},
 							position: [-20, 260],
-							type: 'n8n-nodes-base.start',
+							type: 'aura-nodes-base.start',
 							typeVersion: 1,
 							credentials: {
 								default: {
@@ -966,7 +966,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						firstParam: 123,
 					},
 					position: [-20, 260],
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					credentials: {
 						default: {
@@ -985,7 +985,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						firstParam: 456,
 					},
 					position: [-20, 555],
-					type: 'n8n-nodes-base.no-op',
+					type: 'aura-nodes-base.no-op',
 					typeVersion: 1,
 					credentials: {
 						default: {
@@ -1005,7 +1005,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						firstParam: 123,
 					},
 					position: [-20, 555],
-					type: 'n8n-nodes-base.start',
+					type: 'aura-nodes-base.start',
 					typeVersion: 1,
 					credentials: {
 						default: {
@@ -1242,7 +1242,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						id: 'uuid-1234',
 						parameters: {},
 						name: 'Start',
-						type: 'n8n-nodes-base.start',
+						type: 'aura-nodes-base.start',
 						typeVersion: 1,
 						position: [240, 300],
 					},
@@ -1250,7 +1250,7 @@ describe('PATCH /workflows/:workflowId', () => {
 						id: 'uuid-1234',
 						parameters: {},
 						name: 'Cron',
-						type: 'n8n-nodes-base.cron',
+						type: 'aura-nodes-base.cron',
 						typeVersion: 1,
 						position: [400, 300],
 					},

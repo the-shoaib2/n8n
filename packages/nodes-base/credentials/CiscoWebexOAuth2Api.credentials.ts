@@ -1,4 +1,4 @@
-import type { ICredentialType, INodeProperties } from 'n8n-workflow';
+import type { ICredentialType, INodeProperties } from 'aura-workflow';
 
 export class CiscoWebexOAuth2Api implements ICredentialType {
 	name = 'ciscoWebexOAuth2Api';

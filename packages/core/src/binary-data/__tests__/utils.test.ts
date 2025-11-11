@@ -1,4 +1,4 @@
-import { UnexpectedError } from 'n8n-workflow';
+import { UnexpectedError } from 'aura-workflow';
 import { Readable } from 'node:stream';
 import { createGunzip } from 'node:zlib';
 

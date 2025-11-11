@@ -1,5 +1,5 @@
-import type { INodeTypeBaseDescription, IVersionedNodeType } from 'n8n-workflow';
-import { VersionedNodeType } from 'n8n-workflow';
+import type { INodeTypeBaseDescription, IVersionedNodeType } from 'aura-workflow';
+import { VersionedNodeType } from 'aura-workflow';
 
 import { SlackV1 } from './V1/SlackV1.node';
 import { SlackV2 } from './V2/SlackV2.node';
