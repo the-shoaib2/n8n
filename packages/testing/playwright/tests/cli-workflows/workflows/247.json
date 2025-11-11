@@ -32,7 +32,7 @@
 			},
 			"id": "3b01b603-8e9e-4f91-bd86-04820f2234dc",
 			"name": "OpenAI Chat Model1",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1480, 520],
 			"credentials": {
@@ -49,7 +49,7 @@
 			},
 			"id": "b4c73920-090e-4668-9fa7-7ea124373409",
 			"name": "Token Splitter",
-			"type": "@aura/n8n-nodes-langchain.textSplitterTokenSplitter",
+			"type": "@aura/nodes-langchain..textSplitterTokenSplitter",
 			"typeVersion": 1,
 			"position": [1620, 520]
 		},
@@ -82,7 +82,7 @@
 			},
 			"id": "57a4de1c-f385-439b-8809-8a1172bab713",
 			"name": "OpenAI Chat Model8",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1800, 520],
 			"credentials": {
@@ -99,7 +99,7 @@
 			},
 			"id": "5ad67153-eef9-4d4a-94af-4974d33c2076",
 			"name": "Summary - Advanced",
-			"type": "@aura/n8n-nodes-langchain.chainSummarization",
+			"type": "@aura/nodes-langchain..chainSummarization",
 			"typeVersion": 2,
 			"position": [1460, 380]
 		},
@@ -134,7 +134,7 @@
 			},
 			"id": "cdad3056-57aa-4d84-98b2-5077793b883f",
 			"name": "Evaluate to Baseline3",
-			"type": "@aura/n8n-nodes-langchain.code",
+			"type": "@aura/nodes-langchain..code",
 			"typeVersion": 1,
 			"position": [1780, 380]
 		}

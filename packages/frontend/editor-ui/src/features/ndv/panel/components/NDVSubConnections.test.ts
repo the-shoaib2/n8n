@@ -9,7 +9,7 @@ import { nextTick } from 'vue';
 
 const nodeType: INodeTypeDescription = {
 	displayName: 'OpenAI',
-	name: '@aura/n8n-nodes-langchain.openAi',
+	name: '@aura/nodes-langchain..openAi',
 	version: [1],
 	inputs: [
 		{ type: NodeConnectionTypes.Main },
@@ -40,7 +40,7 @@ const node: INodeUi = {
 	},
 	id: 'f30c2cbc-c1b1-4014-87f7-22e6ae7afcc8',
 	name: 'OpenAI',
-	type: '@aura/n8n-nodes-langchain.openAi',
+	type: '@aura/nodes-langchain..openAi',
 	typeVersion: 1.6,
 	position: [1300, 540],
 };
@@ -173,12 +173,12 @@ describe('NDVSubConnections', () => {
 		const openAI1Node: INodeUi = {
 			...node,
 			name: 'OpenAI1',
-			type: '@aura/n8n-nodes-langchain.openAi',
+			type: '@aura/nodes-langchain..openAi',
 		};
 		const claudeNode: INodeUi = {
 			...node,
 			name: 'Claude',
-			type: '@aura/n8n-nodes-langchain.claude',
+			type: '@aura/nodes-langchain..claude',
 		};
 
 		getNodeType.mockReturnValue(multiConnectionNodeType);

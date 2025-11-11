@@ -101,7 +101,7 @@
 						"id": "toolu_01NJeeLN4wyjHUaKsAV1GMYN",
 						"name": "add_nodes",
 						"input": {
-							"nodeType": "@aura/n8n-nodes-langchain.googleGemini",
+							"nodeType": "@aura/nodes-langchain..googleGemini",
 							"name": "Generate Chapters with AI",
 							"connectionParametersReasoning": "Google Gemini node has dynamic inputs based on resource and operation parameters. For text message operation, it accepts main input and optional ai_tool connections. Setting resource to text and operation to message.",
 							"connectionParameters": {
@@ -140,7 +140,7 @@
 						"id": "toolu_01RWis13u9kDHJMaJR2w9JPo",
 						"name": "add_nodes",
 						"input": {
-							"nodeType": "@aura/n8n-nodes-langchain.lmChatGoogleGemini",
+							"nodeType": "@aura/nodes-langchain..lmChatGoogleGemini",
 							"name": "Google Gemini Chat Model",
 							"connectionParametersReasoning": "Google Gemini Chat Model is an AI sub-node that provides ai_languageModel output, no connection parameters needed",
 							"connectionParameters": {},

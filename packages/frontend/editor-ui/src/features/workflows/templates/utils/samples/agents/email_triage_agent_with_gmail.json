@@ -37,7 +37,7 @@
 			},
 			"id": "a4dccc7a-008e-40c5-90dd-c91090a144fd",
 			"name": "Email Classification Agent",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 2.2,
 			"position": [224, -32]
 		},
@@ -95,7 +95,7 @@
 			},
 			"id": "1fda1d78-a669-4be1-9aba-56c0abb7c247",
 			"name": "Model",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [160, 192],
 			"credentials": {}

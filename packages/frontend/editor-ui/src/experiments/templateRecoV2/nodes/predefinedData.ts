@@ -9,7 +9,7 @@ export interface PredefinedNodeData {
 }
 
 export const NODE_DATA: Record<string, PredefinedNodeData> = {
-	'@aura/n8n-nodes-langchain.agent': {
+	'@aura/nodes-langchain..agent': {
 		starter: [6270, 5462, 3100],
 		popular: [2465, 2326, 2006],
 		youtube: [
@@ -27,7 +27,7 @@ export const NODE_DATA: Record<string, PredefinedNodeData> = {
 			},
 		],
 	},
-	'@aura/n8n-nodes-langchain.openAi': {
+	'@aura/nodes-langchain..openAi': {
 		starter: [3100, 2722, 5462],
 		popular: [2462, 2783, 2187],
 		youtube: [
@@ -99,7 +99,7 @@ export const NODE_DATA: Record<string, PredefinedNodeData> = {
 			},
 		],
 	},
-	'@aura/n8n-nodes-langchain.googleGemini': {
+	'@aura/nodes-langchain..googleGemini': {
 		starter: [6270, 4365, 3905],
 		popular: [5993, 2753, 2466],
 		youtube: [

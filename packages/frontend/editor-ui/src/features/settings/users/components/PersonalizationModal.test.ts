@@ -45,7 +45,7 @@ const renderModal = createComponentRenderer(PersonalizationModal, {
 describe('PersonalizationModal', () => {
 	it('mounts', () => {
 		const { getByTitle } = renderModal({ pinia: createTestingPinia() });
-		expect(getByTitle('Customize n8n to you')).toBeInTheDocument();
+		expect(getByTitle('Customize Aura to you')).toBeInTheDocument();
 	});
 
 	describe('Company field', () => {

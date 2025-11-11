@@ -30,7 +30,7 @@
 			},
 			"id": "83756a50-a3cc-4cf7-ba40-7aa1d7636280",
 			"name": "Embeddings OpenAI4",
-			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/nodes-langchain..embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [300, 1260],
 			"credentials": {
@@ -59,7 +59,7 @@
 			},
 			"id": "f6f7ddd4-5c9c-43dc-934d-960cb7f7b9bf",
 			"name": "Default Data Loader1",
-			"type": "@aura/n8n-nodes-langchain.documentDefaultDataLoader",
+			"type": "@aura/nodes-langchain..documentDefaultDataLoader",
 			"typeVersion": 1,
 			"position": [280, 1460]
 		},
@@ -70,7 +70,7 @@
 			},
 			"id": "408bcff8-96bb-4801-bed1-9fcee602f6ba",
 			"name": "Token Splitter1",
-			"type": "@aura/n8n-nodes-langchain.textSplitterTokenSplitter",
+			"type": "@aura/nodes-langchain..textSplitterTokenSplitter",
 			"typeVersion": 1,
 			"position": [280, 1620]
 		},
@@ -179,7 +179,7 @@
 			},
 			"id": "5dbcc385-e3e9-4208-9bef-72fdfee4eb3e",
 			"name": "Question and Answer Chain1",
-			"type": "@aura/n8n-nodes-langchain.chainRetrievalQa",
+			"type": "@aura/nodes-langchain..chainRetrievalQa",
 			"typeVersion": 1.5,
 			"position": [1700, 1080]
 		},
@@ -192,7 +192,7 @@
 			},
 			"id": "2ff4fe0e-e9f5-4250-a36f-5290dd5c7940",
 			"name": "OpenAI Chat Model1",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1700, 1280],
 			"credentials": {
@@ -206,7 +206,7 @@
 			"parameters": {},
 			"id": "b192d5f4-0d57-4dac-99c8-bef2b3b4d20a",
 			"name": "Vector Store Retriever1",
-			"type": "@aura/n8n-nodes-langchain.retrieverVectorStore",
+			"type": "@aura/nodes-langchain..retrieverVectorStore",
 			"typeVersion": 1,
 			"position": [1780, 1280]
 		},
@@ -217,7 +217,7 @@
 			},
 			"id": "a97eac02-2008-46a4-a21c-3f4ddb473f21",
 			"name": "Embeddings OpenAI3",
-			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/nodes-langchain..embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [1720, 1580],
 			"credentials": {
@@ -254,7 +254,7 @@
 			},
 			"id": "a8fce256-50b2-4d70-b3a3-ee5aa9fa2c9b",
 			"name": "Embeddings OpenAI5",
-			"type": "@aura/n8n-nodes-langchain.embeddingsOpenAi",
+			"type": "@aura/nodes-langchain..embeddingsOpenAi",
 			"typeVersion": 1,
 			"position": [1140, 1300],
 			"credentials": {
@@ -276,7 +276,7 @@
 			},
 			"id": "69a471a7-969f-47ef-9e52-4667c943a69f",
 			"name": "Qdrant Vector Store",
-			"type": "@aura/n8n-nodes-langchain.vectorStoreQdrant",
+			"type": "@aura/nodes-langchain..vectorStoreQdrant",
 			"typeVersion": 1,
 			"position": [280, 1080],
 			"credentials": {
@@ -296,7 +296,7 @@
 			},
 			"id": "43ac7a37-abd1-4b7c-bfdc-e096bda87de6",
 			"name": "Qdrant Vector Store2",
-			"type": "@aura/n8n-nodes-langchain.vectorStoreQdrant",
+			"type": "@aura/nodes-langchain..vectorStoreQdrant",
 			"typeVersion": 1,
 			"position": [1720, 1440],
 			"credentials": {
@@ -318,7 +318,7 @@
 			},
 			"id": "f1a6871e-cc9f-4f36-93f8-15dba0d4687f",
 			"name": "Qdrant Vector Store1",
-			"type": "@aura/n8n-nodes-langchain.vectorStoreQdrant",
+			"type": "@aura/nodes-langchain..vectorStoreQdrant",
 			"typeVersion": 1,
 			"position": [1140, 1080],
 			"credentials": {

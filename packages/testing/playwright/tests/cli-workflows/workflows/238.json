@@ -18,7 +18,7 @@
 			},
 			"id": "086e03aa-f941-4dbc-9794-d418893efd48",
 			"name": "OpenAI Model",
-			"type": "@aura/n8n-nodes-langchain.lmOpenAi",
+			"type": "@aura/nodes-langchain..lmOpenAi",
 			"typeVersion": 1,
 			"position": [660, 600],
 			"credentials": {
@@ -35,7 +35,7 @@
 			},
 			"id": "3d36ca4b-ca52-4c76-8729-2d1416b97254",
 			"name": "Open AI Instruct",
-			"type": "@aura/n8n-nodes-langchain.chainLlm",
+			"type": "@aura/nodes-langchain..chainLlm",
 			"typeVersion": 1.5,
 			"position": [640, 460]
 		},

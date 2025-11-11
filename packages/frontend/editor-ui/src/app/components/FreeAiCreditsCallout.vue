@@ -16,7 +16,7 @@ type Props = {
 
 const props = defineProps<Props>();
 
-const LANGCHAIN_NODES_PREFIX = '@aura/n8n-nodes-langchain.';
+const LANGCHAIN_NODES_PREFIX = '@aura/nodes-langchain..';
 
 const N8N_NODES_PREFIX = '@aura/n8n-nodes.';
 

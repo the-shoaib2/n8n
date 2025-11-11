@@ -47,10 +47,10 @@ function sanitizeFromAiParameterName(s: string) {
 
 // nodeName | [nodeName, highestUnsupportedVersion]
 const NODE_DENYLIST = [
-	'@aura/n8n-nodes-langchain.toolCode',
-	'@aura/n8n-nodes-langchain.toolHttpRequest',
-	'@aura/n8n-nodes-langchain.mcpClientTool',
-	['@aura/n8n-nodes-langchain.toolWorkflow', 1.2],
+	'@aura/nodes-langchain..toolCode',
+	'@aura/nodes-langchain..toolHttpRequest',
+	'@aura/nodes-langchain..mcpClientTool',
+	['@aura/nodes-langchain..toolWorkflow', 1.2],
 ] as const;
 
 const PATH_DENYLIST = [

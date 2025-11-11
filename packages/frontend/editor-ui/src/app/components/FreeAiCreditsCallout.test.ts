@@ -92,7 +92,7 @@ describe('FreeAiCreditsCallout', () => {
 		});
 
 		(useNDVStore as any).mockReturnValue({
-			activeNode: { type: '@aura/n8n-nodes-langchain.openAi' },
+			activeNode: { type: '@aura/nodes-langchain..openAi' },
 		});
 
 		(useProjectsStore as any).mockReturnValue({

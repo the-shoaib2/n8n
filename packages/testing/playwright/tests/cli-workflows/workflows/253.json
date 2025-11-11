@@ -29,7 +29,7 @@
 			},
 			"id": "e082d1ac-db5e-4122-bb0e-4dbb08296463",
 			"name": "Get Weather",
-			"type": "@aura/n8n-nodes-langchain.toolWorkflow",
+			"type": "@aura/nodes-langchain..toolWorkflow",
 			"typeVersion": 1,
 			"position": [640, 700]
 		},
@@ -49,7 +49,7 @@
 			},
 			"id": "ff4cae49-b5d5-4825-a59b-875375933c59",
 			"name": "Get Events",
-			"type": "@aura/n8n-nodes-langchain.toolWorkflow",
+			"type": "@aura/nodes-langchain..toolWorkflow",
 			"typeVersion": 1,
 			"position": [760, 700]
 		},
@@ -102,7 +102,7 @@
 			},
 			"id": "956d7763-aa7a-4089-8ba6-4ea55d9f7daf",
 			"name": "OpenAI Chat Model4",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [540, 540],
 			"credentials": {
@@ -291,7 +291,7 @@
 			},
 			"id": "7a52053b-bcdd-4c55-badb-9cf4739f1804",
 			"name": "Search Wiki",
-			"type": "@aura/n8n-nodes-langchain.toolWorkflow",
+			"type": "@aura/nodes-langchain..toolWorkflow",
 			"typeVersion": 1,
 			"position": [660, 60]
 		},
@@ -304,7 +304,7 @@
 			},
 			"id": "fb451b3f-1c18-4f58-953a-5787d7dc27a5",
 			"name": "OpenAI Chat Model",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [540, 0],
 			"credentials": {
@@ -321,7 +321,7 @@
 			},
 			"id": "bba3dd1d-82f1-4bf2-80ba-2b64e6748abb",
 			"name": "Structured Output Parser",
-			"type": "@aura/n8n-nodes-langchain.outputParserStructured",
+			"type": "@aura/nodes-langchain..outputParserStructured",
 			"typeVersion": 1.2,
 			"position": [800, 0]
 		},
@@ -334,7 +334,7 @@
 			},
 			"id": "7b8eee2b-6677-4935-a102-8a40405b968b",
 			"name": "AI Agent",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [540, -180]
 		},
@@ -398,7 +398,7 @@
 			},
 			"id": "66abd2b8-45ab-455e-b3e1-d6a4d5f083de",
 			"name": "Code Tool",
-			"type": "@aura/n8n-nodes-langchain.toolCode",
+			"type": "@aura/nodes-langchain..toolCode",
 			"typeVersion": 1.1,
 			"position": [740, -400]
 		},
@@ -411,7 +411,7 @@
 			},
 			"id": "899ed8b5-2805-4647-870c-ffa80828d195",
 			"name": "OpenAI Chat Model1",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [540, -420],
 			"credentials": {
@@ -431,7 +431,7 @@
 			},
 			"id": "ab2d9ecf-f338-4e45-b327-667604b21a10",
 			"name": "AI Agent4",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [520, 380]
 		},
@@ -445,7 +445,7 @@
 			},
 			"id": "02408929-ec1f-45ab-bd1f-1b9964814281",
 			"name": "AI Agent1",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [540, -560]
 		},
@@ -514,7 +514,7 @@
 			},
 			"id": "a237cbf1-dab1-4ea9-bb6c-aff17b33e0d3",
 			"name": "HTTP Request",
-			"type": "@aura/n8n-nodes-langchain.toolHttpRequest",
+			"type": "@aura/nodes-langchain..toolHttpRequest",
 			"typeVersion": 1.1,
 			"position": [800, -800]
 		},
@@ -527,7 +527,7 @@
 			},
 			"id": "6aadda49-1d19-4038-90e6-5f7adecc5a1f",
 			"name": "OpenAI Chat Model2",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [600, -800],
 			"credentials": {
@@ -547,7 +547,7 @@
 			},
 			"id": "bdcc5d54-9532-4bf3-a2b7-da03c196cb15",
 			"name": "AI Agent2",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [600, -960]
 		},
@@ -559,7 +559,7 @@
 			},
 			"id": "e49bafe2-725a-4146-8023-ecd86952569f",
 			"name": "Window Buffer Memory1",
-			"type": "@aura/n8n-nodes-langchain.memoryBufferWindow",
+			"type": "@aura/nodes-langchain..memoryBufferWindow",
 			"typeVersion": 1.3,
 			"position": [580, -1220]
 		},
@@ -569,7 +569,7 @@
 			},
 			"id": "ca8a3ac2-9055-4f3f-8ccc-897718885cd4",
 			"name": "Structured Output Parser1",
-			"type": "@aura/n8n-nodes-langchain.outputParserStructured",
+			"type": "@aura/nodes-langchain..outputParserStructured",
 			"typeVersion": 1.2,
 			"position": [720, -1220]
 		},
@@ -582,7 +582,7 @@
 			},
 			"id": "bc913d5b-c00f-44da-a07c-2dceda473199",
 			"name": "OpenAI Chat Model3",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [440, -1220],
 			"credentials": {
@@ -603,7 +603,7 @@
 			},
 			"id": "c255ee66-3a23-4051-9bc3-09eccdf4a4e8",
 			"name": "AI Agent3",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [960, -1380]
 		},
@@ -644,7 +644,7 @@
 			},
 			"id": "8fbc4e41-29c5-442d-8661-441a7e9f348a",
 			"name": "AI Agent5",
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 1.6,
 			"position": [600, -1380]
 		},

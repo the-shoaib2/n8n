@@ -40,7 +40,7 @@
 				"text": "=Search HackerNews for following: {{ $json.data.map(i => i.name).join(', ') }}",
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 2.2,
 			"position": [640, 192],
 			"id": "5798b01b-cdc6-4366-8478-72f81a141259",
@@ -56,7 +56,7 @@
 				},
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [592, 368],
 			"credentials": {

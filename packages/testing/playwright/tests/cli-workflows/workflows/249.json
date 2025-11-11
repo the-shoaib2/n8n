@@ -55,7 +55,7 @@
 			},
 			"id": "d81d65f9-3152-435a-be81-e1f68a75eb6f",
 			"name": "Summary - Simple - Stuff",
-			"type": "@aura/n8n-nodes-langchain.chainSummarization",
+			"type": "@aura/nodes-langchain..chainSummarization",
 			"typeVersion": 2,
 			"position": [1820, 480]
 		},
@@ -68,7 +68,7 @@
 			},
 			"id": "54a03de0-5c56-4ee7-a72a-2d3fe7ca3659",
 			"name": "OpenAI Chat Model",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [1840, 620],
 			"credentials": {
@@ -87,7 +87,7 @@
 			},
 			"id": "314362b4-e5b1-4372-9edb-432857a9039c",
 			"name": "OpenAI Chat Model1",
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1,
 			"position": [2160, 620],
 			"credentials": {
@@ -128,7 +128,7 @@
 			},
 			"id": "6e3eafab-40d3-4329-a500-0a2e4d81a308",
 			"name": "Evaluate to Baseline",
-			"type": "@aura/n8n-nodes-langchain.code",
+			"type": "@aura/nodes-langchain..code",
 			"typeVersion": 1,
 			"position": [2140, 480]
 		}

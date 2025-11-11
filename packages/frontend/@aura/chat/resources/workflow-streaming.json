@@ -9,7 +9,7 @@
 				},
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [400, 224],
 			"id": "9593988a-2ca5-4a82-bd3a-3d8fcb69036d",
@@ -28,7 +28,7 @@
 					"enableStreaming": false
 				}
 			},
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 2.2,
 			"position": [400, 48],
 			"id": "72b37ab2-7352-476b-bca6-5b41e2290082",
@@ -41,7 +41,7 @@
 					"responseMode": "streaming"
 				}
 			},
-			"type": "@aura/n8n-nodes-langchain.chatTrigger",
+			"type": "@aura/nodes-langchain..chatTrigger",
 			"typeVersion": 1.2,
 			"position": [32, 48],
 			"id": "012ecda4-3ae8-4328-a371-c7ae63cabf1c",

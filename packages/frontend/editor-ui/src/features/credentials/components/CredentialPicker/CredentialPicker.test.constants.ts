@@ -168,9 +168,9 @@ export const TEST_CREDENTIAL_TYPES: ICredentialTypeMap = {
 		},
 		supportedNodes: [
 			'n8n-nodes-base.openAi',
-			'@aura/n8n-nodes-langchain.embeddingsOpenAi',
-			'@aura/n8n-nodes-langchain.lmChatOpenAi',
-			'@aura/n8n-nodes-langchain.lmOpenAi',
+			'@aura/nodes-langchain..embeddingsOpenAi',
+			'@aura/nodes-langchain..lmChatOpenAi',
+			'@aura/nodes-langchain..lmOpenAi',
 		],
 	},
 	supabaseApi: {

@@ -65,7 +65,7 @@ const ifNode = createTestNode({
 
 const aiTool = createTestNode({
 	name: 'AI Tool',
-	type: '@aura/n8n-nodes-langchain.memoryBufferWindow',
+	type: '@aura/nodes-langchain..memoryBufferWindow',
 	typeVersion: 1,
 	disabled: false,
 });

@@ -9,6 +9,7 @@ import { createReadStream, createWriteStream, existsSync } from 'fs';
 import { mkdir } from 'fs/promises';
 import { jsonParse, randomString, type IWorkflowExecutionDataProcess } from 'aura-workflow';
 import path from 'path';
+import pc from 'picocolors';
 import replaceStream from 'replacestream';
 import { pipeline } from 'stream/promises';
 import { z } from 'zod';
@@ -316,14 +317,16 @@ export class Start extends BaseCommand<z.infer<typeof flagsSchema>> {
 			const { port } = this.globalConfig;
 
 			const webhookTunnel = await localtunnel(port, {
-				host: 'https://hooks.aura.cloud',
+				host: 'https://hooks.n8n.cloud',
 				subdomain: tunnelSubdomain,
 			});
 
 			process.env.WEBHOOK_URL = `${webhookTunnel.url}/`;
-			this.log(`Tunnel URL: ${process.env.WEBHOOK_URL}\n`);
+			this.log(`Tunnel URL: ${pc.green(process.env.WEBHOOK_URL)}\n`);
 			this.log(
-				'IMPORTANT! Do not share with anybody as it would give people access to your aura instance!',
+				pc.yellow(
+					'IMPORTANT! Do not share with anybody as it would give people access to your aura instance!',
+				),
 			);
 		}
 
@@ -349,7 +352,7 @@ export class Start extends BaseCommand<z.infer<typeof flagsSchema>> {
 
 		const editorUrl = this.getEditorUrl();
 
-		this.log(`\nEditor is now accessible via:\n${editorUrl}`);
+		this.log(`\nEditor is now accessible via:\n${pc.green(editorUrl)}`);
 
 		// Allow to open aura editor by pressing "o"
 		if (Boolean(process.stdout.isTTY) && process.stdin.setRawMode) {
@@ -360,7 +363,7 @@ export class Start extends BaseCommand<z.infer<typeof flagsSchema>> {
 			if (flags.open) {
 				this.openBrowser();
 			}
-			this.log('\nPress "o" to open in Browser.');
+			this.log(pc.cyan('\nPress "o" to open in Browser.'));
 			process.stdin.on('data', (key: string) => {
 				if (key === 'o') {
 					this.openBrowser();

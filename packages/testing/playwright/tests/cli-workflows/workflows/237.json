@@ -14,7 +14,7 @@
 			},
 			"id": "982999e9-1191-4c74-8292-9f43d19a602b",
 			"name": "Azure OpenAI Chat Model",
-			"type": "@aura/n8n-nodes-langchain.lmChatAzureOpenAi",
+			"type": "@aura/nodes-langchain..lmChatAzureOpenAi",
 			"typeVersion": 1,
 			"position": [700, 600],
 			"credentials": {
@@ -31,7 +31,7 @@
 			},
 			"id": "6684c985-3943-4099-a7b1-c8cc51f3d9f8",
 			"name": "Azure OpenAI Chat",
-			"type": "@aura/n8n-nodes-langchain.chainLlm",
+			"type": "@aura/nodes-langchain..chainLlm",
 			"typeVersion": 1.5,
 			"position": [680, 460]
 		},

@@ -29,7 +29,7 @@
 				"text": "=Search HackerNews for {{ $json.name }}",
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 2.2,
 			"position": [624, 192],
 			"id": "597f08a7-28cd-45a0-b85f-0de68e611a3b",
@@ -45,7 +45,7 @@
 				},
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [624, 384],
 			"id": "efb63ea9-9b18-4594-a8d1-94ead7f6a83d",
@@ -99,7 +99,7 @@
 				"text": "=Search HackerNews for {{ $json.name }}",
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.agent",
+			"type": "@aura/nodes-langchain..agent",
 			"typeVersion": 2.2,
 			"position": [656, 672],
 			"id": "2135b360-4f86-4813-b517-33213033fce8",
@@ -115,7 +115,7 @@
 				},
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.lmChatOpenAi",
+			"type": "@aura/nodes-langchain..lmChatOpenAi",
 			"typeVersion": 1.2,
 			"position": [656, 864],
 			"id": "65799f6b-3d83-4d9c-87d8-ae0f13f0ebb4",
@@ -179,7 +179,7 @@
 					"convertFieldsToString": false
 				}
 			},
-			"type": "@aura/n8n-nodes-langchain.toolWorkflow",
+			"type": "@aura/nodes-langchain..toolWorkflow",
 			"typeVersion": 2.2,
 			"position": [880, 864],
 			"id": "718d6149-d5da-41ad-8660-000ccf8a8e28",

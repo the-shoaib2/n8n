@@ -44,7 +44,7 @@
 			"parameters": {
 				"options": {}
 			},
-			"type": "@aura/n8n-nodes-langchain.chatTrigger",
+			"type": "@aura/nodes-langchain..chatTrigger",
 			"typeVersion": 1.1,
 			"position": [0, 0],
 			"id": "c2dd390e-1360-4d6f-a922-4d295246a886",
